@@ -33,9 +33,9 @@ function Nav() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="flex items-center justify-between px-8 py-6 lg:px-12 lg:py-8 xl:py-12 xl:px-20">
+    <nav className="container flex items-center justify-between gap-6 px-6 py-6 mx-auto sm:py-8 lg:px-8 md:py-10 xl:py-12 xl:px-12">
       <Logo color="blue" />
-      <ul className="items-center hidden gap-4 tracking-wide xl:gap-8 lg:flex">
+      <ul className="items-center hidden gap-5 tracking-wide xl:gap-8 lg:flex">
         {navLinks.map(({ label, href }) => (
           <NavLink label={label} href={href} key={href} isActive={pathname.startsWith(`${href}`)} />
         ))}
@@ -44,7 +44,7 @@ function Nav() {
         </li>
       </ul>
       <button
-        className="px-3 py-2 lg:px-5 lg:py-3 space-y-1 border-[1.5px] rounded-lg border-blue lg:hidden hover:cursor-pointer"
+        className="px-6 py-3 lg:px-5 lg:py-3 space-y-1 border-[1.5px] rounded-lg border-blue lg:hidden hover:cursor-pointer"
         onClick={() => setIsOpen(!isOpen)}
       >
         <span className="block w-6 h-0.5 bg-blue"></span>
