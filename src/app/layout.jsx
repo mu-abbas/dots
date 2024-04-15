@@ -1,9 +1,11 @@
+import Footer from '@/components/footer/Footer';
 import './globals.css';
 
 export const metadata = {
-  title: 'Dots Presentations Homepage',
-  description:
-    'Your Story. Your Goals. Connected. Make your next presentation stand out with our Professional, Time-Saving, and price competitive services.',
+  title: {
+    template: '%s - DOTS',
+    default: 'Dots Presentations',
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -14,11 +16,13 @@ export default function RootLayout({ children }) {
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet" />
       </head>
       <body>
-        <header>Nav Bar: TODO</header>
         {children}
-        <footer>Footer: TODO</footer>
+        <Footer />
       </body>
     </html>
   );

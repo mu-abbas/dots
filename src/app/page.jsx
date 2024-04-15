@@ -1,11 +1,19 @@
-import RootLayout from './layout';
+import Header from '@/components/home/Header';
+import Main from '@/components/home/Main';
 
-function Home() {
+export const metadata = {
+  title: 'Home Page - DOTS',
+  description:
+    'Your Story. Your Goals. Connected. Make your next presentation stand out with our Professional, Time-Saving, and price competitive services.',
+};
+
+function HomePage() {
   return (
-    <main className="flex flex-col items-center justify-center gap-6 py-20 text-3xl font-bold">
-      <img src="logo-blue.png" alt="dots logo" />
-    </main>
+    <>
+      <Header />
+      <Main />
+    </>
   );
 }
 
-export default Home;
+export default HomePage;
