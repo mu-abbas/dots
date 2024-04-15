@@ -5,7 +5,9 @@ function CTALink({ color, label, href }) {
   return (
     <Link
       href={href}
-      className={`relative flex overflow-hidden border border-black rounded-xl group  text-[14px] xl:text-[17px]`}
+      className={`relative flex border border-black rounded-xl group  text-[14px] xl:text-[17px] overflow-hidden bg-gradient-to-l ${
+        color === 'black' ? 'from-green' : 'from-blue'
+      } to-10% to-none`}
     >
       {/* non hover state */}
       <span className="flex group-hover:translate-y-[100%] transition duration-300">
@@ -16,6 +18,7 @@ function CTALink({ color, label, href }) {
         >
           {label}
         </span>
+
         <span className={`flex items-center px-3 xl:px-6 ${color === 'black' ? 'bg-green' : 'bg-blue'}`}>
           <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
