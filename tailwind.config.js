@@ -21,6 +21,11 @@ module.exports = {
       lightGrey: '#686868',
       veryLightGrey: '#C4C4C46B',
     },
+    extend: {
+      backgroundImage: {
+        home: "url('/home-bg.png')",
+      },
+    },
   },
   plugins: [],
 };
