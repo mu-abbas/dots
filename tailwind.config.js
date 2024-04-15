@@ -4,10 +4,12 @@ module.exports = {
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './public/fonts/**/*.woff2',
   ],
   theme: {
     fontFamily: {
       sans: ['Space Grotesk', 'sans-serif'],
+      clash: ['Clash Grotesk', 'sans-serif'],
     },
     colors: {
       white: '#FFFFFF',
@@ -24,6 +26,9 @@ module.exports = {
     extend: {
       backgroundImage: {
         home: "url('/home-bg.png')",
+      },
+      fontSize: {
+        max: '10rem',
       },
     },
   },

@@ -1,3 +1,4 @@
+'use client';
 function Main() {
   return <main>Main: TODO</main>;
 }

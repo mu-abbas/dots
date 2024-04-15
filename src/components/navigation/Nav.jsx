@@ -33,7 +33,7 @@ function Nav() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="container flex items-center justify-between gap-6 px-6 py-6 mx-auto sm:py-8 lg:px-8 md:py-10 xl:py-12 xl:px-12">
+    <nav className="container flex items-center justify-between gap-6 px-6 py-6 mx-auto sm:py-8 lg:px-8 md:py-10 xl:px-12">
       <Logo color="blue" />
       <ul className="items-center hidden gap-5 tracking-wide xl:gap-8 lg:flex">
         {navLinks.map(({ label, href }) => (
