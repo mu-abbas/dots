@@ -33,7 +33,7 @@ function Nav() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="flex items-center justify-between px-12 py-8 xl:py-12 xl:px-20">
+    <nav className="flex items-center justify-between px-8 py-6 lg:px-12 lg:py-8 xl:py-12 xl:px-20">
       <Logo color="blue" />
       <ul className="items-center hidden gap-4 tracking-wide xl:gap-8 lg:flex">
         {navLinks.map(({ label, href }) => (
@@ -44,7 +44,7 @@ function Nav() {
         </li>
       </ul>
       <button
-        className="px-5 py-3 space-y-1 border-[1.5px] rounded-lg border-blue lg:hidden hover:cursor-pointer"
+        className="px-3 py-2 lg:px-5 lg:py-3 space-y-1 border-[1.5px] rounded-lg border-blue lg:hidden hover:cursor-pointer"
         onClick={() => setIsOpen(!isOpen)}
       >
         <span className="block w-6 h-0.5 bg-blue"></span>
