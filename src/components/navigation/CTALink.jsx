@@ -5,7 +5,9 @@ function CTALink({ color, label, href }) {
   return (
     <Link
       href={href}
-      className={`relative flex overflow-hidden border border-black rounded-xl group bg-${color} text-[14px] xl:text-[17px]`}
+      className={`relative flex overflow-hidden border border-black rounded-xl group ${
+        color === 'black' ? 'bg-black' : ''
+      } text-[14px] xl:text-[17px]`}
     >
       {/* non hover state */}
       <span className="flex group-hover:translate-y-[100%] transition duration-300">
