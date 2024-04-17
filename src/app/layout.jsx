@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </head>
-      <body>
+      <body className="overflow-hidden 2xl:text-lg 3xl:text-xl">
         {children}
         <Footer />
       </body>

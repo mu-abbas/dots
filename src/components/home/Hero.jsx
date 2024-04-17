@@ -4,12 +4,16 @@ import CTALink from '../navigation/CTALink';
 
 function Hero() {
   return (
-    <section className="flex items-center justify-center h-[75%] flex-col">
-      <h1 className="flex flex-col items-center">
-        <span className="text-6xl font-light leading-3">Your Story. Your Goals.</span>
-        <span className="font-medium leading-none tracking-wider text-max font-clash">Connected.</span>
+    <section className="flex items-center justify-center h-[75%] flex-col container mx-auto px-2">
+      <h1 className="flex flex-col items-center leading-none">
+        <span className="text-2xl font-light sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl">
+          Your Story. Your Goals.
+        </span>
+        <span className="-mt-1 text-6xl font-medium tracking-wider sm:-mt-2 md:-mt-3 sm:text-8xl md:text-9xl font-clash lg:text-10xl xl:text-11xl 2xl:text-12xl">
+          Connected.
+        </span>
       </h1>
-      <p className="max-w-xl mb-8 -mt-2 text-lg text-center">
+      <p className="max-w-sm p-2 mb-8 text-center sm:max-w-lg md:max-w-xl">
         Make your next presentation stand out with our Professional, Time-Saving, and price competitive services.
       </p>
       <CTALink color="none" label="Connect with Dots" href="/contact-us" />

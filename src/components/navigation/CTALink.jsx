@@ -5,7 +5,7 @@ function CTALink({ color, label, href }) {
   return (
     <Link
       href={href}
-      className={`relative flex border border-black rounded-xl group  text-[14px] xl:text-[17px] overflow-hidden bg-gradient-to-l ${
+      className={`relative flex border border-black rounded-xl group 2xl:text-lg overflow-hidden bg-gradient-to-l ${
         color === 'black' ? 'from-green' : 'from-blue'
       } to-10% to-none`}
     >

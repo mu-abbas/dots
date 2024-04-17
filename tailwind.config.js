@@ -28,7 +28,13 @@ module.exports = {
         home: "url('/home-bg.png')",
       },
       fontSize: {
-        max: '10rem',
+        '6xl': '4rem',
+        '10xl': '10rem',
+        '11xl': '11rem',
+        '12xl': '12rem',
+      },
+      screens: {
+        '3xl': '1920px',
       },
     },
   },

@@ -44,12 +44,12 @@ function Nav() {
         </li>
       </ul>
       <button
-        className="px-6 py-3 lg:px-5 lg:py-3 space-y-1 border-[1.5px] rounded-lg border-blue lg:hidden hover:cursor-pointer"
+        className="p-3 space-y-1.5 rounded-lg lg:px-5 lg:py-3 lg:hidden hover:cursor-pointer"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span className="block w-6 h-0.5 bg-blue"></span>
-        <span className={`block w-6 h-0.5  ${isOpen ? 'bg-none' : 'bg-blue'} transtition duration-300`}></span>
-        <span className="block w-6 h-0.5 bg-blue"></span>
+        <span className="block w-10 h-1 bg-blue"></span>
+        <span className={`block w-10 h-1  ${isOpen ? 'bg-none' : 'bg-blue'} transtition duration-300`}></span>
+        <span className="block w-10 h-1 bg-blue"></span>
       </button>
     </nav>
   );
