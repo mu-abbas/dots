@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import CTALink from './CTALink';
+import CTALinkV2 from './CTALinkV2';
 import Logo from './Logo';
 import NavLink from './NavLink';
 import { usePathname } from 'next/navigation';
@@ -43,7 +43,7 @@ function Nav() {
               <NavLink label={label} href={href} key={href} isActive={pathname.startsWith(`${href}`)} />
             ))}
             <li>
-              <CTALink color="black" href="/contact-us" label=" Connect with Dots" />
+              <CTALinkV2 color="black" href="/contact-us" label=" Connect with Dots" />
             </li>
           </ul>
           <button
