@@ -16,7 +16,7 @@ function Hero() {
               Connected.
             </span>
           </h1>
-          <p className="max-w-sm p-2 mb-8 text-center sm:max-w-lg md:max-w-xl">
+          <p className="max-w-sm p-2 mb-8 font-light text-center sm:max-w-lg md:max-w-xl font-poppins">
             Make your next presentation stand out with our Professional, Time-Saving, and price competitive services.
           </p>
           <CTALink color="none" label="Connect with Dots" href="/contact-us" />

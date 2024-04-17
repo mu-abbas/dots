@@ -22,6 +22,7 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
           rel="stylesheet"
         />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
       </head>
       <body className="overflow-x-hidden 2xl:text-lg 3xl:text-xl">
         {children}

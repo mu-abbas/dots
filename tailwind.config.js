@@ -10,6 +10,7 @@ module.exports = {
     fontFamily: {
       sans: ['Space Grotesk', 'sans-serif'],
       clash: ['Clash Display', 'sans-serif'],
+      poppins: ['poppins', 'sans-serif'],
     },
     colors: {
       white: '#FFFFFF',
