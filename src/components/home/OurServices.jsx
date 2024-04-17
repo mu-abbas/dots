@@ -1,6 +1,6 @@
 'use client';
 function OurServices() {
-  return <div>Our services: TODO</div>;
+  return <section className="bg-blue text-offWhite">Our services: TODO</section>;
 }
 
 export default OurServices;
