@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ['Space Grotesk', 'sans-serif'],
-      clash: ['Clash Grotesk', 'sans-serif'],
+      clash: ['Clash Display', 'sans-serif'],
     },
     colors: {
       white: '#FFFFFF',
