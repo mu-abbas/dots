@@ -7,7 +7,7 @@ function Story() {
     <section className="bg-black text-offWhite">
       <Container>
         <div className="py-8 space-y-16 sm:py-10 md:py-12 lg:py-16 2xl:py-20">
-          <h2 className="text-2xl leading-tight md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-7xl 2xl:leading-none">
+          <h2 className="text-3xl leading-tight md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl 2xl:leading-none">
             Clear Story, Well-defined goals and impressive presentations, On Time and On Budget
           </h2>
           <figure className="flex flex-col items-center gap-12 lg:flex-row lg:items-stretch lg:justify-between">
