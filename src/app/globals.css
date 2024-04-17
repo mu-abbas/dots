@@ -11,3 +11,15 @@
     src: url(/fonts/ClashGrotesk-Medium.woff2) format('woff2');
   }
 }
+
+@layer utilities {
+  .leading-none {
+    line-height: 1.125 !important;
+  }
+  .leading-tight {
+    line-height: 1.25 !important;
+  }
+  .leading-snug {
+    line-height: 1.375 !important;
+  }
+}
