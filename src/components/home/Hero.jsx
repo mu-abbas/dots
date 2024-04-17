@@ -12,7 +12,7 @@ function Hero() {
             <span className="text-2xl font-light sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl">
               Your Story. Your Goals.
             </span>
-            <span className="-mt-1 text-6xl font-medium tracking-wider sm:-mt-2 md:-mt-3 sm:text-8xl md:text-9xl font-clash lg:text-10xl xl:text-11xl 2xl:text-12xl">
+            <span className="-mt-1 font-medium tracking-wider text-5xlplus sm:-mt-2 md:-mt-3 sm:text-8xl md:text-9xl font-clash lg:text-10xl xl:text-11xl 2xl:text-12xl">
               Connected.
             </span>
           </h1>
