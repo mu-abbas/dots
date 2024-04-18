@@ -8,18 +8,16 @@ function CTALinkV2({ color, label, href, greyBorder }) {
   return (
     <Link
       href={href}
-      className={`relative flex border  rounded-xl group 2xl:text-lg overflow-hidden bg-gradient-to-l ${
-        color === 'black' ? 'from-green' : 'from-blue'
-      } to-10% to-none w-max ${greyBorder ? 'border-lightGrey' : 'border-black'} ${
-        color === 'black' ? 'bg-black' : ''
-      }`}
+      className={`relative flex border  rounded-xl group 2xl:text-lg overflow-hidden  w-max ${
+        greyBorder ? 'border-lightGrey' : 'border-black'
+      } ${color === 'black' ? 'bg-black' : ''}`}
     >
       {/* none hover state */}
       <span className="flex">
         <span
           className={`px-3 xl:px-6 py-3 ${
             color === 'black' ? 'text-offWhite' : 'text-black'
-          } tracking-wide  group-hover:translate-y-[100%] transition duration-300`}
+          } tracking-wide  group-hover:translate-y-[105%] transition duration-300`}
         >
           {label}
         </span>
@@ -28,7 +26,7 @@ function CTALinkV2({ color, label, href, greyBorder }) {
         <span
           className={`px-3 xl:px-6 py-3 ${
             color === 'black' ? 'text-black bg-green' : 'text-offWhite bg-blue'
-          } tracking-wide group-hover:translate-x-0 transition duration-300 -translate-x-[100%] absolute left-0 top-0`}
+          } tracking-wide group-hover:translate-x-0 transition duration-300 -translate-x-[105%] absolute left-0 top-0`}
         >
           {label}
         </span>
