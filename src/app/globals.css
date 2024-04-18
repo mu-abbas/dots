@@ -13,6 +13,9 @@
 }
 
 @layer utilities {
+  .leading-7 {
+    line-height: 1.75rem !important;
+  }
   .leading-none {
     line-height: 1.125 !important;
   }

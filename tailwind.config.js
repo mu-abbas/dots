@@ -18,6 +18,7 @@ module.exports = {
       green: '#C7F08B',
       lightBlue: '#80B7D2',
       blue: '#2B65F4',
+      mediumBlue: '#2453D7',
       darkBlue: '#1745C4',
       black: '#161B23',
       grey: '#4B4B57',
@@ -40,6 +41,18 @@ module.exports = {
       },
       height: {
         screen: '100dvh',
+      },
+      spacing: {
+        18: '4.5rem',
+      },
+      keyframes: {
+        pulsing: {
+          '50%': { transform: 'scale(.9)' },
+          '100%': { transform: 'scale(1)' },
+        },
+      },
+      animation: {
+        pulsing: 'pulsing 0.7s infinite',
       },
     },
   },
