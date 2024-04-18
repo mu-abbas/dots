@@ -13,7 +13,7 @@ function Story() {
           <figure className="flex flex-col items-center gap-12 lg:flex-row lg:items-stretch lg:justify-between">
             <img src="clear-story.jpeg" alt="cloudflyer project sample" className="order-1 rounded-xl lg:w-1/2" />
             <div className="flex flex-col items-center border-t-[0.5px] lg:items-start border-lightGrey lg:w-2/5">
-              <p className="py-12 lg:py-16 2xl:py-20 md:text-lg lg:text-xl 2xl:text-2xl 3xl:text-3xl font-poppins">
+              <p className="py-12 font-light lg:py-16 2xl:py-20 md:text-lg lg:text-xl 2xl:text-2xl 3xl:text-3xl font-poppins">
                 We will work with you to understand your message and create a presentation that is connected to your
                 audience, visually appealing and easy to follow.
               </p>
