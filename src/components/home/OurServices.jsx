@@ -14,10 +14,18 @@ function OurServices() {
             </p>
           </div>
           <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:gap-8 xl:grid-cols-4">
-            <ServicesCard href="#" heading="presentation design" icon="presentation-icon.svg" />
-            <ServicesCard href="#" heading="pitch deck" icon="pitch-deck-icon.svg" />
-            <ServicesCard href="#" heading="presentation templates" icon="presentation-temp-icon.svg" />
-            <ServicesCard href="#" heading="document design" icon="document-design-icon.svg" />
+            <ServicesCard
+              href="services/presentation-design"
+              heading="presentation design"
+              icon="presentation-icon.svg"
+            />
+            <ServicesCard href="services/pitch-decks" heading="pitch deck" icon="pitch-deck-icon.svg" />
+            <ServicesCard
+              href="services/presentation-templates"
+              heading="presentation templates"
+              icon="presentation-temp-icon.svg"
+            />
+            <ServicesCard href="services/document-design" heading="document design" icon="document-design-icon.svg" />
           </div>
         </div>
       </Container>
