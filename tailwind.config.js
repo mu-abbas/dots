@@ -27,7 +27,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        home: "url('/home-bg.png')",
+        home: "url('/image/home/home-bg.png')",
       },
       fontSize: {
         '5xlplus': '3.5rem',

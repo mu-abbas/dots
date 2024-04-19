@@ -1,4 +1,5 @@
 'use client';
+import Brands from './Brands';
 import Featured from './Featured';
 import IntroVideo from './IntroVideo';
 import OurServices from './OurServices';
@@ -10,6 +11,7 @@ function Main() {
       <IntroVideo />
       <OurServices />
       <Featured />
+      <Brands />
     </main>
   );
 }
