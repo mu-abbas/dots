@@ -8,8 +8,8 @@ import SpaceY from '../micro/SpaceY';
 const presentationDesigns = [
   { src: 'image/home/p-design-1.jpeg', alt: 'Surgio Health', href: '#' },
   { src: 'image/home/p-design-2.jpeg', alt: 'Topo Chico', href: '#' },
-  { src: 'image/home/p-design-3.jpeg', alt: 'Marriot', description: 'Board of Directors Presentation', href: '#' },
-  { src: 'image/home/p-design-4.jpeg', alt: 'Marriort', description: 'Customer Engagement Centers', href: '#' },
+  { src: 'image/home/p-design-3.jpeg', alt: 'Marriott', description: 'Board of Directors Presentation', href: '#' },
+  { src: 'image/home/p-design-4.jpeg', alt: 'Marriott', description: 'Customer Engagement Centers', href: '#' },
 ];
 
 const pitchDecks = [

@@ -14,15 +14,27 @@ module.exports = {
     },
     colors: {
       white: '#FFFFFF',
-      offWhite: '#EFF3E9',
-      green: '#C7F08B',
-      lightBlue: '#80B7D2',
-      blue: '#2B65F4',
-      mediumBlue: '#2453D7',
-      darkBlue: '#1745C4',
-      black: '#161B23',
+      offWhite: '#EFEDEB', //ok
+
+      yellow: '#F2E76E', //ok
+
+      lightGreen: '#A7F9CD', //ok
+      green: '#C7F08B', //ok
+      darkGreen: '#00ae7b',
+      extraDarkGreen: '#005057',
+
+      lightBlue: '#80B7D2', //ok
+      blue: '#2B65F4', //ok
+      lightNavy: '#94B6FF', //ok
+      navy: '#1745BF', //ok
+
+      extraLightPurple: '#FAC7FF',
+      lightPurple: '#A799FF', //ok
+      purple: '#5152D8', //ok
+
+      black: '#161B23', //ok
+      lightGrey: '#B9C8DE', //ok
       grey: '#4B4B57',
-      lightGrey: '#686868',
       veryLightGrey: '#C4C4C46B',
     },
     extend: {
