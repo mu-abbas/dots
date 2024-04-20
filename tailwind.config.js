@@ -6,15 +6,18 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
     './public/fonts/**/*.woff2',
   ],
+
   theme: {
     fontFamily: {
       sans: ['Space Grotesk', 'sans-serif'],
       clash: ['Clash Display', 'sans-serif'],
       poppins: ['poppins', 'sans-serif'],
     },
+
     colors: {
-      white: '#FFFFFF',
+      white: '#FFFFFF', //ok
       offWhite: '#EFEDEB', //ok
+      black: '#161B23', //ok
 
       yellow: '#F2E76E', //ok
 
@@ -32,15 +35,15 @@ module.exports = {
       lightPurple: '#A799FF', //ok
       purple: '#5152D8', //ok
 
-      black: '#161B23', //ok
       lightGrey: '#B9C8DE', //ok
-      grey: '#4B4B57',
-      veryLightGrey: '#C4C4C46B',
+      grey: '#4B4B57', //ok
     },
+
     extend: {
       backgroundImage: {
         home: "url('/image/home/home-bg.png')",
       },
+
       fontSize: {
         '5xlplus': '3.5rem',
         '6xl': '4rem',
@@ -48,25 +51,31 @@ module.exports = {
         '11xl': '11rem',
         '12xl': '12rem',
       },
+
       screens: {
         '3xl': '1920px',
       },
+
       height: {
         screen: '100dvh',
       },
+
       spacing: {
         18: '4.5rem',
       },
+
       keyframes: {
         pulsing: {
           '50%': { transform: 'scale(.9)' },
           '100%': { transform: 'scale(1)' },
         },
       },
+
       animation: {
         pulsing: 'pulsing 0.7s infinite',
       },
     },
   },
+
   plugins: [],
 };

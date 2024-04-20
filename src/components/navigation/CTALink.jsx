@@ -10,9 +10,7 @@ function CTALink({ color, label, href, greyBorder }) {
       href={href}
       className={`relative flex border  rounded-xl group 2xl:text-lg overflow-hidden bg-gradient-to-l ${
         color === 'black' ? 'from-green' : 'from-blue'
-      } to-10% to-none w-max ${greyBorder ? 'border-lightGrey' : 'border-black'} ${
-        color === 'black' ? 'bg-black' : ''
-      }`}
+      } to-10% to-none w-max ${greyBorder ? 'border-grey' : 'border-black'} ${color === 'black' ? 'bg-black' : ''}`}
     >
       {/* non hover state */}
       <span className="flex group-hover:translate-y-[100%] transition duration-300">
