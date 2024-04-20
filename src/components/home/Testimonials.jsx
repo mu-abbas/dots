@@ -11,7 +11,18 @@ function NextArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, top: '0', right: '0', width: '15%', height: '100%', opacity: '0' }}
+      style={{
+        ...style,
+        bottom: '0',
+        right: '0',
+        width: '15%',
+        height: '100%',
+        opacity: '0',
+        zIndex: '50',
+        '@media (hover: none)': {
+          display: 'none',
+        },
+      }}
       onClick={onClick}
     />
   );
@@ -22,7 +33,18 @@ function PrevArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, top: '0', left: '0', width: '15%', height: '100%', opacity: '0' }}
+      style={{
+        ...style,
+        bottom: '0',
+        left: '0',
+        width: '15%',
+        height: '100%',
+        opacity: '0',
+        zIndex: '50',
+        '@media (hover: none)': {
+          display: 'none',
+        },
+      }}
       onClick={onClick}
     />
   );
@@ -87,22 +109,22 @@ function Testimonials() {
           <div className="relative">
             <Slider {...settings}>
               <div>
-                <h3>1</h3>
+                <h3 className="p-20 mx-4 bg-blue">1</h3>
               </div>
               <div>
-                <h3>2</h3>
+                <h3 className="p-20 mx-4 bg-blue">2</h3>
               </div>
               <div>
-                <h3>3</h3>
+                <h3 className="p-20 mx-4 bg-blue">3</h3>
               </div>
               <div>
-                <h3>4</h3>
+                <h3 className="p-20 mx-4 bg-blue">4</h3>
               </div>
               <div>
-                <h3>5</h3>
+                <h3 className="p-20 mx-4 bg-blue">5</h3>
               </div>
               <div>
-                <h3>6</h3>
+                <h3 className="p-20 mx-4 bg-blue">6</h3>
               </div>
             </Slider>
             <div className="relative h-1 overflow-hidden" role="progressbar">
