@@ -26,3 +26,9 @@
     line-height: 1.375 !important;
   }
 }
+
+@media (pointer: none) {
+  .hideMeOnTouchScreens {
+    display: none;
+  }
+}

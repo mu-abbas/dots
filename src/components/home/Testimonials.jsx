@@ -6,11 +6,18 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
+let nextOnClick;
+
 function NextArrow(props) {
   const { className, style, onClick } = props;
+  nextOnClick = e => {
+    if (e.target.classList.contains('slick-arrow')) return;
+    onClick();
+  };
+
   return (
     <div
-      className={className}
+      className={`${className} hideMeOnTouchScreens`}
       style={{
         ...style,
         bottom: '0',
@@ -19,9 +26,6 @@ function NextArrow(props) {
         height: '100%',
         opacity: '0',
         zIndex: '50',
-        '@media (hover: none)': {
-          display: 'none',
-        },
       }}
       onClick={onClick}
     />
@@ -32,7 +36,7 @@ function PrevArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
-      className={className}
+      className={`${className} hideMeOnTouchScreens`}
       style={{
         ...style,
         bottom: '0',
@@ -41,9 +45,6 @@ function PrevArrow(props) {
         height: '100%',
         opacity: '0',
         zIndex: '50',
-        '@media (hover: none)': {
-          display: 'none',
-        },
       }}
       onClick={onClick}
     />
@@ -106,7 +107,7 @@ function Testimonials() {
               Proudly serving a diverse range of clients,from startups to Fortune 500 companies. They trusted us! …..
             </p>
           </div>
-          <div className="relative">
+          <div className="relative" onClick={nextOnClick}>
             <Slider {...settings}>
               <div>
                 <h3 className="p-20 mx-4 bg-blue">1</h3>
