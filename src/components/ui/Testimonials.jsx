@@ -57,42 +57,42 @@ const testimonials = [
   {
     quote:
       '“Outstanding service, great value. They understood and met our needs on time. Highly recommended for future projects.”',
-    image: 'image/home/Rick-Mare.jpg',
+    image: 'image/Rick-Mare.jpg',
     name: 'Rick Mare',
     role: 'CEO',
   },
   {
     quote:
       '“They consistently provide high-quality designs promptly and are great communicators. Having worked together four times.”',
-    image: 'image/home/Lynda.jpg',
+    image: 'image/Lynda.jpg',
     name: 'Lynda Ford',
     role: 'CEO',
   },
   {
     quote:
       '“They precisely met the brief with perfect, timely execution in Pitch Decks. Highly talented, will collaborate again.”',
-    image: 'image/home/Jack.jpg',
+    image: 'image/Jack.jpg',
     name: "Jack O'Holleran",
     role: 'CEO',
   },
   {
     quote:
       '“Exceptional work - professional, ethical, and impressive. Highly satisfied and discussing future projects already!”',
-    image: 'image/home/Benjamin-Mill.jpg',
+    image: 'image/Benjamin-Mill.jpg',
     name: 'Benjamin Mill',
     role: 'Managing Director',
   },
   {
     quote:
       '“They excelled in creating a Google Slides template, seamlessly incorporating feedback, proving to be valuable partners.”',
-    image: 'image/home/Sven-Montanus.jpg',
+    image: 'image/Sven-Montanus.jpg',
     name: 'Sven Montanus',
     role: 'Managing Partner',
   },
   {
     quote:
       '“They consistently delivered exceptional work on multiple projects, prioritizing quality, timely completion, and focus..”',
-    image: 'image/home/Don-Philabaum.png',
+    image: 'image/Don-Philabaum.png',
     name: 'Don Philabaum',
     role: 'Author',
   },
@@ -155,11 +155,11 @@ function Testimonials() {
   };
 
   return (
-    <section className="bg-offWhite">
+    <section className="bg-offWhite testimonials">
       <Container>
         <SpaceY>
           <div className="flex flex-col items-start gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-14 2xl:gap-16 3xl:gap-18 lg:flex-row">
-            <h2 className="px-4 py-3 text-xl font-medium text-center border rounded-lg md:px-6 md:py-4 opacity-85 text-grey border-grey min-w-max sm:text-2xl lg:text-3xl 3xl:text-4xl">
+            <h2 className="px-4 py-3 text-xl font-medium text-center border rounded-lg opacity-75 md:px-6 md:py-4 text-grey border-grey min-w-max sm:text-2xl lg:text-3xl 3xl:text-4xl">
               What our clients say
             </h2>
             <p className="max-w-sm font-light leading-7 lg:leading-8 xl:leading-9 2xl:leading-10 md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-poppins sm:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-3xl 3xl:max-w-4xl 3xl:text-4xl">

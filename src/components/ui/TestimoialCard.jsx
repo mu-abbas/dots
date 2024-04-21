@@ -1,8 +1,8 @@
 'use client';
 function TestimoialCard({ quote, image, name, role }) {
   return (
-    <figure className="flex flex-col justify-between gap-8 lg:h-56 xl:h-64 2xl:h-56">
-      <blockquote className="text-lg font-light leading-7 text-grey font-poppins md:max-w-xl lg:max-w-sm xl:max-w-xs 2xl:max-w-sm 3xl:max-w-lg">
+    <figure className="flex flex-col justify-between gap-8 lg:h-56 xl:h-64 2xl:h-60">
+      <blockquote className="text-lg font-light leading-7 text-grey font-poppins md:max-w-2xl lg:max-w-sm xl:max-w-xs 2xl:max-w-sm 3xl:max-w-lg">
         {quote}
       </blockquote>
       <figcaption className="flex items-center gap-6">

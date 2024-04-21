@@ -1,13 +1,13 @@
 'use client';
-import Blog from './Blog';
+import Blog from '../ui/Blog';
 import Brands from './Brands';
-import Faqs from './Faqs';
+import Faqs from '../ui/Faqs';
 import Featured from './Featured';
 import IntroVideo from './IntroVideo';
 import OurServices from './OurServices';
-import ReadyToStart from './ReadyToStart';
+import ReadyToStart from '../ui/ReadyToStart';
 import Story from './Story';
-import Testimonials from './Testimonials';
+import Testimonials from '../ui/Testimonials';
 function Main() {
   return (
     <main>

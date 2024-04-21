@@ -3,7 +3,7 @@ import Link from 'next/link';
 function ServicesCard({ heading, href, icon }) {
   return (
     <li>
-      <figure className="p-5 transition duration-300 border-[0.5px] rounded-xl border-lightGrey hover:bg-mediumBlue hover:border-mediumBlue lg:p-8 2xl:p-10 2xl:rounded-2xl">
+      <figure className="p-5 transition duration-300 border-[0.5px] rounded-xl border-lightGrey hover:bg-navy hover:border-navy lg:p-8 2xl:p-10 2xl:rounded-2xl">
         <div className="flex items-center gap-4 mb-4 xl:flex-col xl:items-start">
           <img
             src={icon}
