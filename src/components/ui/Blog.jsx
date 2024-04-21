@@ -6,21 +6,21 @@ import BlogPostCard from './BlogPostCard';
 const blogPosts = [
   {
     image: 'image/blog-post-mockup.jpg',
-    description: 'Totam omnis provident nostrum accusamus dignissimos',
+    description: '5 Presentation Design Mistakes to Avoid',
     href: '#',
     date: 'January 14, 2024',
     color: 'purple',
   },
   {
-    image: 'image/blog-post-mockup.jpg',
-    description: 'Totam omnis provident nostrum accusamus dignissimos',
+    image: 'image/blog-post-mockup-2.jpg',
+    description: '7 Proven Strategies to Create Winning Presentations',
     href: '#',
     date: 'January 14, 2024',
-    color: 'purple',
+    color: 'green',
   },
   {
     image: 'image/blog-post-mockup.jpg',
-    description: 'Totam omnis provident nostrum accusamus dignissimos',
+    description: '5 Presentation Design Mistakes to Avoid',
     href: '#',
     date: 'January 14, 2024',
     color: 'purple',

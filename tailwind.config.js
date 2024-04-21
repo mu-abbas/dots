@@ -1,3 +1,5 @@
+const { transform } = require('next/dist/build/swc');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -69,10 +71,15 @@ module.exports = {
           '50%': { transform: 'scale(.9)' },
           '100%': { transform: 'scale(1)' },
         },
+        expand: {
+          '0%': { transform: 'scaleY(0)' },
+          '100%': { transform: 'scaleY(1)' },
+        },
       },
 
       animation: {
         pulsing: 'pulsing 0.7s infinite',
+        expand: 'expand 0.3s',
       },
     },
   },
