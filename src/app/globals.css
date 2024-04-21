@@ -16,6 +16,15 @@
   .leading-7 {
     line-height: 1.75rem !important;
   }
+  .leading-8 {
+    line-height: 2rem !important;
+  }
+  .leading-9 {
+    line-height: 2.25rem !important;
+  }
+  .leading-10 {
+    line-height: 2.5rem !important;
+  }
   .leading-none {
     line-height: 1.125 !important;
   }
@@ -25,4 +34,13 @@
   .leading-snug {
     line-height: 1.375 !important;
   }
+}
+
+.slick-track {
+  display: flex !important;
+  align-items: center !important;
+  @media (min-width: 1024px) {
+    align-items: stretch !important;
+  }
+  padding-bottom: 2rem;
 }
