@@ -7,7 +7,7 @@ function Hero() {
     <section className="flex items-center h-[75%]">
       <Container>
         <div className="flex flex-col items-center">
-          <h1 className="flex flex-col items-center leading-none">
+          <h1 className="flex flex-col items-center leading-12">
             <span className="text-2xl font-light sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl">
               Your Story. Your Goals.
             </span>

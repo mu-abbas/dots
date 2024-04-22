@@ -162,7 +162,7 @@ function Testimonials() {
             <h2 className="px-4 py-3 text-xl font-medium text-center border rounded-lg opacity-75 md:px-6 md:py-4 text-grey border-grey min-w-max sm:text-2xl lg:text-3xl 3xl:text-4xl">
               What our clients say
             </h2>
-            <p className="max-w-sm font-light leading-7 lg:leading-8 xl:leading-9 2xl:leading-10 md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-poppins sm:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-3xl 3xl:max-w-4xl 3xl:text-4xl">
+            <p className="max-w-sm font-light leading-7 lg:leading-8 xl:leading-9 2xl:leading-10 lg:text-lg xl:text-xl 2xl:text-2xl font-poppins sm:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-3xl 3xl:max-w-4xl 3xl:text-3xl">
               Proudly serving a diverse range of clients,from startups to Fortune 500 companies. They trusted us! …..
             </p>
           </div>

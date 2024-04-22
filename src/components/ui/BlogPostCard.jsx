@@ -13,7 +13,7 @@ function BlogPostCard({ image, description, href, date, color }) {
         <figcaption className="px-8 py-10 space-y-10 md:py-12 md:space-y-12 lg:py-10 lg:space-y-10 xl:py-12 xl:space-y-12 2xl:py-16 2xl:space-y-16 3xl:px-12">
           <span className="text-xl text-offWhite 3xl:text-2xl">{description}</span>
           <span className="flex items-center justify-between">
-            <time datetime={date} className="text-sm font-light text-grey 3xl:text-base">
+            <time dateTime={date} className="text-sm font-light text-grey 3xl:text-base">
               {date}
             </time>
             <span
