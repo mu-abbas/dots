@@ -50,7 +50,7 @@ function ReadyToStart() {
               </defs>
             </svg>
           </span>
-          <h2 className="max-w-sm pb-12 text-5xl font-light text-center md:text-6xl md:max-w-lg lg:text-8xl lg:max-w-3xl">
+          <h2 className="max-w-xs pb-6 text-4xl font-light text-center sm:max-w-sm sm:pb-8 lg:pb-10 2xl:pb-12 sm:text-5xl md:text-6xl md:max-w-lg lg:text-8xl lg:max-w-3xl">
             Ready to start the project?
           </h2>
           <CTALinkV2 href="contact-us" color="black" label="Connect with Dots" />
