@@ -44,6 +44,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         home: "url('/image/home/home-bg.png')",
+        readyToStart: "url('/image/ready-to-start-bg.png')",
       },
 
       fontSize: {
