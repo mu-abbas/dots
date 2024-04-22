@@ -37,7 +37,7 @@ function AccordionItem({ title, content, open = false }) {
         id={`accordion-text-01`}
         role="region"
         aria-labelledby={`accordion-title-01`}
-        className={`grid text-sm font-light border-b font-poppins text-offWhite border-grey overflow-hidden transition-all duration-300 ease-in-out leading-6 ${
+        className={`grid text-sm md:text-base font-light border-b font-poppins text-offWhite border-grey overflow-hidden transition-all duration-300 ease-in-out leading-6 ${
           isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
         }`}
       >
