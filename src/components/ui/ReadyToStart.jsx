@@ -10,7 +10,7 @@ function ReadyToStart() {
         <div className="flex flex-col items-center gap-8 py-12">
           <span className="w-36 md:w-40 lg:w-44 2xl:w-48">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174 140" fill="none">
-              <g clip-path="url(#clip0_1102_2814)">
+              <g clipPath="url(#clip0_1102_2814)">
                 <path
                   opacity="0.2"
                   d="M17.17 86.6201L153.85 86.6201C163.333 86.6201 171.02 78.9328 171.02 69.4501V66.1201C171.02 56.6374 163.333 48.9501 153.85 48.9501L17.17 48.9501C7.68729 48.9501 1.52588e-05 56.6374 1.52588e-05 66.1201V69.4501C1.52588e-05 78.9328 7.68729 86.6201 17.17 86.6201Z"
