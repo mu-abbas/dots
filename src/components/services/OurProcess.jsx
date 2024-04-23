@@ -45,11 +45,12 @@ function OurProcess() {
               Professional, Organized, and Fast-Paced.
             </p>
           </div>
-          <div>
+          <div className="divide-y-[0.5px]">
             {processes.map(({ num, heading, content, color }) => (
               <ProcessItem num={num} heading={heading} content={content} color={color} />
             ))}
           </div>
+          <img src="/image/services/Surgio-Health-1.jpg" alt="surgio health project" className="rounded-xl" />
         </SpaceY>
       </Container>
     </section>

@@ -6,7 +6,7 @@ function ProcessItem({ num, heading, content, color }) {
   const purple = 'bg-purple text-offWhite';
 
   return (
-    <div className="flex flex-col md:justify-center md:items-center gap-2 md:gap-4 border-b-[0.5px] md:flex-row border-grey py-8 md:pb-12 lg:py-14 xl:py-16 2xl:py-18 3xl:py-20 lg:gap-6 xl:gap-8 3xl:gap-10">
+    <div className="flex flex-col gap-2 py-8 md:justify-center md:items-center md:gap-4 md:flex-row md:pb-12 lg:py-14 xl:py-16 2xl:py-18 3xl:py-20 lg:gap-6 xl:gap-8 3xl:gap-10 border-grey">
       <span
         className={`flex items-center justify-center pr-[2px] text-5xl lg:text-5xlplus xl:text-6xl  3xl:text-7xl rounded-full size-18 lg:size-20 xl:size-24 3xl:size-28 ${
           color === 'black' ? black : color === 'green' ? green : color === 'white' ? white : purple
