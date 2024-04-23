@@ -17,7 +17,7 @@ function Hero() {
           </h1>
           <div className="flex flex-col items-center gap-12 p-2 py-2 xl:gap-4 md:py-4 xl:py-0 xl:items-start 2xl:gap-6 3xl:gap-8 3xl:mb-4">
             <span className="order-1">
-              <CTALinkV2 color="none" label="Presentation Design Services" href="/contact-us" />
+              <CTALinkV2 color="none" label="Presentation Design Services" href="/services/presentation-design/" />
             </span>
             <p className="max-w-xs font-light text-center sm:max-w-sm md:text-lg md:max-w-lg xl:text-left font-poppins xl:order-2 xl:max-w-md 2xl:max-w-lg 3xl:text-2xl 3xl:max-w-xl 2xl:text-xl">
               We use our creativity, expertise, and passion to connect the dots and bring your stories to life.

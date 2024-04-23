@@ -8,7 +8,7 @@ function OurProcess() {
     <section className="bg-offWhite">
       <Container>
         <SpaceY>
-          <div className="flex flex-col items-start gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-14 2xl:gap-16 3xl:gap-18 lg:flex-row">
+          <div className="flex flex-col items-center gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-14 2xl:gap-16 3xl:gap-18 lg:flex-row">
             <h2 className="px-4 py-3 text-xl font-medium text-center border rounded-lg opacity-75 md:px-6 md:py-4 text-grey border-grey min-w-max sm:text-2xl lg:text-3xl 3xl:text-4xl">
               Our Process
             </h2>

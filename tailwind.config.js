@@ -61,9 +61,9 @@ module.exports = {
         '3xl': '1920px',
       },
 
-      // height: {
-      //   screen: '100dvh',
-      // },
+      height: {
+        screen: '100dvh',
+      },
 
       spacing: {
         18: '4.5rem',
