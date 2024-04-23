@@ -33,7 +33,7 @@ function CTALinkV2({ color, label, href, greyBorder }) {
 
         <span
           className={`flex items-center px-3 xl:px-6 ${color === 'black' ? 'bg-green' : 'bg-blue'} border-l ${
-            greyBorder ? 'border-lightGrey' : 'border-black'
+            greyBorder ? 'border-grey' : 'border-black'
           }`}
         >
           <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">

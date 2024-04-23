@@ -15,7 +15,7 @@ function Hero() {
               Communicate Your Message
             </span>
           </h1>
-          <div className="flex flex-col items-center gap-8 p-2 py-2 xl:gap-4 md:py-4 xl:py-0 xl:items-start 2xl:gap-6 3xl:gap-8 3xl:mb-4">
+          <div className="flex flex-col items-center gap-12 p-2 py-2 xl:gap-4 md:py-4 xl:py-0 xl:items-start 2xl:gap-6 3xl:gap-8 3xl:mb-4">
             <span className="order-1">
               <CTALinkV2 color="none" label="Presentation Design Services" href="/contact-us" />
             </span>
