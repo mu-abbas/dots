@@ -10,36 +10,36 @@ function Brands() {
       </h2>
       <Slider width="240px" duration={25} pauseOnHover={true} blurBorders={false}>
         <Slider.Slide>
-          <img src="brand/abbvie.png" alt="abbvie" />
+          <img src="/brand/abbvie.png" alt="abbvie" />
         </Slider.Slide>
         <Slider.Slide>
-          <img src="brand/cocacola.png" alt="cocacola" />
+          <img src="/brand/cocacola.png" alt="cocacola" />
         </Slider.Slide>
         <Slider.Slide>
-          <img src="brand/j&j.png" alt="j&J" />
+          <img src="/brand/j&j.png" alt="j&J" />
         </Slider.Slide>
         <Slider.Slide>
-          <img src="brand/Google.png" alt="Google" />
+          <img src="/brand/Google.png" alt="Google" />
         </Slider.Slide>
         <Slider.Slide>
-          <img src="brand/gsk.png" alt="gsk" />
+          <img src="/brand/gsk.png" alt="gsk" />
         </Slider.Slide>
         <Slider.Slide>
-          <img src="brand/indeed.png" alt="indeed" />
+          <img src="/brand/indeed.png" alt="indeed" />
         </Slider.Slide>
         <Slider.Slide>
-          <img src="brand/marriott.png" alt="marriott" />
+          <img src="/brand/marriott.png" alt="marriott" />
         </Slider.Slide>
         <Slider.Slide>
-          <img src="brand/novonordisk.png" alt="novonordisk" />
+          <img src="/brand/novonordisk.png" alt="novonordisk" />
         </Slider.Slide>
         <Slider.Slide>
-          <img src="brand/schneider.png" alt="schneider" />
+          <img src="/brand/schneider.png" alt="schneider" />
         </Slider.Slide>
         <Slider.Slide>
-          <img src="brand/uber.png" alt="uber" />
+          <img src="/brand/uber.png" alt="uber" />
           <Slider.Slide>
-            <img src="brand/unilever.png" alt="unilever" />
+            <img src="/brand/unilever.png" alt="unilever" />
           </Slider.Slide>
         </Slider.Slide>
       </Slider>

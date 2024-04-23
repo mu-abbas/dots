@@ -45,9 +45,11 @@ module.exports = {
       backgroundImage: {
         home: "url('/image/home/home-bg.png')",
         readyToStart: "url('/image/ready-to-start-bg.png')",
+        services: "url('/image/services/services-bg.png')",
       },
 
       fontSize: {
+        '4xlplus': '2.75rem',
         '5xlplus': '3.5rem',
         '6xl': '4rem',
         '10xl': '10rem',

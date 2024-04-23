@@ -8,7 +8,7 @@ function AccordionItem({ title, content, open = false }) {
       <h2>
         <button
           className={`flex items-center justify-between py-4 w-full text-left border-b border-grey focus:outline-none gap-8 ${
-            isOpen ? 'text-navy' : 'text-offWhite'
+            isOpen ? 'text-blue' : 'text-offWhite'
           }`}
           onClick={e => {
             e.preventDefault();

@@ -4,7 +4,6 @@ import CTALinkV2 from './CTALinkV2';
 import Logo from './Logo';
 import NavLink from './NavLink';
 import { usePathname } from 'next/navigation';
-import Container from '../micro/Container';
 
 const navLinks = [
   {

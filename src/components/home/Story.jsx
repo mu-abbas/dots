@@ -13,7 +13,7 @@ function Story() {
           </h2>
           <figure className="flex flex-col items-center gap-12 lg:flex-row lg:items-stretch lg:justify-between">
             <img
-              src="image/home/clear-story.jpeg"
+              src="/image/home/clear-story.jpeg"
               alt="cloudflyer project sample"
               className="order-1 rounded-xl lg:w-1/2"
             />
@@ -22,7 +22,7 @@ function Story() {
                 We will work with you to understand your message and create a presentation that is connected to your
                 audience, visually appealing and easy to follow.
               </p>
-              <CTALinkV2 href="services" label="Dicover our process" color="black" greyBorder={true} />
+              <CTALinkV2 href="/services" label="Dicover our process" color="black" greyBorder={true} />
             </div>
           </figure>
         </SpaceY>

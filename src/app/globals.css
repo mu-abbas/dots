@@ -43,6 +43,21 @@
   .leading-15 {
     line-height: 5rem !important;
   }
+  .leading-16 {
+    line-height: 5.5rem !important;
+  }
+  .leading-17 {
+    line-height: 6rem !important;
+  }
+  .leading-18 {
+    line-height: 6.5rem !important;
+  }
+  .leading-19 {
+    line-height: 7rem !important;
+  }
+  .leading-20 {
+    line-height: 7.5rem !important;
+  }
   .leading-none {
     line-height: 1.125rem !important;
   }
