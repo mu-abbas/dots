@@ -1,4 +1,5 @@
 'use client';
+import Slider from 'react-slick';
 import Container from '../micro/Container';
 import SpaceY from '../micro/SpaceY';
 import BlogPostCard from './BlogPostCard';
@@ -27,18 +28,72 @@ const blogPosts = [
   },
 ];
 
+function PrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: 'none',
+      }}
+      onClick={onClick}
+    />
+  );
+}
+
+function NextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: 'none',
+      }}
+      onClick={onClick}
+    />
+  );
+}
+
+const settings = {
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  nextArrow: <NextArrow />,
+  prevArrow: <PrevArrow />,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
+};
+
 function Blog() {
   return (
-    <section className="bg-black">
+    <section className="bg-black blog">
       <Container>
         <SpaceY>
-          <h2 className="text-3xl text-center lg:text-4xl text-lightBlue lg:text-left">
+          <h2 className="text-3xl text-center lg:text-4xl text-lightBlue md:text-left">
             Take a look at our latest articles and resources
           </h2>
-          <div className="grid grid-cols-1 gap-8 place-content-center lg:grid-cols-3">
-            {blogPosts.map(({ image, description, date, href, color }, i) => (
-              <BlogPostCard color={color} image={image} description={description} date={date} href={href} key={i} />
-            ))}
+          <div>
+            <Slider {...settings}>
+              {blogPosts.map(({ image, description, date, href, color }, i) => (
+                <BlogPostCard color={color} image={image} description={description} date={date} href={href} key={i} />
+              ))}
+            </Slider>
           </div>
         </SpaceY>
       </Container>
