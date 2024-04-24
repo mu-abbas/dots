@@ -8,9 +8,11 @@ import OurServices from './OurServices';
 import ReadyToStart from '../ui/ReadyToStart';
 import Story from './Story';
 import Testimonials from '../ui/Testimonials';
+import ScrollUp from '@/helpers/ScrollUp';
 function Main() {
   return (
     <main>
+      <ScrollUp />
       <Story />
       <IntroVideo />
       <OurServices />
