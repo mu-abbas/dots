@@ -62,7 +62,7 @@ module.exports = {
       },
 
       height: {
-        screen: '100dvh',
+        screen: '100svh',
       },
 
       spacing: {
