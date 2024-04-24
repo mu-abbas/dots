@@ -1,31 +1,24 @@
 'use client';
 import Container from '../micro/Container';
 import SpaceY from '../micro/SpaceY';
-import ServicesCard from './ServicesCard';
+import OurDesignTab from './OurDesignTab';
 
 function OurDesign() {
   return (
     <section className="bg-blue text-offWhite">
       <Container>
         <SpaceY>
-          <ul className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:gap-8 xl:grid-cols-4">
-            <ServicesCard
-              href="/services/presentation-design"
-              heading="presentation design"
-              icon="/icon/presentation-icon.svg"
-            />
-            <ServicesCard href="/services/pitch-decks" heading="pitch deck" icon="/icon/pitch-deck-icon.svg" />
-            <ServicesCard
-              href="/services/presentation-templates"
-              heading="presentation templates"
-              icon="/icon/presentation-temp-icon.svg"
-            />
-            <ServicesCard
-              href="/services/document-design"
-              heading="document design"
-              icon="/icon/document-design-icon.svg"
-            />
-          </ul>
+          <h2 className="text-2xl font-light text-center md:text-3xl lg:text-4xl xl:text-5xl 3xl:text-5xlplus">
+            Our Design Services
+          </h2>
+          <div className="hidden lg:block">
+            <div className="flex justify-center gap-4 xl:gap-6">
+              <OurDesignTab heading="presentation design" icon="/icon/presentation-icon.svg" />
+              <OurDesignTab heading="pitch deck" icon="/icon/pitch-deck-icon.svg" />
+              <OurDesignTab heading="presentation templates" icon="/icon/presentation-temp-icon.svg" />
+              <OurDesignTab heading="document design" icon="/icon/document-design-icon.svg" />
+            </div>
+          </div>
         </SpaceY>
       </Container>
     </section>
