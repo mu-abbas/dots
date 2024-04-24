@@ -4,8 +4,14 @@ import { useEffect } from 'react';
 export default function ScrollUp() {
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      window.document.scrollingElement?.scrollTo(0, 0);
-      console.log('scrolled up');
+      setTimeout(() => {
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: 'smooth',
+        });
+        console.log('scrolled up');
+      }, 1000);
     }
   }, []);
   return null;
