@@ -86,7 +86,7 @@
 }
 
 .blog .slick-slide > div {
-  @apply overflow-hidden border border-grey rounded-xl md:mx-4 w-[11/12] max-w-sm mx-auto md:max-w-full;
+  @apply overflow-hidden border border-grey rounded-xl md:mx-4 w-[11/12] max-w-72 mx-auto md:max-w-full;
 }
 
 .blog .slick-list {
