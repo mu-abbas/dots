@@ -1,6 +1,13 @@
 'use client';
+
+import Gallery from './Gallery';
+
 function Main() {
-  return <main></main>;
+  return (
+    <main className="bg-beige">
+      <Gallery />
+    </main>
+  );
 }
 
 export default Main;
