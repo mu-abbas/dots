@@ -6,7 +6,7 @@ function Hero() {
   return (
     <section className="flex items-center xl:items-end">
       <Container>
-        <div className="py-12 sm:py-14 md:py-16 lg:p-0 xl:pt-24 2xl:pt-28">
+        <div className="py-12 lg:p-0 xl:pt-24 2xl:pt-28">
           <div className="flex flex-col justify-between gap-2 md:gap-4 xl:items-end xl:flex-row">
             <h1 className="flex flex-col items-center justify-center gap-2 md:gap-4 xl:items-start">
               <span className="text-3xl font-light sm:text-4xl md:text-5xl xl:text-4xlplus 2xl:text-5xl 3xl:text-6xl">

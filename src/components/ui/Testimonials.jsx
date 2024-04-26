@@ -140,13 +140,13 @@ function Testimonials() {
     beforeChange: (_, next) => setActiveSlide(next),
     responsive: [
       {
-        breakpoint: 1280,
+        breakpoint: 1279,
         settings: {
           slidesToShow: 2,
         },
       },
       {
-        breakpoint: 1024,
+        breakpoint: 1023,
         settings: {
           slidesToShow: 1,
         },
