@@ -8,12 +8,15 @@ function Gallery() {
     <section>
       <Container>
         <SpaceY>
-          <header className="flex gap-4 border-t-[0.5px] border-grey pt-8">
-            <FilterButton>All</FilterButton>
-            <FilterButton>Presentation Design</FilterButton>
-            <FilterButton>Pitch Decks</FilterButton>
-            <FilterButton>Presentation Templates</FilterButton>
-            <FilterButton>Document Design</FilterButton>
+          <header>
+            <div className="border-t-[0.5px] border-grey pt-8 opacity-25"></div>
+            <div className="flex gap-4">
+              <FilterButton>All</FilterButton>
+              <FilterButton>Presentation Design</FilterButton>
+              <FilterButton>Pitch Decks</FilterButton>
+              <FilterButton>Presentation Templates</FilterButton>
+              <FilterButton>Document Design</FilterButton>
+            </div>
           </header>
         </SpaceY>
       </Container>
