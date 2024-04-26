@@ -9,8 +9,8 @@ function CTALinkV2({ color, label, href, greyBorder }) {
     <Link
       href={href}
       className={`relative flex border rounded-xl group 2xl:text-lg overflow-hidden w-max ${
-        greyBorder ? 'border-grey' : 'border-black'
-      } ${color === 'black' ? 'bg-black' : ''}`}
+        greyBorder ? 'border-grey' : color === 'green' ? 'border-lightGrey' : 'border-black'
+      } ${color === 'black' ? 'bg-black' : color === 'green' ? 'bg-offWhite' : ''}`}
     >
       {/* none hover state */}
       <span className="flex">
@@ -25,22 +25,26 @@ function CTALinkV2({ color, label, href, greyBorder }) {
         {/*hover state */}
         <span
           className={`px-3 xl:px-6 py-3 ${
-            color === 'black' ? 'text-black bg-green' : 'text-offWhite bg-blue'
+            color === 'black'
+              ? 'text-black bg-green'
+              : color === 'green'
+              ? 'text-black bg-green'
+              : 'text-offWhite bg-blue'
           } tracking-wide group-hover:translate-x-0 transition duration-300 -translate-x-[105%] absolute left-0 top-0 min-w-44 text-center`}
         >
           {label}
         </span>
 
         <span
-          className={`flex items-center px-3 xl:px-6 ${color === 'black' ? 'bg-green' : 'bg-blue'} border-l ${
-            greyBorder ? 'border-grey' : 'border-black'
-          }`}
+          className={`flex items-center px-3 xl:px-6 ${
+            color === 'black' ? 'bg-green' : color === 'green' ? 'bg-green' : 'bg-blue'
+          } border-l ${greyBorder ? 'border-grey' : color === 'green' ? 'border-lightGrey' : 'border-black'}`}
         >
           <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M2.72573 18.8564L15.9666 1.26852M15.9666 1.26852L0.884648 3.15988M15.9666 1.26852L17.858 16.3505"
-              stroke={`${color === 'black' ? black : offWhite}`}
-              strokeWidth="2.14962"
+              stroke={`${color === 'black' || color === 'green' ? black : offWhite}`}
+              strokeWidth="1.5"
             />
           </svg>
         </span>

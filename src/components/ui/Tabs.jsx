@@ -16,7 +16,7 @@ function Tabs({ items }) {
         <div className="flex flex-col gap-4 lg:flex-row lg:justify-evenly">
           {items.map((item, index) => (
             <TabLink
-              key={item.title}
+              key={index}
               title={item.title}
               isActive={index === activeIndex}
               onClick={() => handleTabClick(index)}
@@ -25,7 +25,7 @@ function Tabs({ items }) {
         </div>
         <div>
           {items.map((item, index) => (
-            <TabItem key={item.title} title={item.title} isActive={index === activeIndex}>
+            <TabItem key={index} title={item.title} isActive={index === activeIndex}>
               {item.content}
             </TabItem>
           ))}

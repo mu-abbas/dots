@@ -46,6 +46,7 @@ module.exports = {
         home: "url('/image/home/home-bg.png')",
         readyToStart: "url('/image/ready-to-start-bg.png')",
         services: "url('/image/services/services-bg.png')",
+        ourDesign: "url('/image/services/our-design-bg.png')",
       },
 
       fontSize: {
