@@ -40,13 +40,15 @@ function CTALinkV2({ color, label, href, greyBorder }) {
             color === 'black' ? 'bg-green' : color === 'green' ? 'bg-green' : 'bg-blue'
           } border-l ${greyBorder ? 'border-grey' : color === 'green' ? 'border-lightGrey' : 'border-black'}`}
         >
-          <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M2.72573 18.8564L15.9666 1.26852M15.9666 1.26852L0.884648 3.15988M15.9666 1.26852L17.858 16.3505"
-              stroke={`${color === 'black' || color === 'green' ? black : offWhite}`}
-              strokeWidth="1.5"
-            />
-          </svg>
+          <span>
+            <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.72573 18.8564L15.9666 1.26852M15.9666 1.26852L0.884648 3.15988M15.9666 1.26852L17.858 16.3505"
+                stroke={`${color === 'black' || color === 'green' ? black : offWhite}`}
+                strokeWidth="1.5"
+              />
+            </svg>
+          </span>
         </span>
       </span>
     </Link>

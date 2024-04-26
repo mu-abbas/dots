@@ -89,18 +89,26 @@
   @apply overflow-hidden border border-grey rounded-xl md:mx-4 w-[11/12] max-w-72 mx-auto md:max-w-full;
 }
 
-.blog .slick-list {
+.ourDesign .slick-slide > div {
+  @apply overflow-hidden border border-lightGrey rounded-xl sm:mx-4 p-4 sm:p-6 md:p-8 max-w-72 mx-auto sm:max-w-full;
+}
+
+.blog .slick-list,
+.ourDesign .slick-list {
   @apply -mx-4;
 }
 
-.blog .slick-dots {
+.blog .slick-dots,
+.ourDesign .slick-dots {
   @apply -bottom-12;
 }
 
-.blog .slick-dots li button::before {
+.blog .slick-dots li button::before,
+.ourDesign .slick-dots li button::before {
   @apply text-offWhite opacity-60 lg:hidden transition duration-300;
 }
 
-.blog .slick-dots li.slick-active button::before {
+.blog .slick-dots li.slick-active button::before,
+.ourDesign .slick-dots li.slick-active button::before {
   @apply text-offWhite opacity-100 scale-125 lg:hidden;
 }
