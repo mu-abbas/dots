@@ -155,7 +155,7 @@ function Testimonials() {
   };
 
   return (
-    <section className="bg-offWhite testimonials">
+    <section className="bg-beige testimonials">
       <Container>
         <SpaceY>
           <div className="flex flex-col items-start gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-14 2xl:gap-16 3xl:gap-18 lg:flex-row">

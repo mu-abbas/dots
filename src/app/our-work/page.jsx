@@ -1,5 +1,13 @@
+import Header from '@/components/our-work/Header';
+import Main from '@/components/our-work/Main';
+
 function OurWork() {
-  return <div>Our work: TODO</div>;
+  return (
+    <>
+      <Header />
+      <Main />
+    </>
+  );
 }
 
 export default OurWork;

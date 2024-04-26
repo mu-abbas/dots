@@ -34,7 +34,7 @@ const processes = [
 
 function OurProcess() {
   return (
-    <section className="bg-offWhite">
+    <section className="bg-beige">
       <Container>
         <SpaceY>
           <div className="flex flex-col items-start gap-6 sm:gap-8 md:gap-16 lg:gap-20 xl:gap-24 2xl:gap-28 3xl:gap-32 md:flex-row">
