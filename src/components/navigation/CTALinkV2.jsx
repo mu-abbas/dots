@@ -8,8 +8,8 @@ function CTALinkV2({ color, label, href, greyBorder }) {
   return (
     <Link
       href={href}
-      className={`relative flex border rounded-xl group 2xl:text-lg overflow-hidden w-max ${
-        greyBorder ? 'border-grey' : color === 'green' ? 'border-lightGrey' : 'border-black'
+      className={`relative flex border rounded-md lg:rounded-lg group 2xl:text-lg overflow-hidden w-max ${
+        greyBorder ? 'border-grey' : 'border-black'
       } ${color === 'black' ? 'bg-black' : color === 'green' ? 'bg-beige' : ''}`}
     >
       {/* none hover state */}

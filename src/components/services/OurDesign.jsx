@@ -126,7 +126,7 @@ function NextArrow(props) {
 
 function OurDesign() {
   return (
-    <section className="relative pb-12 bg-blue text-offWhite ourDesign lg:pb-0">
+    <section className="relative pb-12 overflow-x-hidden bg-blue text-offWhite ourDesign lg:pb-0">
       <div className="absolute inset-0 z-10 origin-bottom-left scale-105 bg-left-bottom bg-no-repeat bg-contain bg-ourDesign opacity-10"></div>
       <div className="relative z-50">
         <Container>
