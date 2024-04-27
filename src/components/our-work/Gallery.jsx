@@ -115,12 +115,6 @@ function Gallery() {
       type: '',
     },
     {
-      title: 'Dolormin template',
-      src: '/image/our-work/Dolormin-3.jpg',
-      href: '/our-work/dolormin',
-      type: '',
-    },
-    {
       title: 'Together E-book',
       src: '/image/our-work/together.jpg',
       href: '/our-work/together-ebook',
@@ -160,7 +154,7 @@ function Gallery() {
               <FilterButton>Document Design</FilterButton>
             </div>
           </header>
-          <div className="grid grid-cols-1 gap-16 lg:grid-cols-2">
+          <div className="grid grid-cols-1 gap-12 sm:gap-16 lg:grid-cols-2 lg:gap-12 2xl:gap-16 3xl:gap-20">
             {projects.map(({ title, src, href }) => (
               <GalleryItem src={src} title={title} href={href} />
             ))}
