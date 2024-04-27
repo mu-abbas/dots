@@ -151,7 +151,7 @@ function Gallery() {
       <Container>
         <SpaceY>
           <header>
-            <div className="border-t-[0.5px] border-grey pt-8 opacity-25 lg:pt-12 2xl:pt-16 "></div>
+            <div className="border-t-[0.5px] border-grey pt-8 opacity-25 lg:pt-10 2xl:pt-12 "></div>
             <div className="flex flex-col flex-wrap items-center gap-2 sm:flex-row xl:gap-3 3xl:gap-4">
               <FilterButton>All</FilterButton>
               <FilterButton>Presentation Design</FilterButton>
