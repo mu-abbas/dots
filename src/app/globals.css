@@ -90,7 +90,7 @@
 }
 
 .ourDesign .slick-slide > div {
-  @apply overflow-hidden border border-lightGrey rounded-xl sm:mx-4 p-4 sm:p-6 md:p-8 max-w-72 mx-auto sm:max-w-full;
+  @apply overflow-hidden border border-lightGrey rounded-xl sm:mx-4 p-4 py-6 sm:p-6 md:p-8 max-w-72 mx-auto sm:max-w-full;
 }
 
 .blog .slick-list,
