@@ -161,7 +161,7 @@ function Gallery() {
         <SpaceY>
           <header>
             <div className="border-t-[0.5px] border-grey pt-8 opacity-25 lg:pt-10 2xl:pt-12 "></div>
-            <div className="flex flex-col flex-wrap items-center gap-2 sm:flex-row xl:gap-3 3xl:gap-4">
+            <div className="flex flex-col flex-wrap gap-2 mx-auto sm:mx-0 max-w-max sm:flex-row xl:gap-3 3xl:gap-4">
               <FilterButton active={filter === 'all'} onClick={() => filterHandler('all')}>
                 All
               </FilterButton>
