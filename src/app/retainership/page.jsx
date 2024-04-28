@@ -1,5 +1,13 @@
+import Header from '@/components/retainership/Header';
+import Main from '@/components/retainership/Main';
+
 function Retainership() {
-  return <div>Retainership: TODO</div>;
+  return (
+    <>
+      <Header />
+      <Main />
+    </>
+  );
 }
 
 export default Retainership;
