@@ -1,11 +1,13 @@
 'use client';
-
+import { Suspense } from 'react';
 import Gallery from './Gallery';
 
 function Main() {
   return (
     <main className="bg-beige">
-      <Gallery />
+      <Suspense>
+        <Gallery />
+      </Suspense>
     </main>
   );
 }
