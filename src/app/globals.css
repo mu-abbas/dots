@@ -93,22 +93,30 @@
   @apply overflow-hidden border border-lightGrey rounded-xl sm:mx-4 p-4 py-6 sm:p-6 md:p-8 max-w-72 mx-auto sm:max-w-full;
 }
 
+.features .slick-slide > div {
+  @apply px-4 max-w-md mx-auto;
+}
+
 .blog .slick-list,
-.ourDesign .slick-list {
+.ourDesign .slick-list,
+.features .slick-list {
   @apply -mx-4;
 }
 
 .blog .slick-dots,
-.ourDesign .slick-dots {
-  @apply -bottom-12;
+.ourDesign .slick-dots,
+.features .slick-dots {
+  @apply -bottom-8;
 }
 
 .blog .slick-dots li button::before,
-.ourDesign .slick-dots li button::before {
+.ourDesign .slick-dots li button::before,
+.features .slick-dots li button::before {
   @apply text-offWhite opacity-60 lg:hidden transition duration-300;
 }
 
 .blog .slick-dots li.slick-active button::before,
-.ourDesign .slick-dots li.slick-active button::before {
+.ourDesign .slick-dots li.slick-active button::before,
+.features .slick-dots li.slick-active button::before {
   @apply text-offWhite opacity-100 scale-125 lg:hidden;
 }

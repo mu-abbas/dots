@@ -5,7 +5,7 @@ import Hero from './Hero';
 function Header() {
   return (
     <header className="bg-blue">
-      <Nav />
+      <Nav color="offWhite" />
       <Hero />
     </header>
   );

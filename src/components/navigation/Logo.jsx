@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 
-function Logo({ color }) {
+function Logo({ color = 'blue' }) {
   return (
     <Link href="/">
       <img

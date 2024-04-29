@@ -1,20 +1,19 @@
 'use client';
-import Container from '../micro/Container';
 
 function Hero() {
   return (
     <section className="flex items-center text-offWhite">
-      <Container>
+      <div className="container px-8 pt-12 mx-auto sm:px-10 sm:pt-14 md:px-12 md:pt-16 lg:px-14 lg:pt-20 xl:px-16 xl:pt-24 2xl:pt-28 2xl:px-20">
         <div className="flex flex-col items-center justify-center gap-12">
-          <h1 className="flex flex-col items-center leading-12">
-            <span className="text-2xl font-light sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl">Dots</span>
-            <span className="-mt-1 font-medium text-5xlplus sm:-mt-2 md:-mt-3 sm:text-8xl md:text-9xl font-clash lg:text-10xl xl:text-11xl 2xl:text-12xl">
+          <h1 className="flex flex-col items-center">
+            <span className="text-4xl font-light sm:text-5xl md:text-5xlplus lg:text-6xl xl:text-7xl">Dots</span>
+            <span className="text-5xl font-medium sm:text-6xl md:text-7xl font-clash lg:text-8xl 2xl:text-9xl">
               Retainership
             </span>
           </h1>
           <img src="/image/retainership/Dots_RetinerImage.png" alt="stats and acitvity with collection of projects" />
         </div>
-      </Container>
+      </div>
     </section>
   );
 }

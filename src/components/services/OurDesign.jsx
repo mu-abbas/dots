@@ -5,6 +5,8 @@ import SpaceY from '../micro/SpaceY';
 import OurDesignTab from './OurDesignTab';
 import OurDesignTabs from './OurDesignTabs';
 import OurDesignCarouselItem from './OurDesignCarouselItem';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const tabs = [
   {
@@ -126,7 +128,7 @@ function NextArrow(props) {
 
 function OurDesign() {
   return (
-    <section className="relative pb-12 overflow-x-hidden bg-blue text-offWhite ourDesign lg:pb-0">
+    <section className="relative pb-8 overflow-x-hidden bg-blue text-offWhite ourDesign lg:pb-0">
       <div className="absolute inset-0 z-10 origin-bottom-left scale-105 bg-left-bottom bg-no-repeat bg-contain bg-ourDesign opacity-10"></div>
       <div className="relative z-50">
         <Container>

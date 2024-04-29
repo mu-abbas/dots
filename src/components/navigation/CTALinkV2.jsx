@@ -4,19 +4,19 @@ import Link from 'next/link';
 const black = '#161B23';
 const offWhite = '#EFF3E9';
 
-function CTALinkV2({ color, label, href, greyBorder }) {
+function CTALinkV2({ color, label, href, greyBorder, whiteBorder }) {
   return (
     <Link
       href={href}
       className={`relative flex border rounded-md lg:rounded-lg group 2xl:text-lg overflow-hidden w-max ${
-        greyBorder ? 'border-grey' : 'border-black'
-      } ${color === 'black' ? 'bg-black' : color === 'green' ? 'bg-beige' : ''}`}
+        greyBorder ? 'border-grey' : whiteBorder ? 'border-offWhite' : 'border-black'
+      } ${color === 'black' ? 'bg-black' : color === 'green' ? (whiteBorder ? '' : 'bg-beige') : ''}`}
     >
       {/* none hover state */}
       <span className="flex">
         <span
           className={`px-3 xl:px-6 py-3 ${
-            color === 'black' ? 'text-offWhite' : 'text-black'
+            color === 'black' || whiteBorder ? 'text-offWhite' : 'text-black'
           } tracking-wide  group-hover:translate-y-[105%] transition duration-300 min-w-44 text-center`}
         >
           {label}
