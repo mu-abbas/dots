@@ -2,91 +2,11 @@
 import Slider from 'react-slick';
 import Container from '../micro/Container';
 import SpaceY from '../micro/SpaceY';
-import OurDesignTab from './OurDesignTab';
 import OurDesignTabs from './OurDesignTabs';
 import OurDesignCarouselItem from './OurDesignCarouselItem';
+import designServices from '@/data/designServices';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-
-const tabs = [
-  {
-    title: <OurDesignTab heading="presentation design" icon="/icon/presentation-icon.svg" />,
-    content: {
-      heading: 'Impressive Presentations, Every Time!',
-      description:
-        'We offer a variety of presentation design services that can make your message, delivered with Impact!',
-      href: '/services/presentation-design',
-      linkLabel: 'View All Presentation Design',
-    },
-  },
-  {
-    title: <OurDesignTab heading="pitch deck" icon="/icon/pitch-deck-icon.svg" />,
-    content: {
-      heading: 'Deck Up Your Pitch!',
-      description: 'It’s your chance to make a great first impression on investors, partners, and customers.',
-      href: '/services/pitch-decks',
-      linkLabel: 'View All Pitch Decks',
-    },
-  },
-  {
-    title: <OurDesignTab heading="presentation templates" icon="/icon/presentation-temp-icon.svg" />,
-    content: {
-      heading: 'Plug In Your Content And Go!',
-      description:
-        'With our templates, you can create professional looking presentations, slides in minutes that follow your brand guidelines and are customized to your needs.',
-      href: '/services/presentation-templates',
-      linkLabel: 'View All Presentation Templates',
-    },
-  },
-  {
-    title: <OurDesignTab heading="document design" icon="/icon/document-design-icon.svg" />,
-    content: {
-      heading: 'Complex Dots, Easily Connected!',
-      description:
-        'We offer a complete range of document design and layout services, from simple documents to complex financial reports that meets your specific needs, Timeline and budget.',
-      href: '/services/document-design',
-      linkLabel: 'View All Document Design',
-    },
-  },
-];
-
-const carousels = [
-  {
-    firstHeading: 'presentation design',
-    secondHeading: 'Impressive Presentations, Every Time!',
-    icon: '/icon/presentation-icon.svg',
-    description:
-      'We offer a variety of presentation design services that can make your message, delivered with Impact!',
-    href: '/services/presentation-design',
-    linkLabel: 'View All Presentation Design',
-  },
-  {
-    firstHeading: 'pitch deck',
-    secondHeading: 'Deck Up Your Pitch!',
-    icon: '/icon/pitch-deck-icon.svg',
-    description: 'It’s your chance to make a great first impression on investors, partners, and customers.',
-    href: '/services/pitch-decks',
-    linkLabel: 'View All Pitch Decks',
-  },
-  {
-    firstHeading: 'presentation templates',
-    secondHeading: 'Plug In Your Content And Go!',
-    icon: '/icon/presentation-temp-icon.svg',
-    description:
-      'With our templates, you can create professional looking presentations, slides in minutes that follow your brand guidelines and are customized to your needs.',
-    href: '/services/presentation-templates',
-    linkLabel: 'View All Presentation Templates',
-  },
-  {
-    firstHeading: 'document design',
-    secondHeading: 'Complex Dots, Easily Connected!',
-    icon: '/icon/document-design-icon.svg',
-    description:
-      'We offer a complete range of document design and layout services, from simple documents to complex financial reports that meets your specific needs, Timeline and budget.',
-    href: '/services/document-design',
-    linkLabel: 'View All Document Design',
-  },
-];
 
 const settings = {
   dots: true,
@@ -137,11 +57,11 @@ function OurDesign() {
               Our Design Services
             </h2>
             <div className="hidden lg:block">
-              <OurDesignTabs items={tabs} />
+              <OurDesignTabs items={designServices} />
             </div>
             <div className="lg:hidden">
               <Slider {...settings}>
-                {carousels.map(({ firstHeading, secondHeading, icon, linkLabel, href, description }, index) => (
+                {designServices.map(({ firstHeading, secondHeading, icon, linkLabel, href, description }, index) => (
                   <OurDesignCarouselItem
                     firstHeading={firstHeading}
                     secondHeading={secondHeading}

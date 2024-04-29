@@ -1,0 +1,136 @@
+const projects = [
+  {
+    title: 'Topo Chico',
+    src: '/image/our-work/TopoChico-4.jpg',
+    href: '/our-work/topochico',
+    type: 'presentation-design',
+  },
+  {
+    title: 'Marriott BOD',
+    src: '/image/our-work/BOD-1.jpg',
+    href: '/our-work/marriott-bod',
+    type: 'presentation-design',
+  },
+  {
+    title: 'Venus Presentation',
+    src: '/image/our-work/venus-2.jpg',
+    href: '/our-work/venus-presentation',
+    type: 'presentation-design',
+  },
+  {
+    title: 'Surgio Health',
+    src: '/image/our-work/Surgio-Health-4.jpg',
+    href: '/our-work/surgio-health',
+    type: 'presentation-design',
+  },
+  {
+    title: 'Marriott CEC',
+    src: '/image/our-work/CEC-2.jpg',
+    href: '/our-work/marriott-cec',
+    type: 'presentation-design',
+  },
+  {
+    title: 'Cloud Flyer',
+    src: '/image/our-work/CloudFlyer-5.jpg',
+    href: '/our-work/cloud-flyer',
+    type: 'pitch-deck',
+  },
+  {
+    title: 'League of Play',
+    src: '/image/our-work/League-of-play.jpg',
+    href: '/our-work/league-of-play',
+    type: 'pitch-deck',
+  },
+  {
+    title: 'SMS',
+    src: '/image/our-work/SMS-2.jpg',
+    href: '/our-work/sms',
+    type: 'pitch-deck',
+  },
+  {
+    title: 'Oversubscribed',
+    src: '/image/our-work/Oversubscribe.jpg',
+    href: '/our-work/oversubscribed',
+    type: 'pitch-deck',
+  },
+  {
+    title: 'Decast',
+    src: '/image/our-work/Decast-3.jpg',
+    href: '/our-work/decast',
+    type: 'pitch-deck',
+  },
+  {
+    title: 'Gruppi',
+    src: '/image/our-work/Gruppi-2.jpg',
+    href: '/our-work/gruppi',
+    type: 'pitch-deck',
+  },
+  {
+    title: 'Collection XYZ',
+    src: '/image/our-work/CollectionXYZ-1.jpg',
+    href: '/our-work/collection-xyz',
+    type: 'pitch-deck',
+  },
+  {
+    title: 'Stake Sauce',
+    src: '/image/our-work/Stake-Sauce.jpg',
+    href: '/our-work/stake-sauce',
+    type: 'pitch-deck',
+  },
+  {
+    title: 'Marriott DRES',
+    src: '/image/our-work/DRES-2.jpg',
+    href: '/our-work/marriott-dres',
+    type: 'presentation-template',
+  },
+  {
+    title: 'Novonordisk BIG',
+    src: '/image/our-work/BIG-template.jpg',
+    href: '/our-work/novonordisk-big-template',
+    type: 'presentation-template',
+  },
+  {
+    title: 'Marriott Event template',
+    src: '/image/our-work/Marriott-Connecting-the-dots.jpg',
+    href: '/our-work/marriott-event-template',
+    type: 'presentation-template',
+  },
+  {
+    title: 'Venus template',
+    src: '/image/our-work/Venus-Template-1.jpg',
+    href: '/our-work/venus-template',
+    type: 'presentation-template',
+  },
+  {
+    title: 'Dolormin template',
+    src: '/image/our-work/Dolormin-3.jpg',
+    href: '/our-work/dolormin',
+    type: 'presentation-template',
+  },
+  {
+    title: 'Together E-book',
+    src: '/image/our-work/together.jpg',
+    href: '/our-work/together-ebook',
+    type: 'document-design',
+  },
+  {
+    title: 'Y20 Whitepaper',
+    src: '/image/our-work/Y20-CCL.jpg',
+    href: '/our-work/y20-whitepaper',
+    type: 'document-design',
+  },
+  {
+    title: 'BIG Report',
+    src: '/image/our-work/BIG-NOVO.jpg',
+    href: '/our-work/novonordisk-big-report',
+    type: 'document-design',
+  },
+  {
+    title: 'Together Whitepaper',
+    src: '/image/our-work/Together-Ebook-1.jpg',
+    href: '/our-work/together-whitepaper',
+    type: 'document-design',
+  },
+];
+
+export default projects;
