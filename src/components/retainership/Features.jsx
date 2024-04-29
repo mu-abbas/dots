@@ -53,7 +53,7 @@ const settings = {
   nextArrow: <NextArrow />,
   prevArrow: <PrevArrow />,
   autoplay: true,
-  autoplaySpeed: 3000,
+  autoplaySpeed: 5000,
 };
 
 function PrevArrow(props) {
@@ -92,7 +92,7 @@ function Features() {
           <h2 className="max-w-xs mx-auto text-2xl font-light text-center md:max-w-md xl:max-w-2xl md:text-3xl lg:text-4xl xl:text-5xl 3xl:text-5xlplus text-offWhite">
             Reliable, Efficient Delivery Every Time!
           </h2>
-          <div className="hidden grid-cols-2 gap-6 xl:grid-cols-3 md:grid">
+          <div className="hidden grid-cols-2 gap-6 xl:grid-cols-3 md:grid 3xl:gap-8">
             {features.map(({ src, title, content }, index) => (
               <Feature src={src} title={title} content={content} key={index} />
             ))}
