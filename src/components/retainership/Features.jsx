@@ -52,7 +52,7 @@ function Features() {
     <section className="pb-8 bg-blue features md:pb-0">
       <Container>
         <SpaceY>
-          <h2 className="max-w-xs mx-auto text-2xl font-light text-center md:max-w-md xl:max-w-2xl md:text-3xl lg:text-4xl xl:text-5xl 3xl:text-5xlplus text-offWhite">
+          <h2 className="max-w-xs mx-auto text-2xl font-light text-center md:max-w-md xl:max-w-2xl md:text-3xl lg:text-4xl xl:leading-12 xl:text-5xl 3xl:text-5xlplus text-offWhite 3xl:max-w-3xl 3xl:leading-13">
             Reliable, Efficient Delivery Every Time!
           </h2>
           <div className="hidden grid-cols-2 gap-6 xl:grid-cols-3 md:grid 3xl:gap-8">
