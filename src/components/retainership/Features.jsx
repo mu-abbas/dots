@@ -52,7 +52,7 @@ const settings = {
   slidesToScroll: 1,
   nextArrow: <NextArrow />,
   prevArrow: <PrevArrow />,
-  autoplay: false,
+  autoplay: true,
   autoplaySpeed: 3000,
 };
 
