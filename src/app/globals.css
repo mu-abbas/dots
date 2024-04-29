@@ -94,7 +94,15 @@
 }
 
 .features .slick-slide > div {
-  @apply px-4 max-w-md mx-auto;
+  @apply px-2 max-w-sm mx-auto opacity-0 duration-1000 transition;
+}
+
+.features .slick-active > div {
+  @apply opacity-100;
+}
+
+.features .slick-track {
+  @apply flex items-center;
 }
 
 .blog .slick-list,

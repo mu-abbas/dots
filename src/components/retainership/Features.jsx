@@ -52,6 +52,8 @@ const settings = {
   slidesToScroll: 1,
   nextArrow: <NextArrow />,
   prevArrow: <PrevArrow />,
+  autoplay: false,
+  autoplaySpeed: 3000,
 };
 
 function PrevArrow(props) {
