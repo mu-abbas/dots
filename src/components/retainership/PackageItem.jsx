@@ -7,7 +7,7 @@ function PackageItem({ title, content }) {
     <div
       className={`rounded-3xl bg-opacity-10 ${
         isOpen ? 'bg-white shadow-md' : ' bg-grey'
-      } transition duration-300 max-w-xl 2xl:max-w-2xl 3xl:max-w-3xl`}
+      } transition duration-300 max-w-xl 3xl:max-w-3xl`}
     >
       <h2>
         <button
