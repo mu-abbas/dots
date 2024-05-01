@@ -79,8 +79,8 @@ module.exports = {
           '100%': { transform: 'scaleY(1)' },
         },
         popUp: {
-          '0%': { transform: 'scale(0)' },
-          '100%': { transform: 'scale(1)' },
+          '0%': { transform: 'scale(0)', opcaity: 0 },
+          '100%': { transform: 'scale(1)', opcaity: 1 },
         },
       },
 

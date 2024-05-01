@@ -11,7 +11,11 @@ function Hero() {
               Retainership
             </span>
           </h1>
-          <img src="/image/retainership/Dots_RetinerImage.png" alt="stats and acitvity with collection of projects" />
+          <img
+            src="/image/retainership/Dots_RetinerImage.png"
+            alt="stats and acitvity with collection of projects"
+            className="animate-popUp"
+          />
         </div>
       </div>
     </section>
