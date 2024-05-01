@@ -1,6 +1,6 @@
 const packages = [
   {
-    title: 'Number of Slides / Month',
+    title: 'Slides / Month',
     content: {
       heading: 'The Repeat Package',
       description:

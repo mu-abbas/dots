@@ -5,13 +5,13 @@ function PackageItem({ title, content }) {
 
   return (
     <div
-      className={`rounded-3xl bg-opacity-10 ${
+      className={`rounded-xl bg-opacity-10 ${
         isOpen ? 'bg-white shadow-md' : ' bg-grey'
       } transition duration-300 max-w-xl 3xl:max-w-3xl`}
     >
       <h2>
         <button
-          className="flex items-center justify-between gap-3 p-8 text-left 3xl:p-10 focus:outline-none"
+          className="flex items-center justify-between gap-3 p-6 text-left xl:p-8 3xl:p-10 focus:outline-none"
           onClick={e => {
             e.preventDefault();
             setIsOpen(!isOpen);
@@ -50,12 +50,12 @@ function PackageItem({ title, content }) {
         }`}
       >
         <div className="overflow-hidden">
-          <div className="px-8 pb-4">
+          <div className="px-6 pb-3 xl:px-8 xl:pb-4">
             {content.heading && (
               <h3 className="pb-2 text-lg font-normal 3xl:pb-3 xl:text-xl 3xl:text-2xl">{content.heading}</h3>
             )}
             <div className="text-xs font-light leading-5 xl:leading-6 xl:text-base 3xl:text-lg 3xl:leading-7">
-              <p className="pb-4">{content.description}</p>
+              <p className="pb-3 xl:pb-4">{content.description}</p>
               {content.extraInformation && <p className="pb-4">{content.extraInformation}</p>}
             </div>
           </div>
