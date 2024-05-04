@@ -46,6 +46,12 @@ module.exports = {
         readyToStart: "url('/image/ready-to-start-bg.png')",
         services: "url('/image/services/services-bg.png')",
         ourDesign: "url('/image/services/our-design-bg.png')",
+        aboutUs: "url('/image/about-us/about-bg.png')",
+        weDots: "url('/image/about-us/aboutUs-We.png')",
+      },
+
+      backgroundSize: {
+        half: '30%',
       },
 
       fontSize: {
