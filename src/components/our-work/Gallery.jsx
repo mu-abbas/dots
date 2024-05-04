@@ -3,7 +3,7 @@ import { usePathname, useSearchParams } from 'next/navigation';
 import Container from '../micro/Container';
 import projects from '@/data/projects';
 import SpaceY from '../micro/SpaceY';
-import FilterButton from './FilterButton';
+import FilterButton from '../ui/FilterButton';
 import GalleryItem from './GalleryItem';
 import { useRouter } from 'next/navigation';
 
