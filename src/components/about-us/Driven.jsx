@@ -11,11 +11,11 @@ function Driven() {
       <Container>
         <SpaceY>
           <div>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-4xlplus 3xl:text-5xl">
+            <h2 className="text-2xl leading-7 tracking-tight sm:tracking-normal md:text-3xl lg:text-4xl xl:text-4xlplus 3xl:text-5xl">
               Driven to Create Extraordinary Presentations
             </h2>
-            <p className="py-2 font-extralight font-poppins md:text-lg xl:text-xl 3xl:text-2xl">
-              We don&apos;t just craft slides; we craft experiences..! That&apos;s why we&apos;re driven by Four Core
+            <p className="py-4 leading-5 md:leading-6 font-extralight font-poppins md:text-lg xl:text-xl 3xl:text-2xl">
+              We don&apos;t just craft slides, we craft experiences..! That&apos;s why we&apos;re driven by Four Core
               Values:
             </p>
           </div>
