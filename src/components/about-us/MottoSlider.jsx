@@ -16,7 +16,7 @@ function MottoSlider() {
         </Slider>
       </div>
       <div className="font-semibold border-opacity-35 font-clash text-8xl text-blue border-y border-lightGrey lg:hidden">
-        <Slider width="900px" duration={20} pauseOnHover={false} blurBorders={false}>
+        <Slider width="675px" duration={20} pauseOnHover={false} blurBorders={false}>
           <Slider.Slide>
             <h2>OUR MOTTO*</h2>
           </Slider.Slide>
