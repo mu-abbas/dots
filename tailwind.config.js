@@ -48,6 +48,7 @@ module.exports = {
         ourDesign: "url('/image/services/our-design-bg.png')",
         aboutUs: "url('/image/about-us/about-bg.png')",
         weDots: "url('/image/about-us/aboutUs-We.png')",
+        DotsPower: "url('/image/about-us/Power-bg.png')",
       },
 
       fontSize: {
