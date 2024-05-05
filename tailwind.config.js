@@ -50,10 +50,6 @@ module.exports = {
         weDots: "url('/image/about-us/aboutUs-We.png')",
       },
 
-      backgroundSize: {
-        half: '30%',
-      },
-
       fontSize: {
         '4xlplus': '2.75rem',
         '5xlplus': '3.5rem',
