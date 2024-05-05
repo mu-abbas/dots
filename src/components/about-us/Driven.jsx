@@ -24,6 +24,25 @@ function Driven() {
               <DrivenProp src={src} title={title} description={description} key={index} />
             ))}
           </div>
+          <h2 className="pt-12 text-2xl leading-7 tracking-tight lg:leading-10 md:leading-9 xl:leading-11 3xl:leading-12 sm:tracking-normal md:text-3xl lg:text-4xl xl:text-4xlplus 3xl:text-5xl">
+            We Are Driven to Make a Lasting Impression, Both in Business and in the Community.
+          </h2>
+          <figure className="flex flex-col gap-6 lg:gap-12 2xl:gap-16 3xl:gap-24 lg:flex-row">
+            <img src="/image/about-us/driven.jpeg" alt="driven info graphic" className="lg:w-1/2 rounded-xl" />
+            <figcaption className="flex flex-col justify-center gap-4 lg:pl-12 font-extralight 2xl:gap-8 sm:text-lg 3xl:text-3xl xl:text-2xl xl:leading-9 font-poppins 3xl:leading-10 2xl:pl-16 3xl:pl-24 lg:border-l-[0.5px] border-lightGrey">
+              <p>
+                Businesses of all sizes didn&apos;t realize how a well-designed presentation could help them grow their
+                business, deliver their message more effectively, engage with their audience, and leave a lasting
+                impression.
+              </p>
+              <p>We decided to connect the dots between presentation design and business success.</p>
+            </figcaption>
+          </figure>
+          <p className="p-6 text-sm shadow-sm md:p-8 bg-opacity-10 bg-lightPurple rounded-xl font-poppins lg:text-base xl:text-xl 3xl:text-2xl lg:p-12 xl:p-14 3xl:p-18">
+            In addition, this year we are planning to provide annual trainings and workshops in schools to nurture the
+            next generation of visual storytellers. We want to teach students how to use presentation design to
+            communicate their ideas effectively and persuasively.
+          </p>
         </SpaceY>
       </Container>
     </section>
