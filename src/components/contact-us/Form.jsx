@@ -24,7 +24,8 @@ function Form() {
       body: JSON.stringify(formData),
     });
     const data = await res.json();
-    if (data?.success) {
+    console.log(data);
+    if (data?.success === 'true') {
       toast.success('Form Successfully Submitted');
       reset();
     } else {
