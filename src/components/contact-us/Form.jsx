@@ -15,7 +15,7 @@ function Form() {
 
   async function onSubmit(formData) {
     setIsSubmitting(true);
-    const res = await fetch('https://formsubmit.co/ajax/mahmoud@dotspresentations.com', {
+    const res = await fetch('https://formsubmit.co/ajax/kastel098@gmail.com', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -24,12 +24,11 @@ function Form() {
       body: JSON.stringify(formData),
     });
     const data = await res.json();
-    console.log(data);
     if (data?.success === 'true') {
-      toast.success('Form Successfully Submitted');
+      toast.success('We have received your request successfully');
       reset();
     } else {
-      toast.error('Error occured, Please try again!');
+      toast.error('Something went wrong, please try again!');
     }
     setIsSubmitting(false);
   }
