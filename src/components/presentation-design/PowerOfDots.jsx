@@ -15,7 +15,7 @@ function PowerOfDots() {
         <SpaceY>
           <div>
             <SpaceY>
-              <h2 className="flex flex-col mt-8 md:mt-12 lg:mt-16 xl:mt-20 2xl:mt-24">
+              <h2 className="flex flex-col mt-12 lg:mt-16 xl:mt-20 2xl:mt-24">
                 <span className="text-2xl font-light lg:text-3xl xl:text-4xl 2xl:text-5xl">The power of</span>
                 <span className="font-semibold font-clash text-blue text-7xl lg:text-8xl xl:text-9xl 2xl:text-10xl">
                   DOTS

@@ -51,6 +51,9 @@ module.exports = {
         weDots: "url('/image/about-us/aboutUs-We.png')",
         DotsPower: "url('/image/about-us/Power-bg.png')",
         presentationDesign: "url('/image/presentation-design/Presentation_Bckgd1.png')",
+        shape4: "url('/image/presentation-design/Shape4.png')",
+        shape2: "url('/image/presentation-design/Shape2.png')",
+        shape3: "url('/image/presentation-design/Shape3.png')",
       },
 
       fontSize: {
