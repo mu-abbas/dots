@@ -135,3 +135,10 @@
 .features .slick-dots li.slick-active button::before {
   @apply text-offWhite opacity-100 scale-125 lg:hidden;
 }
+
+.slick-track,
+.slick-slide,
+.slick-list,
+.slick-dots {
+  @apply focus:outline-none;
+}

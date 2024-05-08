@@ -7,7 +7,6 @@ function Form() {
     register,
     handleSubmit,
     formState: { errors },
-    getValues,
     reset,
   } = useForm();
 
@@ -15,16 +14,17 @@ function Form() {
 
   async function onSubmit(formData) {
     setIsSubmitting(true);
-    const res = await fetch('https://formsubmit.co/ajax/kastel098@gmail.com', {
+
+    const res = await fetch('https://qzzlzsrwjrwxtamulxpz.supabase.co/functions/v1/resend-contact-form', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        Accept: 'application/json',
       },
       body: JSON.stringify(formData),
     });
     const data = await res.json();
-    if (data?.success === 'true') {
+
+    if (data?.id) {
       toast.success('We have received your request successfully');
       reset();
     } else {
@@ -35,17 +35,15 @@ function Form() {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <input type="text" placeholder="Name" {...register('Name', { required: true })} />
-      <input type="text" placeholder="Email" {...register('Email', { required: true, pattern: /^\S+@\S+$/i })} />
-      <input type="number" placeholder="Budget" {...register('Budget', { required: true, maxLength: 12 })} />
-      <input type="text" placeholder="Timeline" {...register('Timeline', { required: true })} />
+      <input type="text" placeholder="Name" {...register('name', { required: true })} />
+      <input type="text" placeholder="Email" {...register('email', { required: true, pattern: /^\S+@\S+$/i })} />
+      <input type="number" placeholder="Budget" {...register('budget', { required: true, maxLength: 12 })} />
+      <input type="text" placeholder="Timeline" {...register('timeline', { required: true })} />
       <input
         type="url"
         placeholder="Link your presentation"
-        {...register('Link your presentation', { required: true })}
+        {...register('Link your presentation', { required: false })}
       />
-      <input type="hidden" {...register('_template')} value="table"></input>
-      <input type="hidden" {...register('_cc')} value={getValues('Email')}></input>
       <input type="submit" value={isSubmitting ? 'Please wait...' : 'Submit'} />
     </form>
   );

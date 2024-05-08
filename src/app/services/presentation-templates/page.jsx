@@ -1,5 +1,13 @@
+import Header from '@/components/presentation-templates/Header';
+import Main from '@/components/presentation-templates/Main';
+
 function PresentationTemplates() {
-  return <div>Presentation templates: TODO</div>;
+  return (
+    <>
+      <Header />
+      <Main />
+    </>
+  );
 }
 
 export default PresentationTemplates;
