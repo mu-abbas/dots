@@ -28,6 +28,7 @@ module.exports = {
       extraDarkGreen: '#005057',
 
       lightBlue: '#80B7D2', //ok
+      mediumBlue: '#83A1CE',
       blue: '#2B65F4', //ok
       lightNavy: '#94B6FF', //ok
       navy: '#1745BF', //ok
@@ -49,6 +50,7 @@ module.exports = {
         aboutUs: "url('/image/about-us/about-bg.png')",
         weDots: "url('/image/about-us/aboutUs-We.png')",
         DotsPower: "url('/image/about-us/Power-bg.png')",
+        presentationDesign: "url('/image/presentation-design/Presentation_Bckgd1.png')",
       },
 
       fontSize: {

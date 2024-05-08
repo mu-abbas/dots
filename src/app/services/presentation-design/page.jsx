@@ -1,5 +1,13 @@
+import Header from '@/components/presentation-design/Header';
+import Main from '@/components/presentation-design/Main';
+
 function PresentationDesign() {
-  return <div>Presentation design: TODO</div>;
+  return (
+    <>
+      <Header />
+      <Main />
+    </>
+  );
 }
 
 export default PresentationDesign;
