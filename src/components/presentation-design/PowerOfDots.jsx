@@ -5,7 +5,7 @@ import SpaceY from '../micro/SpaceY';
 import powers from '@/data/powerOfDots';
 import PowerItem from './PowerItem';
 import projects from '@/data/projects';
-import GalleryItem from './GalleryItem';
+import GalleryItem from '../ui/GalleryItem';
 import CTALinkV2 from '../navigation/CTALinkV2';
 
 function PowerOfDots() {
