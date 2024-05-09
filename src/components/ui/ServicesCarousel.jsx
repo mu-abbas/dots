@@ -49,7 +49,11 @@ function ServicesCarousel({ images }) {
     <Slider {...settings}>
       {images.map(({ src, alt }, index) => (
         <figure key={index}>
-          <img src={src} alt={alt} className="w-full max-w-5xl mx-auto shadow-md" />
+          <img
+            src={src}
+            alt={alt}
+            className="w-full mx-auto shadow-md lg:max-h-[28rem] xl:max-h-[32rem] 3xl:max-h-[40rem] 2xl:max-h-[36rem] object-cover rounded-xl"
+          />
         </figure>
       ))}
     </Slider>
