@@ -1,5 +1,18 @@
+import Header from '@/components/document-design/Header';
+import Main from '@/components/document-design/Main';
+
+export const metadata = {
+  title: 'Document Design',
+  description: `Your All-in-One Solution forYour All-in-OneSolution for Document Design Get your documents noticed with our professional design and layout services. We create custom reports, fillable forms, and other documents that match your needs, informative, visually appealing, and follow your brand look and feel. Annual Reports Design Story-driven customized charts, illustrations, infographics, and formats that deliver your`,
+};
+
 function DocumentDesign() {
-  return <div>Document design: TODO</div>;
+  return (
+    <>
+      <Header />
+      <Main />
+    </>
+  );
 }
 
 export default DocumentDesign;

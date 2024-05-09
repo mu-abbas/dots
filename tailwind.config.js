@@ -29,6 +29,7 @@ module.exports = {
 
       lightBlue: '#80B7D2', //ok
       mediumBlue: '#83A1CE',
+      babyBlue: '#80B1CC',
       blue: '#2B65F4', //ok
       lightNavy: '#94B6FF', //ok
       navy: '#1745BF', //ok
