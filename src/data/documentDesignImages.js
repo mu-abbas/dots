@@ -4,7 +4,7 @@ const images = [
     alt: 'big showcase',
   },
   {
-    src: '//image/document-design/Together-Ebook-1.jpg',
+    src: '/image/document-design/Together-Ebook-1.jpg',
     alt: 'together showcase',
   },
   {
