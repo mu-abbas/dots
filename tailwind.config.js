@@ -52,6 +52,7 @@ module.exports = {
         DotsPower: "url('/image/about-us/Power-bg.png')",
         presentationDesign: "url('/image/presentation-design/Presentation_Bckgd1.png')",
         presentationTemplates: "url('/image/presentation-templates/PresentationTemplate_Background2.png')",
+        pitchDecks: "url('/image/pitch-decks/Pitch_Bckgd1.png')",
         shape4: "url('/image/presentation-design/Shape4.png')",
         shape2: "url('/image/presentation-design/Shape2.png')",
         shape3: "url('/image/presentation-design/Shape3.png')",
