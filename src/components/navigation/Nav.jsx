@@ -75,7 +75,7 @@ function Nav({ color }) {
           } transition duration-300 origin-left p-12  left-0 top-0 w-full text-black bg-beige shadow-md lg:hidden flex flex-col ease-in-out gap-12 z-50`}
         >
           <div className="flex items-center justify-between">
-            <Logo color="blue" />
+            <Logo />
             <button className="scale-150 text-blue" onClick={() => setIsOpen(!isOpen)}>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
                 <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
@@ -84,7 +84,7 @@ function Nav({ color }) {
           </div>
           <ul className="flex flex-col justify-start gap-4 pb-8 border-b border-blue">
             {navLinks.map(({ label, href }) => (
-              <NavLink label={label} href={href} key={href} isActive={pathname.startsWith(`${href}`)} color={color} />
+              <NavLink label={label} href={href} key={href} isActive={pathname.startsWith(`${href}`)} />
             ))}
           </ul>
         </div>
