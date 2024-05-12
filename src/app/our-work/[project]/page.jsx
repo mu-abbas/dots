@@ -1,4 +1,5 @@
-import Nav from '@/components/navigation/Nav';
+import Header from '@/components/show-cases/Header';
+import Main from '@/components/show-cases/Main';
 import projectsPages from '@/data/projectsPages';
 
 export async function generateStaticParams() {
@@ -18,16 +19,11 @@ export async function generateMetadata({ params }) {
 
 function page({ params }) {
   const { project } = params;
-  const [{ title, src }] = projectsPages.filter(item => item.href === project);
+  const [{ title, href }] = projectsPages.filter(item => item.href === project);
   return (
     <>
-      <header className="bg-beige">
-        <Nav />
-        <h1>client name: {`${title}`}</h1>
-      </header>
-      <main>
-        <img src={src} alt={`${title} project`} className="object-cover w-screen h-screen" />
-      </main>
+      <Header title={title} />
+      <Main href={href} />
     </>
   );
 }
