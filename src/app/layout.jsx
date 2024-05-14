@@ -20,15 +20,15 @@ const poppins = Poppins({
 const clash = localFont({
   src: [
     {
-      path: './ClashDisplay-Regular.woff2',
+      path: './fonts/ClashDisplay-Regular.woff2',
       weight: '400',
     },
     {
-      path: './ClashDisplay-Medium.woff2',
+      path: './fonts/ClashDisplay-Medium.woff2',
       weight: '500',
     },
     {
-      path: './ClashDisplay-Semibold.woff2',
+      path: './fonts/ClashDisplay-Semibold.woff2',
       weight: '600',
     },
   ],
