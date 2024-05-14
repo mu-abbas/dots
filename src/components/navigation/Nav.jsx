@@ -35,9 +35,9 @@ function Nav({ color }) {
   useEffect(() => {
     const body = document.querySelector('body');
     if (isOpen) {
-      body.classList.add('overflow-y-hidden');
+      body.classList.add('h-screen', 'overflow-y-hidden');
     } else {
-      body.classList.remove('overflow-y-hidden');
+      body.classList.remove('h-screen', 'overflow-y-hidden');
     }
   }, [isOpen]);
 
@@ -80,9 +80,9 @@ function Nav({ color }) {
             ></span>
           </button>
           <div
-            className={`fixed h-screen ${
+            className={`fixed h-full ${
               isOpen ? 'translate-x-0 opacity-100' : '-translate-x-[100%] opacity-0'
-            } transition duration-1000 origin-left p-12  left-0 top-0 w-full text-black bg-beige shadow-md lg:hidden flex flex-col ease-out gap-12 max-w-md`}
+            } transition duration-700 origin-left p-12  left-0 top-0 w-full text-black bg-beige shadow-md lg:hidden flex flex-col ease-out gap-12 max-w-md`}
           >
             <div className="flex items-center justify-between">
               <Logo />
