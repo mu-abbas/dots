@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import CTALinkV2 from './CTALinkV2';
 import Logo from './Logo';
 import NavLink from './NavLink';
@@ -31,6 +31,15 @@ const navLinks = [
 function Nav({ color }) {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    const body = document.querySelector('body');
+    if (isOpen) {
+      body.classList.add('overflow-y-hidden');
+    } else {
+      body.classList.remove('overflow-y-hidden');
+    }
+  }, [isOpen]);
 
   return (
     <nav className="relative z-50">
@@ -71,9 +80,9 @@ function Nav({ color }) {
             ></span>
           </button>
           <div
-            className={`absolute h-screen ${
+            className={`fixed h-screen ${
               isOpen ? 'translate-x-0 opacity-100' : '-translate-x-[100%] opacity-0'
-            } transition duration-300 origin-left p-12  left-0 top-0 w-full text-black bg-beige shadow-md lg:hidden flex flex-col ease-in-out gap-12 max-w-lg`}
+            } transition duration-1000 origin-left p-12  left-0 top-0 w-full text-black bg-beige shadow-md lg:hidden flex flex-col ease-out gap-12 max-w-md`}
           >
             <div className="flex items-center justify-between">
               <Logo />
@@ -83,8 +92,8 @@ function Nav({ color }) {
                 </svg>
               </button>
             </div>
-            <ul className="flex flex-col justify-start gap-4 pb-8 pl-4 border-b border-blue">
-              {navLinks.map(({ label, href }) => (
+            <ul className="flex flex-col justify-start gap-4 pb-8 pl-2 text-lg border-b border-blue">
+              {[...navLinks, { label: 'Contact Us', href: '/contact-us' }].map(({ label, href }) => (
                 <NavLink label={label} href={href} key={href} isActive={pathname.startsWith(`${href}`)} />
               ))}
             </ul>
