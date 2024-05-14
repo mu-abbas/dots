@@ -2,30 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  @font-face {
-    font-family: 'Clash Display';
-    font-style: medium;
-    font-weight: 500;
-    font-display: swap;
-    src: url(/fonts/ClashDisplay-Medium.woff2) format('woff2');
-  }
-  @font-face {
-    font-family: 'Clash Display';
-    font-style: regular;
-    font-weight: 400;
-    font-display: swap;
-    src: url(/fonts/ClashDisplay-Regular.woff2) format('woff2');
-  }
-  @font-face {
-    font-family: 'Clash Display';
-    font-style: semibold;
-    font-weight: 600;
-    font-display: swap;
-    src: url(/fonts/ClashDisplay-Semibold.woff2) format('woff2');
-  }
-}
-
 @layer utilities {
   .leading-6 {
     line-height: 1.5rem !important;

@@ -9,9 +9,9 @@ module.exports = {
 
   theme: {
     fontFamily: {
-      sans: ['Space Grotesk', 'sans-serif'],
-      clash: ['Clash Display', 'sans-serif'],
-      poppins: ['poppins', 'sans-serif'],
+      sans: ['var(--font-grotesk)', 'sans-serif'],
+      clash: ['var(--font-clash)', 'sans-serif'],
+      poppins: ['var(--font-poppins)', 'sans-serif'],
     },
 
     colors: {
