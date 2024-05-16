@@ -1,5 +1,6 @@
 import Header from '@/components/about-us/Header';
 import Main from '@/components/about-us/Main';
+import Footer from '@/components/footer/Footer';
 
 export const metadata = {
   title: 'About Us',
@@ -11,6 +12,7 @@ function AboutUs() {
     <>
       <Header />
       <Main />
+      <Footer />
     </>
   );
 }

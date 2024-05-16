@@ -1,3 +1,4 @@
+import Footer from '@/components/footer/Footer';
 import Header from '@/components/pitch-decks/Header';
 import Main from '@/components/pitch-decks/Main';
 
@@ -11,6 +12,7 @@ function PitchDecks() {
     <>
       <Header />
       <Main />
+      <Footer />
     </>
   );
 }

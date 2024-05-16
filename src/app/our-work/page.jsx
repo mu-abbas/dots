@@ -1,3 +1,4 @@
+import Footer from '@/components/footer/Footer';
 import Header from '@/components/our-work/Header';
 import Main from '@/components/our-work/Main';
 
@@ -12,6 +13,7 @@ function OurWork() {
     <>
       <Header />
       <Main />
+      <Footer />
     </>
   );
 }

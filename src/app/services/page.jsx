@@ -1,3 +1,4 @@
+import Footer from '@/components/footer/Footer';
 import Header from '@/components/services/Header';
 import Main from '@/components/services/Main';
 
@@ -12,6 +13,7 @@ function Services() {
     <>
       <Header />
       <Main />
+      <Footer />
     </>
   );
 }

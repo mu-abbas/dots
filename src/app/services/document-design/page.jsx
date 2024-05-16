@@ -1,5 +1,6 @@
 import Header from '@/components/document-design/Header';
 import Main from '@/components/document-design/Main';
+import Footer from '@/components/footer/Footer';
 
 export const metadata = {
   title: 'Document Design',
@@ -11,6 +12,7 @@ function DocumentDesign() {
     <>
       <Header />
       <Main />
+      <Footer />
     </>
   );
 }

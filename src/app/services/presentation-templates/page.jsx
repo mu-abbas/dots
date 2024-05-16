@@ -1,3 +1,4 @@
+import Footer from '@/components/footer/Footer';
 import Header from '@/components/presentation-templates/Header';
 import Main from '@/components/presentation-templates/Main';
 
@@ -12,6 +13,7 @@ function PresentationTemplates() {
     <>
       <Header />
       <Main />
+      <Footer />
     </>
   );
 }

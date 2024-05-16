@@ -1,3 +1,4 @@
+import Footer from '@/components/footer/Footer';
 import Header from '@/components/resources/Header';
 import Main from '@/components/resources/Main';
 
@@ -12,6 +13,7 @@ function resources() {
     <>
       <Header />
       <Main />
+      <Footer />
     </>
   );
 }

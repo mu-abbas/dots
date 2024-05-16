@@ -1,3 +1,4 @@
+import Footer from '@/components/footer/Footer';
 import Header from '@/components/show-cases/Header';
 import Main from '@/components/show-cases/Main';
 import projectsPages from '@/data/projectsPages';
@@ -24,6 +25,7 @@ function page({ params }) {
     <>
       <Header title={title} />
       <Main href={href} />
+      <Footer />
     </>
   );
 }
