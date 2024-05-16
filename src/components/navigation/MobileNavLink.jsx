@@ -4,11 +4,11 @@ import MobileNavAccordionItem from './MobileNavAccordionItem';
 
 function MobileNavLink({ label, href, isActive, color = 'blue', subLinks }) {
   return (
-    <li className={`transition duration-300 flex gap-4 items-center`}>
+    <li className={`flex gap-4 items-center`}>
       {href !== '/services' && href !== '/resources' && (
         <Link
           href={href}
-          className={`${
+          className={`transition duration-300 ${
             isActive ? (color === 'blue' ? 'text-blue' : 'text-green') : color === 'blue' ? '' : 'text-offWhite'
           } ${color === 'blue' ? 'hover:text-blue' : 'hover:text-green'}`}
         >
@@ -22,7 +22,7 @@ function MobileNavLink({ label, href, isActive, color = 'blue', subLinks }) {
           mainLink={
             <Link
               href={href}
-              className={`${
+              className={`transition duration-300 ${
                 isActive ? (color === 'blue' ? 'text-blue' : 'text-green') : color === 'blue' ? '' : 'text-offWhite'
               } ${color === 'blue' ? 'hover:text-blue' : 'hover:text-green'}`}
             >

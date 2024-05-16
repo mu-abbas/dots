@@ -8,10 +8,10 @@ function MobileNavAccordionItem({ mainLink, subLinks, isActive }) {
 
   return (
     <div>
-      <div className="flex gap-3">
+      <div className="flex gap-3 group">
         {mainLink}
         <button
-          className={`flex items-center justify-between text-left focus:outline-none hover:text-blue cursor-pointer ${
+          className={`flex items-center justify-between text-left focus:outline-none transition duration-300 group-hover:text-blue cursor-pointer ${
             isOpen || isActive ? 'text-blue' : 'text-black'
           }`}
           onClick={e => {
@@ -21,7 +21,7 @@ function MobileNavAccordionItem({ mainLink, subLinks, isActive }) {
           aria-expanded={isOpen}
           aria-controls={`accordion-text-01`}
         >
-          <span className={`${isOpen ? 'rotate-180' : 'rotate-0'} duration-300 transition`}>
+          <span className={`${isOpen ? 'rotate-180' : 'rotate-0'}`}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
