@@ -8,7 +8,7 @@ function MobileNavAccordionItem({ mainLink, subLinks }) {
 
   return (
     <div>
-      <div className="flex gap-2">
+      <div className="flex gap-3">
         {mainLink}
         <button
           className={`flex items-center justify-between text-left focus:outline-none hover:text-blue cursor-pointer ${
@@ -26,9 +26,9 @@ function MobileNavAccordionItem({ mainLink, subLinks }) {
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              strokeWidth={2.5}
+              strokeWidth={2}
               stroke="currentColor"
-              className="size-4"
+              className="mt-0.5 size-4"
             >
               <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
             </svg>
