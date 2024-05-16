@@ -16,20 +16,7 @@ function MobileNavLink({ label, href, isActive, color = 'blue', subLinks }) {
         </Link>
       )}
       {(href === '/services' || href === '/resources') && (
-        <MobileNavAccordionItem
-          isActive={isActive}
-          subLinks={subLinks}
-          mainLink={
-            <Link
-              href={href}
-              className={`transition duration-300 ${
-                isActive ? (color === 'blue' ? 'text-blue' : 'text-green') : color === 'blue' ? '' : 'text-offWhite'
-              } ${color === 'blue' ? 'hover:text-blue' : 'hover:text-green'}`}
-            >
-              {label}
-            </Link>
-          }
-        />
+        <MobileNavAccordionItem isActive={isActive} subLinks={subLinks} href={href} label={label} />
       )}
     </li>
   );

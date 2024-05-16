@@ -2,14 +2,17 @@
 import { useState } from 'react';
 import MobileNavLink from './MobileNavLink';
 import { usePathname } from 'next/navigation';
-function MobileNavAccordionItem({ mainLink, subLinks, isActive }) {
+import Link from 'next/link';
+function MobileNavAccordionItem({ href, label, subLinks, isActive }) {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(subLinks.some(subLink => pathname.startsWith(`${subLink.href}`)));
 
   return (
     <div>
       <div className="flex gap-3 group">
-        {mainLink}
+        <Link href={href} className={`transition duration-300 ${isActive ? 'text-blue' : ''} hover:text-blue`}>
+          {label}
+        </Link>
         <button
           className={`flex items-center justify-between text-left focus:outline-none transition duration-300 group-hover:text-blue cursor-pointer ${
             isOpen || isActive ? 'text-blue' : 'text-black'

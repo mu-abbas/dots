@@ -104,6 +104,10 @@ module.exports = {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
         },
+        nav: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(0%)' },
+        },
       },
 
       animation: {
@@ -111,6 +115,7 @@ module.exports = {
         expand: 'expand 0.3s',
         popUp: 'popUp 0.3s',
         opacity: 'opacity 0.3s',
+        nav: 'nav 0.7s',
       },
     },
   },
