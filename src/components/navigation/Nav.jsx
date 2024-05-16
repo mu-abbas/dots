@@ -4,29 +4,8 @@ import CTALinkV2 from './CTALinkV2';
 import Logo from './Logo';
 import NavLink from './NavLink';
 import { usePathname } from 'next/navigation';
-
-const navLinks = [
-  {
-    label: 'Services',
-    href: '/services',
-  },
-  {
-    label: 'Our Work',
-    href: '/our-work',
-  },
-  {
-    label: 'Retainership',
-    href: '/retainership',
-  },
-  {
-    label: 'Resources',
-    href: '/resources',
-  },
-  {
-    label: 'About Us',
-    href: '/about-us',
-  },
-];
+import MobileNavLink from './MobileNavLink';
+import navLinks from '@/data/navLinks';
 
 function Nav({ color }) {
   const pathname = usePathname();
@@ -82,7 +61,7 @@ function Nav({ color }) {
           <div
             className={`fixed h-[100dvh] overflow-y-scroll ${
               isOpen ? 'translate-x-0 opacity-100' : '-translate-x-[100%] opacity-0'
-            } transition duration-700 origin-left p-12  left-0 top-0 w-full text-black bg-beige shadow-md lg:hidden flex flex-col ease-out gap-12 max-w-md`}
+            } transition duration-700 origin-left p-12  left-0 top-0 w-full text-black bg-beige shadow-md lg:hidden flex flex-col ease-out gap-12 max-w-md no-scrollbar`}
           >
             <div className="flex items-center justify-between">
               <Logo />
@@ -92,11 +71,49 @@ function Nav({ color }) {
                 </svg>
               </button>
             </div>
-            <ul className="flex flex-col justify-start gap-4 pb-8 pl-2 text-lg border-b border-blue">
-              {[...navLinks, { label: 'Contact Us', href: '/contact-us' }].map(({ label, href }) => (
-                <NavLink label={label} href={href} key={href} isActive={pathname.startsWith(`${href}`)} />
-              ))}
-            </ul>
+            <div className="space-y-6">
+              <ul className="flex flex-col justify-start gap-3 pb-6 text-lg border-b border-blue">
+                {[...navLinks, { label: 'Contact Us', href: '/contact-us' }].map(({ label, href, subLinks = [] }) => (
+                  <MobileNavLink
+                    label={label}
+                    href={href}
+                    key={href}
+                    subLinks={subLinks}
+                    isActive={pathname.startsWith(`${href}`)}
+                  />
+                ))}
+              </ul>
+              <div className="flex items-center gap-2">
+                <a
+                  href="https://www.linkedin.com/company/dots-presentations/"
+                  target="blank"
+                  className="transition duration-300 active:scale-95"
+                >
+                  <img src="/icon/linkedIn.svg" alt="linkedin page" />
+                </a>
+                <a
+                  href="https://www.instagram.com/dotspresentations/"
+                  target="blank"
+                  className="transition duration-300 active:scale-95"
+                >
+                  <img src="/icon/instagram.svg" alt="instagram page" />
+                </a>
+                <a
+                  href="https://www.twitter.com/DotsPPTs"
+                  target="blank"
+                  className="transition duration-300 active:scale-95"
+                >
+                  <img src="/icon/twitter.svg" alt="twitter page" />
+                </a>
+                <a
+                  href="https://www.youtube.com/@DotsPresentations"
+                  target="blank"
+                  className="transition duration-300 active:scale-95"
+                >
+                  <img src="/icon/youtube.svg" alt="youtube page" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
