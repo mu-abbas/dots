@@ -7,8 +7,8 @@ import navLinks from '@/data/navLinks';
 function MobileNav({ isOpen = false, setIsOpen, pathname }) {
   useEffect(() => {
     const overlay = document.querySelector('.overlay');
-    // const mobileNav = document.querySelector('.mobileNav');
-    // mobileNav.classList.remove('hidden');
+    const mobileNav = document.querySelector('.mobileNav');
+    mobileNav.classList.remove('hidden');
 
     if (isOpen) {
       overlay.classList.remove('hidden');
@@ -22,7 +22,7 @@ function MobileNav({ isOpen = false, setIsOpen, pathname }) {
 
   return (
     <div
-      className={`mobileNav  opacity-0 -translate-x-[100%] fixed h-[100dvh] overflow-y-scroll ${
+      className={`mobileNav hidden opacity-0 -translate-x-[100%] fixed h-[100dvh] overflow-y-scroll ${
         isOpen ? 'translate-x-0 opacity-100' : ''
       } transition duration-700 origin-left p-12  left-0 top-0 w-full text-black bg-beige shadow-md lg:hidden flex flex-col ease-out gap-12 max-w-md no-scrollbar`}
     >
