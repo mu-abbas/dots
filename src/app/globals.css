@@ -125,3 +125,7 @@
 .slick-dots {
   @apply focus:outline-none;
 }
+
+.overlay {
+  -webkit-backdrop-filter: blur(8px);
+}

@@ -13,11 +13,23 @@ function Nav({ color }) {
 
   useEffect(() => {
     const body = document.querySelector('body');
+    const overlay = document.querySelector('.overlay');
+
     if (isOpen) {
       body.classList.add('h-screen', 'overflow-y-hidden');
+      overlay.classList.remove('hidden');
+      overlay.style.opacity = '1';
     } else {
       body.classList.remove('h-screen', 'overflow-y-hidden');
+      overlay.style.opacity = '0';
     }
+    const timer = setTimeout(() => {
+      if (!isOpen) {
+        overlay.classList.add('hidden');
+      }
+    }, 300);
+
+    return clearTimeout(timer);
   }, [isOpen]);
 
   return (

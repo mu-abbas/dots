@@ -100,12 +100,17 @@ module.exports = {
           '0%': { transform: 'scale(0)', opcaity: 0 },
           '100%': { transform: 'scale(1)', opcaity: 1 },
         },
+        opacity: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
       },
 
       animation: {
         pulsing: 'pulsing 0.7s infinite',
         expand: 'expand 0.3s',
         popUp: 'popUp 0.3s',
+        opacity: 'opacity 0.3s',
       },
     },
   },

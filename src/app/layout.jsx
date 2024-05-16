@@ -52,7 +52,8 @@ export default function RootLayout({ children }) {
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
-      <body className="overflow-x-hidden 2xl:text-lg 3xl:text-xl">
+      <body className="relative overflow-x-hidden 2xl:text-lg 3xl:text-xl">
+        <div className="absolute inset-0 z-40 hidden w-full h-full transition duration-300 animate-opacity overlay backdrop-blur"></div>
         {children}
         <Footer />
       </body>
