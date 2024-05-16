@@ -53,7 +53,7 @@ export default function RootLayout({ children }) {
         <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body className="relative overflow-x-hidden 2xl:text-lg 3xl:text-xl">
-        <div className="absolute inset-0 z-40 hidden w-full h-full transition duration-300 animate-opacity overlay backdrop-blur"></div>
+        <div className="absolute inset-0 z-40 hidden w-full h-full transition duration-300 animate-opacity overlay"></div>
         {children}
         <Footer />
       </body>
