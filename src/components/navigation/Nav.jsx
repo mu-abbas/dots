@@ -12,15 +12,11 @@ function Nav({ color }) {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    const body = document.querySelector('body');
     const overlay = document.querySelector('.overlay');
-
     if (isOpen) {
-      body.classList.add('h-screen', 'overflow-y-hidden');
       overlay.classList.remove('hidden');
       overlay.style.opacity = '1';
     } else {
-      body.classList.remove('h-screen', 'overflow-y-hidden');
       overlay.style.opacity = '0';
     }
     const timer = setTimeout(() => {
