@@ -4,11 +4,11 @@ import Logo from './Logo';
 import MobileNavLink from './MobileNavLink';
 import navLinks from '@/data/navLinks';
 
-function MobileNav({ isOpen, setIsOpen, pathname }) {
+function MobileNav({ isOpen = false, setIsOpen, pathname }) {
   useEffect(() => {
     const overlay = document.querySelector('.overlay');
-    const mobileNav = document.querySelector('.mobileNav');
-    mobileNav.classList.remove('hidden');
+    // const mobileNav = document.querySelector('.mobileNav');
+    // mobileNav.classList.remove('hidden');
 
     if (isOpen) {
       overlay.classList.remove('hidden');
@@ -22,8 +22,8 @@ function MobileNav({ isOpen, setIsOpen, pathname }) {
 
   return (
     <div
-      className={`mobileNav hidden fixed h-[100dvh] overflow-y-scroll ${
-        isOpen ? 'translate-x-0 opacity-100' : '-translate-x-[100%] opacity-0'
+      className={`mobileNav  opacity-0 -translate-x-[100%] fixed h-[100dvh] overflow-y-scroll ${
+        isOpen ? 'translate-x-0 opacity-100' : ''
       } transition duration-700 origin-left p-12  left-0 top-0 w-full text-black bg-beige shadow-md lg:hidden flex flex-col ease-out gap-12 max-w-md no-scrollbar`}
     >
       <div className="flex items-center justify-between">
