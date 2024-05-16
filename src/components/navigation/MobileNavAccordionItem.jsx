@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import MobileNavLink from './MobileNavLink';
 import { usePathname } from 'next/navigation';
-function MobileNavAccordionItem({ mainLink, subLinks }) {
+function MobileNavAccordionItem({ mainLink, subLinks, isActive }) {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(subLinks.some(subLink => pathname.startsWith(`${subLink.href}`)));
 
@@ -12,7 +12,7 @@ function MobileNavAccordionItem({ mainLink, subLinks }) {
         {mainLink}
         <button
           className={`flex items-center justify-between text-left focus:outline-none hover:text-blue cursor-pointer ${
-            isOpen ? 'text-blue' : 'text-black'
+            isOpen || isActive ? 'text-blue' : 'text-black'
           }`}
           onClick={e => {
             e.preventDefault();

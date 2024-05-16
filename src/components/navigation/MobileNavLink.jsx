@@ -17,6 +17,7 @@ function MobileNavLink({ label, href, isActive, color = 'blue', subLinks }) {
       )}
       {(href === '/services' || href === '/resources') && (
         <MobileNavAccordionItem
+          isActive={isActive}
           subLinks={subLinks}
           mainLink={
             <Link
