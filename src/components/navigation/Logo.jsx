@@ -4,11 +4,7 @@ import Link from 'next/link';
 function Logo({ color = 'blue' }) {
   return (
     <Link href="/">
-      <img
-        src={`/icon/logo-${color}.svg`}
-        alt="dots logomark"
-        className="w-28 sm:w-32 md:w-36 lg:w-40 xl:w-44 2xl:w-48 3xl:w-52"
-      />
+      <img src={`/icon/logo-${color}.svg`} alt="dots logomark" className="w-28 sm:w-32 xl:w-36 2xl:w-40 3xl:w-44" />
     </Link>
   );
 }

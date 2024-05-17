@@ -16,11 +16,18 @@ function Nav({ color }) {
       <div className="container p-6 mx-auto sm:p-8 md:p-10 lg:px-12 xl:px-14 2xl:px-16">
         <div className="flex items-center justify-between gap-6">
           <Logo color={color} />
-          <ul className="items-center hidden gap-5 tracking-wide xl:gap-8 lg:flex">
-            {navLinks.map(({ label, href }) => (
-              <NavLink label={label} href={href} key={href} isActive={pathname.startsWith(`${href}`)} color={color} />
+          <ul className="items-center hidden gap-4 text-sm tracking-wide xl:gap-5 xl:text-base lg:flex 3xl:text-lg 3xl:gap-8">
+            {navLinks.map(({ label, href, subLinks = [] }) => (
+              <NavLink
+                label={label}
+                subLinks={subLinks}
+                href={href}
+                key={href}
+                isActive={pathname.startsWith(`${href}`)}
+                color={color}
+              />
             ))}
-            <li>
+            <li className="ml-4 xl:ml-8 2xl:ml-16 3xl:ml-32">
               <CTALinkV2
                 color={`${color === 'offWhite' ? 'green' : 'black'}`}
                 href="/contact-us"

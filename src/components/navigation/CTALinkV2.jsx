@@ -8,7 +8,7 @@ function CTALinkV2({ color, label, href, greyBorder, whiteBorder }) {
   return (
     <Link
       href={href}
-      className={`relative flex border rounded-md lg:rounded-lg group 2xl:text-lg overflow-hidden w-max ${
+      className={`relative flex border rounded-xl group 3xl:text-lg overflow-hidden w-max ${
         greyBorder ? 'border-grey' : whiteBorder ? 'border-offWhite' : 'border-black'
       } ${color === 'black' ? 'bg-black' : color === 'green' ? (whiteBorder ? '' : 'bg-beige') : ''}`}
     >
@@ -36,7 +36,7 @@ function CTALinkV2({ color, label, href, greyBorder, whiteBorder }) {
         </span>
 
         <span
-          className={`flex items-center px-3 xl:px-6 ${
+          className={`flex items-center justify-center xl:px-6 min-w-14 ${
             color === 'black' ? 'bg-green' : color === 'green' ? 'bg-green' : 'bg-blue'
           } border-l ${greyBorder ? 'border-grey' : whiteBorder ? 'border-offWhite' : 'border-black'}`}
         >

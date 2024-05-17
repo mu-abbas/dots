@@ -14,9 +14,7 @@ function MobileNavAccordionItem({ href, label, subLinks, isActive }) {
           {label}
         </Link>
         <button
-          className={`flex items-center justify-between text-left focus:outline-none transition duration-300 group-hover:text-blue cursor-pointer ${
-            isOpen || isActive ? 'text-blue' : 'text-black'
-          }`}
+          className={`flex items-center justify-between text-left focus:outline-none  cursor-pointer`}
           onClick={e => {
             e.preventDefault();
             setIsOpen(!isOpen);
@@ -24,7 +22,11 @@ function MobileNavAccordionItem({ href, label, subLinks, isActive }) {
           aria-expanded={isOpen}
           aria-controls={`accordion-text-01`}
         >
-          <span className={`${isOpen ? 'rotate-180' : 'rotate-0'}`}>
+          <span
+            className={`${isOpen ? 'rotate-180' : 'rotate-0'} transition duration-300 group-hover:text-blue ${
+              isOpen || isActive ? 'text-blue' : 'text-black'
+            }`}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -47,9 +49,9 @@ function MobileNavAccordionItem({ href, label, subLinks, isActive }) {
         }`}
       >
         <div className="overflow-hidden">
-          <ul className="flex flex-col justify-start gap-2 p-2 pb-0 pl-4 text-base">
+          <ul className="flex flex-col justify-start gap-3 pt-2 pl-4 text-base">
             {subLinks.map(({ label, href }) => (
-              <MobileNavLink label={label} href={href} key={href} isActive={pathname.startsWith(`${href}`)} />
+              <MobileNavLink label={`- ${label}`} href={href} key={href} isActive={pathname.startsWith(`${href}`)} />
             ))}
           </ul>
         </div>
