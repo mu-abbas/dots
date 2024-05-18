@@ -9,7 +9,7 @@ function Footer() {
     <footer className="bg-black text-offWhite">
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr_1fr] gap-8 sm:grid-cols-2 sm:gap-16">
-          <div className="space-y-8 border-b-[0.5px] lg:border-none border-grey pb-8 sm:col-span-2 lg:col-span-1">
+          <div className="space-y-8 border-b-[0.5px] lg:border-none border-grey pb-8 sm:pb-16 sm:col-span-2 lg:col-span-1">
             <Logo color="yellow" />
             <Link
               href="/contact-us"
