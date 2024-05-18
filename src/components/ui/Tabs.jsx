@@ -13,7 +13,7 @@ function Tabs({ items }) {
   return (
     <div className="w-full">
       <SpaceY>
-        <div className="flex flex-col gap-4 lg:flex-row lg:justify-evenly">
+        <div className="flex flex-col gap-4 lg:flex-row lg:justify-evenly" role="tablist">
           {items.map((item, index) => (
             <TabLink
               key={index}

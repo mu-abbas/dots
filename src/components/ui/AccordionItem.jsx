@@ -4,8 +4,8 @@ function AccordionItem({ title, content, open = false }) {
   const [isOpen, setIsOpen] = useState(open);
 
   return (
-    <div>
-      <h2>
+    <li>
+      <h4>
         <button
           className={`flex items-center justify-between py-4 w-full text-left border-b border-grey focus:outline-none gap-8 ${
             isOpen ? 'text-blue' : 'text-offWhite'
@@ -32,7 +32,7 @@ function AccordionItem({ title, content, open = false }) {
             </svg>
           </span>
         </button>
-      </h2>
+      </h4>
       <div
         id={`accordion-text-01`}
         role="region"
@@ -45,7 +45,7 @@ function AccordionItem({ title, content, open = false }) {
           <div className="p-4 sm:p-6 md:leading-7">{content}</div>
         </div>
       </div>
-    </div>
+    </li>
   );
 }
 

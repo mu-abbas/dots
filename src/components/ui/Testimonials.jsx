@@ -98,7 +98,13 @@ function Testimonials() {
             </Slider>
 
             {/* progress bar */}
-            <div className="relative h-1 overflow-hidden" role="progressbar">
+            <div
+              className="relative h-1 overflow-hidden"
+              aria-valuetext={`${activeSlide + 1} out of ${6}`}
+              aria-valuemin={1}
+              aria-valuemax={6}
+              aria-valuenow={activeSlide + 1}
+            >
               <span className="absolute left-0 w-full h-1 opacity-25 bg-grey"></span>
               <span
                 className={`absolute left-0 h-1 transition duration-300 origin-left bg-black w-1/6`}
