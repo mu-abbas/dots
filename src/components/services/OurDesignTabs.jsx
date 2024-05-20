@@ -13,7 +13,10 @@ function OurDesignTabs({ items }) {
 
   return (
     <div className="w-full">
-      <div className="flex justify-center gap-4 border-b-[0.5px] xl:gap-6 border-lightGrey pb-12 lg:pb-14 xl:pb-16 2xl:pb-18">
+      <div
+        className="flex justify-center gap-4 border-b-[0.5px] xl:gap-6 border-lightGrey pb-12 lg:pb-14 xl:pb-16 2xl:pb-18"
+        role="tablist"
+      >
         {items.map((item, index) => (
           <OurDesignTabsLink
             key={index}

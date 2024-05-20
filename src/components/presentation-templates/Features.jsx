@@ -13,7 +13,7 @@ function Features() {
     <section>
       <Container>
         <SpaceY>
-          <div className="mt-12 lg:mt-16 xl:mt-20 2xl:mt-24">
+          <div className="mt-16 lg:mt-32 md:mt-24">
             <div className="grid grid-cols-1 gap-8 md:gap-12 md:grid-cols-2 lg:gap-16">
               {features.map(({ src, label, content }, index) => (
                 <FeatureItem src={src} label={label} content={content} key={index} />

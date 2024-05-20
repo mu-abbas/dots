@@ -12,12 +12,12 @@ function Counter() {
     <section className="text-center text-black bg-beige">
       <Container>
         <SpaceY>
-          <div>
+          <div className="mt-12 md:mt-18 lg:mt-24">
             <SpaceY>
               <h2 className="mt-8 text-2xl text-center md:text-3xl lg:text-4xl 3xl:text-5xl lg:mt-12 xl:mt-16 2xl:mt-20">
                 So far we have accomplished
               </h2>
-              <div className="grid justify-center grid-cols-[15rem] md:grid-cols-[15rem_15rem] xl:grid-cols-[15rem_15rem_15rem_15rem] gap-8 2xl:gap-12 3xl:grid-cols-[18rem_18rem_18rem_18rem] 3xl:gap-16">
+              <div className="grid grid-cols-1 gap-8 mx-auto justify-items-center md:gap-10 lg:gap-12 md:grid-cols-2 xl:grid-cols-4 2xl:gap-14 3xl:gap-16 w-max">
                 <CounterItem number={300} sign="+" label="Clients" />
                 <CounterItem number={12} sign="+" label="Countries" />
                 <CounterItem number={95} sign="%" label="Long-term" />
