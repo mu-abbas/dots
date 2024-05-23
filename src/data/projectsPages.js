@@ -117,6 +117,34 @@ const projectsPages = [
   {
     title: 'Cloud Flyer',
     href: 'cloud-flyer',
+    details: {
+      descriptionImage: '/image/our-work/pitch-decks/cloud-flyer/CloudFlyer-2.jpg',
+      description:
+        'We worked with Cloudflyer in preparation for their pitch deck. We created their strong elements from scratch to match the brand guidelines and to deliver a clear and visually appealing presentation.',
+      openingImage: '/image/our-work/pitch-decks/cloud-flyer/Slide1.JPG',
+      slides: [
+        '/image/our-work/pitch-decks/cloud-flyer/Slide2.JPG',
+        '/image/our-work/pitch-decks/cloud-flyer/Slide4.JPG',
+        '/image/our-work/pitch-decks/cloud-flyer/Slide5.JPG',
+        '/image/our-work/pitch-decks/cloud-flyer/Slide6.JPG',
+        '/image/our-work/pitch-decks/cloud-flyer/Slide7.JPG',
+        '/image/our-work/pitch-decks/cloud-flyer/Slide10.JPG',
+        '/image/our-work/pitch-decks/cloud-flyer/Slide11.JPG',
+        '/image/our-work/pitch-decks/cloud-flyer/Slide12.JPG',
+      ],
+      afterSlides: [
+        '/image/our-work/pitch-decks/cloud-flyer/Slide3.JPG',
+        '/image/our-work/pitch-decks/cloud-flyer/Slide8.JPG',
+        '/image/our-work/pitch-decks/cloud-flyer/Slide9.JPG',
+        '/image/our-work/pitch-decks/cloud-flyer/Slide13.JPG',
+      ],
+      beforeSlides: [
+        '/image/our-work/pitch-decks/cloud-flyer/before/slide1.jpeg',
+        '/image/our-work/pitch-decks/cloud-flyer/before/slide2.jpeg',
+        '/image/our-work/pitch-decks/cloud-flyer/before/slide3.jpeg',
+        '/image/our-work/pitch-decks/cloud-flyer/before/slide4.jpeg',
+      ],
+    },
   },
   {
     title: 'League of Play',

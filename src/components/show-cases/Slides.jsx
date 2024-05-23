@@ -5,7 +5,7 @@ import Container from '../micro/Container';
 function Slides({ slides }) {
   return (
     <section>
-      <Container>
+      <div className="container px-8 mx-auto sm:px-10 md:px-12 lg:px-14 xl:px-16 2xl:px-20">
         <div
           role="presentation"
           aria-label="image gallery"
@@ -20,7 +20,7 @@ function Slides({ slides }) {
             />
           ))}
         </div>
-      </Container>
+      </div>
     </section>
   );
 }
