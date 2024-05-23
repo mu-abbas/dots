@@ -17,7 +17,7 @@ function ImageSlider({ afterSlides, beforeSlides }) {
             {afterSlides.map((slide, index) => (
               <ReactCompareSlider
                 key={index}
-                transition="1s ease-out"
+                onlyHandleDraggable
                 position={75}
                 itemOne={<ReactCompareSliderImage src={slide} alt="slide after our touch" />}
                 itemTwo={<ReactCompareSliderImage src={beforeSlides[index]} alt="slide before our touch" />}
