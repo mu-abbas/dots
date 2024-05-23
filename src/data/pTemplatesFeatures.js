@@ -7,7 +7,8 @@ const features = [
   {
     src: '/icon/bag.svg',
     label: 'Professional - looking presentations',
-    content: 'Especially if you need to create multiple presentations on a regular basis.',
+    content:
+      'Our templates ensure your presentations are visually appealing and polished, helping you impress your audience and convey your message effectively.',
   },
   {
     src: '/icon/star.svg',

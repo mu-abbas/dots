@@ -16,7 +16,7 @@ function Slides({ slides }) {
               src={slide}
               alt="slide"
               key={index}
-              className="mx-auto transition duration-300 cursor-pointer sm:max-w-lg lg:max-w-full hover:brightness-75"
+              className="mx-auto transition duration-300 cursor-pointer sm:max-w-lg lg:max-w-full hover:brightness-75 rounded-xl"
             />
           ))}
         </div>

@@ -35,6 +35,34 @@ const projectsPages = [
   {
     title: 'Marriott BOD',
     href: 'marriott-bod',
+    details: {
+      descriptionImage: '/image/our-work/p-design/marriorr-bod/Marriot_Bord-of-Directors.jpg',
+      description:
+        'We worked with Marriot in preparation for their Board of Directors Presentation. We used their strong brand elements to create a clear and visually appealing presentation.',
+      openingImage: '/image/our-work/p-design/marriorr-bod/Slide1.JPG',
+      afterSlides: [
+        '/image/our-work/p-design/marriorr-bod/Slide2.JPG',
+        '/image/our-work/p-design/marriorr-bod/Slide3.JPG',
+        '/image/our-work/p-design/marriorr-bod/Slide4.JPG',
+        '/image/our-work/p-design/marriorr-bod/Slide5.JPG',
+        '/image/our-work/p-design/marriorr-bod/Slide6.JPG',
+        '/image/our-work/p-design/marriorr-bod/Slide7.JPG',
+        '/image/our-work/p-design/marriorr-bod/Slide8.JPG',
+        '/image/our-work/p-design/marriorr-bod/Slide9.JPG',
+        '/image/our-work/p-design/marriorr-bod/Slide10.JPG',
+      ],
+      beforeSlides: [
+        '/image/our-work/p-design/marriorr-bod/before/slide1.jpeg',
+        '/image/our-work/p-design/marriorr-bod/before/slide2.jpeg',
+        '/image/our-work/p-design/marriorr-bod/before/slide3.jpeg',
+        '/image/our-work/p-design/marriorr-bod/before/slide4.jpeg',
+        '/image/our-work/p-design/marriorr-bod/before/slide5.jpeg',
+        '/image/our-work/p-design/marriorr-bod/before/slide6.jpeg',
+        '/image/our-work/p-design/marriorr-bod/before/slide7.jpeg',
+        '/image/our-work/p-design/marriorr-bod/before/slide8.jpeg',
+        '/image/our-work/p-design/marriorr-bod/before/slide9.jpeg',
+      ],
+    },
   },
   {
     title: 'Venus Presentation',
