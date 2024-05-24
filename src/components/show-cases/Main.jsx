@@ -18,7 +18,7 @@ function Main({ details, next, previous }) {
         {details ? (
           <>
             <Description descriptionImage={details.descriptionImage} description={details.description} />
-            <OpeningSlide src={details.openingImage} />
+            {details.openingImage && <OpeningSlide src={details.openingImage} />}
             {details.slides && <Slides slides={details.slides} />}
             {details.topSlides && <Slides slides={details.topSlides} />}
             {(details.compareSlides || details.afterSlides) && <CompareText />}

@@ -544,8 +544,8 @@ const projectsPages = [
       descriptionImage: '/image/our-work/d-design/big-report/BIG-Document.jpg',
       description:
         'We worked with BIG, a Novonordisk sector, in preparation for their report. We created these strong elements from scratch for their new branding to deliver clear and visually appealing document.',
-      openingImage: '/image/our-work/d-design/big-report/Slide2.JPG',
       slides: [
+        '/image/our-work/d-design/big-report/Slide2.JPG',
         '/image/our-work/d-design/big-report/Slide3.JPG',
         '/image/our-work/d-design/big-report/Slide4.JPG',
         '/image/our-work/d-design/big-report/Slide5.JPG',
@@ -586,8 +586,8 @@ const projectsPages = [
         '/image/our-work/d-design/big-report/Slide40.JPG',
         '/image/our-work/d-design/big-report/Slide41.JPG',
         '/image/our-work/d-design/big-report/Slide42.JPG',
+        '/image/our-work/d-design/big-report/Slide43.JPG',
       ],
-      footerImage: '/image/our-work/d-design/big-report/Slide43.JPG',
     },
   },
   {
@@ -597,8 +597,8 @@ const projectsPages = [
       descriptionImage: '/image/our-work/d-design/together-2/Together-Ebook-1.jpg',
       description:
         'We worked with together in preparation for their whitepaper. We created these strong elements from scratch for their branding to deliver clear and visually appealing whitepaper.',
-      openingImage: '/image/our-work/d-design/together-2/1-2.jpg',
       slides: [
+        '/image/our-work/d-design/together-2/1-2.jpg',
         '/image/our-work/d-design/together-2/69.jpg',
         '/image/our-work/d-design/together-2/70.jpg',
         '/image/our-work/d-design/together-2/71.jpg',
@@ -611,8 +611,8 @@ const projectsPages = [
         '/image/our-work/d-design/together-2/81.jpg',
         '/image/our-work/d-design/together-2/82.jpg',
         '/image/our-work/d-design/together-2/83.jpg',
+        '/image/our-work/d-design/together-2/Cover.jpg',
       ],
-      footerImage: '/image/our-work/d-design/together-2/Cover.jpg',
     },
   },
 ];
