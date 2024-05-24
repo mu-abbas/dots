@@ -1,6 +1,7 @@
 'use client';
 import SpaceY from '../micro/SpaceY';
 import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
+import { ImgComparisonSlider } from '@img-comparison-slider/react';
 function ImageSlider({ afterSlides, beforeSlides }) {
   return (
     <section>
@@ -15,13 +16,19 @@ function ImageSlider({ afterSlides, beforeSlides }) {
             className="grid grid-cols-1 gap-6 2xl:gap-8 3xl:gap-12 lg:grid-cols-2"
           >
             {afterSlides.map((slide, index) => (
-              <ReactCompareSlider
-                key={index}
-                onlyHandleDraggable
-                position={75}
-                itemOne={<ReactCompareSliderImage src={slide} alt="slide after our touch" />}
-                itemTwo={<ReactCompareSliderImage src={beforeSlides[index]} alt="slide before our touch" />}
-              />
+              <>
+                <ReactCompareSlider
+                  key={index}
+                  onlyHandleDraggable
+                  position={25}
+                  itemOne={<ReactCompareSliderImage src={beforeSlides[index]} alt="slide before our touch" />}
+                  itemTwo={<ReactCompareSliderImage src={slide} alt="slide after our touch" />}
+                />
+                <ImgComparisonSlider>
+                  <img slot="first" src={beforeSlides[index]} alt="slide before our touch" />
+                  <img slot="second" src={slide} alt="slide after our touch" />
+                </ImgComparisonSlider>
+              </>
             ))}
           </div>
         </SpaceY>
