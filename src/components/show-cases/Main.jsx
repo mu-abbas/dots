@@ -2,6 +2,8 @@
 
 import SpaceY from '../micro/SpaceY';
 import ClosingSlide from './ClosingSlide';
+import CompareSlider from './CompareSlider';
+import CompareText from './CompareText';
 import Description from './Description';
 import ImageSlider from './ImageSlider';
 import OpeningSlide from './OpeningSlide';
@@ -17,9 +19,15 @@ function Main({ details, next, previous }) {
           <>
             <Description descriptionImage={details.descriptionImage} description={details.description} />
             <OpeningSlide src={details.openingImage} />
-            {details?.slides && <Slides slides={details.slides} />}
-            {details?.afterSlides && (
-              <ImageSlider afterSlides={details?.afterSlides} beforeSlides={details?.beforeSlides} />
+            {details.slides && <Slides slides={details.slides} />}
+            {details.topSlides && <Slides slides={details.topSlides} />}
+            {(details.compareSlides || details.afterSlides) && <CompareText />}
+            {details.compareSlides && <CompareSlider compareSlides={details.compareSlides} />}
+            {details.downSlides && <Slides slides={details.downSlides} />}
+            {details.afterSlides && (
+              <>
+                <ImageSlider afterSlides={details.afterSlides} beforeSlides={details.beforeSlides} />
+              </>
             )}
             {details.footerImage && <ClosingSlide src={details.footerImage} />}
           </>

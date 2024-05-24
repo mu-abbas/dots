@@ -1,3 +1,5 @@
+import ClosingSlide from '@/components/show-cases/ClosingSlide';
+
 const projectsPages = [
   {
     title: 'Topo Chico',
@@ -41,7 +43,6 @@ const projectsPages = [
         'We worked with Marriot in preparation for their Board of Directors Presentation. We used their strong brand elements to create a clear and visually appealing presentation.',
       openingImage: '/image/our-work/p-design/marriorr-bod/Slide1.JPG',
       afterSlides: [
-        '/image/our-work/p-design/marriorr-bod/Slide2.JPG',
         '/image/our-work/p-design/marriorr-bod/Slide3.JPG',
         '/image/our-work/p-design/marriorr-bod/Slide4.JPG',
         '/image/our-work/p-design/marriorr-bod/Slide5.JPG',
@@ -52,7 +53,6 @@ const projectsPages = [
         '/image/our-work/p-design/marriorr-bod/Slide10.JPG',
       ],
       beforeSlides: [
-        '/image/our-work/p-design/marriorr-bod/before/slide1.jpeg',
         '/image/our-work/p-design/marriorr-bod/before/slide2.jpeg',
         '/image/our-work/p-design/marriorr-bod/before/slide3.jpeg',
         '/image/our-work/p-design/marriorr-bod/before/slide4.jpeg',
@@ -62,6 +62,10 @@ const projectsPages = [
         '/image/our-work/p-design/marriorr-bod/before/slide8.jpeg',
         '/image/our-work/p-design/marriorr-bod/before/slide9.jpeg',
       ],
+      compareSlides: {
+        after: '/image/our-work/p-design/marriorr-bod/Slide2.JPG',
+        before: '/image/our-work/p-design/marriorr-bod/before/slide1.jpeg',
+      },
     },
   },
   {
@@ -88,6 +92,36 @@ const projectsPages = [
   {
     title: 'Surgio Health',
     href: 'surgio-health',
+    details: {
+      descriptionImage: '/image/our-work/p-design/surgiohealth/Surgio-Health-3.jpg',
+      description:
+        'We worked with Surgio Health in preparation for their presentation. We created these strong elements to match their brand guidelines, and to deliver a clear and visually appealing presentation.',
+      openingImage: '/image/our-work/p-design/surgiohealth/Slide1.JPG',
+      topSlides: [
+        '/image/our-work/p-design/surgiohealth/Slide2.JPG',
+        '/image/our-work/p-design/surgiohealth/Slide3.JPG',
+        '/image/our-work/p-design/surgiohealth/Slide4.JPG',
+        '/image/our-work/p-design/surgiohealth/Slide6.JPG',
+      ],
+      compareSlides: {
+        after: '/image/our-work/p-design/surgiohealth/Slide5.JPG',
+        before: '/image/our-work/p-design/surgiohealth/before.jpg',
+      },
+      downSlides: [
+        '/image/our-work/p-design/surgiohealth/Slide7.JPG',
+        '/image/our-work/p-design/surgiohealth/Slide8.JPG',
+        '/image/our-work/p-design/surgiohealth/Slide9.JPG',
+        '/image/our-work/p-design/surgiohealth/Slide10.JPG',
+        '/image/our-work/p-design/surgiohealth/Slide11.JPG',
+        '/image/our-work/p-design/surgiohealth/Slide12.JPG',
+        '/image/our-work/p-design/surgiohealth/Slide13.JPG',
+        '/image/our-work/p-design/surgiohealth/Slide14.JPG',
+        '/image/our-work/p-design/surgiohealth/Slide15.JPG',
+        '/image/our-work/p-design/surgiohealth/Slide16.JPG',
+        '/image/our-work/p-design/surgiohealth/Slide17.JPG',
+        '/image/our-work/p-design/surgiohealth/Slide18.JPG',
+      ],
+    },
   },
   {
     title: 'Marriott CEC',
@@ -149,18 +183,133 @@ const projectsPages = [
   {
     title: 'League of Play',
     href: 'league-of-play',
+    details: {
+      descriptionImage: '/image/our-work/pitch-decks/league-of-play/LeagueofPlay-1.jpg',
+      description:
+        'We worked with League of Play in preparation for their pitch deck. We created their strong elements from scratch to match the brand guidelines and to deliver a clear and visually appealing presentation.',
+      openingImage: '/image/our-work/pitch-decks/league-of-play/1.jpg',
+      slides: [
+        '/image/our-work/pitch-decks/league-of-play/2.jpg',
+        '/image/our-work/pitch-decks/league-of-play/3.jpg',
+        '/image/our-work/pitch-decks/league-of-play/4.jpg',
+        '/image/our-work/pitch-decks/league-of-play/5.jpg',
+        '/image/our-work/pitch-decks/league-of-play/6.jpg',
+        '/image/our-work/pitch-decks/league-of-play/7.jpg',
+        '/image/our-work/pitch-decks/league-of-play/8.jpg',
+        '/image/our-work/pitch-decks/league-of-play/10.jpg',
+        '/image/our-work/pitch-decks/league-of-play/11.jpg',
+        '/image/our-work/pitch-decks/league-of-play/12.jpg',
+        '/image/our-work/pitch-decks/league-of-play/13.jpg',
+        '/image/our-work/pitch-decks/league-of-play/14.jpg',
+        '/image/our-work/pitch-decks/league-of-play/15.jpg',
+        '/image/our-work/pitch-decks/league-of-play/16.jpg',
+        '/image/our-work/pitch-decks/league-of-play/17.jpg',
+        '/image/our-work/pitch-decks/league-of-play/18.jpg',
+        '/image/our-work/pitch-decks/league-of-play/20.jpg',
+        '/image/our-work/pitch-decks/league-of-play/21.jpg',
+        '/image/our-work/pitch-decks/league-of-play/22.jpg',
+        '/image/our-work/pitch-decks/league-of-play/23.jpg',
+      ],
+      footerImage: '/image/our-work/pitch-decks/league-of-play/19.jpg',
+    },
   },
   {
     title: 'SMS',
     href: 'sms',
+    details: {
+      descriptionImage: '/image/our-work/pitch-decks/sms/SMS.jpg',
+      description:
+        'We worked with SMS in preparation for their investor deck. We created their strong elements to match their brand guidelines, and to deliver a clear and visually appealing presentation.',
+      openingImage: '/image/our-work/pitch-decks/sms/Slide1.JPG',
+      slides: [
+        '/image/our-work/pitch-decks/sms/Slide2.JPG',
+        '/image/our-work/pitch-decks/sms/Slide4.JPG',
+        '/image/our-work/pitch-decks/sms/Slide5.JPG',
+        '/image/our-work/pitch-decks/sms/Slide6.JPG',
+      ],
+      afterSlides: [
+        '/image/our-work/pitch-decks/sms/Slide3.JPG',
+        '/image/our-work/pitch-decks/sms/Slide4.JPG',
+        '/image/our-work/pitch-decks/sms/Slide7.JPG',
+        '/image/our-work/pitch-decks/sms/Slide8.JPG',
+      ],
+      beforeSlides: [
+        '/image/our-work/pitch-decks/sms/before.jpeg',
+        '/image/our-work/pitch-decks/sms/before2.jpeg',
+        '/image/our-work/pitch-decks/sms/before3.jpeg',
+        '/image/our-work/pitch-decks/sms/before4.jpeg',
+      ],
+      footerImage: '/image/our-work/pitch-decks/sms/Slide9.JPG',
+    },
   },
   {
     title: 'Oversubscribed',
     href: 'oversubscribed',
+    details: {
+      descriptionImage: '/image/our-work/pitch-decks/oversubscribed/Oversubscribed-2021.jpg',
+      description:
+        'We worked with Oversubscribed in preparation for their investor deck. We created their strong elements from scratch to match the notion style that the client requested and to deliver a clear and visually appealing presentation.',
+      openingImage: '/image/our-work/pitch-decks/oversubscribed/Slide1.JPG',
+      slides: [
+        '/image/our-work/pitch-decks/oversubscribed/Slide2.JPG',
+        '/image/our-work/pitch-decks/oversubscribed/Slide4.JPG',
+        '/image/our-work/pitch-decks/oversubscribed/Slide5.JPG',
+        '/image/our-work/pitch-decks/oversubscribed/Slide6.JPG',
+        '/image/our-work/pitch-decks/oversubscribed/Slide7.JPG',
+        '/image/our-work/pitch-decks/oversubscribed/Slide8.JPG',
+        '/image/our-work/pitch-decks/oversubscribed/Slide9.JPG',
+        '/image/our-work/pitch-decks/oversubscribed/Slide10.JPG',
+        '/image/our-work/pitch-decks/oversubscribed/Slide11.JPG',
+        '/image/our-work/pitch-decks/oversubscribed/Slide14.JPG',
+        '/image/our-work/pitch-decks/oversubscribed/Slide15.JPG',
+        '/image/our-work/pitch-decks/oversubscribed/Slide17.JPG',
+        '/image/our-work/pitch-decks/oversubscribed/Slide18.JPG',
+        '/image/our-work/pitch-decks/oversubscribed/Slide19.JPG',
+      ],
+      afterSlides: [
+        '/image/our-work/pitch-decks/oversubscribed/Slide3.JPG',
+        '/image/our-work/pitch-decks/oversubscribed/Slide12.JPG',
+        '/image/our-work/pitch-decks/oversubscribed/Slide13.JPG',
+        '/image/our-work/pitch-decks/oversubscribed/Slide16.JPG',
+      ],
+      beforeSlides: [
+        '/image/our-work/pitch-decks/oversubscribed/before.jpeg',
+        '/image/our-work/pitch-decks/oversubscribed/before2.jpeg',
+        '/image/our-work/pitch-decks/oversubscribed/before3.jpeg',
+        '/image/our-work/pitch-decks/oversubscribed/before4.jpeg',
+      ],
+      footerImage: ['/image/our-work/pitch-decks/oversubscribed/Slide20.JPG'],
+    },
   },
   {
     title: 'Decast',
     href: 'decast',
+    details: {
+      descriptionImage: '/image/our-work/pitch-decks/decast-deck/Decast-2.jpg',
+      description:
+        'We worked with Decast in preparation for their pitch deck. We created their strong elements from scratch to match the brand guidelines and to deliver a clear and visually appealing presentation.',
+      openingImage: '/image/our-work/pitch-decks/decast-deck/Slide1.JPG',
+      slides: [
+        '/image/our-work/pitch-decks/decast-deck/Slide2.JPG',
+        '/image/our-work/pitch-decks/decast-deck/Slide3.JPG',
+        '/image/our-work/pitch-decks/decast-deck/Slide4.JPG',
+        '/image/our-work/pitch-decks/decast-deck/Slide5.JPG',
+        '/image/our-work/pitch-decks/decast-deck/Slide6.JPG',
+        '/image/our-work/pitch-decks/decast-deck/Slide7.JPG',
+        '/image/our-work/pitch-decks/decast-deck/Slide8.JPG',
+        '/image/our-work/pitch-decks/decast-deck/Slide9.JPG',
+        '/image/our-work/pitch-decks/decast-deck/Slide10.JPG',
+        '/image/our-work/pitch-decks/decast-deck/Slide11.JPG',
+        '/image/our-work/pitch-decks/decast-deck/Slide12.JPG',
+        '/image/our-work/pitch-decks/decast-deck/Slide13.JPG',
+        '/image/our-work/pitch-decks/decast-deck/Slide14.JPG',
+        '/image/our-work/pitch-decks/decast-deck/Slide15.JPG',
+        '/image/our-work/pitch-decks/decast-deck/Slide16.JPG',
+        '/image/our-work/pitch-decks/decast-deck/Slide17.JPG',
+        '/image/our-work/pitch-decks/decast-deck/Slide18.JPG',
+        '/image/our-work/pitch-decks/decast-deck/Slide19.JPG',
+      ],
+    },
   },
   {
     title: 'Gruppi',
@@ -169,10 +318,66 @@ const projectsPages = [
   {
     title: 'Collection XYZ',
     href: 'collection-xyz',
+    details: {
+      descriptionImage: '/image/our-work/pitch-decks/collection-xyz/CollectionXYZ.jpg',
+      description:
+        'We worked with Collection XYZ in preparation for their investor deck. We created their strong elements from scratch to match the brand guidelines and to deliver a clear and visually appealing presentation.',
+      openingImage: '/image/our-work/pitch-decks/collection-xyz/1.jpg',
+      slides: [
+        '/image/our-work/pitch-decks/collection-xyz/10.jpg',
+        '/image/our-work/pitch-decks/collection-xyz/2.jpg',
+        '/image/our-work/pitch-decks/collection-xyz/8.jpg',
+        '/image/our-work/pitch-decks/collection-xyz/11.jpg',
+        '/image/our-work/pitch-decks/collection-xyz/12.jpg',
+        '/image/our-work/pitch-decks/collection-xyz/13.jpg',
+      ],
+      afterSlides: [
+        '/image/our-work/pitch-decks/collection-xyz/3.jpg',
+        '/image/our-work/pitch-decks/collection-xyz/4.jpg',
+        '/image/our-work/pitch-decks/collection-xyz/5.jpg',
+        '/image/our-work/pitch-decks/collection-xyz/6.jpg',
+        '/image/our-work/pitch-decks/collection-xyz/7.jpg',
+        '/image/our-work/pitch-decks/collection-xyz/9.jpg',
+      ],
+      beforeSlides: [
+        '/image/our-work/pitch-decks/collection-xyz/before/Slide2.JPG',
+        '/image/our-work/pitch-decks/collection-xyz/before/Slide3.JPG',
+        '/image/our-work/pitch-decks/collection-xyz/before/Slide4.JPG',
+        '/image/our-work/pitch-decks/collection-xyz/before/Slide5.JPG',
+        '/image/our-work/pitch-decks/collection-xyz/before/Slide6.JPG',
+        '/image/our-work/pitch-decks/collection-xyz/before/Slide7.JPG',
+      ],
+    },
   },
   {
     title: 'Stake Sauce',
     href: 'stake-sauce',
+    details: {
+      descriptionImage: '/image/our-work/pitch-decks/stake-sauce/StakeSauce.jpg',
+      description:
+        'We worked with Stake Sauce in preparation for their pitch deck. We created these strong elements to match their brand guidelines, and to deliver a clear and visually appealing presentation.',
+      openingImage: '/image/our-work/pitch-decks/stake-sauce/Slide1.JPG',
+      slides: [
+        '/image/our-work/pitch-decks/stake-sauce/Slide2.JPG',
+        '/image/our-work/pitch-decks/stake-sauce/Slide3.JPG',
+        '/image/our-work/pitch-decks/stake-sauce/Slide7.JPG',
+        '/image/our-work/pitch-decks/stake-sauce/Slide8.JPG',
+        '/image/our-work/pitch-decks/stake-sauce/Slide9.JPG',
+        '/image/our-work/pitch-decks/stake-sauce/Slide11.JPG',
+      ],
+      afterSlides: [
+        '/image/our-work/pitch-decks/stake-sauce/Slide4.JPG',
+        '/image/our-work/pitch-decks/stake-sauce/Slide5.JPG',
+        '/image/our-work/pitch-decks/stake-sauce/Slide6.JPG',
+        '/image/our-work/pitch-decks/stake-sauce/Slide10.JPG',
+      ],
+      beforeSlides: [
+        '/image/our-work/pitch-decks/stake-sauce/before1.jpeg',
+        '/image/our-work/pitch-decks/stake-sauce/before2.jpeg',
+        '/image/our-work/pitch-decks/stake-sauce/before3.jpeg',
+        '/image/our-work/pitch-decks/stake-sauce/before4.jpeg',
+      ],
+    },
   },
   {
     title: 'Marriott DRES',
