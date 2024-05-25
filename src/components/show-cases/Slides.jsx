@@ -1,7 +1,5 @@
 'use client';
 
-import Container from '../micro/Container';
-
 function Slides({ slides }) {
   return (
     <section>
@@ -9,7 +7,7 @@ function Slides({ slides }) {
         <div
           role="presentation"
           aria-label="image gallery"
-          className="grid grid-cols-1 gap-6 2xl:gap-8 3xl:gap-12 lg:grid-cols-2"
+          className="grid grid-cols-1 gap-6 -mt-6 2xl:gap-8 3xl:gap-12 lg:grid-cols-2 sm:-mt-8 md:-mt-10 lg:-mt-0"
         >
           {slides.map((slide, index) => (
             <img

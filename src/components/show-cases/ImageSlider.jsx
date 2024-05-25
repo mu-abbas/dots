@@ -9,12 +9,12 @@ function ImageSlider({ afterSlides, beforeSlides }) {
         <div
           role="presentation"
           aria-label="image gallery"
-          className="grid grid-cols-1 gap-6 2xl:gap-8 3xl:gap-12 lg:grid-cols-2"
+          className="grid grid-cols-1 gap-6 mx-auto 2xl:gap-8 3xl:gap-12 lg:grid-cols-2 sm:max-w-lg rounded-xl lg:max-w-full lg:-mb-0"
         >
           {afterSlides.map((slide, index) => (
             <ImgComparisonSlider key={index} className="slider-with-shadows">
-              <img slot="first" src={beforeSlides[index]} alt="slide before our touch" />
-              <img slot="second" src={slide} alt="slide after our touch" />
+              <img slot="first" src={beforeSlides[index]} alt="slide before our touch" className="rounded-xl" />
+              <img slot="second" src={slide} alt="slide after our touch" className="rounded-xl" />
               <Handle />
             </ImgComparisonSlider>
           ))}
