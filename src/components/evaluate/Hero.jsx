@@ -11,7 +11,7 @@ function Hero() {
           <span className="text-3xl font-light md:text-4xl lg:text-5xl">
             Get a <span className="text-green">free</span>,
           </span>
-          <span className="text-4xl font-medium md:leading-12 md:text-6xl lg:text-7xl lg:leading-13 font-clash">
+          <span className="text-4xl font-medium md:leading-10 md:text-5xl lg:text-7xl lg:leading-13 font-clash">
             expert slide evaluation
           </span>
         </h1>
