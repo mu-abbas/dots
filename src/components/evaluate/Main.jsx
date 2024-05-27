@@ -1,13 +1,12 @@
 'use client';
 
 import Container from '../micro/Container';
+import Steps from './Steps';
 
 function Main() {
   return (
     <main className="bg-beige">
-      <Container>
-        <p className="text-xl text-center">Main: TODO</p>
-      </Container>
+      <Steps />
     </main>
   );
 }
