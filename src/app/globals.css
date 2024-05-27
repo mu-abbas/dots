@@ -139,3 +139,11 @@
 .slider-with-shadows {
   @apply focus:outline-none;
 }
+
+.labelsGroup:focus-within span {
+  @apply lg:border-darkGreen lg:border-opacity-100;
+}
+
+.labelGroup:focus-within span {
+  @apply border-darkGreen border-opacity-100;
+}

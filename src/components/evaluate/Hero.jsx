@@ -12,7 +12,7 @@ function Hero() {
             Get a <span className="text-green">free</span>,
           </span>
           <span className="text-4xl font-medium md:leading-10 md:text-5xl lg:text-7xl lg:leading-13 font-clash">
-            expert slide evaluation
+            <span className="text-green">expert</span> slide evaluation
           </span>
         </h1>
         <p className="font-light max-w-64 sm:text-lg md:text-center md:mx-auto sm:max-w-md md:max-w-xs font-poppins lg:max-w-sm md:text-lg lg:text-2xl 2xl:text-3xl 2xl:max-w-lg">
