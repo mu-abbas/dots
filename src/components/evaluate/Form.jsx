@@ -39,7 +39,7 @@ function Form() {
       <span className="flex flex-col w-full gap-4 rounded-lg labelsGroup lg:flex-row lg:gap-0 lg:border-grey lg:border-2 lg:border-opacity-5 lg:focus-within:border-darkGreen">
         <label className="relative w-full group lg:min-w-[50%] lg:w-auto labelGroup">
           <span
-            className={`absolute bg-white border-2 border-grey border-opacity-10 inline-block h-[1.2rem] w-[4.5rem] z-40 rounded-md translate-x-3 -translate-y-2 opacity-0 group-focus-within:opacity-100 lg:w-[6rem] lg:h-[1.5rem] lg:-translate-y-[0.92rem] lg:translate-x-7 ${
+            className={`absolute bg-white border-2 border-grey border-opacity-10 inline-block h-[1.2rem] w-[4.5rem] z-40 rounded-md translate-x-3 -translate-y-[0.525rem] opacity-0 group-focus-within:opacity-100 lg:w-[6rem] lg:h-[1.5rem] lg:-translate-y-[0.92rem] lg:translate-x-7 ${
               isEmailEmpty ? '' : 'opacity-100'
             }`}
           ></span>
@@ -62,7 +62,7 @@ function Form() {
         </label>
         <label className="relative w-full group lg:min-w-[50%] lg:w-auto lg:border-l lg:border-grey lg:border-opacity-5 labelGroup">
           <span
-            className={`absolute bg-white border-2 border-grey border-opacity-10 inline-block h-[1.2rem] w-[8rem] z-40 rounded-md translate-x-3 -translate-y-2 opacity-0 group-focus-within:opacity-100 lg:w-[11rem] lg:h-[1.5rem] lg:-translate-y-[0.92rem] lg:translate-x-7 ${
+            className={`absolute bg-white border-2 border-grey border-opacity-10 inline-block h-[1.2rem] w-[8rem] z-40 rounded-md translate-x-3 -translate-y-[0.525rem] opacity-0 group-focus-within:opacity-100 lg:w-[11rem] lg:h-[1.5rem] lg:-translate-y-[0.92rem] lg:translate-x-7 ${
               isUrlEmpty ? '' : 'opacity-100'
             }`}
           ></span>
