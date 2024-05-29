@@ -34,17 +34,17 @@ function Form() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="flex flex-col items-center max-w-sm gap-4 p-4 mx-auto md:p-6 sm:p-5 lg:gap-0 lg:flex-row bg-beige rounded-xl md:max-w-md lg:max-w-5xl lg:flex-wrap lg:p-8 lg:translate-y-full lg:shadow-lg lg:-mt-36"
+      className="flex flex-col items-center max-w-sm gap-4 p-4 mx-auto md:p-6 sm:p-5 lg:gap-0 lg:flex-row bg-beige rounded-xl md:max-w-md lg:max-w-5xl lg:flex-wrap lg:p-8 lg:translate-y-full lg:shadow-lg lg:-mt-36 3xl:max-w-6xl"
     >
-      <span className="flex flex-col w-full gap-4 rounded-lg labelsGroup lg:flex-row lg:gap-0 lg:border-grey lg:border-2 lg:border-opacity-5 lg:focus-within:border-darkGreen">
+      <div className="flex flex-col w-full gap-4 rounded-lg labelsGroup lg:flex-row lg:gap-0 lg:border-grey lg:border-2 lg:border-opacity-5 lg:focus-within:border-darkGreen active:border-darkGreen">
         <label className="relative w-full group lg:min-w-[50%] lg:w-auto labelGroup">
           <span
-            className={`absolute bg-white border-2 border-grey border-opacity-10 inline-block h-[1.2rem] w-[4.5rem] z-40 rounded-md translate-x-3 -translate-y-[0.525rem] opacity-0 group-focus-within:opacity-100 lg:w-[6rem] lg:h-[1.5rem] lg:-translate-y-[0.92rem] lg:translate-x-7 ${
+            className={`absolute bg-white border-2 border-grey border-opacity-10 inline-block h-[1.2rem] w-[4.5rem] z-10 rounded-md translate-x-3 -translate-y-[0.525rem] opacity-0 group-focus-within:opacity-100 lg:w-[6rem] lg:h-[1.5rem] lg:-translate-y-[0.92rem] lg:translate-x-7 ${
               isEmailEmpty ? '' : 'opacity-100'
             }`}
           ></span>
           <span
-            className={`absolute flex items-center justify-center px-4 py-1 text-black duration-300 z-50 transtition lg:text-lg ${
+            className={`absolute flex items-center justify-center px-4 py-1 text-black duration-300 z-20 transtition lg:text-lg cursor-text ${
               isEmailEmpty
                 ? 'group-focus-within:leading-none group-focus-within:-translate-y-3 group-focus-within:-translate-x-2 group-focus-within:opacity-100 group-focus-within:scale-[0.6] lg:group-focus-within:scale-75 lg:group-focus-within:-translate-y-4 lg:group-focus-within:translate-x-4 translate-x-2 translate-y-1.5 opacity-40 lg:translate-y-2.5 2xl:translate-y-3'
                 : '-translate-y-3 leading-none -translate-x-2 opacity-100 scale-[0.6] lg:scale-75 lg:-translate-y-4 lg:translate-x-4'
@@ -62,12 +62,12 @@ function Form() {
         </label>
         <label className="relative w-full group lg:min-w-[50%] lg:w-auto lg:border-l lg:border-grey lg:border-opacity-5 labelGroup">
           <span
-            className={`absolute bg-white border-2 border-grey border-opacity-10 inline-block h-[1.2rem] w-[8rem] z-40 rounded-md translate-x-3 -translate-y-[0.525rem] opacity-0 group-focus-within:opacity-100 lg:w-[11rem] lg:h-[1.5rem] lg:-translate-y-[0.92rem] lg:translate-x-7 ${
+            className={`absolute bg-white border-2 border-grey border-opacity-10 inline-block h-[1.2rem] w-[8rem] z-10 rounded-md translate-x-3 -translate-y-[0.525rem] opacity-0 group-focus-within:opacity-100 lg:w-[11rem] lg:h-[1.5rem] lg:-translate-y-[0.92rem] lg:translate-x-7 ${
               isUrlEmpty ? '' : 'opacity-100'
             }`}
           ></span>
           <span
-            className={`absolute flex items-center justify-center z-50 px-4 py-1 text-black duration-300 rounded-md transtition lg:text-lg ${
+            className={`absolute flex items-center justify-center z-20 px-4 py-1 text-black duration-300 rounded-md transtition lg:text-lg cursor-text ${
               isUrlEmpty
                 ? 'group-focus-within:leading-none group-focus-within:-translate-y-3 group-focus-within:-translate-x-[1.625rem] group-focus-within:opacity-100 group-focus-within:scale-[0.6] lg:group-focus-within:scale-75 lg:group-focus-within:-translate-y-4 lg:group-focus-within:translate-x-1 translate-x-2 translate-y-1.5 opacity-40 lg:translate-y-2.5 2xl:translate-y-3'
                 : '-translate-y-3 leading-none -translate-x-[1.625rem] opacity-100 scale-[0.6] lg:scale-75 lg:-translate-y-4 lg:translate-x-1'
@@ -83,7 +83,7 @@ function Form() {
             onChange={e => setIsUrlEmpty(!e.target.value.length > 0)}
           />
         </label>
-      </span>
+      </div>
       <input
         type="submit"
         value={isSubmitting ? 'Please wait...' : 'Send'}
