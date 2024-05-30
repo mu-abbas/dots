@@ -1,12 +1,11 @@
 'use client';
 
 import { Toaster } from 'react-hot-toast';
-import Container from '../micro/Container';
 import Form from './Form';
 
 function ContactForm() {
   return (
-    <section className="border-b">
+    <section className="xl:w-full">
       <Toaster
         position="top-center"
         reverseOrder={false}
@@ -16,10 +15,7 @@ function ContactForm() {
           },
         }}
       />
-      <Container>
-        <p className="text-center">Form: TODO</p>
-        <Form />
-      </Container>
+      <Form />
     </section>
   );
 }

@@ -147,3 +147,7 @@
 .labelGroup:focus-within span {
   @apply border-darkGreen border-opacity-100;
 }
+
+.contact-input {
+  @apply w-full border-b border-black bg-green placeholder:opacity-0 py-3 px-4 focus:outline-none font-light;
+}

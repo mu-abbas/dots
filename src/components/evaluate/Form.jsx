@@ -43,9 +43,9 @@ function Form() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="flex flex-col items-center max-w-sm gap-4 p-4 mx-auto md:p-6 sm:p-5 lg:gap-0 lg:flex-row bg-beige rounded-xl md:max-w-md lg:max-w-5xl lg:flex-wrap lg:p-8 lg:translate-y-full lg:shadow-lg lg:-mt-36 3xl:max-w-6xl"
+      className="flex flex-col items-center max-w-sm gap-5 p-4 mx-auto md:p-6 sm:p-5 lg:gap-0 lg:flex-row bg-beige rounded-xl md:max-w-md lg:max-w-5xl lg:flex-wrap lg:p-8 lg:translate-y-full lg:shadow-lg lg:-mt-36 3xl:max-w-6xl"
     >
-      <div className="flex flex-col w-full gap-4 rounded-lg labelsGroup lg:flex-row lg:gap-0 lg:border-grey lg:border-2 lg:border-opacity-5 lg:focus-within:border-darkGreen active:border-darkGreen">
+      <fieldset className="flex flex-col w-full gap-5 rounded-lg labelsGroup lg:flex-row lg:gap-0 lg:border-grey lg:border-2 lg:border-opacity-5 lg:focus-within:border-darkGreen active:border-darkGreen">
         <label className="relative w-full group lg:min-w-[50%] lg:w-auto labelGroup">
           <span
             className={`absolute bg-white border-2 border-grey border-opacity-10 inline-block h-[1.2rem] w-[4.5rem] z-10 rounded-md translate-x-3 -translate-y-[0.525rem] opacity-0 group-focus-within:opacity-100 lg:w-[6rem] lg:h-[1.5rem] lg:-translate-y-[0.92rem] lg:translate-x-7 ${
@@ -62,20 +62,22 @@ function Form() {
             Your Email
           </p>
           <input
+            autoComplete="off"
             type="text"
             placeholder="Your Email"
             {...register('email', {
               required: 'This field is required.',
               pattern: {
                 value: emailPattern,
-                message: 'Please insert a correct email address.',
+                message: 'Please insert a valid email address.',
               },
             })}
             className="w-full px-6 py-2 border-2 rounded-lg border-opacity-10 text-grey lg:rounded-none lg:rounded-l-lg placeholder:opacity-0 focus:outline-none focus:border-opacity-100 focus:border-darkGreen lg:py-4 lg:border-none border-grey"
             onChange={e => setIsEmailEmpty(!e.target.value.length > 0)}
+            aria-invalid={errors?.email ? 'true' : 'false'}
           />
           {errors?.email && (
-            <p className="absolute bottom-0 right-0 px-3 py-1 text-[0.5rem] lg:text-xs error-message 3xl:text-sm text-red font-poppins">
+            <p className="absolute bottom-0 right-0 px-1 py-[1px] text-[0.5rem] sm:py-[2px] sm:text-[0.625rem] lg:text-xs error-message 3xl:text-sm text-red font-poppins translate-y-full lg:py-1 lg:px-3">
               {errors?.email?.message}
             </p>
           )}
@@ -97,6 +99,7 @@ function Form() {
             Link Your Presentation
           </p>
           <input
+            autoComplete="off"
             type="text"
             placeholder="Link your presentation"
             {...register('url', {
@@ -105,19 +108,21 @@ function Form() {
             })}
             className="w-full px-6 py-2 transition duration-300 border-2 rounded-lg border-opacity-10 border-grey lg:rounded-none lg:rounded-r-lg placeholder:opacity-0 focus:border-opacity-100 focus:border-darkGreen focus:outline-none lg:py-4 lg:border-none text-grey"
             onChange={e => setIsUrlEmpty(!e.target.value.length > 0)}
+            aria-invalid={errors?.url ? 'true' : 'false'}
           />
           {errors?.url && (
-            <p className="absolute bottom-0 right-0 px-3 py-1 text-[0.5rem] error-message lg:text-xs text-red font-poppins 3xl:text-sm">
+            <p className="absolute bottom-0 right-0 px-1 py-[1px] text-[0.5rem] error-message lg:text-xs text-red font-poppins 3xl:text-sm translate-y-full sm:py-[2px] sm:text-[0.625rem] lg:py-1 lg:px-3">
               {errors?.url?.message}
             </p>
           )}
         </label>
-      </div>
+      </fieldset>
 
       <input
         type="submit"
         value={isSubmitting ? 'Please wait...' : 'Send'}
         className="border-2 border-blue w-full px-6 py-2 mr-auto transition duration-300 rounded-lg cursor-pointer bg-blue lg:mt-6 lg:max-w-60 lg:py-4 lg:text-xl hover:opacity-85 active:scale-[0.98] hover:shadow-lg active:shadow-sm uppercase tracking-widest lg:border-none"
+        aria-busy={isSubmitting}
       />
     </form>
   );
