@@ -14,7 +14,7 @@ function Steps() {
               <h2 className="text-2xl font-light text-left sm:text-2xl md:text-3xl lg:text-4xl 3xl:text-5xl lg:mt-12 xl:mt-16 2xl:mt-20 sm:max-w-md md:max-w-max md:text-center md:mx-auto md:leading-10 lg:leading-11 lg:max-w-2xl xl:max-w-4xl">
                 Get a free, quick and easy check of your slides in just 3 steps:
               </h2>
-              <ul className="flex flex-col gap-6 sm:gap-8 md:flex-row md:justify-between">
+              <ul className="flex flex-col gap-8 sm:gap-12 md:flex-row md:justify-between">
                 {steps.map((step, index) => (
                   <li
                     key={index}

@@ -1,6 +1,6 @@
 'use client';
 
-import Container from '../micro/Container';
+import CTA from './CTA';
 import Process from './Process';
 import Steps from './Steps';
 
@@ -9,6 +9,7 @@ function Main() {
     <main className="bg-beige">
       <Steps />
       <Process />
+      <CTA />
     </main>
   );
 }
