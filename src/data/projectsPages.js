@@ -1,5 +1,3 @@
-import ClosingSlide from '@/components/show-cases/ClosingSlide';
-
 const projectsPages = [
   {
     title: 'Topo Chico',
@@ -314,6 +312,27 @@ const projectsPages = [
   {
     title: 'Gruppi',
     href: 'gruppi',
+    details: {
+      descriptionImage: '/image/our-work/pitch-decks/gruppi-deck/7kl7kG0w.jpeg',
+      description:
+        'We worked with Gruppi in preparation for their pitch deck. We created their strong elements from scratch to match the brand guidelines and to deliver a clear and visually appealing presentation.',
+      openingImage: '/image/our-work/pitch-decks/gruppi-deck/Slide1.png',
+      slides: [
+        '/image/our-work/pitch-decks/gruppi-deck/Slide2.png',
+        '/image/our-work/pitch-decks/gruppi-deck/Slide3.png',
+        '/image/our-work/pitch-decks/gruppi-deck/Slide4.png',
+        '/image/our-work/pitch-decks/gruppi-deck/Slide5.png',
+        '/image/our-work/pitch-decks/gruppi-deck/Slide6.png',
+        '/image/our-work/pitch-decks/gruppi-deck/Slide7.png',
+        '/image/our-work/pitch-decks/gruppi-deck/Slide8.png',
+        '/image/our-work/pitch-decks/gruppi-deck/Slide10.png',
+        '/image/our-work/pitch-decks/gruppi-deck/Slide11.png',
+        '/image/our-work/pitch-decks/gruppi-deck/Slide12.JPG',
+        '/image/our-work/pitch-decks/gruppi-deck/Slide13.JPG',
+        '/image/our-work/pitch-decks/gruppi-deck/Slide14.JPG',
+      ],
+      footerImage: '/image/our-work/pitch-decks/gruppi-deck/Slide9.png',
+    },
   },
   {
     title: 'Collection XYZ',
@@ -452,6 +471,24 @@ const projectsPages = [
   {
     title: 'Marriott Event template',
     href: 'marriott-event-template',
+    details: {
+      descriptionImage: '/image/our-work/p-templates/marriott-temp/rCGEeWDw.jpeg',
+      description:
+        'We worked with Marriot in preparation for their Connecting the dots Event. We create the event PowerPoint template. We created these strong elements from scratch for their new event to deliver clear and visually appealing presentations.',
+      openingImage: '/image/our-work/p-templates/marriott-temp/Slide1.JPG',
+      slides: [
+        '/image/our-work/p-templates/marriott-temp/Slide1.JPG',
+        '/image/our-work/p-templates/marriott-temp/Slide2.JPG',
+        '/image/our-work/p-templates/marriott-temp/Slide3.JPG',
+        '/image/our-work/p-templates/marriott-temp/Slide4.JPG',
+        '/image/our-work/p-templates/marriott-temp/Slide5.JPG',
+        '/image/our-work/p-templates/marriott-temp/Slide6.JPG',
+        '/image/our-work/p-templates/marriott-temp/Slide7.JPG',
+        '/image/our-work/p-templates/marriott-temp/Slide8.JPG',
+        '/image/our-work/p-templates/marriott-temp/Slide9.JPG',
+        '/image/our-work/p-templates/marriott-temp/Slide10.JPG',
+      ],
+    },
   },
   {
     title: 'Venus template',
@@ -532,10 +569,50 @@ const projectsPages = [
   {
     title: 'Together E-book',
     href: 'together-ebook',
+    details: {
+      descriptionImage: '/image/our-work/d-design/together-2/Together-Ebook-1.jpg',
+      description:
+        'We worked with together in preparation for their whitepaper. We created these strong elements from scratch for their branding to deliver clear and visually appealing whitepaper.',
+      slides: [
+        '/image/our-work/d-design/together-1/1.jpg',
+        '/image/our-work/d-design/together-1/2.jpg',
+        '/image/our-work/d-design/together-1/3.jpg',
+        '/image/our-work/d-design/together-1/4.jpg',
+        '/image/our-work/d-design/together-1/5.jpg',
+        '/image/our-work/d-design/together-1/6.jpg',
+        '/image/our-work/d-design/together-1/7.jpg',
+        '/image/our-work/d-design/together-1/11.jpg',
+        '/image/our-work/d-design/together-1/12.jpg',
+        '/image/our-work/d-design/together-1/13.jpg',
+      ],
+    },
   },
   {
     title: 'Y20 Whitepaper',
     href: 'y20-whitepaper',
+    details: {
+      descriptionImage: '/image/our-work/d-design/y20-paper/vPMUD5Gg.jpeg',
+      description:
+        'We worked with CCL in preparation for their Y20 whitepaper. We created these strong elements from scratch to match their branding and to deliver a clear and visually appealing whitepaper.',
+      slides: [
+        '/image/our-work/d-design/y20-paper/1.jpg',
+        '/image/our-work/d-design/y20-paper/2.jpg',
+        '/image/our-work/d-design/y20-paper/3.jpg',
+        '/image/our-work/d-design/y20-paper/4.jpg',
+        '/image/our-work/d-design/y20-paper/5.jpg',
+        '/image/our-work/d-design/y20-paper/6.jpg',
+        '/image/our-work/d-design/y20-paper/7.jpg',
+        '/image/our-work/d-design/y20-paper/8.jpg',
+        '/image/our-work/d-design/y20-paper/9.jpg',
+        '/image/our-work/d-design/y20-paper/10.jpg',
+        '/image/our-work/d-design/y20-paper/11.jpg',
+        '/image/our-work/d-design/y20-paper/12.jpg',
+        '/image/our-work/d-design/y20-paper/13.jpg',
+        '/image/our-work/d-design/y20-paper/14.jpg',
+        '/image/our-work/d-design/y20-paper/15.jpg',
+        '/image/our-work/d-design/y20-paper/16.jpg',
+      ],
+    },
   },
   {
     title: 'BIG Report',
@@ -598,7 +675,7 @@ const projectsPages = [
       description:
         'We worked with together in preparation for their whitepaper. We created these strong elements from scratch for their branding to deliver clear and visually appealing whitepaper.',
       slides: [
-        '/image/our-work/d-design/together-2/1-2.jpg',
+        '/image/our-work/d-design/together-2/1.jpg',
         '/image/our-work/d-design/together-2/69.jpg',
         '/image/our-work/d-design/together-2/70.jpg',
         '/image/our-work/d-design/together-2/71.jpg',
