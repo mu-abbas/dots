@@ -149,5 +149,5 @@
 }
 
 .contact-input {
-  @apply w-full border-b border-black bg-green placeholder:opacity-0 py-3 px-4 focus:outline-none font-light rounded-none;
+  @apply w-full border-b border-black bg-green placeholder:opacity-0 py-3 px-4 focus:outline-none font-light rounded-none lg:py-4;
 }

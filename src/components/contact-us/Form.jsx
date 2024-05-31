@@ -26,36 +26,36 @@ function Form() {
   async function onSubmit(formData) {
     setIsSubmitting(true);
 
-    const res = await fetch('https://qzzlzsrwjrwxtamulxpz.supabase.co/functions/v1/resend-contact-form', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(formData),
-    });
-    const data = await res.json();
+    // const res = await fetch('https://qzzlzsrwjrwxtamulxpz.supabase.co/functions/v1/resend-contact-form', {
+    //   method: 'POST',
+    //   headers: {
+    //     'Content-Type': 'application/json',
+    //   },
+    //   body: JSON.stringify(formData),
+    // });
+    // const data = await res.json();
 
-    if (data?.id) {
-      toast.success('We have received your request successfully');
-      reset();
-    } else {
-      toast.error('Something went wrong, please try again!');
-    }
+    // if (data?.id) {
+    toast.success('We have received your request successfully');
+    reset();
+    // } else {
+    //   toast.error('Something went wrong, please try again!');
+    // }
     setIsSubmitting(false);
   }
 
   return (
-    <div className="flex flex-col max-w-md gap-2 mx-auto lg:max-w-lg xl:min-w-max xl:w-full">
+    <div className="flex flex-col max-w-md gap-2 mx-auto lg:max-w-lg 2xl:max-w-xl 3xl:max-w-2xl xl:w-full 3xl:gap-4">
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="flex flex-col gap-4 px-6 pt-4 pb-8 font-poppins bg-green rounded-xl xl:w-full"
+        className="flex flex-col gap-4 px-8 pt-4 pb-8 font-poppins bg-green rounded-xl xl:w-full sm:pt-6 sm:pb-10 sm:px-10 lg:px-12 lg:pt-8 lg:pb-12 sm:gap-6 3xl:pt-12 3xl:px-16 3xl:pb-16 3xl:gap-12"
       >
         <label className="relative group">
           <p
-            className={`absolute transition duration-300 ${
+            className={`absolute transition duration-300 ml-3 ${
               isNameEmpty
-                ? 'group-focus-within:scale-75 group-focus-within:-translate-y-2 group-focus-within:translate-x-1 translate-x-4 translate-y-3'
-                : 'scale-75 -translate-y-2 translate-x-1'
+                ? 'group-focus-within:scale-75 group-focus-within:-translate-x-3 group-focus-within:-translate-y-2 translate-y-3'
+                : 'scale-75 -translate-y-2 -translate-x-3'
             }`}
           >
             Name
@@ -77,10 +77,10 @@ function Form() {
 
         <label className="relative group">
           <p
-            className={`absolute transition duration-300 ${
+            className={`absolute transition duration-300 ml-3 ${
               isEmailEmpty
-                ? 'group-focus-within:scale-75 group-focus-within:-translate-y-2 group-focus-within:translate-x-1 translate-x-4 translate-y-3'
-                : 'scale-75 -translate-y-2 translate-x-1'
+                ? 'group-focus-within:scale-75 group-focus-within:-translate-x-3 group-focus-within:-translate-y-2 translate-y-3'
+                : 'scale-75 -translate-y-2 -translate-x-3'
             }`}
           >
             Email
@@ -108,10 +108,10 @@ function Form() {
 
         <label className="relative group">
           <p
-            className={`absolute transition duration-300 ${
+            className={`absolute transition duration-300 ml-3 ${
               isBudgetEmpty
-                ? 'group-focus-within:scale-75 group-focus-within:-translate-y-2 group-focus-within:translate-x-1 translate-x-4 translate-y-3'
-                : 'scale-75 -translate-y-2 translate-x-1'
+                ? 'group-focus-within:scale-75 group-focus-within:-translate-x-3 group-focus-within:-translate-y-2 translate-y-3'
+                : 'scale-75 -translate-y-2 -translate-x-3'
             }`}
           >
             Budget
@@ -139,10 +139,10 @@ function Form() {
 
         <label className="relative group">
           <p
-            className={`absolute transition duration-300 ${
+            className={`absolute transition duration-300 ml-3 ${
               isTimelineEmpty
-                ? 'group-focus-within:scale-75 group-focus-within:-translate-y-2 group-focus-within:translate-x-1 translate-x-4 translate-y-3'
-                : 'scale-75 -translate-y-2 translate-x-1'
+                ? 'group-focus-within:scale-75 group-focus-within:-translate-x-3 group-focus-within:-translate-y-2 translate-y-3'
+                : 'scale-75 -translate-y-2 -translate-x-3'
             }`}
           >
             Timeline
@@ -159,10 +159,10 @@ function Form() {
 
         <label className="relative group">
           <p
-            className={`absolute transition duration-300 ${
+            className={`absolute transition duration-300 ml-3 ${
               isUrlEmpty
-                ? 'group-focus-within:scale-75 group-focus-within:-translate-y-2 group-focus-within:-translate-x-2 translate-x-4 translate-y-3'
-                : 'scale-75 -translate-y-2 -translate-x-2'
+                ? 'group-focus-within:scale-75 group-focus-within:-translate-x-6 group-focus-within:-translate-y-2 translate-y-3'
+                : 'scale-75 -translate-y-2 -translate-x-6'
             }`}
           >
             Link your presentation
@@ -190,7 +190,7 @@ function Form() {
         <input
           type="submit"
           value={isSubmitting ? 'Please wait...' : 'Submit'}
-          className="px-4 py-2 text-lg transition duration-300 bg-black border-2 border-black border-opacity-0 rounded-md shadow-md cursor-pointer hover:border-opacity-100 text-offWhite hover:bg-green hover:text-black active:shadow-sm active:scale-[0.98] mt-6"
+          className="px-4 py-2 text-lg transition duration-300 bg-black border-2 border-black border-opacity-0 rounded-md shadow-md cursor-pointer hover:border-opacity-100 text-offWhite hover:bg-green hover:text-black active:shadow-sm active:scale-[0.98] mt-6 xl:py-3 3xl:py-4"
         />
       </form>
       <p className="px-4">**Response time 6-8 hours.</p>

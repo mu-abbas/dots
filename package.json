@@ -12,6 +12,7 @@
     "@img-comparison-slider/react": "^8.0.2",
     "next": "14.2.0",
     "react": "^18",
+    "react-calendly": "^4.3.0",
     "react-countup": "^6.5.3",
     "react-dom": "^18",
     "react-hook-form": "^7.51.4",
