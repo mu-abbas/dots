@@ -13,7 +13,7 @@ const projects = [
   },
   {
     title: 'Venus Presentation',
-    src: '/image/our-work/venus-2.jpg',
+    src: '/image/our-work/Venus-2.jpg',
     href: '/our-work/venus-presentation',
     type: 'presentation-design',
   },
