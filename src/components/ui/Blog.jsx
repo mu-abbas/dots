@@ -69,8 +69,8 @@ function Blog() {
           </h2>
           <div>
             <Slider {...settings}>
-              {blogPosts.map(({ image, description, date, href, color }, i) => (
-                <BlogPostCard color={color} image={image} description={description} date={date} href={href} key={i} />
+              {blogPosts.map(({ image, title, date, href, color }, i) => (
+                <BlogPostCard color={color} image={image} title={title} date={date} href={href} key={i} />
               ))}
             </Slider>
           </div>

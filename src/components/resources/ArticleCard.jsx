@@ -1,13 +1,13 @@
 'use client';
 import Link from 'next/link';
 
-function ArticleCard({ src, href, description }) {
+function ArticleCard({ src, href, title }) {
   return (
-    <Link href={href}>
+    <Link href={`/resources/${href}`}>
       <figure className="max-w-md mx-auto 3xl:max-w-xl">
-        <img src={src} alt={description} className="rounded-xl" />
+        <img src={src} alt={title} className="rounded-xl" />
         <figcaption className="px-2 mt-4 text-lg text-center 2xl:text-2xl sm:text-left sm:text-xl 3xl:text-3xl 3xl:mt-6">
-          {description}
+          {title}
         </figcaption>
       </figure>
     </Link>

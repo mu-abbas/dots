@@ -5,14 +5,14 @@ const purple = '#5152D8';
 const green = '#C7F08B';
 const blue = '#2B65F4';
 
-function BlogPostCard({ image, description, href, date, color }) {
+function BlogPostCard({ image, title, href, date, color }) {
   return (
-    <Link href={href} aria-label={description}>
+    <Link href={`/resources/${href}`} aria-label={title}>
       <figure className="font-poppins">
-        <img src={image} alt={description} />
+        <img src={image} alt={title} />
         <figcaption className="flex items-center justify-center min-h-64">
           <div className="px-8 py-10 space-y-10 md:py-12 md:space-y-12 lg:py-10 lg:space-y-10 xl:py-12 xl:space-y-12 2xl:py-16 2xl:space-y-16 3xl:px-12">
-            <span className="text-xl text-offWhite 3xl:text-2xl">{description}</span>
+            <span className="text-xl text-offWhite 3xl:text-2xl">{title}</span>
             <span className="flex items-center justify-between">
               <time dateTime={date} className="text-sm font-light text-grey 3xl:text-base">
                 {date}

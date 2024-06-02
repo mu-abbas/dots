@@ -94,7 +94,7 @@ function Footer() {
                 target="blank"
                 className="transition duration-300 active:scale-95 hover:brightness-75"
               >
-                <img src="/icon/footerYoutube.svg" alt="youtube page" className="size-7 xl:size-8 3xl:size-9" />
+                <img src="/icon/footerYouTube.svg" alt="youtube page" className="size-7 xl:size-8 3xl:size-9" />
               </a>
             </div>
           </div>

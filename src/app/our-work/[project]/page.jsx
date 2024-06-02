@@ -23,10 +23,10 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }) {
   const { project } = params;
-  const [{ title }] = projectsPages.filter(item => item.href === project);
+  const [{ title, details }] = projectsPages.filter(item => item.href === project);
   return {
     title: title,
-    description: 'TODO',
+    description: details.description,
   };
 }
 

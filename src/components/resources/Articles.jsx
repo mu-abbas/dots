@@ -42,8 +42,8 @@ function Articles() {
             </div>
           </header>
           <div className="grid grid-cols-1 gap-12 md:grid-cols-2 xl:grid-cols-3">
-            {filteredArticles.map(({ image, description, href }, index) => (
-              <ArticleCard href={href} description={description} src={image} key={index} />
+            {filteredArticles.map(({ image, title, href }, index) => (
+              <ArticleCard href={href} title={title} src={image} key={index} />
             ))}
           </div>
         </SpaceY>

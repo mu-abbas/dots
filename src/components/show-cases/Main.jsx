@@ -11,7 +11,6 @@ import Pagination from './Pagination';
 import Slides from './Slides';
 
 function Main({ details, next, previous }) {
-  console.log(next);
   return (
     <main className="bg-beige">
       <SpaceY>
