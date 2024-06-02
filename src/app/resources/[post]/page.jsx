@@ -40,7 +40,7 @@ function page({ params }) {
   return (
     <>
       <Header title={title} date={date} duration={duration} />
-      <Main content={content} next={next} image={image} previous={previous} slides={slides} title={title} />
+      <Main content={content} next={next} href={href} image={image} previous={previous} slides={slides} title={title} />
       <Footer />
     </>
   );

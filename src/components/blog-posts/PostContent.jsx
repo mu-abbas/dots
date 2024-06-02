@@ -1,12 +1,30 @@
 'use client';
 
-import Container from '../micro/Container';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import SpaceY from '../micro/SpaceY';
 
-function PostContent({ content, slides, title }) {
+import {
+  FacebookShareButton,
+  LinkedinShareButton,
+  PinterestShareButton,
+  RedditShareButton,
+  TelegramShareButton,
+  TwitterShareButton,
+  WhatsappShareButton,
+  FacebookMessengerShareButton,
+  FacebookIcon,
+  FacebookMessengerIcon,
+  LinkedinIcon,
+  PinterestIcon,
+  RedditIcon,
+  TelegramIcon,
+  TwitterIcon,
+  WhatsappIcon,
+} from 'react-share';
+
+function PostContent({ content, slides, title, href }) {
   const settings = {
     dots: true,
     infinite: true,
@@ -37,6 +55,44 @@ function PostContent({ content, slides, title }) {
               ))}
             </Slider>
           )}
+          <div className="flex flex-wrap justify-center w-full gap-2 p-6 mx-auto bg-white rounded-xl max-w-max">
+            <p className="w-full pb-2 text-center">Share our post</p>
+
+            <div className="flex justify-center gap-2">
+              <FacebookShareButton url={`https://dev-dots.netlify.app/resources/${href}/`}>
+                <FacebookIcon size={32} round={true} />
+              </FacebookShareButton>
+
+              <FacebookMessengerShareButton url={`https://dev-dots.netlify.app/resources/${href}/`}>
+                <FacebookMessengerIcon size={32} round={true} />
+              </FacebookMessengerShareButton>
+
+              <TwitterShareButton url={`https://dev-dots.netlify.app/resources/${href}/`}>
+                <TwitterIcon size={32} round={true} />
+              </TwitterShareButton>
+
+              <LinkedinShareButton url={`https://dev-dots.netlify.app/resources/${href}/`}>
+                <LinkedinIcon size={32} round={true} />
+              </LinkedinShareButton>
+            </div>
+            <div className="flex justify-center gap-2">
+              <WhatsappShareButton url={`https://dev-dots.netlify.app/resources/${href}/`}>
+                <WhatsappIcon size={32} round={true} />
+              </WhatsappShareButton>
+
+              <TelegramShareButton url={`https://dev-dots.netlify.app/resources/${href}/`}>
+                <TelegramIcon size={32} round={true} />
+              </TelegramShareButton>
+
+              <PinterestShareButton url={`https://dev-dots.netlify.app/resources/${href}/`}>
+                <PinterestIcon size={32} round={true} />
+              </PinterestShareButton>
+
+              <RedditShareButton url={`https://dev-dots.netlify.app/resources/${href}/`}>
+                <RedditIcon size={32} round={true} />
+              </RedditShareButton>
+            </div>
+          </div>
         </SpaceY>
       </div>
     </section>
