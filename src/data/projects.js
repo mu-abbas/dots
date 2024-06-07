@@ -127,7 +127,7 @@ const projects = [
   },
   {
     title: 'Together Whitepaper',
-    src: '/image/our-work/Together-Ebook-1.jpg',
+    src: '/image/home/d-design-4.jpeg',
     href: '/our-work/together-whitepaper',
     type: 'document-design',
   },

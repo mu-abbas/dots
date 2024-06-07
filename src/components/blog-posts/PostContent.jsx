@@ -49,9 +49,9 @@ function PostContent({ content, slides, title, href }) {
         <SpaceY>
           <div>{content}</div>
           {!!slides.length && (
-            <Slider {...settings}>
+            <Slider {...settings} className="postSlider">
               {slides.map((slide, index) => (
-                <img src={slide} key={index} alt={title} className="px-2" />
+                <img src={slide} key={index} alt={title} className="rounded-xl" />
               ))}
             </Slider>
           )}

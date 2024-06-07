@@ -29,7 +29,7 @@ export const presentationTemplates = [
 ];
 export const documentDesigns = [
   { src: '/image/home/d-design-1.jpeg', alt: 'BIG', href: '/our-work/novonordisk-big-report' },
-  { src: '/image/home/d-design-2.jpeg', alt: 'Together', href: '/our-work/together-ebook' },
+  { src: '/image/home/d-design-2.jpeg', alt: 'Together 1', href: '/our-work/together-ebook' },
   { src: '/image/home/d-design-3.jpeg', alt: 'Y20', href: '/our-work/y20-whitepaper' },
-  { src: '/image/home/d-design-4.jpeg', alt: 'CCL', href: '#' },
+  { src: '/image/home/d-design-4.jpeg', alt: 'Together 2', href: '/our-work/together-whitepaper' },
 ];

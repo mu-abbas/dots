@@ -52,7 +52,7 @@ function Form() {
       >
         <label className="relative group">
           <p
-            className={`absolute transition duration-300 ml-3 ${
+            className={`absolute transition duration-300 ml-3 cursor-text ${
               isNameEmpty
                 ? 'group-focus-within:scale-75 group-focus-within:-translate-x-3 group-focus-within:-translate-y-2 translate-y-3'
                 : 'scale-75 -translate-y-2 -translate-x-3'
@@ -77,7 +77,7 @@ function Form() {
 
         <label className="relative group">
           <p
-            className={`absolute transition duration-300 ml-3 ${
+            className={`absolute transition duration-300 ml-3 cursor-text ${
               isEmailEmpty
                 ? 'group-focus-within:scale-75 group-focus-within:-translate-x-3 group-focus-within:-translate-y-2 translate-y-3'
                 : 'scale-75 -translate-y-2 -translate-x-3'
@@ -108,7 +108,7 @@ function Form() {
 
         <label className="relative group">
           <p
-            className={`absolute transition duration-300 ml-3 ${
+            className={`absolute transition duration-300 ml-3 cursor-text ${
               isBudgetEmpty
                 ? 'group-focus-within:scale-75 group-focus-within:-translate-x-3 group-focus-within:-translate-y-2 translate-y-3'
                 : 'scale-75 -translate-y-2 -translate-x-3'
@@ -139,7 +139,7 @@ function Form() {
 
         <label className="relative group">
           <p
-            className={`absolute transition duration-300 ml-3 ${
+            className={`absolute transition duration-300 ml-3 cursor-text ${
               isTimelineEmpty
                 ? 'group-focus-within:scale-75 group-focus-within:-translate-x-3 group-focus-within:-translate-y-2 translate-y-3'
                 : 'scale-75 -translate-y-2 -translate-x-3'
@@ -159,7 +159,7 @@ function Form() {
 
         <label className="relative group">
           <p
-            className={`absolute transition duration-300 ml-3 ${
+            className={`absolute transition duration-300 ml-3 cursor-text ${
               isUrlEmpty
                 ? 'group-focus-within:scale-75 group-focus-within:-translate-x-6 group-focus-within:-translate-y-2 translate-y-3'
                 : 'scale-75 -translate-y-2 -translate-x-6'

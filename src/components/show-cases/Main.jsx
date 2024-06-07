@@ -19,10 +19,10 @@ function Main({ details, next, previous }) {
             <Description descriptionImage={details.descriptionImage} description={details.description} />
             {details.openingImage && <OpeningSlide src={details.openingImage} />}
             {details.slides && <Slides slides={details.slides} />}
-            {details.topSlides && <Slides slides={details.topSlides} />}
+            {details.topSlides && <Slides slides={details.topSlides} downSlides={details.downSlides} />}
             {(details.compareSlides || details.afterSlides) && <CompareText />}
             {details.compareSlides && <CompareSlider compareSlides={details.compareSlides} />}
-            {details.downSlides && <Slides slides={details.downSlides} />}
+            {details.downSlides && <Slides slides={details.downSlides} topSlides={details.topSlides} />}
             {details.afterSlides && (
               <>
                 <ImageSlider afterSlides={details.afterSlides} beforeSlides={details.beforeSlides} />

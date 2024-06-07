@@ -10,37 +10,37 @@ function Brands() {
       </h2>
       <Slider width="240px" duration={25} pauseOnHover={true} blurBorders={false}>
         <Slider.Slide>
-          <img src="/brand/abbvie.png" alt="abbvie" />
+          <img src="/brand/abbvie.png" alt="abbvie" className="w-32 mx-auto" />
         </Slider.Slide>
         <Slider.Slide>
-          <img src="/brand/cocacola.png" alt="cocacola" />
+          <img src="/brand/cocacola.png" alt="cocacola" className="mx-auto w-36" />
         </Slider.Slide>
         <Slider.Slide>
-          <img src="/brand/j&j.png" alt="j&J" />
+          <img src="/brand/j&j.png" alt="j&J" className="mx-auto w-36" />
         </Slider.Slide>
         <Slider.Slide>
-          <img src="/brand/Google.png" alt="Google" />
+          <img src="/brand/Google.png" alt="Google" className="mx-auto w-36" />
         </Slider.Slide>
         <Slider.Slide>
-          <img src="/brand/gsk.png" alt="gsk" />
+          <img src="/brand/gsk.png" alt="gsk" className="mx-auto w-36" />
         </Slider.Slide>
         <Slider.Slide>
-          <img src="/brand/indeed.png" alt="indeed" />
+          <img src="/brand/indeed.png" alt="indeed" className="mx-auto w-36" />
         </Slider.Slide>
         <Slider.Slide>
-          <img src="/brand/marriott.png" alt="marriott" />
+          <img src="/brand/marriott.png" alt="marriott" className="mx-auto w-36" />
         </Slider.Slide>
         <Slider.Slide>
-          <img src="/brand/novonordisk.png" alt="novonordisk" />
+          <img src="/brand/novo.png" alt="novonordisk" className="mx-auto w-36" />
         </Slider.Slide>
         <Slider.Slide>
-          <img src="/brand/schneider.png" alt="schneider" />
+          <img src="/brand/schneider.png" alt="schneider" className="mx-auto w-36" />
         </Slider.Slide>
         <Slider.Slide>
-          <img src="/brand/uber.png" alt="uber" />
-          <Slider.Slide>
-            <img src="/brand/unilever.png" alt="unilever" />
-          </Slider.Slide>
+          <img src="/brand/uber.png" alt="uber" className="mx-auto w-36" />
+        </Slider.Slide>
+        <Slider.Slide>
+          <img src="/brand/unilever.png" alt="unilever" className="mx-auto w-36" />
         </Slider.Slide>
       </Slider>
     </section>

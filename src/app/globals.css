@@ -151,3 +151,11 @@
 .contact-input {
   @apply w-full border-b border-black bg-green placeholder:opacity-0 py-3 px-4 focus:outline-none font-light rounded-none lg:py-4;
 }
+
+.postSlider .slick-arrow::before {
+  @apply text-black;
+}
+
+.postSlider .slick-slide {
+  @apply p-2;
+}
