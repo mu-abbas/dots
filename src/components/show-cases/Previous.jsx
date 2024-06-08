@@ -10,7 +10,7 @@ function Previous({ previous }) {
           href={previous}
           className="flex items-center gap-4 transition-transform duration-300 max-w-max group active:scale-95"
         >
-          <span className="relative z-50 p-1 rounded-full -mr-14 bg-beige ">
+          <span className="relative z-10 p-1 rounded-full -mr-14 bg-beige ">
             <span className="flex items-center justify-center transition duration-500 rounded-full bg-green size-12 sm:size-14 lg:size-16 3xl:size-18 group-hover:bg-blue group-hover:text-offWhite">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

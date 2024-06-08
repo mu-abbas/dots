@@ -109,7 +109,7 @@ module.exports = {
       animation: {
         pulsing: 'pulsing 0.7s infinite',
         expand: 'expand 0.3s',
-        popUp: 'popUp 0.3s',
+        popUp: 'popUp 0.5s ease-out',
         opacity: 'opacity 0.3s',
       },
     },

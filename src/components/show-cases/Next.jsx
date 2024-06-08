@@ -13,7 +13,7 @@ function Next({ next }) {
           <span className="items-center justify-center hidden w-48 pr-6 transition duration-500 rounded-full lg:flex sm:h-14 3xl:h-16 grow-0 bg-green group-hover:bg-blue group-hover:text-offWhite 3xl:w-60 3xl:pl-4 ">
             Next
           </span>
-          <span className="relative z-50 p-1 rounded-full -ml-14 bg-beige">
+          <span className="relative z-10 p-1 rounded-full -ml-14 bg-beige">
             <span className="flex items-center justify-center transition duration-500 rounded-full bg-green size-12 sm:size-14 lg:size-16 group-hover:bg-blue group-hover:text-offWhite 3xl:size-18">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

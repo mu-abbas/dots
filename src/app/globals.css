@@ -159,3 +159,11 @@
 .postSlider .slick-slide {
   @apply p-2;
 }
+
+.gallery .slick-next {
+  @apply -right-8 xl:-right-12 xl:scale-150 lg:scale-125 opacity-0 md:opacity-100;
+}
+
+.gallery .slick-prev {
+  @apply -left-8 xl:-left-12 xl:scale-150 lg:scale-125 opacity-0 md:opacity-100;
+}
