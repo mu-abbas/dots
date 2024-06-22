@@ -34,7 +34,7 @@ export async function generateMetadata({ params }) {
       siteName: 'Dotspresentaions',
       images: [
         {
-          url: `https://dev-dots.netlify.app${image}`,
+          url: `https://dotspresentations.com${image}`,
           width: 800,
           height: 600,
         },
@@ -47,7 +47,7 @@ export async function generateMetadata({ params }) {
       title: `${title} - DOTS`,
       description: description,
       creator: '@dotsppts',
-      images: [`https://dev-dots.netlify.app${image}`],
+      images: [`https://dotspresentations.com${image}`],
     },
   };
 }
