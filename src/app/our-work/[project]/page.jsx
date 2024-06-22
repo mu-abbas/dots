@@ -23,7 +23,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }) {
   const { project } = params;
-  const [{ title, details, descriptionImage }] = projectsPages.filter(item => item.href === project);
+  const [{ title, details }] = projectsPages.filter(item => item.href === project);
   return {
     title: title,
     description: details.description,
@@ -34,7 +34,7 @@ export async function generateMetadata({ params }) {
       siteName: 'Dotspresentaions',
       images: [
         {
-          url: `https://dev-dots.netlify.app${descriptionImage}`,
+          url: `https://dev-dots.netlify.app${details.descriptionImage}`,
           width: 800,
           height: 600,
         },
@@ -47,7 +47,7 @@ export async function generateMetadata({ params }) {
       title: `${title} - DOTS`,
       description: details.description,
       creator: '@dotsppts',
-      images: [`https://dev-dots.netlify.app${descriptionImage}`],
+      images: [`https://dev-dots.netlify.app${details.descriptionImage}`],
     },
   };
 }
