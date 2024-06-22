@@ -59,36 +59,36 @@ function PostContent({ content, slides, title, href }) {
             <p className="w-full pb-2 text-center">Share our post</p>
 
             <div className="flex justify-center gap-2">
-              <FacebookShareButton url={`https://dev-dots.netlify.app/resources/${href}/`}>
+              <FacebookShareButton url={`https://dotspresentations.com/resources/${href}/`}>
                 <FacebookIcon size={32} round={true} />
               </FacebookShareButton>
 
-              <FacebookMessengerShareButton url={`https://dev-dots.netlify.app/resources/${href}/`}>
+              <FacebookMessengerShareButton url={`https://dotspresentations.com/resources/${href}/`}>
                 <FacebookMessengerIcon size={32} round={true} />
               </FacebookMessengerShareButton>
 
-              <TwitterShareButton url={`https://dev-dots.netlify.app/resources/${href}/`}>
+              <TwitterShareButton url={`https://dotspresentations.com/resources/${href}/`}>
                 <TwitterIcon size={32} round={true} />
               </TwitterShareButton>
 
-              <LinkedinShareButton url={`https://dev-dots.netlify.app/resources/${href}/`}>
+              <LinkedinShareButton url={`https://dotspresentations.com/resources/${href}/`}>
                 <LinkedinIcon size={32} round={true} />
               </LinkedinShareButton>
             </div>
             <div className="flex justify-center gap-2">
-              <WhatsappShareButton url={`https://dev-dots.netlify.app/resources/${href}/`}>
+              <WhatsappShareButton url={`https://dotspresentations.com/resources/${href}/`}>
                 <WhatsappIcon size={32} round={true} />
               </WhatsappShareButton>
 
-              <TelegramShareButton url={`https://dev-dots.netlify.app/resources/${href}/`}>
+              <TelegramShareButton url={`https://dotspresentations.com/resources/${href}/`}>
                 <TelegramIcon size={32} round={true} />
               </TelegramShareButton>
 
-              <PinterestShareButton url={`https://dev-dots.netlify.app/resources/${href}/`}>
+              <PinterestShareButton url={`https://dotspresentations.com/resources/${href}/`}>
                 <PinterestIcon size={32} round={true} />
               </PinterestShareButton>
 
-              <RedditShareButton url={`https://dev-dots.netlify.app/resources/${href}/`}>
+              <RedditShareButton url={`https://dotspresentations.com/resources/${href}/`}>
                 <RedditIcon size={32} round={true} />
               </RedditShareButton>
             </div>

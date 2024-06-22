@@ -7,6 +7,11 @@ function Slides({ slides, downSlides = [], topSlides = [] }) {
   const [sliderIsOpen, setSliderIsOpen] = useState(false);
   const allSlides = [...topSlides, ...slides, ...downSlides];
 
+  function handleOpen() {
+    setSliderIsOpen(true);
+    document.querySelector('body').classList.add('overflow-y-hidden');
+  }
+
   return (
     <section>
       <div className="container px-8 mx-auto sm:px-10 md:px-12 lg:px-14 xl:px-16 2xl:px-20">
@@ -21,12 +26,12 @@ function Slides({ slides, downSlides = [], topSlides = [] }) {
               alt="slide"
               key={index}
               className="mx-auto transition duration-300 cursor-pointer sm:max-w-lg lg:max-w-full hover:brightness-75 rounded-xl"
-              onClick={() => setSliderIsOpen(true)}
+              onClick={handleOpen}
             />
           ))}
         </div>
       </div>
-      {sliderIsOpen && <GallerySlider slides={allSlides} setSliderIsOpen={setSliderIsOpen}/>}
+      {sliderIsOpen && <GallerySlider slides={allSlides} setSliderIsOpen={setSliderIsOpen} />}
     </section>
   );
 }
