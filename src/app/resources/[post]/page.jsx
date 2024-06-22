@@ -23,10 +23,32 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }) {
   const { post } = params;
-  const [{ title, description }] = blogPosts.filter(item => item.href === post);
+  const [{ title, description, image }] = blogPosts.filter(item => item.href === post);
   return {
     title: title,
     description: description,
+    openGraph: {
+      title: `${title} - DOTS`,
+      description: description,
+      url: `https://dotspresentations.com/${post}`,
+      siteName: 'Dotspresentaions',
+      images: [
+        {
+          url: `https://dev-dots.netlify.app${image}`,
+          width: 800,
+          height: 600,
+        },
+      ],
+      locale: 'en_US',
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${title} - DOTS`,
+      description: description,
+      creator: '@dotsppts',
+      images: [`https://dev-dots.netlify.app${image}`],
+    },
   };
 }
 

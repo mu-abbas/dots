@@ -6,6 +6,30 @@ export const metadata = {
   title: 'Evaluate Your Slide',
   description:
     'Get a free, expert slide evaluation on your slides before you deliver your presentation. on your slides before you deliver your presentation. Link your presentation/Slides here UPLOAD Get a free, quick and easy check of your slides in just 3 steps Get a free, quick and easy check of your slides in just 3 steps.',
+  openGraph: {
+    title: 'Evaluate Your Slide - DOTS',
+    description:
+      'Get a free, expert slide evaluation on your slides before you deliver your presentation. on your slides before you deliver your presentation. Link your presentation/Slides here UPLOAD Get a free, quick and easy check of your slides in just 3 steps Get a free, quick and easy check of your slides in just 3 steps.',
+    url: 'https://dotspresentations.com/resources/evaluate-your-slide',
+    siteName: 'Dotspresentaions',
+    images: [
+      {
+        url: 'https://upload.wikimedia.org/wikipedia/commons/b/b5/800x600_Wallpaper_Blue_Sky.png',
+        width: 800,
+        height: 600,
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Evaluate Your Slide - DOTS',
+    description:
+      'Get a free, expert slide evaluation on your slides before you deliver your presentation. on your slides before you deliver your presentation. Link your presentation/Slides here UPLOAD Get a free, quick and easy check of your slides in just 3 steps Get a free, quick and easy check of your slides in just 3 steps.',
+    creator: '@dotsppts',
+    images: ['https://upload.wikimedia.org/wikipedia/commons/b/b5/800x600_Wallpaper_Blue_Sky.png'],
+  },
 };
 
 function EvaluateYourSlide() {

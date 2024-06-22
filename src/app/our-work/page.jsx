@@ -6,6 +6,30 @@ export const metadata = {
   title: 'Our Work',
   description:
     'Creating presentations that gets you noticed AllPresentation DesignPitch DecksPresentation TemplatesDocument Design Topo Chico Marriot BOD Venus Presentation Surgio Health Marriot CEC Cloud Flyer League of Play SMS Oversubscribe Decast Gruppi CollectionXYZ Stake Sauce Marriot DRES Novonordisk BIG Marriot Event template Venus template Dolormin template Together E-book Y20 Whitepaper BIG Report Together Whitepaper.',
+  openGraph: {
+    title: 'Our Work - DOTS',
+    description:
+      'Creating presentations that gets you noticed AllPresentation DesignPitch DecksPresentation TemplatesDocument Design Topo Chico Marriot BOD Venus Presentation Surgio Health Marriot CEC Cloud Flyer League of Play SMS Oversubscribe Decast Gruppi CollectionXYZ Stake Sauce Marriot DRES Novonordisk BIG Marriot Event template Venus template Dolormin template Together E-book Y20 Whitepaper BIG Report Together Whitepaper.',
+    url: 'https://dotspresentations.com/our-work',
+    siteName: 'Dotspresentaions',
+    images: [
+      {
+        url: 'https://upload.wikimedia.org/wikipedia/commons/b/b5/800x600_Wallpaper_Blue_Sky.png',
+        width: 800,
+        height: 600,
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Our Work - DOTS',
+    description:
+      'Creating presentations that gets you noticed AllPresentation DesignPitch DecksPresentation TemplatesDocument Design Topo Chico Marriot BOD Venus Presentation Surgio Health Marriot CEC Cloud Flyer League of Play SMS Oversubscribe Decast Gruppi CollectionXYZ Stake Sauce Marriot DRES Novonordisk BIG Marriot Event template Venus template Dolormin template Together E-book Y20 Whitepaper BIG Report Together Whitepaper.',
+    creator: '@dotsppts',
+    images: ['https://upload.wikimedia.org/wikipedia/commons/b/b5/800x600_Wallpaper_Blue_Sky.png'],
+  },
 };
 
 function OurWork() {
