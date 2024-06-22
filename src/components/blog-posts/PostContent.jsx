@@ -61,35 +61,43 @@ function PostContent({ content, slides, title, href }) {
             <div className="flex justify-center gap-2">
               <FacebookShareButton url={`https://dotspresentations.com/resources/${href}/`}>
                 <FacebookIcon size={32} round={true} />
+                <span className="sr-only">share on facebook</span>
               </FacebookShareButton>
 
               <FacebookMessengerShareButton url={`https://dotspresentations.com/resources/${href}/`}>
                 <FacebookMessengerIcon size={32} round={true} />
+                <span className="sr-only">share on messenger</span>
               </FacebookMessengerShareButton>
 
               <TwitterShareButton url={`https://dotspresentations.com/resources/${href}/`}>
                 <TwitterIcon size={32} round={true} />
+                <span className="sr-only">share on twitter</span>
               </TwitterShareButton>
 
               <LinkedinShareButton url={`https://dotspresentations.com/resources/${href}/`}>
                 <LinkedinIcon size={32} round={true} />
+                <span className="sr-only">share on linkedin</span>
               </LinkedinShareButton>
             </div>
             <div className="flex justify-center gap-2">
               <WhatsappShareButton url={`https://dotspresentations.com/resources/${href}/`}>
                 <WhatsappIcon size={32} round={true} />
+                <span className="sr-only">share on whatsapp</span>
               </WhatsappShareButton>
 
               <TelegramShareButton url={`https://dotspresentations.com/resources/${href}/`}>
                 <TelegramIcon size={32} round={true} />
+                <span className="sr-only">share on telegram</span>
               </TelegramShareButton>
 
               <PinterestShareButton url={`https://dotspresentations.com/resources/${href}/`}>
                 <PinterestIcon size={32} round={true} />
+                <span className="sr-only">share on pinterest</span>
               </PinterestShareButton>
 
               <RedditShareButton url={`https://dotspresentations.com/resources/${href}/`}>
                 <RedditIcon size={32} round={true} />
+                <span className="sr-only">share on reddit</span>
               </RedditShareButton>
             </div>
           </div>

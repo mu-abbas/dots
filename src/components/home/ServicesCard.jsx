@@ -14,6 +14,7 @@ function ServicesCard({ heading, href, icon }) {
         </div>
         <Link href={href} className="space-x-1 text-sm font-semibold">
           <span>Learn More</span>
+          <span className="sr-only">about ${heading}</span>
           <svg
             width="19"
             height="20"

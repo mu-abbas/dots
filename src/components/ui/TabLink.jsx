@@ -8,7 +8,6 @@ function TabLink({ title, onClick, isActive }) {
       role="tab"
       id={`tab-link-${title}`}
       aria-selected={isActive}
-      aria-controls={`tab-${title}`}
       onClick={onClick}
     >
       {title}

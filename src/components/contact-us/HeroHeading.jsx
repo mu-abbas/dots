@@ -6,11 +6,7 @@ function HeroHeading() {
         We&apos;re glad you ended up here
       </h1>
       <figure className="flex items-center justify-around gap-4 sm:gap-0 md:px-16 lg:px-32 xl:flex-col xl:gap-12 xl:items-start xl:px-16 3xl:px-32">
-        <img
-          src="/image/contact-us/social.png"
-          alt="social icons"
-          className="size-24 sm:size-32 lg:size-40 xl:size-48 3xl:size-56"
-        />
+        <img src="/image/contact-us/social.png" alt="social icons" className="w-24 sm:w-32 lg:w-40 xl:w-48 3xl:w-56" />
         <figcaption className="flex flex-col items-center lg:gap-4 sm:gap-2 xl:pb-12">
           <p className="uppercase lg:text-lg xl:text-xl">Follow Us On</p>
           <div className="flex items-center gap-2 xl:scale-125">

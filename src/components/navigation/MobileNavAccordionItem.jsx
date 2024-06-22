@@ -38,6 +38,7 @@ function MobileNavAccordionItem({ href, label, subLinks, isActive }) {
               <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
             </svg>
           </span>
+          <span className="sr-only">drop down list button</span>
         </button>
       </div>
       <div

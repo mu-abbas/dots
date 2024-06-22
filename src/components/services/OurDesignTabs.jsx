@@ -23,6 +23,7 @@ function OurDesignTabs({ items }) {
             title={<OurDesignTab heading={item.firstHeading} icon={item.icon} />}
             isActive={index === activeIndex}
             onClick={() => handleTabClick(index)}
+            heading={item.firstHeading}
           />
         ))}
       </div>

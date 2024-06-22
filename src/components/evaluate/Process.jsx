@@ -26,7 +26,9 @@ function Process() {
                 </h3>
                 <ul className="space-y-8 3xl:space-y-12">
                   {processes.map(({ src, label, content }, index) => (
-                    <ProcessItem key={index} src={src} label={label} content={content} />
+                    <li key={index}>
+                      <ProcessItem src={src} label={label} content={content} />
+                    </li>
                   ))}
                 </ul>
               </div>

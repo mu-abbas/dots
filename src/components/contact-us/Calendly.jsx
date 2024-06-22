@@ -19,8 +19,8 @@ function Calendly() {
               We got you! follow the steps in the calendar to pick the best time and you&apos;ll be all set.
             </p>
           </div>
-          <div className="self-stretch hidden border-l border-black h-[840px] lg:block"></div>
-          <div className="w-full h-[860px] md:h-[910px] overflow-hidden max-w-xl mx-auto 3xl:max-w-full">
+          <div className="self-stretch hidden border-l border-black h-[1000px] lg:block"></div>
+          <div className="w-full h-[1000px] overflow-hidden max-w-xl mx-auto 3xl:max-w-full">
             <InlineWidget
               url="https://calendly.com/mahmoud_elsoudy/30min"
               pageSettings={{
@@ -28,7 +28,7 @@ function Calendly() {
                 hideLandingPageDetails: true,
               }}
               styles={{
-                height: '950px',
+                height: '1000px',
                 width: '100%',
               }}
             />

@@ -55,6 +55,7 @@ function Nav({ color }) {
                 false ? '-rotate-[135deg] -translate-y-2.5' : ''
               } transition duration-300`}
             ></span>
+            <span className="sr-only">nav bar opening button</span>
           </button>
           <MobileNav isOpen={isOpen} setIsOpen={setIsOpen} pathname={pathname} />
         </div>

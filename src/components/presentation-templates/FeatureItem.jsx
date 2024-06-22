@@ -6,7 +6,7 @@ function FeatureItem({ src, label, content }) {
         <img src={src} alt={label} className="size-12 xl:size-14 3xl:size-16" />
       </div>
       <figcaption className="space-y-1">
-        <h3 className="text-lg font-semibold xl:text-xl 3xl:text-2xl">{label}</h3>
+        <h2 className="text-lg font-semibold xl:text-xl 3xl:text-2xl">{label}</h2>
         <p className="text-sm font-light font-poppins xl:text-base 3xl:text-lg">{content}</p>
       </figcaption>
     </figure>

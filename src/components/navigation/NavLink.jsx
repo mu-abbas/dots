@@ -31,6 +31,7 @@ function NavLink({ label, href, isActive, color = 'blue', subLinks }) {
                 <path d="M80 110 c17 -22 35 -40 39 -40 4 0 22 18 40 40 l32 40 -71 0 -72 0 32 -40z" />
               </g>
             </svg>
+            <span className="sr-only">drop down button</span>
           </button>
           <SubLinks subLinks={subLinks} isHover={isHover} setIsHover={setIsHover} />
         </div>
