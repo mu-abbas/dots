@@ -8,7 +8,7 @@ import { presentationDesigns, pitchDecks, presentationTemplates, documentDesigns
 
 function Featured() {
   return (
-    <section className="bg-black text-offWhite">
+    <section className="bg-black text-offWhite sticky rounded-t-[2rem] pb-[2rem] lg:rounded-t-[3rem] lg:pb-[3rem] 2xl:rounded-t-[4rem] 2xl:pb-[4rem] 2xl:-mt-[4rem] -mt-[2rem] lg:-mt-[3rem]">
       <Container>
         <SpaceY>
           <div className="flex flex-col items-center gap-4 md:flex-row md:items-center md:justify-between">

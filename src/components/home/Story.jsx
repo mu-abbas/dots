@@ -5,7 +5,7 @@ import CTALinkV2 from '../navigation/CTALinkV2';
 
 function Story() {
   return (
-    <section className="bg-black text-offWhite">
+    <section className="bg-black text-offWhite sticky -top-[50%] rounded-t-[2rem] pb-[2rem] lg:rounded-t-[3rem] lg:pb-[3rem] 2xl:rounded-t-[4rem] 2xl:pb-[4rem]">
       <Container>
         <SpaceY>
           <h2 className="text-2xl leading-8 md:leading-10 md:text-3xl lg:text-4xl xl:text-5xlplus 3xl:text-7xl xl:tracking-tighter 2xl:tracking-normal lg:leading-11 xl:leading-13 3xl:leading-15">

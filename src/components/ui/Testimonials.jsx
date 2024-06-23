@@ -79,7 +79,7 @@ function Testimonials() {
   };
 
   return (
-    <section className="bg-beige testimonials">
+    <section className="bg-beige testimonials sticky top-0 rounded-t-[2rem] pb-[2rem] lg:rounded-t-[3rem] lg:pb-[3rem] 2xl:rounded-t-[4rem] 2xl:pb-[4rem] 2xl:-mt-[4rem] -mt-[2rem] lg:-mt-[3rem]">
       <Container>
         <SpaceY>
           <div className="flex flex-col items-start gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-14 2xl:gap-16 3xl:gap-18 lg:flex-row">

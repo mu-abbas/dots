@@ -104,6 +104,10 @@ module.exports = {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
         },
+        slideDown: {
+          '0%': { opacity: '0', transform: 'translateY(-100%)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
       },
 
       animation: {
@@ -111,6 +115,7 @@ module.exports = {
         expand: 'expand 0.5s',
         popUp: 'popUp 0.5s ease-out',
         opacity: 'opacity 0.5s',
+        slideDown: 'slideDown 0.5s ease-out',
       },
     },
   },

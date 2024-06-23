@@ -4,7 +4,7 @@ import Hero from './Hero';
 
 function Header() {
   return (
-    <header className="h-screen bg-center bg-cover min-h-[568px] bg-beige bg-home bg-repeat-none">
+    <header className="h-screen bg-center bg-cover min-h-[568px] bg-beige bg-home bg-repeat-none sticky top-0">
       <Nav />
       <Hero />
     </header>

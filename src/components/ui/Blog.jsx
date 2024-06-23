@@ -61,7 +61,7 @@ const settings = {
 
 function Blog() {
   return (
-    <section className="bg-black blog">
+    <section className="sticky bg-black blog rounded-t-[2rem] lg:rounded-t-[3rem] 2xl:rounded-t-[4rem] 2xl:-mt-[4rem] -mt-[2rem] lg:-mt-[3rem]">
       <Container>
         <SpaceY>
           <h2 className="text-3xl text-center lg:text-4xl text-lightBlue md:text-left">

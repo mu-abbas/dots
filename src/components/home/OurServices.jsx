@@ -5,7 +5,7 @@ import ServicesCard from './ServicesCard';
 
 function OurServices() {
   return (
-    <section className="bg-blue text-offWhite">
+    <section className="bg-blue text-offWhite sticky -top-[50%] md:top-0 rounded-t-[2rem] pb-[2rem] lg:rounded-t-[3rem] lg:pb-[3rem] 2xl:rounded-t-[4rem] 2xl:pb-[4rem] lg:-mt-[3rem] 2xl:-mt-[4rem] -mt-[2rem]">
       <Container>
         <SpaceY>
           <div className="flex flex-col gap-2 xl:flex-row xl:items-center xl:justify-between">

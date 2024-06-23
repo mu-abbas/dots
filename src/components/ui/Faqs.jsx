@@ -5,7 +5,7 @@ import faqs from '@/data/faqs';
 
 function Faqs() {
   return (
-    <section className="bg-black -mt-[0.5px]">
+    <section className="bg-black -mt-[0.5px] sticky pb-[4rem] -top-[50%]">
       <Container>
         <div className="flex flex-col gap-12 lg:flex-row">
           <div className="space-y-6 xl:space-y-8 2xl:space-y-12">
