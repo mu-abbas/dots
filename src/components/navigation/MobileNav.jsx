@@ -7,6 +7,7 @@ import navLinks from '@/data/navLinks';
 function MobileNav({ isOpen = false, setIsOpen, pathname }) {
   useEffect(() => {
     const overlay = document.querySelector('.overlay');
+    const nav = document.querySelector('nav');
     const mobileNav = document.querySelector('.mobileNav');
     mobileNav.classList.remove('hidden');
 

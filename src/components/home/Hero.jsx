@@ -4,7 +4,7 @@ import CTALinkV2 from '../navigation/CTALinkV2';
 
 function Hero() {
   return (
-    <section className="flex items-center h-[75%]">
+    <section className="flex items-center h-screen bg-cover min-h-[568px] bg-beige bg-home bg-repeat-none bg-center sticky top-0">
       <Container>
         <div className="flex flex-col items-center">
           <h1 className="flex flex-col items-center leading-12">

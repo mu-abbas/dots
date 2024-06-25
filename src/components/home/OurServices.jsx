@@ -1,11 +1,33 @@
 'use client';
+import { useEffect, useRef } from 'react';
 import Container from '../micro/Container';
 import SpaceY from '../micro/SpaceY';
 import ServicesCard from './ServicesCard';
 
 function OurServices() {
+  const ref = useRef();
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+  });
+
+  function handleScroll() {
+    if (window.innerWidth >= 768) return;
+    const currentViewPortEnd = window.innerHeight;
+    const currentElementEnd = ref.current.getBoundingClientRect().bottom;
+    const currentElementTop = ref.current.getBoundingClientRect().top;
+    if (currentElementEnd <= currentViewPortEnd && ref.current.style.top === 'unset') {
+      ref.current.style.top = `${currentElementTop}px`;
+    } else if (currentElementEnd > currentViewPortEnd) {
+      ref.current.style.top = 'unset';
+    }
+  }
+
   return (
-    <section className="bg-blue text-offWhite sticky -top-[50%] md:top-0 rounded-t-[2rem] pb-[2rem] lg:rounded-t-[3rem] lg:pb-[3rem] 2xl:rounded-t-[4rem] 2xl:pb-[4rem] lg:-mt-[3rem] 2xl:-mt-[4rem] -mt-[2rem]">
+    <section
+      ref={ref}
+      className="bg-blue text-offWhite sticky md:top-0 pb-[2rem] lg:pb-[3rem] 2xl:pb-[4rem] lg:-mt-[3rem] 2xl:-mt-[4rem] -mt-[2rem]"
+    >
       <Container>
         <SpaceY>
           <div className="flex flex-col gap-2 xl:flex-row xl:items-center xl:justify-between">

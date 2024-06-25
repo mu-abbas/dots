@@ -1,12 +1,10 @@
 'use client';
 import Nav from '../navigation/Nav';
-import Hero from './Hero';
 
 function Header() {
   return (
-    <header className="h-screen bg-center bg-cover min-h-[568px] bg-beige bg-home bg-repeat-none sticky top-0">
+    <header className="fixed top-0 z-50 w-full">
       <Nav />
-      <Hero />
     </header>
   );
 }

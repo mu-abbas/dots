@@ -8,36 +8,31 @@ import OurServices from './OurServices';
 import ReadyToStart from '../ui/ReadyToStart';
 import Story from './Story';
 import Testimonials from '../ui/Testimonials';
-import { useInView } from 'react-intersection-observer';
 import Nav from '../navigation/Nav';
-import { useState } from 'react';
+import Hero from './Hero';
+import { useEffect, useRef, useState } from 'react';
+
 function Main() {
-  const { ref, inView } = useInView({
-    threshold: 0.01,
+  const ref = useRef();
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
   });
-  const [animate, setAnimate] = useState(false);
 
   function handleScroll() {
-    if (inView && !animate) {
-      setAnimate(inView);
-    } else {
-      setTimeout(() => {
-        setAnimate(inView);
-      }, 300);
+    const readyToStart = document.querySelector('.readyToStart');
+    const currentElementTop = ref.current.getBoundingClientRect().top;
+    if (readyToStart.getBoundingClientRect().top <= 0) {
+      ref.current.style.top = `${currentElementTop}px`;
+    }
+    if (readyToStart.getBoundingClientRect().top > 0) {
+      ref.current.style.top = 'unset';
     }
   }
 
   return (
-    <main ref={ref} onScroll={handleScroll()}>
-      {animate && (
-        <div
-          className={`fixed top-0 z-50 w-full bg-beige animate-opacity aria-hidden transition duration-300 ${
-            inView ? '' : 'opacity-0'
-          }`}
-        >
-          <Nav />
-        </div>
-      )}
+    <main ref={ref} className="sticky">
+      <Hero />
       <Story />
       <IntroVideo />
       <OurServices />

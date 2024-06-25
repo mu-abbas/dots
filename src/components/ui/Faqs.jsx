@@ -1,11 +1,29 @@
 'use client';
+import { useEffect, useRef } from 'react';
 import Container from '../micro/Container';
 import Accordion from './Accordion';
 import faqs from '@/data/faqs';
 
 function Faqs() {
+  const ref = useRef();
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+  });
+
+  function handleScroll() {
+    const currentViewPortEnd = window.innerHeight;
+    const currentElementEnd = ref.current.getBoundingClientRect().bottom;
+    const currentElementTop = ref.current.getBoundingClientRect().top;
+    if (currentElementEnd <= currentViewPortEnd && ref.current.style.top === 'unset') {
+      ref.current.style.top = `${currentElementTop}px`;
+    } else if (currentElementEnd > currentViewPortEnd) {
+      ref.current.style.top = 'unset';
+    }
+  }
+
   return (
-    <section className="bg-black -mt-[0.5px] sticky pb-[4rem] -top-[50%]">
+    <section ref={ref} className="bg-black -mt-[0.5px] sticky pb-[4rem] -top-[50%]">
       <Container>
         <div className="flex flex-col gap-12 lg:flex-row">
           <div className="space-y-6 xl:space-y-8 2xl:space-y-12">

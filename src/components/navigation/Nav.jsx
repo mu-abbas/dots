@@ -12,7 +12,7 @@ function Nav({ color }) {
   const pathname = usePathname();
 
   return (
-    <nav className="relative z-50">
+    <nav className="relative transition duration-300">
       <div className="container p-6 mx-auto sm:p-8 md:p-10 lg:px-12 xl:px-14 2xl:px-16">
         <div className="flex items-center justify-between gap-6">
           <Logo color={color} />

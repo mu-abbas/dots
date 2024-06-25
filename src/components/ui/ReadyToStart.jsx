@@ -5,7 +5,7 @@ import CTALinkV2 from '../navigation/CTALinkV2';
 
 function ReadyToStart() {
   return (
-    <section className="bg-center bg-contain bg-navy bg-readyToStart text-offWhite sticky top-0 rounded-t-[2rem] pb-[2rem] lg:rounded-t-[3rem] lg:pb-[3rem] 2xl:rounded-t-[4rem] 2xl:pb-[4rem] 2xl:-mt-[4rem] -mt-[2rem] lg:-mt-[3rem]">
+    <section className="readyToStart bg-center bg-contain bg-navy bg-readyToStart text-offWhite sticky top-0 rounded-t-[2rem] pb-[2rem] lg:rounded-t-[3rem] lg:pb-[3rem] 2xl:rounded-t-[4rem] 2xl:pb-[4rem] 2xl:-mt-[4rem] -mt-[2rem] lg:-mt-[3rem]">
       <Container>
         <div className="flex flex-col items-center gap-8 py-12">
           <span className="w-36 md:w-40 lg:w-44 2xl:w-48">
