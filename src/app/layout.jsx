@@ -8,7 +8,6 @@ const grotesk = Space_Grotesk({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-grotesk',
-  preload: false,
 });
 
 const poppins = Poppins({
@@ -16,7 +15,6 @@ const poppins = Poppins({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-poppins',
-  preload: false,
 });
 
 const clash = localFont({
@@ -36,7 +34,6 @@ const clash = localFont({
   ],
   display: 'swap',
   variable: '--font-clash',
-  preload: false,
 });
 
 export const metadata = {
