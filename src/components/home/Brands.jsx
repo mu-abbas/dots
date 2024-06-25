@@ -10,7 +10,7 @@ function Brands() {
       </h2>
       <Slider width="240px" duration={25} pauseOnHover={true} blurBorders={false}>
         <Slider.Slide>
-          <img src="/brand/abbvie.png" alt="abbvie" className="w-32 mx-auto" />
+          <img src="/brand/abbvie.png" alt="abbvie" className="mx-auto w-36" />
         </Slider.Slide>
         <Slider.Slide>
           <img src="/brand/cocacola.png" alt="cocacola" className="mx-auto w-36" />
