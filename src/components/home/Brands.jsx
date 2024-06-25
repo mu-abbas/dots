@@ -3,8 +3,8 @@ import Slider from 'react-infinite-logo-slider';
 
 function Brands() {
   return (
-    <section className="py-12 bg-green sm:py-14 md:py-16 lg:py-20 xl:py-24 2xl:py-28 sticky top-0 rounded-t-[2rem] pb-[2rem] lg:rounded-t-[3rem] lg:pb-[3rem] 2xl:rounded-t-[4rem] 2xl:pb-[4rem] 2xl:-mt-[4rem] -mt-[2rem] lg:-mt-[3rem]">
-      <h2 className="flex flex-col items-center justify-center px-8 pb-10 text-3xl font-medium text-center md:pb-14 sm:gap-2 sm:px-10 md:px-12 lg:px-14 xl:px-16 2xl:px-20 sm:flex-row md:text-4xl 3xl:text-5xl 3xl:pb-20">
+    <section className="py-14 bg-green sm:py-18 md:py-24 lg:py-28 xl:py-32 sticky top-16 rounded-t-[2rem] pb-[3rem] lg:rounded-t-[2.5rem] lg:pb-[6rem] 2xl:rounded-t-[3rem] 2xl:pb-[8rem] 2xl:-mt-[4rem] -mt-[2rem] lg:-mt-[3rem]">
+      <h2 className="flex flex-col items-center justify-center px-8 pb-6 text-3xl font-medium text-center md:pb-8 sm:gap-2 sm:px-10 md:px-12 lg:px-14 xl:px-16 2xl:px-20 sm:flex-row md:text-4xl 3xl:text-5xl 3xl:pb-20">
         <span>We help big brands</span>
         <span className="font-bold">Connect the dots</span>
       </h2>

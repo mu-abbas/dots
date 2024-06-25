@@ -26,7 +26,7 @@ function OurServices() {
   return (
     <section
       ref={ref}
-      className="bg-blue text-offWhite sticky md:top-0 pb-[2rem] lg:pb-[3rem] 2xl:pb-[4rem] lg:-mt-[3rem] 2xl:-mt-[4rem] -mt-[2rem]"
+      className="bg-blue text-offWhite sticky top-32 lg:top-28 3xl:top-32 pb-[2rem] lg:pb-[3rem] 2xl:pb-[4rem] lg:-mt-[3rem] 2xl:-mt-[4rem] -mt-[2rem]"
     >
       <Container>
         <SpaceY>

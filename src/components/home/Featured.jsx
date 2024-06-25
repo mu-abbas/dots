@@ -28,7 +28,7 @@ function Featured() {
   return (
     <section
       ref={ref}
-      className="bg-black text-offWhite sticky rounded-t-[2rem] pb-[2rem] lg:rounded-t-[3rem] lg:pb-[3rem] 2xl:rounded-t-[4rem] 2xl:pb-[4rem] 2xl:-mt-[4rem] -mt-[2rem] lg:-mt-[3rem]"
+      className="bg-black text-offWhite sticky rounded-t-[2rem] pb-[2rem] lg:rounded-t-[3rem] lg:pb-[2.5rem] 2xl:rounded-t-[3rem] 2xl:pb-[4rem] 2xl:-mt-[4rem] -mt-[2rem] lg:-mt-[3rem]"
     >
       <Container>
         <SpaceY>

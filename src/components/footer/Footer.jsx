@@ -6,7 +6,7 @@ import Logo from '../navigation/Logo';
 
 function Footer() {
   return (
-    <footer className="sticky bg-black text-offWhite rounded-t-[2rem] py-[2rem] lg:rounded-t-[3rem] lg:py-[3rem] 2xl:rounded-t-[4rem] 2xl:py-[4rem] 2xl:-mt-[4rem] -mt-[2rem] lg:-mt-[3rem]">
+    <footer className="sticky bg-black text-offWhite rounded-t-[2rem] py-[2rem] lg:rounded-t-[2.5rem] lg:py-[3rem] 2xl:rounded-t-[3rem] 2xl:py-[4rem] 2xl:-mt-[4rem] -mt-[2rem] lg:-mt-[3rem]">
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr_1fr] gap-8 sm:grid-cols-2 sm:gap-16">
           <div className="space-y-8 border-b-[0.5px] lg:border-none border-grey pb-8 sm:pb-16 sm:col-span-2 lg:col-span-1">
@@ -65,7 +65,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="flex items-center justify-around py-4 sm:py-0 sm:justify-around text-offWhite sm:col-span-2 lg:col-span-1 lg:justify-between">
+          <div className="flex items-center justify-start gap-12 py-4 sm:gap-0 sm:py-0 sm:justify-around text-offWhite sm:col-span-2 lg:col-span-1 lg:justify-between">
             <p className="text-lg font-light xl:text-2xl 2xl:text-3xl 3xl:text-4xl">Follow Us</p>
             <div className="flex items-center gap-2 xl:gap-3">
               <a
@@ -98,7 +98,7 @@ function Footer() {
               </a>
             </div>
           </div>
-          <p className="mx-auto text-sm font-light font-poppins text-grey max-w-max border-t-[0.5px] border-grey pt-12 sm:col-span-2 lg:border-none lg:pt-0 lg:text-base xl:text-lg xl:py-8 2xl:py-12 3xl:text-2xl 2xl:text-xl 3xl:py-16">
+          <p className="mr-auto sm:mx-auto sm:pr-0 pr-6 text-xs font-light font-poppins text-grey max-w-max border-t-[0.5px] border-grey pt-12 sm:col-span-2 lg:border-none lg:pt-0 lg:text-sm xl:text-base xl:py-8 2xl:py-12 3xl:text-lg 2xl:text-base 3xl:py-16">
             &copy; Dots Presentations . All Rights Reserved
           </p>
         </div>
