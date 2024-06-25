@@ -12,6 +12,7 @@ function Featured() {
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   });
 
   function handleScroll() {

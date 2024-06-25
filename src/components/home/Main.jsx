@@ -8,15 +8,15 @@ import OurServices from './OurServices';
 import ReadyToStart from '../ui/ReadyToStart';
 import Story from './Story';
 import Testimonials from '../ui/Testimonials';
-import Nav from '../navigation/Nav';
 import Hero from './Hero';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 
 function Main() {
   const ref = useRef();
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   });
 
   function handleScroll() {
