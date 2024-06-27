@@ -16,7 +16,7 @@ function ReadyToStart() {
 
   function handleScroll() {
     const main = document.querySelector('main');
-    if (innerWidth === window.innerWidth && main.style.top !== 'unset') return;
+    if (innerWidth === window.innerWidth && main.style.top !== 'unset' && ref.current.style.top !== 'unset') return;
     stickyFn(ref, true);
     setInnerWidth(window.innerWidth);
   }
