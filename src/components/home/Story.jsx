@@ -1,12 +1,14 @@
 'use client';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Container from '../micro/Container';
 import SpaceY from '../micro/SpaceY';
 import CTALinkV2 from '../navigation/CTALinkV2';
 import stickyFn from '@/helpers/sticky';
+import navBg from '@/helpers/navBg';
 
 function Story() {
   const ref = useRef();
+  const [innerWidth, setInnerWidth] = useState(0);
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
@@ -14,7 +16,10 @@ function Story() {
   });
 
   function handleScroll() {
-    stickyFn(ref, true);
+    navBg(ref);
+    if (innerWidth === window.innerWidth && ref.current.style.top !== 'unset') return;
+    stickyFn(ref);
+    setInnerWidth(window.innerWidth);
   }
 
   return (

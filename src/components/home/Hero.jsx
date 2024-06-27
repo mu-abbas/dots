@@ -1,26 +1,10 @@
 'use client';
-import { useEffect, useRef } from 'react';
 import Container from '../micro/Container';
 import CTALinkV2 from '../navigation/CTALinkV2';
-import stickyFn from '@/helpers/sticky';
 
 function Hero() {
-  const ref = useRef();
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  });
-
-  function handleScroll() {
-    stickyFn(ref, false, true);
-  }
-
   return (
-    <section
-      ref={ref}
-      className="sticky top-0 flex items-center h-screen bg-center bg-cover bg-beige bg-home bg-repeat-none"
-    >
+    <section className="sticky top-0 flex items-center h-screen bg-center bg-cover bg-beige bg-home bg-repeat-none">
       <Container>
         <div className="flex flex-col items-center mt-10 sm:mt-12">
           <h1 className="flex flex-col items-center">

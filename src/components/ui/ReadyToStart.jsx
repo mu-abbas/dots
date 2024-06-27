@@ -1,12 +1,13 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Container from '../micro/Container';
 import CTALinkV2 from '../navigation/CTALinkV2';
 import stickyFn from '@/helpers/sticky';
 
 function ReadyToStart() {
   const ref = useRef();
+  const [innerWidth, setInnerWidth] = useState(0);
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
@@ -14,7 +15,9 @@ function ReadyToStart() {
   });
 
   function handleScroll() {
-    stickyFn(ref, false, false, true);
+    if (innerWidth === window.innerWidth && ref.current.style.top !== 'unset') return;
+    stickyFn(ref, true);
+    setInnerWidth(window.innerWidth);
   }
 
   return (

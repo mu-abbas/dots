@@ -1,9 +1,7 @@
 'use client';
-import { useEffect, useRef } from 'react';
 import Container from '../micro/Container';
 import Accordion from './Accordion';
 import faqs from '@/data/faqs';
-import stickyFn from '@/helpers/sticky';
 
 function Faqs() {
   return (

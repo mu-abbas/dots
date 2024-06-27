@@ -52,6 +52,7 @@ function PrevArrow(props) {
 function Testimonials() {
   const [activeSlide, setActiveSlide] = useState(0);
   const ref = useRef();
+  const [innerWidth, setInnerWidth] = useState(0);
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
@@ -59,7 +60,9 @@ function Testimonials() {
   });
 
   function handleScroll() {
+    if (innerWidth === window.innerWidth && ref.current.style.top !== 'unset') return;
     stickyFn(ref);
+    setInnerWidth(window.innerWidth);
   }
 
   const settings = {
