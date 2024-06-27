@@ -14,13 +14,13 @@ export default function stickyFn(ref, headerBg = false, hero = false, lastSectio
 
   // element shorter than view port
   if (elementHeight <= conditionalValue && ref.current.style.top !== topValue) {
-    // if (lastSection && elementTop <= topValue && main.style.top === 'unset') {
-    //   main.style.top = `${mainTop}px`;
-    // } else if (lastSection && elementTop > topValue && main.style.top !== 'unset') {
-    //   main.style.top = 'unset';
-    // } else {
-    ref.current.style.top = `${topValue}px`;
-    // }
+    if (lastSection && elementTop <= topValue && main.style.top === 'unset') {
+      main.style.top = `${mainTop}px`;
+    } else if (lastSection && elementTop > topValue && main.style.top !== 'unset') {
+      main.style.top = 'unset';
+    } else {
+      ref.current.style.top = `${topValue}px`;
+    }
   }
 
   // element longer than view port and
@@ -29,9 +29,9 @@ export default function stickyFn(ref, headerBg = false, hero = false, lastSectio
     elementEnd - roundValue <= viewPortHeight &&
     ref.current.style.top === 'unset'
   ) {
-    // if (lastSection) {
-    //   main.style.top = `${mainTop}px`;
-    // }
+    if (lastSection) {
+      main.style.top = `${mainTop}px`;
+    }
     ref.current.style.top = `${elementTop}px`;
   }
 
@@ -40,9 +40,9 @@ export default function stickyFn(ref, headerBg = false, hero = false, lastSectio
     elementEnd - roundValue > viewPortHeight &&
     ref.current.style.top !== 'unset'
   ) {
-    // if (lastSection) {
-    //   main.style.top = 'unset';
-    // }
+    if (lastSection) {
+      main.style.top = 'unset';
+    }
     ref.current.style.top = 'unset';
   }
 
