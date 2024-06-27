@@ -9,7 +9,7 @@ function Hero() {
     <section className="text-white">
       <Container>
         <h1 className="flex flex-col gap-1 pb-8 md:gap-4 md:text-center lg:pb-12">
-          <span className="text-3xl font-light md:text-4xl lg:text-5xl">Your All-in-One Solution for</span>
+          <span className="text-3xl font-light md:text-4xl lg:text-5xl">All-in-One Solution for</span>
           <span className="text-4xl font-medium md:leading-12 md:text-6xl lg:text-7xl lg:leading-13 font-clash">
             Document Design
           </span>
