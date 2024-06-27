@@ -6,16 +6,23 @@ import { useEffect, useRef, useState } from 'react';
 function IntroVideo() {
   const ref = useRef();
   const [innerWidth, setInnerWidth] = useState(0);
+  const [innerHeight, setInnerHeight] = useState(0);
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   });
 
+  useEffect(() => {
+    ref.current.style.top = 'unset';
+  }, []);
+
   function handleScroll() {
-    if (innerWidth === window.innerWidth && ref.current.style.top !== 'unset') return;
+    if (innerWidth === window.innerWidth && innerHeight === window.innerHeight && ref.current.style.top !== 'unset')
+      return;
     stickyFn(ref);
     setInnerWidth(window.innerWidth);
+    setInnerHeight(window.innerHeight);
   }
 
   return (

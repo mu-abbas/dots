@@ -9,10 +9,17 @@ import ReadyToStart from '../ui/ReadyToStart';
 import Story from './Story';
 import Testimonials from '../ui/Testimonials';
 import Hero from './Hero';
+import { useEffect, useRef } from 'react';
 
 function Main() {
+  const ref = useRef();
+
+  useEffect(() => {
+    ref.current.style.top = 'unset';
+  }, []);
+
   return (
-    <main className="sticky">
+    <main className="sticky" ref={ref}>
       <Hero />
       <Story />
       <IntroVideo />

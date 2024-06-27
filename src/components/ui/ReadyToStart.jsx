@@ -8,17 +8,23 @@ import stickyFn from '@/helpers/sticky';
 function ReadyToStart() {
   const ref = useRef();
   const [innerWidth, setInnerWidth] = useState(0);
+  const [innerHeight, setInnerHeight] = useState(0);
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   });
 
+  useEffect(() => {
+    ref.current.style.top = 'unset';
+  }, []);
+
   function handleScroll() {
     const main = document.querySelector('main');
-    if (innerWidth === window.innerWidth && main.style.top !== 'unset' && ref.current.style.top !== 'unset') return;
+    if (innerWidth === window.innerWidth && innerHeight === window.innerHeight && main.style.top !== 'unset') return;
     stickyFn(ref, true);
     setInnerWidth(window.innerWidth);
+    setInnerHeight(window.innerHeight);
   }
 
   return (

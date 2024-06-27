@@ -13,36 +13,41 @@ export default function stickyFn(ref, lastSection = false) {
   const conditionalValue = viewPortHeight - navHeight + roundValue;
 
   // element shorter than view port
-  if (elementHeight <= conditionalValue && ref.current.style.top !== topValue) {
-    if (lastSection && elementTop <= topValue && main.style.top === 'unset') {
-      main.style.top = `${mainTop}px`;
-    } else if (lastSection && elementTop > topValue && main.style.top !== 'unset') {
-      main.style.top = 'unset';
-    } else {
-      ref.current.style.top = `${topValue}px`;
-    }
+  if (
+    elementHeight <= conditionalValue &&
+    elementTop <= topValue &&
+    (ref.current.style.top === 'unset' || (lastSection && main.style.top === 'unset'))
+  ) {
+    if (lastSection && elementTop > topValue - 50) main.style.top = `${mainTop}px`;
+    ref.current.style.top = `${topValue}px`;
+  }
+
+  if (
+    elementHeight <= conditionalValue &&
+    elementTop > topValue &&
+    (ref.current.style.top !== 'unset' || (lastSection && main.style.top !== 'unset'))
+  ) {
+    if (lastSection) main.style.top = 'unset';
+    ref.current.style.top = 'unset';
   }
 
   // element longer than view port and
   if (
     elementHeight > conditionalValue &&
     elementEnd - roundValue <= viewPortHeight &&
-    ref.current.style.top === 'unset'
+    elementEnd - roundValue > viewPortHeight - 50 &&
+    (ref.current.style.top === 'unset' || (lastSection && main.style.top === 'unset'))
   ) {
-    if (lastSection) {
-      main.style.top = `${mainTop}px`;
-    }
+    if (lastSection) main.style.top = `${mainTop}px`;
     ref.current.style.top = `${elementTop}px`;
   }
 
   if (
     elementHeight > conditionalValue &&
     elementEnd - roundValue > viewPortHeight &&
-    ref.current.style.top !== 'unset'
+    (ref.current.style.top !== 'unset' || (lastSection && main.style.top !== 'unset'))
   ) {
-    if (lastSection) {
-      main.style.top = 'unset';
-    }
+    if (lastSection) main.style.top = 'unset';
     ref.current.style.top = 'unset';
   }
 }
