@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Container from '../micro/Container';
 import SpaceY from '../micro/SpaceY';
 import Slider from 'react-slick';
@@ -7,6 +7,7 @@ import TestimoialCard from './TestimoialCard';
 import testimonials from '@/data/testimonials';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import stickyFn from '@/helpers/sticky';
 
 let nextOnClick;
 
@@ -50,6 +51,16 @@ function PrevArrow(props) {
 
 function Testimonials() {
   const [activeSlide, setActiveSlide] = useState(0);
+  const ref = useRef();
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  });
+
+  function handleScroll() {
+    stickyFn(ref);
+  }
 
   const settings = {
     dots: false,
@@ -79,7 +90,7 @@ function Testimonials() {
   };
 
   return (
-    <section className="bg-beige testimonials sticky top-16 rounded-t-[2rem] pb-[2rem] lg:rounded-t-[2.5rem] lg:pb-[3rem] 2xl:rounded-t-[3rem] 2xl:pb-[4rem] 2xl:-mt-[4rem] -mt-[2rem] lg:-mt-[3rem]">
+    <section ref={ref} className="sticky bg-beige testimonials sticky-top-rounded sticky-padding sticky-margin">
       <Container>
         <SpaceY>
           <div className="flex flex-col items-start gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-14 2xl:gap-16 3xl:gap-18 lg:flex-row">

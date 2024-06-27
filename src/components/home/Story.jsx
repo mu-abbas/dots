@@ -3,6 +3,7 @@ import { useEffect, useRef } from 'react';
 import Container from '../micro/Container';
 import SpaceY from '../micro/SpaceY';
 import CTALinkV2 from '../navigation/CTALinkV2';
+import stickyFn from '@/helpers/sticky';
 
 function Story() {
   const ref = useRef();
@@ -13,27 +14,11 @@ function Story() {
   });
 
   function handleScroll() {
-    const nav = document.querySelector('nav');
-    const currentViewPortEnd = window.innerHeight;
-    const currentElementEnd = ref.current.getBoundingClientRect().bottom;
-    const currentElementTop = ref.current.getBoundingClientRect().top;
-    if (currentElementTop <= currentViewPortEnd * 0.5 && !nav.classList.contains('bg-beige')) {
-      nav.classList.add('bg-beige');
-    } else if (currentElementTop > currentViewPortEnd * 0.5 && nav.classList.contains('bg-beige')) {
-      nav.classList.remove('bg-beige');
-    }
-    if (currentElementEnd <= currentViewPortEnd && ref.current.style.top === 'unset') {
-      ref.current.style.top = `${currentElementTop}px`;
-    } else if (currentElementEnd > currentViewPortEnd) {
-      ref.current.style.top = 'unset';
-    }
+    stickyFn(ref, true);
   }
 
   return (
-    <section
-      className="bg-black text-offWhite sticky rounded-t-[2rem] pb-[2rem] lg:rounded-t-[2.5rem] lg:pb-[3rem] 2xl:rounded-t-[3rem] 2xl:pb-[4rem]"
-      ref={ref}
-    >
+    <section className="sticky bg-black text-offWhite sticky-top-rounded sticky-paading" ref={ref}>
       <Container>
         <SpaceY>
           <h2 className="text-2xl leading-8 md:leading-10 md:text-3xl lg:text-4xl xl:text-5xlplus 3xl:text-7xl xl:tracking-tighter 2xl:tracking-normal lg:leading-11 xl:leading-13 3xl:leading-15">

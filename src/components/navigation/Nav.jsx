@@ -12,8 +12,8 @@ function Nav({ color }) {
   const pathname = usePathname();
 
   return (
-    <nav className="relative transition duration-300">
-      <div className="container p-6 mx-auto sm:p-8 md:p-10 lg:px-12 xl:px-14 2xl:px-16">
+    <nav className="relative transition duration-300 border-b border-[transparent]">
+      <div className="container px-6 py-6 mx-auto sm:px-8 sm:py-6 md:px-10 lg:px-12 xl:px-14 2xl:px-16">
         <div className="flex items-center justify-between gap-6">
           <Logo color={color} />
           <ul className="items-center hidden gap-4 text-sm tracking-wide xl:gap-5 xl:text-base lg:flex 3xl:text-lg 3xl:gap-8">

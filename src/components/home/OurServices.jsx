@@ -3,6 +3,7 @@ import { useEffect, useRef } from 'react';
 import Container from '../micro/Container';
 import SpaceY from '../micro/SpaceY';
 import ServicesCard from './ServicesCard';
+import stickyFn from '@/helpers/sticky';
 
 function OurServices() {
   const ref = useRef();
@@ -13,22 +14,11 @@ function OurServices() {
   });
 
   function handleScroll() {
-    if (window.innerWidth >= 768) return;
-    const currentViewPortEnd = window.innerHeight;
-    const currentElementEnd = ref.current.getBoundingClientRect().bottom;
-    const currentElementTop = ref.current.getBoundingClientRect().top;
-    if (currentElementEnd <= currentViewPortEnd && ref.current.style.top === 'unset') {
-      ref.current.style.top = `${currentElementTop}px`;
-    } else if (currentElementEnd > currentViewPortEnd) {
-      ref.current.style.top = 'unset';
-    }
+    stickyFn(ref);
   }
 
   return (
-    <section
-      ref={ref}
-      className="bg-blue text-offWhite sticky top-32 lg:top-28 3xl:top-32 pb-[2rem] lg:pb-[3rem] 2xl:pb-[4rem] lg:-mt-[3rem] 2xl:-mt-[4rem] -mt-[2rem]"
-    >
+    <section ref={ref} className="sticky bg-blue text-offWhite sticky-top-rounded sticky-margin sticky-padding">
       <Container>
         <SpaceY>
           <div className="flex flex-col gap-2 xl:flex-row xl:items-center xl:justify-between">

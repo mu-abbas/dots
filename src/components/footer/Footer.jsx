@@ -6,7 +6,7 @@ import Logo from '../navigation/Logo';
 
 function Footer() {
   return (
-    <footer className="sticky bg-black text-offWhite rounded-t-[2rem] py-[2rem] lg:rounded-t-[2.5rem] lg:py-[3rem] 2xl:rounded-t-[3rem] 2xl:py-[4rem] 2xl:-mt-[4rem] -mt-[2rem] lg:-mt-[3rem]">
+    <footer className="sticky bg-black text-offWhite sticky-padding sticky-margin sticky-top-rounded">
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr_1fr] gap-8 sm:grid-cols-2 sm:gap-16">
           <div className="space-y-8 border-b-[0.5px] lg:border-none border-grey pb-8 sm:pb-16 sm:col-span-2 lg:col-span-1">

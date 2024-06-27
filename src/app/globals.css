@@ -167,3 +167,23 @@
 .gallery .slick-prev {
   @apply -left-8 xl:-left-12 xl:scale-150 lg:scale-125 opacity-0 md:opacity-100;
 }
+
+.sticky-top-rounded {
+  @apply rounded-t-[1.5rem] lg:rounded-t-[2rem] 2xl:rounded-t-[2.5rem];
+}
+
+.sticky-bottom-rounded {
+  @apply rounded-b-[1.5rem] lg:rounded-b-[2rem] 2xl:rounded-b-[2.5rem];
+}
+
+.sticky-padding {
+  @apply py-[1.5rem] lg:py-[2rem] 2xl:py-[2.5rem];
+}
+
+.sticky-margin {
+  @apply -mt-[1.5rem] lg:-mt-[2rem] 2xl:-mt-[2.5rem];
+}
+
+.sticky-border {
+  border-color: #d7dbd2 !important;
+}

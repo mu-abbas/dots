@@ -1,4 +1,3 @@
-import Footer from '@/components/footer/Footer';
 import { Space_Grotesk, Poppins } from 'next/font/google';
 import localFont from 'next/font/local';
 import './globals.css';
