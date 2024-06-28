@@ -17,24 +17,33 @@ export default function stickyFn(ref, lastSection = false) {
   // element shorter than view port
   if (
     elementHeight <= conditionalValue &&
-    (ref.current.style.top !== `${topValue}px` || main.style.top !== `${mainShortTop}px`)
+    (parseInt(ref.current.style.top) >= topValue + 50 ||
+      parseInt(ref.current.style.top) <= topValue - 50 ||
+      parseInt(main.style.top) >= mainShortTop + 50 ||
+      parseInt(main.style.top) <= mainShortTop - 50 ||
+      !ref.current.style.top ||
+      !main.style.top)
   ) {
     if (lastSection) {
       main.style.top = `${mainShortTop}px`;
-    } else {
-      ref.current.style.top = `${topValue}px`;
     }
+    ref.current.style.top = `${topValue}px`;
   }
 
   // element longer than view port and
+
   if (
     elementHeight > conditionalValue &&
-    (ref.current.style.top !== `${viewPortHeight - elementHeight}px` || main.style.top !== `${mainLongTop}px`)
+    (parseInt(ref.current.style.top) >= viewPortHeight - elementHeight + 50 ||
+      parseInt(ref.current.style.top) <= viewPortHeight - elementHeight - 50 ||
+      parseInt(main.style.top) >= mainLongTop + 50 ||
+      parseInt(main.style.top) <= mainLongTop - 50 ||
+      !ref.current.style.top ||
+      !main.style.top)
   ) {
     if (lastSection) {
       main.style.top = `${mainLongTop}px`;
-    } else {
-      ref.current.style.top = `${viewPortHeight - elementHeight}px`;
     }
+    ref.current.style.top = `${viewPortHeight - elementHeight}px`;
   }
 }

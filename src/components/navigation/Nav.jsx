@@ -5,14 +5,24 @@ import NavLink from './NavLink';
 import { usePathname } from 'next/navigation';
 import navLinks from '@/data/navLinks';
 import MobileNav from './MobileNav';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function Nav({ color }) {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
 
+  useEffect(() => {
+    const mainSecChild = document.querySelector('main > section:nth-child(2)');
+    const nav = document.querySelector('nav');
+    const navHeight = nav.getBoundingClientRect().height;
+    const elementTop = mainSecChild.getBoundingClientRect().top;
+    if (elementTop <= navHeight * 4 && !nav.classList.contains('bg-beige')) {
+      nav.classList.add('bg-beige', 'sticky-border');
+    }
+  }, []);
+
   return (
-    <nav className="relative transition duration-300 border-b border-[transparent]">
+    <nav className={`relative transition duration-300 border-b border-[transparent]`}>
       <div className="container px-6 py-6 mx-auto sm:px-8 sm:py-6 md:px-10 lg:px-12 xl:px-14 2xl:px-16">
         <div className="flex items-center justify-between gap-6">
           <Logo color={color} />
