@@ -2,13 +2,11 @@
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
-import Container from '../micro/Container';
 import {
   FacebookShareButton,
   LinkedinShareButton,
-  PinterestShareButton,
   RedditShareButton,
   TelegramShareButton,
   TwitterShareButton,
@@ -17,7 +15,6 @@ import {
   FacebookIcon,
   FacebookMessengerIcon,
   LinkedinIcon,
-  PinterestIcon,
   RedditIcon,
   TelegramIcon,
   TwitterIcon,
@@ -39,20 +36,14 @@ function GallerySlider({ setSliderIsOpen, slides }) {
     beforeChange: (_, next) => setActiveSlide(next),
   };
 
-  const handleScroll = event => event.preventDefault();
-
   function handleClose() {
     setSliderIsOpen(false);
     document.querySelector('body').classList.remove('overflow-y-hidden');
   }
 
   return (
-    <div
-      onWheel={handleScroll}
-      onTouchMove={handleScroll}
-      className="gallery fixed inset-0 z-50 w-screen h-[100dvh] bg-black bg-opacity-90 animate-opacity"
-    >
-      <div className="absolute top-0 left-0 flex items-center w-full gap-6 px-12 py-8">
+    <div className="gallery flex flex-col gap-4 fixed inset-0 z-50 w-screen h-[100dvh] bg-black bg-opacity-90 animate-opacity">
+      <div className="flex items-center w-full gap-6 px-12 pt-8">
         <div className="relative ml-auto">
           <button onClick={() => setShareIsOpen(!shareIsOpen)} className="flex items-center text-white cursor-pointer">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-5">
@@ -65,57 +56,51 @@ function GallerySlider({ setSliderIsOpen, slides }) {
           </button>
           {shareIsOpen && (
             <div
-              className={`absolute -bottom-52 z-10 translate-y-2 -right-2 w-32 transition grid
+              className={`absolute -bottom-48 z-10 -right-2 w-32 transition grid
         grid-rows-[1fr] opacity-100 duration-300`}
             >
               <ul className={`overflow-hidden bg-white rounded-md shadow-md min-w-max flex flex-col gap-1 py-2`}>
                 <li className="flex gap-2 px-4 text-sm transition duration-300 cursor-pointer group text-grey">
                   <FacebookShareButton url={`https://dotspresentations.com${pathname}`}>
-                    <FacebookIcon size={16} round={true} />
+                    <FacebookIcon size={16} round={true} className="inline-block mr-2" />
+                    <span className="transition duration-300 text-purple group-hover:text-red">Facebook</span>
                   </FacebookShareButton>
-                  <p className="transition duration-300 text-purple group-hover:text-red">Facebook</p>
                 </li>
                 <li className="flex gap-2 px-4 text-sm transition duration-300 cursor-pointer group text-grey">
                   <FacebookMessengerShareButton url={`https://dotspresentations.com${pathname}`}>
-                    <FacebookMessengerIcon size={16} round={true} />
+                    <FacebookMessengerIcon size={16} round={true} className="inline-block mr-2" />
+                    <span className="transition duration-300 text-purple group-hover:text-red">Messenger</span>
                   </FacebookMessengerShareButton>
-                  <p className="transition duration-300 text-purple group-hover:text-red">Messenger</p>
                 </li>
                 <li className="flex gap-2 px-4 text-sm transition duration-300 cursor-pointer group text-grey">
                   <TwitterShareButton url={`https://dotspresentations.com${pathname}`}>
-                    <TwitterIcon size={16} round={true} />
+                    <TwitterIcon size={16} round={true} className="inline-block mr-2" />
+                    <span className="transition duration-300 text-purple group-hover:text-red">Twitter</span>
                   </TwitterShareButton>
-                  <p className="transition duration-300 text-purple group-hover:text-red">Twitter</p>
                 </li>
                 <li className="flex gap-2 px-4 text-sm transition duration-300 cursor-pointer group text-grey">
                   <LinkedinShareButton url={`https://dotspresentations.com${pathname}`}>
-                    <LinkedinIcon size={16} round={true} />
+                    <LinkedinIcon size={16} round={true} className="inline-block mr-2" />
+                    <span className="transition duration-300 text-purple group-hover:text-red">LinkedIn</span>
                   </LinkedinShareButton>
-                  <p className="transition duration-300 text-purple group-hover:text-red">LinkedIn</p>
                 </li>
                 <li className="flex gap-2 px-4 text-sm transition duration-300 cursor-pointer group text-grey">
                   <WhatsappShareButton url={`https://dotspresentations.com${pathname}`}>
-                    <WhatsappIcon size={16} round={true} />
+                    <WhatsappIcon size={16} round={true} className="inline-block mr-2" />
+                    <span className="transition duration-300 text-purple group-hover:text-red">Whatsapp</span>
                   </WhatsappShareButton>
-                  <p className="transition duration-300 text-purple group-hover:text-red">Whatsapp</p>
                 </li>
                 <li className="flex gap-2 px-4 text-sm transition duration-300 cursor-pointer group text-grey">
                   <TelegramShareButton url={`https://dotspresentations.com${pathname}`}>
-                    <TelegramIcon size={16} round={true} />
+                    <TelegramIcon size={16} round={true} className="inline-block mr-2" />
+                    <span className="transition duration-300 text-purple group-hover:text-red">Telegram</span>
                   </TelegramShareButton>
-                  <p className="transition duration-300 text-purple group-hover:text-red">Telegram</p>
-                </li>
-                <li className="flex gap-2 px-4 text-sm transition duration-300 cursor-pointer group text-grey">
-                  <PinterestShareButton url={`https://dotspresentations.com${pathname}`}>
-                    <PinterestIcon size={16} round={true} />
-                  </PinterestShareButton>
-                  <p className="transition duration-300 text-purple group-hover:text-red">Pinterest</p>
                 </li>
                 <li className="flex gap-2 px-4 text-sm transition duration-300 cursor-pointer group text-grey">
                   <RedditShareButton url={`https://dotspresentations.com${pathname}`}>
-                    <RedditIcon size={16} round={true} />
+                    <RedditIcon size={16} round={true} className="inline-block mr-2" />
+                    <span className="transition duration-300 text-purple group-hover:text-red">Reddit</span>
                   </RedditShareButton>
-                  <p className="transition duration-300 text-purple group-hover:text-red">Reddit</p>
                 </li>
               </ul>
             </div>
@@ -127,19 +112,17 @@ function GallerySlider({ setSliderIsOpen, slides }) {
           </svg>
         </button>
       </div>
-      <div className="flex items-center justify-center w-full h-full">
-        <Container>
-          <div className="mx-auto md:max-w-4xl lg:max-w-5xl xl:max-w-6xl animate-popUp">
-            <Slider {...settings}>
-              {slides.map((slide, index) => (
-                <img src={slide} key={index} alt="slide" />
-              ))}
-            </Slider>
-          </div>
-          <p className="pt-4 text-center text-white">
-            Slide {activeSlide + 1} / {slides.length}
-          </p>
-        </Container>
+      <div className="flex flex-col items-center justify-center mx-auto max-w-[80%] px-[5%] h-full overflow-y-scroll no-scrollbar">
+        <div className="w-full mx-auto md:max-w-4xl lg:max-w-5xl xl:max-w-6xl animate-popUp">
+          <Slider {...settings}>
+            {slides.map((slide, index) => (
+              <img src={slide} key={index} alt="slide" className="w-full" />
+            ))}
+          </Slider>
+        </div>
+        <p className="pt-4 text-center text-white">
+          Slide {activeSlide + 1} / {slides.length}
+        </p>
       </div>
     </div>
   );

@@ -1,10 +1,26 @@
 'use client';
+import { useEffect, useRef } from 'react';
 import Container from '../micro/Container';
 import CTALinkV2 from '../navigation/CTALinkV2';
+import stickyFn from '@/helpers/sticky';
 
 function ReadyToStart() {
+  const ref = useRef();
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  });
+
+  function handleScroll() {
+    stickyFn(ref, true);
+  }
+
   return (
-    <section className="sticky bg-center bg-contain readyToStart bg-navy bg-readyToStart text-offWhite sticky-padding sticky-margin">
+    <section
+      ref={ref}
+      className="sticky bg-center bg-contain readyToStart bg-navy bg-readyToStart text-offWhite sticky-padding sticky-margin"
+    >
       <Container>
         <div className="flex flex-col items-center gap-8 py-12">
           <span className="w-36 md:w-40 lg:w-44 2xl:w-48">

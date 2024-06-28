@@ -9,23 +9,10 @@ import ReadyToStart from '../ui/ReadyToStart';
 import Story from './Story';
 import Testimonials from '../ui/Testimonials';
 import Hero from './Hero';
-import { useEffect, useRef } from 'react';
-import stickyFn from '@/helpers/sticky';
 
 function Main() {
-  const ref = useRef();
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  });
-
-  function handleScroll() {
-    stickyFn(ref);
-  }
-
   return (
-    <main className="sticky" ref={ref}>
+    <main className="sticky">
       <Hero />
       <Story />
       <IntroVideo />

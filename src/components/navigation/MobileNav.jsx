@@ -7,19 +7,35 @@ import navLinks from '@/data/navLinks';
 function MobileNav({ isOpen = false, setIsOpen, pathname }) {
   useEffect(() => {
     const overlay = document.querySelector('.overlay');
-    const nav = document.querySelector('nav');
     const mobileNav = document.querySelector('.mobileNav');
     mobileNav.classList.remove('hidden');
 
     if (isOpen) {
       overlay.classList.remove('hidden');
+      document.querySelector('body').classList.add('overflow-y-hidden');
     } else {
       overlay.classList.add('hidden');
+      document.querySelector('body').classList.remove('overflow-y-hidden');
     }
     return () => {
       overlay.classList.add('hidden');
+      document.querySelector('body').classList.remove('overflow-y-hidden');
     };
   }, [isOpen]);
+
+  useEffect(() => {
+    if (isOpen) {
+      window.addEventListener('scroll', handleScroll);
+    } else {
+      window.removeEventListener('scroll', handleScroll);
+    }
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [isOpen]);
+
+  function handleScroll(e) {
+    console.log('scrolled');
+    e.preventDefault();
+  }
 
   return (
     <div

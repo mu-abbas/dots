@@ -8,7 +8,6 @@ import SpaceY from '../micro/SpaceY';
 import {
   FacebookShareButton,
   LinkedinShareButton,
-  PinterestShareButton,
   RedditShareButton,
   TelegramShareButton,
   TwitterShareButton,
@@ -17,7 +16,6 @@ import {
   FacebookIcon,
   FacebookMessengerIcon,
   LinkedinIcon,
-  PinterestIcon,
   RedditIcon,
   TelegramIcon,
   TwitterIcon,
@@ -89,11 +87,6 @@ function PostContent({ content, slides, title, href }) {
                 <TelegramIcon size={32} round={true} />
                 <span className="sr-only">share on telegram</span>
               </TelegramShareButton>
-
-              <PinterestShareButton url={`https://dotspresentations.com/resources/${href}/`}>
-                <PinterestIcon size={32} round={true} />
-                <span className="sr-only">share on pinterest</span>
-              </PinterestShareButton>
 
               <RedditShareButton url={`https://dotspresentations.com/resources/${href}/`}>
                 <RedditIcon size={32} round={true} />
