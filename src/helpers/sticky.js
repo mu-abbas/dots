@@ -17,33 +17,18 @@ export default function stickyFn(ref, lastSection = false) {
   // element shorter than view port
   if (
     elementHeight <= conditionalValue &&
-    (parseInt(ref.current.style.top) >= topValue + 100 ||
-      parseInt(ref.current.style.top) <= topValue - 100 ||
-      parseInt(main.style.top) >= mainShortTop + 100 ||
-      parseInt(main.style.top) <= mainShortTop - 100 ||
-      !ref.current.style.top ||
-      !main.style.top)
+    (ref.current.style.top !== `${topValue}px` || main.style.top !== `${mainShortTop}px`)
   ) {
-    if (lastSection) {
-      main.style.top = `${mainShortTop}px`;
-    }
+    if (lastSection) main.style.top = `${mainShortTop}px`;
     ref.current.style.top = `${topValue}px`;
   }
 
   // element longer than view port and
-
   if (
     elementHeight > conditionalValue &&
-    (parseInt(ref.current.style.top) >= viewPortHeight - elementHeight + 100 ||
-      parseInt(ref.current.style.top) <= viewPortHeight - elementHeight - 100 ||
-      parseInt(main.style.top) >= mainLongTop + 100 ||
-      parseInt(main.style.top) <= mainLongTop - 100 ||
-      !ref.current.style.top ||
-      !main.style.top)
+    (ref.current.style.top !== `${viewPortHeight - elementHeight}px` || main.style.top !== `${mainLongTop}px`)
   ) {
-    if (lastSection) {
-      main.style.top = `${mainLongTop}px`;
-    }
+    if (lastSection) main.style.top = `${mainLongTop}px`;
     ref.current.style.top = `${viewPortHeight - elementHeight}px`;
   }
 }
