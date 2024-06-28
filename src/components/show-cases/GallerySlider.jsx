@@ -112,7 +112,7 @@ function GallerySlider({ setSliderIsOpen, slides }) {
           </svg>
         </button>
       </div>
-      <div className="flex flex-col items-center justify-center mx-auto max-w-[80%] px-[5%] h-full overflow-y-scroll no-scrollbar">
+      <div className="flex flex-col items-center justify-center mx-auto max-w-[100%] sm:max-w-[80%] sm:px-[5%] h-full overflow-y-scroll no-scrollbar">
         <div className="w-full mx-auto md:max-w-4xl lg:max-w-5xl xl:max-w-6xl animate-popUp">
           <Slider {...settings}>
             {slides.map((slide, index) => (
