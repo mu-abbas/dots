@@ -11,7 +11,7 @@ export default function stickyFn(ref, lastSection = false) {
   const roundValue = viewPortWidth >= 1536 ? 40 : viewPortWidth >= 1024 ? 32 : 24;
   const topValue = navHeight - roundValue;
   const conditionalValue = viewPortHeight - navHeight + roundValue;
-  const mainShortTop = -(mainHeight - elementHeight);
+  const mainShortTop = -(mainHeight - elementHeight - topValue);
   const mainLongTop = viewPortHeight - mainHeight;
 
   // element shorter than view port
