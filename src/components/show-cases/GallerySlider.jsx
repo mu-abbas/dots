@@ -42,8 +42,11 @@ function GallerySlider({ setSliderIsOpen, slides }) {
   }
 
   return (
-    <div className="gallery flex flex-col gap-4 fixed inset-0 z-50 w-screen h-[100dvh] bg-black bg-opacity-90 animate-opacity">
-      <div className="flex items-center w-full gap-6 px-12 pt-8">
+    <div className="gallery flex flex-col fixed inset-0 z-50 w-screen h-[100dvh] bg-black bg-opacity-90 animate-opacity">
+      <div className="flex items-center w-full gap-6 px-6 pt-4 pb-2 md:pb-4 md:px-8 lg:px-10 md:pt-6 lg:pt-8">
+        <p className="text-center text-white">
+          Slide {activeSlide + 1} / {slides.length}
+        </p>
         <div className="relative ml-auto">
           <button onClick={() => setShareIsOpen(!shareIsOpen)} className="flex items-center text-white cursor-pointer">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-5">
@@ -112,7 +115,7 @@ function GallerySlider({ setSliderIsOpen, slides }) {
           </svg>
         </button>
       </div>
-      <div className="flex flex-col items-center justify-center mx-auto max-w-[100%] sm:max-w-[80%] sm:px-[5%] h-full overflow-y-scroll no-scrollbar">
+      <div className="flex flex-col items-center justify-center mx-auto max-w-[100%] sm:max-w-[85%] sm:px-[5%] h-full overflow-y-scroll no-scrollbar">
         <div className="w-full mx-auto md:max-w-4xl lg:max-w-5xl xl:max-w-6xl animate-popUp">
           <Slider {...settings}>
             {slides.map((slide, index) => (
@@ -120,9 +123,6 @@ function GallerySlider({ setSliderIsOpen, slides }) {
             ))}
           </Slider>
         </div>
-        <p className="pt-4 text-center text-white">
-          Slide {activeSlide + 1} / {slides.length}
-        </p>
       </div>
     </div>
   );
