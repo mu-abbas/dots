@@ -1,28 +1,18 @@
 'use client';
 import stickyFn from '@/helpers/sticky';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import Slider from 'react-infinite-logo-slider';
 
 function Brands() {
   const ref = useRef();
-  const [innerWidth, setInnerWidth] = useState(0);
-  const [innerHeight, setInnerHeight] = useState(0);
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   });
 
-  useEffect(() => {
-    ref.current.style.top = 'unset';
-  }, []);
-
   function handleScroll() {
-    if (innerWidth === window.innerWidth && innerHeight === window.innerHeight && ref.current.style.top !== 'unset')
-      return;
     stickyFn(ref);
-    setInnerWidth(window.innerWidth);
-    setInnerHeight(window.innerHeight);
   }
 
   return (
