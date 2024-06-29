@@ -30,6 +30,10 @@ function Nav({ color }) {
     }
   }, []);
 
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
+
   return (
     <nav className={`relative transition duration-300 border-b border-[transparent]`}>
       <div className="container px-6 py-6 mx-auto sm:px-8 sm:py-6 md:px-10 lg:px-12 xl:px-14 2xl:px-16">
