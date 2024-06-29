@@ -4,10 +4,23 @@ import drivenProps from '@/data/drivenProps';
 import Container from '../micro/Container';
 import SpaceY from '../micro/SpaceY';
 import DrivenProp from './DrivenProp';
+import { useEffect, useRef } from 'react';
+import stickyFn from '@/helpers/sticky';
 
 function Driven() {
+  const ref = useRef();
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  });
+
+  function handleScroll() {
+    stickyFn(ref);
+  }
+
   return (
-    <section className="bg-purple text-offWhite">
+    <section className="sticky bg-purple text-offWhite sticky-padding sticky-margin sticky-top-rounded" ref={ref}>
       <Container>
         <SpaceY>
           <div>

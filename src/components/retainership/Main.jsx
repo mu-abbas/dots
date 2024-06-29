@@ -4,10 +4,12 @@ import ReadyToStart from '../ui/ReadyToStart';
 import Counter from './Counter';
 import Features from './Features';
 import Packages from './Packages';
+import Hero from './Hero';
 
 function Main() {
   return (
-    <main className="bg-blue">
+    <main className="sticky pt-24">
+      <Hero />
       <Features />
       <Counter />
       <Packages />

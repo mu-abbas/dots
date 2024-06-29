@@ -20,7 +20,7 @@ function Story() {
   }
 
   return (
-    <section className="sticky bg-black text-offWhite sticky-top-rounded sticky-paading" ref={ref}>
+    <section className="sticky bg-black text-offWhite sticky-top-rounded sticky-padding navControlled" ref={ref}>
       <Container>
         <SpaceY>
           <h2 className="text-2xl leading-8 md:leading-10 md:text-3xl lg:text-4xl xl:text-5xlplus 3xl:text-7xl xl:tracking-tighter 2xl:tracking-normal lg:leading-11 xl:leading-13 3xl:leading-15">

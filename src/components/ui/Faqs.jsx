@@ -5,7 +5,7 @@ import faqs from '@/data/faqs';
 
 function Faqs() {
   return (
-    <section className="sticky z-10 bg-black sticky-margin sticky-bottom-rounded">
+    <section className="sticky z-10 bg-black sticky-margin sticky-bottom-rounded sticky-top-rounded sticky-padding">
       <Container>
         <div className="flex flex-col gap-12 lg:flex-row">
           <div className="space-y-6 xl:space-y-8 2xl:space-y-12">

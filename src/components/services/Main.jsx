@@ -5,9 +5,11 @@ import ReadyToStart from '../ui/ReadyToStart';
 import Testimonials from '../ui/Testimonials';
 import OurDesign from './OurDesign';
 import OurProcess from './OurProcess';
+import Hero from './Hero';
 function Main() {
   return (
-    <main>
+    <main className="sticky">
+      <Hero />
       <OurProcess />
       <OurDesign />
       <Testimonials />

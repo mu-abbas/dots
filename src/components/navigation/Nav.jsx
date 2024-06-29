@@ -12,12 +12,21 @@ function Nav({ color }) {
   const pathname = usePathname();
 
   useEffect(() => {
-    const mainSecChild = document.querySelector('main > section:nth-child(2)');
+    const navControlled = document.querySelector('.navControlled');
+    if (!navControlled) return;
     const nav = document.querySelector('nav');
     const navHeight = nav.getBoundingClientRect().height;
-    const elementTop = mainSecChild.getBoundingClientRect().top;
-    if (elementTop <= navHeight * 4 && !nav.classList.contains('bg-beige')) {
-      nav.classList.add('bg-beige', 'sticky-border');
+    const elementTop = navControlled.getBoundingClientRect().top;
+    const bgColor = Array.from(navControlled.classList)
+      ?.filter(item => item.startsWith('nav-'))
+      ?.at(0)
+      ?.split('-')
+      ?.at(1);
+    const bgClassName = Array.from(nav.classList)
+      ?.filter(item => item.startsWith('bg-'))
+      ?.at(0);
+    if (elementTop <= navHeight * 3.5 && !bgClassName) {
+      nav.classList.add(`${bgColor ? `bg-${bgColor}` : 'bg-beige'}`, 'sticky-border');
     }
   }, []);
 

@@ -3,10 +3,14 @@ import ReadyToStart from '../ui/ReadyToStart';
 import Driven from './Driven';
 import Motto from './Motto';
 import WeDots from './WeDots';
+import Hero from './Hero';
+import CoverImage from '../resources/CoverImage';
 
 function Main() {
   return (
-    <main className="bg-beige">
+    <main className="sticky">
+      <Hero />
+      <CoverImage />
       <WeDots />
       <Driven />
       <Motto />

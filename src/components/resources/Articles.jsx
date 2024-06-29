@@ -6,11 +6,24 @@ import FilterButton from './FilterButton';
 import { useRouter } from 'next/navigation';
 import blogPosts from '@/data/blogPosts';
 import ArticleCard from './ArticleCard';
+import { useEffect, useRef } from 'react';
+import navBg from '@/helpers/navBg';
 
 function Articles() {
   const searchParams = useSearchParams();
   const pathname = usePathname();
   const router = useRouter();
+
+  const ref = useRef();
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  });
+
+  function handleScroll() {
+    navBg(ref);
+  }
 
   const filter = searchParams.get('filter') || 'recent';
   const filteredArticles = blogPosts.filter(article =>
@@ -24,11 +37,11 @@ function Articles() {
   }
 
   return (
-    <section>
+    <section className="sticky z-10 sticky-bottom-rounded bg-beige navControlled" ref={ref}>
       <Container>
         <SpaceY>
           <header>
-            <div className="border-t-[0.5px] border-grey pt-8 opacity-25 lg:pt-10 2xl:pt-12 "></div>
+            <div className="border-t-[0.5px] border-grey pt-8 opacity-25 lg:pt-10 2xl:pt-12"></div>
             <div className="flex flex-col flex-wrap gap-2 sm:flex-row xl:gap-3 3xl:gap-4">
               <FilterButton active={filter === 'all'} onClick={() => filterHandler('all')}>
                 All

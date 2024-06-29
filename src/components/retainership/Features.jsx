@@ -49,7 +49,7 @@ function NextArrow(props) {
 
 function Features() {
   return (
-    <section className="pb-8 bg-blue features md:pb-0">
+    <section className="sticky pb-8 bg-blue features md:pb-0 sticky-bottom-rounded">
       <Container>
         <SpaceY>
           <h2 className="max-w-xs mx-auto text-2xl font-light text-center md:max-w-md xl:max-w-2xl md:text-3xl lg:text-4xl xl:leading-12 xl:text-5xl 3xl:text-5xlplus text-offWhite 3xl:max-w-3xl 3xl:leading-13">

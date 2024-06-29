@@ -1,11 +1,27 @@
 'use client';
 
+import { useEffect, useRef } from 'react';
 import Container from '../micro/Container';
 import SpaceY from '../micro/SpaceY';
+import stickyFn from '@/helpers/sticky';
 
 function WeDots() {
+  const ref = useRef();
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  });
+
+  function handleScroll() {
+    stickyFn(ref);
+  }
+
   return (
-    <section className="bg-left bg-no-repeat bg-cover lg:bg-contain lg:bg-center bg-beige bg-weDots">
+    <section
+      ref={ref}
+      className="sticky bg-left bg-no-repeat bg-cover sticky-margin sticky-padding sticky-top-rounded lg:bg-contain lg:bg-center bg-beige bg-weDots"
+    >
       <Container>
         <SpaceY>
           <h2 className="pb-6 text-2xl font-semibold border-b border-opacity-50 opacity-75 lg:pb-12 text-grey border-grey min-w-max sm:text-3xl lg:text-4xl 3xl:text-5xl">

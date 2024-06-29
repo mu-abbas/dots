@@ -2,10 +2,23 @@
 import Container from '../micro/Container';
 import packages from '@/data/packages';
 import Accordion from './PackagesAccordion';
+import { useEffect, useRef } from 'react';
+import stickyFn from '@/helpers/sticky';
 
 function Packages() {
+  const ref = useRef();
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  });
+
+  function handleScroll() {
+    stickyFn(ref);
+  }
+
   return (
-    <section className="bg-beige">
+    <section ref={ref} className="sticky bg-beige sticky-padding sticky-top-rounded sticky-margin">
       <div className="grid grid-col-1 lg:grid-cols-[1.1fr_0.8fr]">
         <Container>
           <div className="max-w-3xl mx-auto">

@@ -4,7 +4,7 @@ import CTALinkV2 from '../navigation/CTALinkV2';
 
 function Hero() {
   return (
-    <section className="flex items-center xl:items-end">
+    <section className="sticky top-0 flex items-center pt-24 bg-center bg-cover xl:items-end bg-green bg-services bg-repeat-none sticky-padding">
       <Container>
         <div className="py-12 lg:p-0 xl:pt-24 2xl:pt-28">
           <div className="flex flex-col justify-between gap-2 md:gap-4 xl:items-end xl:flex-row">

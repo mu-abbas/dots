@@ -1,12 +1,25 @@
 'use client';
 
+import { useEffect, useRef } from 'react';
 import Container from '../micro/Container';
 import SpaceY from '../micro/SpaceY';
 import CounterItem from './CounterItem';
+import stickyFn from '@/helpers/sticky';
 
 function Counter() {
+  const ref = useRef();
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  });
+
+  function handleScroll() {
+    stickyFn(ref);
+  }
+
   return (
-    <section className="text-center bg-black text-offWhite">
+    <section ref={ref} className="sticky text-center bg-black -z-10 sticky-padding sticky-margin text-offWhite">
       <Container>
         <SpaceY>
           <h2 className="text-2xl text-center md:text-3xl lg:text-4xl 3xl:text-5xl">So far we have accomplished</h2>

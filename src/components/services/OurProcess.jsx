@@ -1,11 +1,26 @@
 'use client';
+import { useEffect, useRef } from 'react';
 import Container from '../micro/Container';
 import SpaceY from '../micro/SpaceY';
 import ProcessItem from './ProcessItem';
 import processes from '@/data/processes';
+import stickyFn from '@/helpers/sticky';
+import navBg from '@/helpers/navBg';
 function OurProcess() {
+  const ref = useRef();
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  });
+
+  function handleScroll() {
+    navBg(ref);
+    stickyFn(ref);
+  }
+
   return (
-    <section className="bg-beige">
+    <section ref={ref} className="sticky bg-beige sticky-padding sticky-margin sticky-top-rounded navControlled">
       <Container>
         <SpaceY>
           <div className="flex flex-col items-start gap-6 sm:gap-8 md:gap-16 lg:gap-20 xl:gap-24 2xl:gap-28 3xl:gap-32 md:flex-row">

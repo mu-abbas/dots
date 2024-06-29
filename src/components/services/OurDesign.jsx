@@ -7,6 +7,8 @@ import OurDesignCarouselItem from './OurDesignCarouselItem';
 import designServices from '@/data/designServices';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { useEffect, useRef } from 'react';
+import stickyFn from '@/helpers/sticky';
 
 const settings = {
   dots: true,
@@ -47,10 +49,24 @@ function NextArrow(props) {
 }
 
 function OurDesign() {
+  const ref = useRef();
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  });
+
+  function handleScroll() {
+    stickyFn(ref);
+  }
+
   return (
-    <section className="relative pb-8 overflow-x-hidden bg-blue text-offWhite ourDesign lg:pb-0">
+    <section
+      ref={ref}
+      className="sticky pb-8 overflow-x-hidden bg-blue text-offWhite ourDesign sticky-padding sticky-margin sticky-top-rounded"
+    >
       <div className="absolute inset-0 z-10 origin-bottom-left scale-105 bg-left-bottom bg-no-repeat bg-contain bg-ourDesign opacity-10"></div>
-      <div className="relative z-50">
+      <div className="relative z-50 pb-8 lg:pb-0">
         <Container>
           <SpaceY>
             <h2 className="text-2xl font-light text-center md:text-3xl lg:text-4xl xl:text-5xl 3xl:text-5xlplus">
