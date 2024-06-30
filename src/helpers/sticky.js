@@ -1,4 +1,5 @@
 export default function stickyFn(ref, lastSection = false) {
+  if (!ref) return;
   const nav = document.querySelector('nav');
   const main = document.querySelector('main');
 

@@ -4,6 +4,8 @@ import Container from '../micro/Container';
 import SpaceY from '../micro/SpaceY';
 import BlogPostCard from './BlogPostCard';
 import blogPosts from '@/data/blogPosts';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 function PrevArrow(props) {
   const { className, style, onClick } = props;
