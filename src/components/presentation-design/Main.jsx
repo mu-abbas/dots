@@ -5,10 +5,12 @@ import ReadyToStart from '../ui/ReadyToStart';
 import Capabilities from './Capabilities';
 import Offers from './Offers';
 import PowerOfDots from './PowerOfDots';
+import Hero from './Hero';
 
 function Main() {
   return (
-    <main className="bg-beige">
+    <main className="sticky">
+      <Hero />
       <PowerOfDots />
       <Capabilities />
       <Offers />

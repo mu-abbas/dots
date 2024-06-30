@@ -13,7 +13,7 @@ export const metadata = {
     siteName: 'Dotspresentaions',
     images: [
       {
-        url: 'https://upload.wikimedia.org/wikipedia/commons/b/b5/800x600_Wallpaper_Blue_Sky.png',
+        url: 'https://i.ibb.co/tM39yJ3/meta.png',
         width: 800,
         height: 600,
       },
@@ -26,7 +26,7 @@ export const metadata = {
     title: 'Services - DOTS',
     description: `The Visual Way to Communicate Your Message Presentation Design Services Presentation Design Services We use our creativity, expertise, and passion to connect the dots and bring your stories to life. The Visual Way to Communicate Your Message We use our creativity, expertise, and passion to connect the dots and bring your stories to life.`,
     creator: '@dotsppts',
-    images: ['https://upload.wikimedia.org/wikipedia/commons/b/b5/800x600_Wallpaper_Blue_Sky.png'],
+    images: ['https://i.ibb.co/tM39yJ3/meta.png'],
   },
 };
 

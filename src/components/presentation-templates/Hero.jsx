@@ -6,7 +6,7 @@ import images from '@/data/presentationTemplatesImages';
 
 function Hero() {
   return (
-    <section className="text-white">
+    <section className="pt-24 text-white sticky-bottom-rounded bg-[left_bottom_-12rem] bg-no-repeat bg-contain lg:bg-[length:480px_1080px] bg-presentationTemplates bg-lightNavy">
       <Container>
         <h1 className="flex flex-col gap-1 pb-8 md:gap-4 md:text-center lg:pb-12">
           <span className="text-3xl font-light md:text-4xl lg:text-5xl">Save Time and</span>

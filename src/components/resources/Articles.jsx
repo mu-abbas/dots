@@ -6,24 +6,11 @@ import FilterButton from './FilterButton';
 import { useRouter } from 'next/navigation';
 import blogPosts from '@/data/blogPosts';
 import ArticleCard from './ArticleCard';
-import { useEffect, useRef } from 'react';
-import navBg from '@/helpers/navBg';
 
 function Articles() {
   const searchParams = useSearchParams();
   const pathname = usePathname();
   const router = useRouter();
-
-  const ref = useRef();
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  });
-
-  function handleScroll() {
-    navBg(ref);
-  }
 
   const filter = searchParams.get('filter') || 'recent';
   const filteredArticles = blogPosts.filter(article =>
@@ -37,7 +24,7 @@ function Articles() {
   }
 
   return (
-    <section className="sticky z-10 sticky-bottom-rounded bg-beige navControlled" ref={ref}>
+    <section className="sticky z-10 sticky-bottom-rounded bg-beige">
       <Container>
         <SpaceY>
           <header>

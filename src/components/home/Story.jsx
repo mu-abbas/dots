@@ -4,7 +4,6 @@ import Container from '../micro/Container';
 import SpaceY from '../micro/SpaceY';
 import CTALinkV2 from '../navigation/CTALinkV2';
 import stickyFn from '@/helpers/sticky';
-import navBg from '@/helpers/navBg';
 
 function Story() {
   const ref = useRef();
@@ -15,12 +14,11 @@ function Story() {
   });
 
   function handleScroll() {
-    navBg(ref);
     stickyFn(ref);
   }
 
   return (
-    <section className="sticky bg-black text-offWhite sticky-top-rounded sticky-padding navControlled" ref={ref}>
+    <section className="sticky bg-black text-offWhite sticky-top-rounded sticky-padding" ref={ref}>
       <Container>
         <SpaceY>
           <h2 className="text-2xl leading-8 md:leading-10 md:text-3xl lg:text-4xl xl:text-5xlplus 3xl:text-7xl xl:tracking-tighter 2xl:tracking-normal lg:leading-11 xl:leading-13 3xl:leading-15">

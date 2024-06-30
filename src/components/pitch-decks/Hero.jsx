@@ -6,7 +6,7 @@ import images from '@/data/pitchDecksImages';
 
 function Hero() {
   return (
-    <section className="text-white">
+    <section className="pt-24 text-white sticky-bottom-rounded bg-[left_1rem_center] bg-no-repeat md:bg-50% bg-75% bg-lightPurple bg-pitchDecks">
       <Container>
         <h1 className="flex flex-col gap-1 pb-8 md:gap-4 md:text-center lg:pb-12">
           <span className="text-3xl font-light md:text-4xl lg:text-5xl">Pitch Decks</span>

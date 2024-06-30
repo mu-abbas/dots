@@ -1,12 +1,25 @@
 'use client';
+import { useEffect, useRef } from 'react';
 import Container from '../micro/Container';
 import SpaceY from '../micro/SpaceY';
 import CapabilityItem from './CapabilityItem';
 import CapabilityList from './CapabilityList';
+import stickyFn from '@/helpers/sticky';
 
 function Capabilities() {
+  const ref = useRef();
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  });
+
+  function handleScroll() {
+    stickyFn(ref);
+  }
+
   return (
-    <section className="bg-green">
+    <section className="sticky bg-green sticky-padding sticky-top-rounded sticky-margin" ref={ref}>
       <Container>
         <SpaceY>
           <h2 className="text-3xl text-center opacity-75 md:text-left md:text-4xl lg:text-5xl xl:text-5xlplus 3xl:text-6xl text-grey">

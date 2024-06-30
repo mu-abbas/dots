@@ -2,7 +2,7 @@
 
 function Hero() {
   return (
-    <section className="pt-24 bg-beige">
+    <section className="pt-28 bg-beige">
       <div className="pt-[1.5rem] lg:pt-[2rem] 2xl:pt-[2.5rem]">
         <div className="container px-8 py-12 pb-0 mx-auto sm:px-10 sm:py-14 md:px-12 md:py-16 lg:px-14 lg:py-20 xl:px-16 xl:py-24 2xl:py-28 2xl:px-20 sm:pb-0 md:pb-0 lg:pb-0 xl:pb-0 2xl:pb-0 3xl:pb-0">
           <h1 className="flex flex-col justify-center gap-2 pt-12 md:gap-4 xl:items-start ">

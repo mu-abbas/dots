@@ -4,7 +4,7 @@ import Container from '../micro/Container';
 
 function Hero({ title, date, duration }) {
   return (
-    <section>
+    <section className="sticky pt-24 sticky-bottom-rounded bg-beige">
       <Container>
         <div className="flex flex-col items-center gap-1 sm:gap-2 md:gap-4">
           <time dateTime={date} className="text-sm font-bold sm:text-base text-blue md:text-lg xl:text-xl 2xl:text-2xl">

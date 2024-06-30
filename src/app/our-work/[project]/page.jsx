@@ -61,8 +61,8 @@ function page({ params }) {
 
   return (
     <>
-      <Header title={title} />
-      <Main href={href} details={details} next={next} previous={previous} />
+      <Header />
+      <Main details={details} next={next} previous={previous} title={title} />
       <Footer />
     </>
   );

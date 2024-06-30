@@ -7,7 +7,7 @@ import Next from './Next';
 
 function Pagination({ next, previous }) {
   return (
-    <section>
+    <section className="bg-beige pb-[1.5rem] lg:pb-[2rem] 2xl:pb-[2.5rem]">
       <Container>
         <div className="flex items-center justify-between">
           <Previous previous={previous} />

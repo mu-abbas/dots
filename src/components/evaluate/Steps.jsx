@@ -6,7 +6,7 @@ import steps from '@/data/steps';
 
 function Steps() {
   return (
-    <section className="text-center text-black bg-beige">
+    <section className="sticky text-center text-black bg-beige -z-10 pt-[1.5rem] lg:pt-[2rem] 2xl:pt-[2.5rem] sticky-margin">
       <Container>
         <div className="lg:mt-24">
           <SpaceY>

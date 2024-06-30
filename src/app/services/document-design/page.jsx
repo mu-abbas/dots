@@ -12,7 +12,7 @@ export const metadata = {
     siteName: 'Dotspresentaions',
     images: [
       {
-        url: 'https://upload.wikimedia.org/wikipedia/commons/b/b5/800x600_Wallpaper_Blue_Sky.png',
+        url: 'https://i.ibb.co/tM39yJ3/meta.png',
         width: 800,
         height: 600,
       },
@@ -25,7 +25,7 @@ export const metadata = {
     title: 'Document Design - DOTS',
     description: `Your All-in-One Solution forYour All-in-OneSolution for Document Design Get your documents noticed with our professional design and layout services. We create custom reports, fillable forms, and other documents that match your needs, informative, visually appealing, and follow your brand look and feel. Annual Reports Design Story-driven customized charts, illustrations, infographics, and formats.`,
     creator: '@dotsppts',
-    images: ['https://upload.wikimedia.org/wikipedia/commons/b/b5/800x600_Wallpaper_Blue_Sky.png'],
+    images: ['https://i.ibb.co/tM39yJ3/meta.png'],
   },
 };
 

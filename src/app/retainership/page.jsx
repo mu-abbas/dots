@@ -14,7 +14,7 @@ export const metadata = {
     siteName: 'Dotspresentaions',
     images: [
       {
-        url: 'https://upload.wikimedia.org/wikipedia/commons/b/b5/800x600_Wallpaper_Blue_Sky.png',
+        url: 'https://i.ibb.co/tM39yJ3/meta.png',
         width: 800,
         height: 600,
       },
@@ -28,7 +28,7 @@ export const metadata = {
     description:
       'Dots Retainership Reliable, Efficient Delivery Every Time! Top Presentation Designers A dedicated team of highly skilled and experienced professionals with proven expertise in a wide range of industries. Fast Turnarounds A dedicated team of highly skilled and experienced professionals with proven expertise in a wide range of industries.',
     creator: '@dotsppts',
-    images: ['https://upload.wikimedia.org/wikipedia/commons/b/b5/800x600_Wallpaper_Blue_Sky.png'],
+    images: ['https://i.ibb.co/tM39yJ3/meta.png'],
   },
 };
 function Retainership() {

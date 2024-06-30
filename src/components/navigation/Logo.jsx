@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 function Logo({ color = 'blue' }) {
   return (
-    <Link href="/">
+    <Link href="/" className="relative">
       <img
         src={`${color === 'yellow' ? '/image/logomark-yellow.png' : `/icon/logo-${color}.svg`}`}
         alt="dots logomark"

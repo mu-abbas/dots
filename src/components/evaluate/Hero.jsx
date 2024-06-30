@@ -5,7 +5,7 @@ import Form from './Form';
 
 function Hero() {
   return (
-    <section className="text-white">
+    <section className="pt-24 text-white bg-black sticky-bottom-rounded">
       <Container>
         <h1 className="flex flex-col gap-3 pb-4 text-center md:gap-6 md:pb-8 lg:pb-12 2xl:gap-9 2xl:pb-16">
           <span className="text-3xl font-light sm:text-4xl lg:text-5xl 2xl:text-6xl">

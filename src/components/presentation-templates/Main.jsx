@@ -3,10 +3,12 @@
 import Faqs from '../ui/Faqs';
 import ReadyToStart from '../ui/ReadyToStart';
 import Features from './Features';
+import Hero from './Hero';
 
 function Main() {
   return (
-    <main className="bg-beige">
+    <main className="sticky">
+      <Hero />
       <Features />
       <Faqs />
       <ReadyToStart />

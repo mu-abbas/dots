@@ -1,13 +1,10 @@
 'use client';
-
 import Nav from '../navigation/Nav';
-import Hero from './Hero';
 
-function Header({ title, date, duration }) {
+function Header() {
   return (
     <header className="bg-beige">
       <Nav />
-      <Hero title={title} date={date} duration={duration} />
     </header>
   );
 }

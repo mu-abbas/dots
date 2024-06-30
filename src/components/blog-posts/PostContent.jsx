@@ -42,7 +42,7 @@ function PostContent({ content, slides, title, href }) {
   };
 
   return (
-    <section>
+    <section className="bg-beige sticky-top-rounded sticky-margin">
       <div className="container px-8 pt-12 mx-auto sm:px-10 sm:pt-14 md:px-12 md:pt-16 lg:px-14 lg:pt-20 xl:px-16 xl:pt-24 2xl:pt-28 2xl:px-20">
         <SpaceY>
           <div>{content}</div>

@@ -4,7 +4,7 @@ import Container from '../micro/Container';
 
 function Hero({ title }) {
   return (
-    <section>
+    <section className="sticky z-10 pt-24 sticky-bottom-rounded bg-beige">
       <Container>
         <div className="py-4 sm:p-6 md:p-8 lg:p-12 xl:p-16 2xl:p-20 3xl:p-24">
           <h1 className="flex flex-col md:gap-3 lg:gap-5 xl:gap-7 3xl:gap-9">

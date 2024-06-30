@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect, useRef } from 'react';
 import Container from '../micro/Container';
 import SpaceY from '../micro/SpaceY';
 import CTALinkV2 from '../navigation/CTALinkV2';
@@ -7,10 +8,21 @@ import GalleryItem from '../ui/GalleryItem';
 import FeatureItem from './FeatureItem';
 import features from '@/data/pTemplatesFeatures';
 import projects from '@/data/projects';
+import stickyFn from '@/helpers/sticky';
 
 function Features() {
+  const ref = useRef();
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  });
+
+  function handleScroll() {
+    stickyFn(ref);
+  }
   return (
-    <section>
+    <section className="sticky sticky-padding bg-beige sticky-margin -z-10" ref={ref}>
       <Container>
         <SpaceY>
           <div className="mt-16 lg:mt-32 md:mt-24">

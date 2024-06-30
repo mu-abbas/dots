@@ -1,32 +1,11 @@
 'use client';
 
-import navBg from '@/helpers/navBg';
-import { useEffect, useRef } from 'react';
-
 function HeroHeading() {
-  const ref = useRef();
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  });
-
-  function handleScroll() {
-    navBg(ref);
-  }
-
   return (
     <section className="flex flex-col gap-12 space-y-12 xl:w-full xl:justify-around">
-      <div>
-        <h1 className="mx-auto text-5xl font-light text-center lg:px-0 lg:text-6xl md:text-5xlplus md:max-w-2xl md:px-4 xl:text-7xl xl:max-w-full 3xl:text-8xl">
-          We&apos;re glad you ended up here
-        </h1>
-        <span
-          aria-hidden
-          className="inline-block translate-y-24 sm:translate-y-20 md:translate-y-14 navControlled lg:translate-y-4 2xl:-translate-y-6 3xl:-translate-y-18"
-          ref={ref}
-        ></span>
-      </div>
+      <h1 className="mx-auto text-5xl font-light text-center lg:px-0 lg:text-6xl md:text-5xlplus md:max-w-2xl md:px-4 xl:text-7xl xl:max-w-full 3xl:text-8xl">
+        We&apos;re glad you ended up here
+      </h1>
       <figure className="flex items-center justify-around gap-4 sm:gap-0 md:px-16 lg:px-32 xl:flex-col xl:gap-12 xl:items-start xl:px-16 3xl:px-32">
         <img src="/image/contact-us/social.png" alt="social icons" className="w-24 sm:w-32 lg:w-40 xl:w-48 3xl:w-56" />
         <figcaption className="flex flex-col items-center lg:gap-4 sm:gap-2 xl:pb-12">

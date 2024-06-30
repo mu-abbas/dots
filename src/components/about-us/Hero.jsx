@@ -1,21 +1,7 @@
 'use client';
-
-import { useEffect, useRef } from 'react';
 import Container from '../micro/Container';
-import navBg from '@/helpers/navBg';
 
 function Hero() {
-  const ref = useRef();
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  });
-
-  function handleScroll() {
-    navBg(ref);
-  }
-
   return (
     <section className="sticky">
       <div className="bg-black bg-center bg-no-repeat bg-cover sm:pt-16 md:pt-20 xl:pt-24 2xl:pt-28 sticky-padding sticky-bottom-rounded text-offWhite bg-aboutUs">
@@ -29,11 +15,6 @@ function Hero() {
                 Connecting the dots to your success
               </span>
             </h1>
-            <span
-              aria-hidden
-              className="inline-block -translate-y-6 sm:-translate-y-16 md:-translate-y-24 navControlled nav-black lg:-translate-y-36 2xl:-translate-y-64 3xl:-translate-y-72"
-              ref={ref}
-            ></span>
           </Container>
         </div>
       </div>

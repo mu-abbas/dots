@@ -7,7 +7,7 @@ import ProcessItem from './ProcessItem';
 
 function Process() {
   return (
-    <section>
+    <section className="bg-beige sticky-margin">
       <Container>
         <div className="pt-12 border-t border-black sm:pt-14 md:pt-16 lg:pt-8 xl:pt-4 2xl:pt-0">
           <SpaceY>

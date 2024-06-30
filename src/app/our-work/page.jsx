@@ -14,7 +14,7 @@ export const metadata = {
     siteName: 'Dotspresentaions',
     images: [
       {
-        url: 'https://upload.wikimedia.org/wikipedia/commons/b/b5/800x600_Wallpaper_Blue_Sky.png',
+        url: 'https://i.ibb.co/tM39yJ3/meta.png',
         width: 800,
         height: 600,
       },
@@ -28,7 +28,7 @@ export const metadata = {
     description:
       'Creating presentations that gets you noticed AllPresentation DesignPitch DecksPresentation TemplatesDocument Design Topo Chico Marriot BOD Venus Presentation Surgio Health Marriot CEC Cloud Flyer League of Play SMS Oversubscribe Decast Gruppi CollectionXYZ Stake Sauce Marriot DRES Novonordisk BIG Marriot Event template Venus template Dolormin template Together E-book Y20 Whitepaper BIG Report Together Whitepaper.',
     creator: '@dotsppts',
-    images: ['https://upload.wikimedia.org/wikipedia/commons/b/b5/800x600_Wallpaper_Blue_Sky.png'],
+    images: ['https://i.ibb.co/tM39yJ3/meta.png'],
   },
 };
 

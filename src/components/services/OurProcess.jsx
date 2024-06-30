@@ -5,7 +5,6 @@ import SpaceY from '../micro/SpaceY';
 import ProcessItem from './ProcessItem';
 import processes from '@/data/processes';
 import stickyFn from '@/helpers/sticky';
-import navBg from '@/helpers/navBg';
 function OurProcess() {
   const ref = useRef();
 
@@ -15,12 +14,11 @@ function OurProcess() {
   });
 
   function handleScroll() {
-    navBg(ref);
     stickyFn(ref);
   }
 
   return (
-    <section ref={ref} className="sticky bg-beige sticky-padding sticky-margin sticky-top-rounded navControlled">
+    <section ref={ref} className="sticky bg-beige sticky-padding sticky-margin sticky-top-rounded">
       <Container>
         <SpaceY>
           <div className="flex flex-col items-start gap-6 sm:gap-8 md:gap-16 lg:gap-20 xl:gap-24 2xl:gap-28 3xl:gap-32 md:flex-row">

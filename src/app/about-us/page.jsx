@@ -13,7 +13,7 @@ export const metadata = {
     siteName: 'Dotspresentaions',
     images: [
       {
-        url: 'https://upload.wikimedia.org/wikipedia/commons/b/b5/800x600_Wallpaper_Blue_Sky.png',
+        url: 'https://i.ibb.co/tM39yJ3/meta.png',
         width: 800,
         height: 600,
       },
@@ -27,7 +27,7 @@ export const metadata = {
     description:
       'Dots Presentations is a creative design studio that specializes in creating powerful presentations and visually compelling data visualizations. Our core mission is to take complex data and turn it into clear, engaging narratives that resonate with diverse audiences. We are passionate about helping businesses, organizations, and individuals tell their stories effectively, ensuring that their message is not only understood but also remembered. At Dots Presentations, we connect the dots to deliver clarity, impact, and insight.',
     creator: '@dotsppts',
-    images: ['https://upload.wikimedia.org/wikipedia/commons/b/b5/800x600_Wallpaper_Blue_Sky.png'],
+    images: ['https://i.ibb.co/tM39yJ3/meta.png'],
   },
 };
 

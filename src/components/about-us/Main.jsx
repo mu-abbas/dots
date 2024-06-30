@@ -4,7 +4,7 @@ import Driven from './Driven';
 import Motto from './Motto';
 import WeDots from './WeDots';
 import Hero from './Hero';
-import CoverImage from '../resources/CoverImage';
+import CoverImage from './CoverImage';
 
 function Main() {
   return (

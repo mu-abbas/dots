@@ -6,24 +6,11 @@ import SpaceY from '../micro/SpaceY';
 import FilterButton from '../ui/FilterButton';
 import GalleryItem from './GalleryItem';
 import { useRouter } from 'next/navigation';
-import { useEffect, useRef } from 'react';
-import navBg from '@/helpers/navBg';
 
 function Gallery() {
   const searchParams = useSearchParams();
   const pathname = usePathname();
   const router = useRouter();
-
-  const ref = useRef();
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  });
-
-  function handleScroll() {
-    navBg(ref);
-  }
 
   const filter = searchParams.get('filter') || 'all';
   const filteredProjects = projects.filter(project => (filter === 'all' ? project : project.type === filter));
@@ -35,7 +22,7 @@ function Gallery() {
   }
 
   return (
-    <section ref={ref} className="navControlled">
+    <section>
       <Container>
         <SpaceY>
           <header>

@@ -7,10 +7,23 @@ import PowerItem from './PowerItem';
 import projects from '@/data/projects';
 import GalleryItem from '../ui/GalleryItem';
 import CTALinkV2 from '../navigation/CTALinkV2';
+import { useEffect, useRef } from 'react';
+import stickyFn from '@/helpers/sticky';
 
 function PowerOfDots() {
+  const ref = useRef();
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  });
+
+  function handleScroll() {
+    stickyFn(ref);
+  }
+
   return (
-    <section>
+    <section ref={ref} className="sticky sticky-padding bg-beige sticky-margin -z-10">
       <Container>
         <SpaceY>
           <div>

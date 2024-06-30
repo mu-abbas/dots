@@ -14,7 +14,7 @@ export const metadata = {
     siteName: 'Dotspresentaions',
     images: [
       {
-        url: 'https://upload.wikimedia.org/wikipedia/commons/b/b5/800x600_Wallpaper_Blue_Sky.png',
+        url: 'https://i.ibb.co/tM39yJ3/meta.png',
         width: 800,
         height: 600,
       },
@@ -28,7 +28,7 @@ export const metadata = {
     description:
       'Get a free, expert slide evaluation on your slides before you deliver your presentation. on your slides before you deliver your presentation. Link your presentation/Slides here UPLOAD Get a free, quick and easy check of your slides in just 3 steps Get a free, quick and easy check of your slides in just 3 steps.',
     creator: '@dotsppts',
-    images: ['https://upload.wikimedia.org/wikipedia/commons/b/b5/800x600_Wallpaper_Blue_Sky.png'],
+    images: ['https://i.ibb.co/tM39yJ3/meta.png'],
   },
 };
 

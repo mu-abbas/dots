@@ -13,7 +13,7 @@ export const metadata = {
     siteName: 'Dotspresentaions',
     images: [
       {
-        url: 'https://upload.wikimedia.org/wikipedia/commons/b/b5/800x600_Wallpaper_Blue_Sky.png',
+        url: 'https://i.ibb.co/tM39yJ3/meta.png',
         width: 800,
         height: 600,
       },
@@ -27,7 +27,7 @@ export const metadata = {
     description:
       'We’re glad you ended up here Follow Us On Linkedin-in Instagram Facebook-square Link your presentation Send **Response time 6-8 hours Want to schedule a phone call instead? We got you! follow the steps in the calendar to pick the best time and you’ll be all set.',
     creator: '@dotsppts',
-    images: ['https://upload.wikimedia.org/wikipedia/commons/b/b5/800x600_Wallpaper_Blue_Sky.png'],
+    images: ['https://i.ibb.co/tM39yJ3/meta.png'],
   },
 };
 

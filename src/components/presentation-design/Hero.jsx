@@ -6,7 +6,7 @@ import images from '@/data/presentationDesignImages';
 
 function Hero() {
   return (
-    <section className="text-white">
+    <section className="pt-24 text-white bg-left-bottom bg-no-repeat bg-contain bg-mediumBlue bg-presentationDesign sticky-bottom-rounded">
       <Container>
         <h1 className="flex flex-col gap-1 pb-8 md:gap-4 md:text-center lg:pb-12">
           <span className="text-3xl font-light md:text-4xl lg:text-5xl">Connect With Your Audience,</span>

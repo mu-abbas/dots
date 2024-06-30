@@ -8,7 +8,7 @@ function Hero() {
   return (
     <section>
       <Container>
-        <div className="flex flex-col gap-16 xl:flex-row">
+        <div className="flex flex-col gap-16 pt-12 xl:flex-row">
           <HeroHeading />
           <ContactForm />
         </div>

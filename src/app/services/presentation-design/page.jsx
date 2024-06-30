@@ -13,7 +13,7 @@ export const metadata = {
     siteName: 'Dotspresentaions',
     images: [
       {
-        url: 'https://upload.wikimedia.org/wikipedia/commons/b/b5/800x600_Wallpaper_Blue_Sky.png',
+        url: 'https://i.ibb.co/tM39yJ3/meta.png',
         width: 800,
         height: 600,
       },
@@ -26,7 +26,7 @@ export const metadata = {
     title: 'Presentation Design - DOTS',
     description: `Connect With Your Audience, And Let Your Presentation Pop Our presentation design services are the solution that helps you create Engaging, Flawless, and Effective Presentations. On Budget. On-Time! The power of DOTS The power of DOTS Create Tailored Solutions Especially if you need to create multiple presentations on a regular basis.`,
     creator: '@dotsppts',
-    images: ['https://upload.wikimedia.org/wikipedia/commons/b/b5/800x600_Wallpaper_Blue_Sky.png'],
+    images: ['https://i.ibb.co/tM39yJ3/meta.png'],
   },
 };
 

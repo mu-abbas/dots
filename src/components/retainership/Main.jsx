@@ -8,7 +8,7 @@ import Hero from './Hero';
 
 function Main() {
   return (
-    <main className="sticky pt-24">
+    <main className="sticky">
       <Hero />
       <Features />
       <Counter />

@@ -13,7 +13,7 @@ export const metadata = {
     siteName: 'Dotspresentaions',
     images: [
       {
-        url: 'https://upload.wikimedia.org/wikipedia/commons/b/b5/800x600_Wallpaper_Blue_Sky.png',
+        url: 'https://i.ibb.co/tM39yJ3/meta.png',
         width: 800,
         height: 600,
       },
@@ -26,7 +26,7 @@ export const metadata = {
     title: 'Presentation Templates - DOTS',
     description: `Save Time and Get Your Message Across with Style! Get Your Message Across with Style! Our Presentation Templates Service is here to save your time and create visually appealing Slides/ Presentations that follow your brand guidelines and are customized to your needs. Save Time and Effort Especially if you need to create multiple presentations.`,
     creator: '@dotsppts',
-    images: ['https://upload.wikimedia.org/wikipedia/commons/b/b5/800x600_Wallpaper_Blue_Sky.png'],
+    images: ['https://i.ibb.co/tM39yJ3/meta.png'],
   },
 };
 

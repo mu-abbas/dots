@@ -6,10 +6,23 @@ import SpaceY from '../micro/SpaceY';
 import CTALinkV2 from '../navigation/CTALinkV2';
 import GalleryItem from '../ui/GalleryItem';
 import CounterItem from './CounterItem';
+import { useEffect, useRef } from 'react';
+import stickyFn from '@/helpers/sticky';
 
 function Counter() {
+  const ref = useRef();
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  });
+
+  function handleScroll() {
+    stickyFn(ref);
+  }
+
   return (
-    <section className="text-center text-black bg-beige">
+    <section ref={ref} className="sticky text-center text-black -z-10 sticky-padding sticky-margin bg-beige">
       <Container>
         <SpaceY>
           <div className="mt-12 md:mt-18 lg:mt-24">
