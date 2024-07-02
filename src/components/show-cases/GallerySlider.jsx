@@ -39,6 +39,7 @@ function GallerySlider({ setSliderIsOpen, slides }) {
   function handleClose() {
     setSliderIsOpen(false);
     document.querySelector('body').classList.remove('overflow-y-hidden');
+    document.querySelector('nav').classList.add('z-50');
   }
 
   return (

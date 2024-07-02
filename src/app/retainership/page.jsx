@@ -3,18 +3,18 @@ import Header from '@/components/retainership/Header';
 import Main from '@/components/retainership/Main';
 
 export const metadata = {
-  title: 'Retainership',
+  title: 'Presentation Design Retainership',
   description:
-    'Dots Retainership Reliable, Efficient Delivery Every Time! Top Presentation Designers A dedicated team of highly skilled and experienced professionals with proven expertise in a wide range of industries. Fast Turnarounds A dedicated team of highly skilled and experienced professionals with proven expertise in a wide range of industries.',
+    'Ensure ongoing presentation excellence with our retainership services. Benefit from continuous support, regular updates, and priority service to keep your presentations top-notch.',
   openGraph: {
-    title: 'Retainership - DOTS',
+    title: 'Presentation Design Retainership | Dots Presentations',
     description:
-      'Dots Retainership Reliable, Efficient Delivery Every Time! Top Presentation Designers A dedicated team of highly skilled and experienced professionals with proven expertise in a wide range of industries. Fast Turnarounds A dedicated team of highly skilled and experienced professionals with proven expertise in a wide range of industries.',
+      'Ensure ongoing presentation excellence with our retainership services. Benefit from continuous support, regular updates, and priority service to keep your presentations top-notch.',
     url: 'https://dotspresentations.com/retainership',
     siteName: 'Dotspresentaions',
     images: [
       {
-        url: 'https://i.ibb.co/tM39yJ3/meta.png',
+        url: 'https://dotspresentations.com/images/retainershipog.jpeg',
         width: 800,
         height: 600,
       },
@@ -24,11 +24,11 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Retainership - DOTS',
+    title: 'Presentation Design Retainership | Dots Presentations',
     description:
-      'Dots Retainership Reliable, Efficient Delivery Every Time! Top Presentation Designers A dedicated team of highly skilled and experienced professionals with proven expertise in a wide range of industries. Fast Turnarounds A dedicated team of highly skilled and experienced professionals with proven expertise in a wide range of industries.',
+      'Ensure ongoing presentation excellence with our retainership services. Benefit from continuous support, regular updates, and priority service to keep your presentations top-notch.',
     creator: '@dotsppts',
-    images: ['https://i.ibb.co/tM39yJ3/meta.png'],
+    images: ['https://dotspresentations.com/images/retainershipog.jpeg'],
   },
 };
 function Retainership() {

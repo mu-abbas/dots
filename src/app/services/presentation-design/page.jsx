@@ -3,17 +3,17 @@ import Header from '@/components/presentation-design/Header';
 import Main from '@/components/presentation-design/Main';
 
 export const metadata = {
-  title: 'Presentation Design',
+  title: 'Custom Presentation Design',
   description:
-    'Connect With Your Audience, And Let Your Presentation Pop Our presentation design services are the solution that helps you create Engaging, Flawless, and Effective Presentations. On Budget. On-Time! The power of DOTS The power of DOTS Create Tailored Solutions Especially if you need to create multiple presentations on a regular basis.',
+    'Get bespoke presentation designs tailored to your brand and message. Our expert designers create visually appealing, easy-to-follow slides that connect with your audience.',
   openGraph: {
-    title: 'Presentation Design - DOTS',
-    description: `Connect With Your Audience, And Let Your Presentation Pop Our presentation design services are the solution that helps you create Engaging, Flawless, and Effective Presentations. On Budget. On-Time! The power of DOTS The power of DOTS Create Tailored Solutions Especially if you need to create multiple presentations on a regular basis.`,
+    title: 'Custom Presentation Design | Dots Presentations ',
+    description: `Get bespoke presentation designs tailored to your brand and message. Our expert designers create visually appealing, easy-to-follow slides that connect with your audience.`,
     url: 'https://dotspresentations.com/services/presentation-design/',
     siteName: 'Dotspresentaions',
     images: [
       {
-        url: 'https://i.ibb.co/tM39yJ3/meta.png',
+        url: 'https://dotspresentations.com/images/presentationog.jpeg',
         width: 800,
         height: 600,
       },
@@ -23,10 +23,10 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Presentation Design - DOTS',
-    description: `Connect With Your Audience, And Let Your Presentation Pop Our presentation design services are the solution that helps you create Engaging, Flawless, and Effective Presentations. On Budget. On-Time! The power of DOTS The power of DOTS Create Tailored Solutions Especially if you need to create multiple presentations on a regular basis.`,
+    title: 'Custom Presentation Design | Dots Presentations ',
+    description: `Get bespoke presentation designs tailored to your brand and message. Our expert designers create visually appealing, easy-to-follow slides that connect with your audience.`,
     creator: '@dotsppts',
-    images: ['https://i.ibb.co/tM39yJ3/meta.png'],
+    images: ['https://dotspresentations.com/images/presentationog.jpeg'],
   },
 };
 

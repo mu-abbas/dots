@@ -3,17 +3,17 @@ import Main from '@/components/about-us/Main';
 import Footer from '@/components/footer/Footer';
 
 export const metadata = {
-  title: 'About Us',
-  description: `Dots Presentations is a creative design studio that specializes in creating powerful presentations and visually compelling data visualizations. Our core mission is to take complex data and turn it into clear, engaging narratives that resonate with diverse audiences. We are passionate about helping businesses, organizations, and individuals tell their stories effectively, ensuring that their message is not only understood but also remembered. At Dots Presentations, we connect the dots to deliver clarity, impact, and insight.`,
+  title: 'About Dots Presentations',
+  description: `Learn more about Dots Presentations, our mission, and our team of expert designers. Discover how we help clients tell their stories and achieve their presentation goals.`,
   openGraph: {
-    title: 'About Us - DOTS',
+    title: 'About Dots Presentations | Presentation Design Experts',
     description:
-      'Dots Presentations is a creative design studio that specializes in creating powerful presentations and visually compelling data visualizations. Our core mission is to take complex data and turn it into clear, engaging narratives that resonate with diverse audiences. We are passionate about helping businesses, organizations, and individuals tell their stories effectively, ensuring that their message is not only understood but also remembered. At Dots Presentations, we connect the dots to deliver clarity, impact, and insight.',
+      'Learn more about Dots Presentations, our mission, and our team of expert designers. Discover how we help clients tell their stories and achieve their presentation goals.',
     url: 'https://dotspresentations.com/about-us',
     siteName: 'Dotspresentaions',
     images: [
       {
-        url: 'https://i.ibb.co/tM39yJ3/meta.png',
+        url: 'https://dotspresentations.com/images/aboutusog.jpeg',
         width: 800,
         height: 600,
       },
@@ -23,11 +23,11 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'About Us - DOTS',
+    title: 'About Dots Presentations | Presentation Design Experts',
     description:
-      'Dots Presentations is a creative design studio that specializes in creating powerful presentations and visually compelling data visualizations. Our core mission is to take complex data and turn it into clear, engaging narratives that resonate with diverse audiences. We are passionate about helping businesses, organizations, and individuals tell their stories effectively, ensuring that their message is not only understood but also remembered. At Dots Presentations, we connect the dots to deliver clarity, impact, and insight.',
+      'Learn more about Dots Presentations, our mission, and our team of expert designers. Discover how we help clients tell their stories and achieve their presentation goals.',
     creator: '@dotsppts',
-    images: ['https://i.ibb.co/tM39yJ3/meta.png'],
+    images: ['https://dotspresentations.com/images/aboutusog.jpeg'],
   },
 };
 

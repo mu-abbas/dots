@@ -17,6 +17,7 @@ function Nav({ color }) {
   const currentColor = isScrolled ? 'blue' : color;
 
   useEffect(() => {
+    if (!ref?.current) return;
     if (window.scrollY >= ref.current.getBoundingClientRect().height) setIsScrolled(true);
   }, []);
 
@@ -30,6 +31,7 @@ function Nav({ color }) {
   }, []);
 
   function handleScroll() {
+    if (!ref?.current) return;
     if (window.scrollY >= ref.current.getBoundingClientRect().height && isScrolled === false) setIsScrolled(true);
     if (window.scrollY < ref.current.getBoundingClientRect().height && isScrolled === true) setIsScrolled(false);
   }

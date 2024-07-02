@@ -5,15 +5,15 @@ import Main from '@/components/services/Main';
 export const metadata = {
   title: 'Services',
   description:
-    'The Visual Way to Communicate Your Message Presentation Design Services Presentation Design Services We use our creativity, expertise, and passion to connect the dots and bring your stories to life. The Visual Way to Communicate Your Message We use our creativity, expertise, and passion to connect the dots and bring your stories to life.',
+    'Explore our comprehensive presentation design services, including custom presentations, templates, pitch decks, and document design. Elevate your communication and captivate your audience with visually stunning slides.',
   openGraph: {
-    title: 'Services - DOTS',
-    description: `The Visual Way to Communicate Your Message Presentation Design Services Presentation Design Services We use our creativity, expertise, and passion to connect the dots and bring your stories to life. The Visual Way to Communicate Your Message We use our creativity, expertise, and passion to connect the dots and bring your stories to life.`,
+    title: 'Services - Dots Presentations',
+    description: `Explore our comprehensive presentation design services, including custom presentations, templates, pitch decks, and document design. Elevate your communication and captivate your audience with visually stunning slides.`,
     url: 'https://dotspresentations.com/services/',
     siteName: 'Dotspresentaions',
     images: [
       {
-        url: 'https://i.ibb.co/tM39yJ3/meta.png',
+        url: 'https://dotspresentations.com/images/servicesog.jpeg',
         width: 800,
         height: 600,
       },
@@ -23,10 +23,10 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Services - DOTS',
-    description: `The Visual Way to Communicate Your Message Presentation Design Services Presentation Design Services We use our creativity, expertise, and passion to connect the dots and bring your stories to life. The Visual Way to Communicate Your Message We use our creativity, expertise, and passion to connect the dots and bring your stories to life.`,
+    title: 'Services - Dots Presentations',
+    description: `Explore our comprehensive presentation design services, including custom presentations, templates, pitch decks, and document design. Elevate your communication and captivate your audience with visually stunning slides.`,
     creator: '@dotsppts',
-    images: ['https://i.ibb.co/tM39yJ3/meta.png'],
+    images: ['https://dotspresentations.com/images/servicesog.jpeg'],
   },
 };
 

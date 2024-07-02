@@ -3,18 +3,18 @@ import Header from '@/components/resources/Header';
 import Main from '@/components/resources/Main';
 
 export const metadata = {
-  title: 'Resources',
+  title: 'Presentation Design Resources | Dots Presentations',
   description:
-    'Learn more with Dots Tips and Tricks Latest Articles 7 Proven Strategies to Create Winning Presentations Ready to start the project? Connect with Dots.',
+    'Access valuable resources to improve your presentation skills. From evaluating your slides to reading our blog, we provide tips and insights to help you create impactful presentations.',
   openGraph: {
-    title: 'Resources - DOTS',
+    title: 'Presentation Design Resources | Dots Presentations',
     description:
-      'Learn more with Dots Tips and Tricks Latest Articles 7 Proven Strategies to Create Winning Presentations Ready to start the project? Connect with Dots.',
+      'Access valuable resources to improve your presentation skills. From evaluating your slides to reading our blog, we provide tips and insights to help you create impactful presentations.',
     url: 'https://dotspresentations.com/resources',
     siteName: 'Dotspresentaions',
     images: [
       {
-        url: 'https://i.ibb.co/tM39yJ3/meta.png',
+        url: 'https://dotspresentations.com/images/resourcesog.jpeg',
         width: 800,
         height: 600,
       },
@@ -24,11 +24,11 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Resources - DOTS',
+    title: 'Presentation Design Resources | Dots Presentations',
     description:
-      'Learn more with Dots Tips and Tricks Latest Articles 7 Proven Strategies to Create Winning Presentations Ready to start the project? Connect with Dots.',
+      'Access valuable resources to improve your presentation skills. From evaluating your slides to reading our blog, we provide tips and insights to help you create impactful presentations.',
     creator: '@dotsppts',
-    images: ['https://i.ibb.co/tM39yJ3/meta.png'],
+    images: ['https://dotspresentations.com/images/resourcesog.jpeg'],
   },
 };
 

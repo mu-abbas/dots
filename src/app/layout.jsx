@@ -37,7 +37,7 @@ const clash = localFont({
 
 export const metadata = {
   title: {
-    template: '%s - DOTS',
+    template: '%s - Dots Presentations',
     default: 'Dots Presentations',
   },
 };

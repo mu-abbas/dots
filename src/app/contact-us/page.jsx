@@ -6,14 +6,14 @@ export const metadata = {
   title: 'Contact Us',
   description: `We’re glad you ended up here Follow Us On Linkedin-in Instagram Facebook-square Link your presentation Send **Response time 6-8 hours Want to schedule a phone call instead? We got you! follow the steps in the calendar to pick the best time and you’ll be all set.`,
   openGraph: {
-    title: 'Contact Us - DOTS',
+    title: 'Contact Us - Dots Presentations',
     description:
       'We’re glad you ended up here Follow Us On Linkedin-in Instagram Facebook-square Link your presentation Send **Response time 6-8 hours Want to schedule a phone call instead? We got you! follow the steps in the calendar to pick the best time and you’ll be all set.',
     url: 'https://dotspresentations.com/contact-us',
     siteName: 'Dotspresentaions',
     images: [
       {
-        url: 'https://i.ibb.co/tM39yJ3/meta.png',
+        url: 'https://dotspresentations.com/images/contactusog.jpeg',
         width: 800,
         height: 600,
       },
@@ -23,11 +23,11 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Contact Us - DOTS',
+    title: 'Contact Us - Dots Presentations',
     description:
       'We’re glad you ended up here Follow Us On Linkedin-in Instagram Facebook-square Link your presentation Send **Response time 6-8 hours Want to schedule a phone call instead? We got you! follow the steps in the calendar to pick the best time and you’ll be all set.',
     creator: '@dotsppts',
-    images: ['https://i.ibb.co/tM39yJ3/meta.png'],
+    images: ['https://dotspresentations.com/images/contactusog.jpeg'],
   },
 };
 

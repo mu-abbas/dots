@@ -3,17 +3,17 @@ import Header from '@/components/home/Header';
 import Main from '@/components/home/Main';
 
 export const metadata = {
-  title: 'Home Page - DOTS',
+  title: 'Professional Presentation Design Services | Dots Presentations',
   description:
-    'Your Story. Your Goals. Connected. Make your next presentation stand out with our Professional, Time-Saving, and price competitive services.',
+    'Transform your presentations with Dots Presentations. We offer professional, time-saving, and competitively priced presentation design services to help you tell your story effectively and impress your audience.',
   openGraph: {
-    title: 'Home Page - DOTS',
-    description: `Your Story. Your Goals. Connected. Make your next presentation stand out with our Professional, Time-Saving, and price competitive services.`,
+    title: 'Professional Presentation Design Services | Dots Presentations',
+    description: `Transform your presentations with Dots Presentations. We offer professional, time-saving, and competitively priced presentation design services to help you tell your story effectively and impress your audience.`,
     url: 'https://dotspresentations.com/',
     siteName: 'Dotspresentaions',
     images: [
       {
-        url: 'https://i.ibb.co/tM39yJ3/meta.png',
+        url: 'https://dotspresentations.com/images/homeog.jpeg',
         width: 800,
         height: 600,
       },
@@ -23,10 +23,10 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Home Page - DOTS',
-    description: `Your Story. Your Goals. Connected. Make your next presentation stand out with our Professional, Time-Saving, and price competitive services.`,
+    title: 'Professional Presentation Design Services | Dots Presentations',
+    description: `Transform your presentations with Dots Presentations. We offer professional, time-saving, and competitively priced presentation design services to help you tell your story effectively and impress your audience.`,
     creator: '@dotsppts',
-    images: ['https://i.ibb.co/tM39yJ3/meta.png'],
+    images: ['https://dotspresentations.com/images/homeog.jpeg'],
   },
 };
 

@@ -9,6 +9,7 @@ function Slides({ slides, downSlides = [], topSlides = [] }) {
 
   function handleOpen() {
     setSliderIsOpen(true);
+    document.querySelector('nav').classList.remove('z-50');
     document.querySelector('body').classList.add('overflow-y-hidden');
   }
 

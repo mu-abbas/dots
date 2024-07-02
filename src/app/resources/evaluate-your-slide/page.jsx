@@ -3,18 +3,18 @@ import Main from '@/components/evaluate/Main';
 import Footer from '@/components/footer/Footer';
 
 export const metadata = {
-  title: 'Evaluate Your Slide',
+  title: 'Slide Evaluation Tool',
   description:
-    'Get a free, expert slide evaluation on your slides before you deliver your presentation. on your slides before you deliver your presentation. Link your presentation/Slides here UPLOAD Get a free, quick and easy check of your slides in just 3 steps Get a free, quick and easy check of your slides in just 3 steps.',
+    'Use our slide evaluation tool to get professional feedback on your presentation slides. Improve your design and effectiveness with expert recommendations.',
   openGraph: {
-    title: 'Evaluate Your Slide - DOTS',
+    title: 'Slide Evaluation Tool | Dots Presentations',
     description:
-      'Get a free, expert slide evaluation on your slides before you deliver your presentation. on your slides before you deliver your presentation. Link your presentation/Slides here UPLOAD Get a free, quick and easy check of your slides in just 3 steps Get a free, quick and easy check of your slides in just 3 steps.',
+      'Use our slide evaluation tool to get professional feedback on your presentation slides. Improve your design and effectiveness with expert recommendations.',
     url: 'https://dotspresentations.com/resources/evaluate-your-slide',
     siteName: 'Dotspresentaions',
     images: [
       {
-        url: 'https://i.ibb.co/tM39yJ3/meta.png',
+        url: 'https://dotspresentations.com/images/evaluateog.jpeg',
         width: 800,
         height: 600,
       },
@@ -24,11 +24,11 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Evaluate Your Slide - DOTS',
+    title: 'Slide Evaluation Tool | Dots Presentations',
     description:
-      'Get a free, expert slide evaluation on your slides before you deliver your presentation. on your slides before you deliver your presentation. Link your presentation/Slides here UPLOAD Get a free, quick and easy check of your slides in just 3 steps Get a free, quick and easy check of your slides in just 3 steps.',
+      'Use our slide evaluation tool to get professional feedback on your presentation slides. Improve your design and effectiveness with expert recommendations.',
     creator: '@dotsppts',
-    images: ['https://i.ibb.co/tM39yJ3/meta.png'],
+    images: ['https://dotspresentations.com/images/evaluateog.jpeg'],
   },
 };
 

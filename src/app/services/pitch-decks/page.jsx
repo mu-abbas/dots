@@ -3,16 +3,16 @@ import Header from '@/components/pitch-decks/Header';
 import Main from '@/components/pitch-decks/Main';
 
 export const metadata = {
-  title: 'Pitch Decks',
-  description: `Pitch Decks That Close Deals It's your chance to make a great first impression on investors, partners, and customers. So far we have accomplished 0 + Clients 0 + Countries 0 % Client Retention 0 % Satisfied clients Pitch Decks that win Ready to start the project? Connect with Dots.`,
+  title: 'Engaging Pitch Deck Design',
+  description: `Make a lasting impression with our expertly crafted pitch decks. We design compelling slides that effectively communicate your vision and value proposition to investors.`,
   openGraph: {
-    title: 'Pitch Decks - DOTS',
-    description: `Pitch Decks That Close Deals It's your chance to make a great first impression on investors, partners, and customers. So far we have accomplished 0 + Clients 0 + Countries 0 % Client Retention 0 % Satisfied clients Pitch Decks that win Ready to start the project? Connect with Dots.`,
+    title: 'Engaging Pitch Deck Design | Dots Presentations',
+    description: `Make a lasting impression with our expertly crafted pitch decks. We design compelling slides that effectively communicate your vision and value proposition to investors.`,
     url: 'https://dotspresentations.com/services/pitch-decks/',
     siteName: 'Dotspresentaions',
     images: [
       {
-        url: 'https://i.ibb.co/tM39yJ3/meta.png',
+        url: 'https://dotspresentations.com/images/pitchog.jpeg',
         width: 800,
         height: 600,
       },
@@ -22,10 +22,10 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Pitch Decks - DOTS',
-    description: `Pitch Decks That Close Deals It's your chance to make a great first impression on investors, partners, and customers. So far we have accomplished 0 + Clients 0 + Countries 0 % Client Retention 0 % Satisfied clients Pitch Decks that win Ready to start the project? Connect with Dots.`,
+    title: 'Engaging Pitch Deck Design | Dots Presentations',
+    description: `Make a lasting impression with our expertly crafted pitch decks. We design compelling slides that effectively communicate your vision and value proposition to investors.`,
     creator: '@dotsppts',
-    images: ['https://i.ibb.co/tM39yJ3/meta.png'],
+    images: ['https://dotspresentations.com/images/pitchog.jpeg'],
   },
 };
 

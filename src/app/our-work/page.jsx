@@ -3,18 +3,18 @@ import Header from '@/components/our-work/Header';
 import Main from '@/components/our-work/Main';
 
 export const metadata = {
-  title: 'Our Work',
+  title: 'Presentation Design Portfolio',
   description:
-    'Creating presentations that gets you noticed AllPresentation DesignPitch DecksPresentation TemplatesDocument Design Topo Chico Marriot BOD Venus Presentation Surgio Health Marriot CEC Cloud Flyer League of Play SMS Oversubscribe Decast Gruppi CollectionXYZ Stake Sauce Marriot DRES Novonordisk BIG Marriot Event template Venus template Dolormin template Together E-book Y20 Whitepaper BIG Report Together Whitepaper.',
+    'View our portfolio of successful presentation design projects. See how we have helped clients from various industries tell their stories and achieve their goals with impactful presentations.',
   openGraph: {
-    title: 'Our Work - DOTS',
+    title: 'Presentation Design Portfolio | Dots Presentations',
     description:
-      'Creating presentations that gets you noticed AllPresentation DesignPitch DecksPresentation TemplatesDocument Design Topo Chico Marriot BOD Venus Presentation Surgio Health Marriot CEC Cloud Flyer League of Play SMS Oversubscribe Decast Gruppi CollectionXYZ Stake Sauce Marriot DRES Novonordisk BIG Marriot Event template Venus template Dolormin template Together E-book Y20 Whitepaper BIG Report Together Whitepaper.',
+      'View our portfolio of successful presentation design projects. See how we have helped clients from various industries tell their stories and achieve their goals with impactful presentations.',
     url: 'https://dotspresentations.com/our-work',
     siteName: 'Dotspresentaions',
     images: [
       {
-        url: 'https://i.ibb.co/tM39yJ3/meta.png',
+        url: 'https://dotspresentations.com/images/ourworkog.jpeg',
         width: 800,
         height: 600,
       },
@@ -24,11 +24,11 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Our Work - DOTS',
+    title: 'Presentation Design Portfolio | Dots Presentations',
     description:
-      'Creating presentations that gets you noticed AllPresentation DesignPitch DecksPresentation TemplatesDocument Design Topo Chico Marriot BOD Venus Presentation Surgio Health Marriot CEC Cloud Flyer League of Play SMS Oversubscribe Decast Gruppi CollectionXYZ Stake Sauce Marriot DRES Novonordisk BIG Marriot Event template Venus template Dolormin template Together E-book Y20 Whitepaper BIG Report Together Whitepaper.',
+      'View our portfolio of successful presentation design projects. See how we have helped clients from various industries tell their stories and achieve their goals with impactful presentations.',
     creator: '@dotsppts',
-    images: ['https://i.ibb.co/tM39yJ3/meta.png'],
+    images: ['https://dotspresentations.com/images/ourworkog.jpeg'],
   },
 };
 

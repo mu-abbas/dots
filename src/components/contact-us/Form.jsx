@@ -26,21 +26,22 @@ function Form() {
   async function onSubmit(formData) {
     setIsSubmitting(true);
 
-    // const res = await fetch('https://qzzlzsrwjrwxtamulxpz.supabase.co/functions/v1/resend-contact-form', {
-    //   method: 'POST',
-    //   headers: {
-    //     'Content-Type': 'application/json',
-    //   },
-    //   body: JSON.stringify(formData),
-    // });
-    // const data = await res.json();
+    const res = await fetch('https://us-central1-dots-presentations.cloudfunctions.net/createSlides', {
+      mode: 'no-cors',
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
 
-    // if (data?.id) {
-    toast.success('We have received your request successfully');
-    reset();
-    // } else {
-    //   toast.error('Something went wrong, please try again!');
-    // }
+    if (res) {
+      toast.success('We have received your request successfully');
+      reset();
+    } else {
+      toast.error('Something went wrong, please try again!');
+    }
+
     setIsSubmitting(false);
   }
 
