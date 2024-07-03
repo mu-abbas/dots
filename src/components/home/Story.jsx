@@ -35,7 +35,7 @@ function Story() {
                 We will work with you to understand your message and create a presentation that is connected to your
                 audience, visually appealing and easy to follow.
               </p>
-              <CTALinkV2 href="/services" label="Dicover our process" color="black" greyBorder={true} />
+              <CTALinkV2 href="/services" label="Discover our process" color="black" greyBorder={true} />
             </div>
           </figure>
         </SpaceY>

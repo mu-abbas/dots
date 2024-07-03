@@ -1,4 +1,5 @@
 import { Space_Grotesk, Poppins } from 'next/font/google';
+import { GoogleAnalytics } from '@next/third-parties/google';
 import localFont from 'next/font/local';
 import './globals.css';
 
@@ -50,6 +51,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
+        <GoogleAnalytics gaId="G-ZSNCJRTQZD" />
       </head>
       <body className="relative overflow-x-hidden 2xl:text-lg 3xl:text-xl">
         <div className="absolute inset-0 z-40 hidden w-full h-full transition duration-300 animate-opacity overlay lg:hidden"></div>
