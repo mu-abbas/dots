@@ -1,5 +1,3 @@
-'use client';
-
 import Container from '../micro/Container';
 import ServicesCarousel from '../ui/ServicesCarousel';
 import images from '@/data/presentationTemplatesImages';

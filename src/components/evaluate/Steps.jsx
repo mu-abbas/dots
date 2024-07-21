@@ -1,5 +1,3 @@
-'use client';
-
 import Container from '../micro/Container';
 import SpaceY from '../micro/SpaceY';
 import steps from '@/data/steps';

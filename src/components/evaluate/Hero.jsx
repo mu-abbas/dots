@@ -1,5 +1,3 @@
-'use client';
-
 import Container from '../micro/Container';
 import Form from './Form';
 

@@ -1,5 +1,4 @@
 'use client';
-
 import SpaceY from '../micro/SpaceY';
 import ClosingSlide from './ClosingSlide';
 import CompareSlider from './CompareSlider';

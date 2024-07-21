@@ -1,4 +1,3 @@
-'use client';
 function DrivenProp({ src, title, description }) {
   return (
     <figure className="flex flex-col gap-4 3xl:gap-8">

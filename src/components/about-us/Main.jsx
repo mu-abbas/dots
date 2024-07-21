@@ -1,4 +1,3 @@
-'use client';
 import ReadyToStart from '../ui/ReadyToStart';
 import Driven from './Driven';
 import Motto from './Motto';

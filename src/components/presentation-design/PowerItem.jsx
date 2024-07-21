@@ -1,4 +1,3 @@
-'use client';
 function PowerItem({ src, label, content }) {
   return (
     <figure className="flex flex-col items-start gap-4 lg:gap-8 lg:items-center lg:flex-row">

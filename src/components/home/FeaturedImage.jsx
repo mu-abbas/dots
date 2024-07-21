@@ -1,4 +1,3 @@
-'use client';
 import Link from 'next/link';
 function FeaturedImage({ src, alt, href, description, name }) {
   return (

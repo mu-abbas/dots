@@ -1,4 +1,3 @@
-'use client';
 function TestimoialCard({ quote, image, name, role }) {
   return (
     <figure className="flex flex-col justify-between gap-8 lg:h-56 xl:h-64 2xl:h-60">

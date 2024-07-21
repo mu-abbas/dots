@@ -1,5 +1,3 @@
-'use client';
-
 import { ImgComparisonSlider } from '@img-comparison-slider/react';
 import Handle from './Handle';
 function ImageSlider({ afterSlides, beforeSlides }) {

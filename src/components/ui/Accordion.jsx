@@ -1,4 +1,3 @@
-'use client';
 import AccordionItem from './AccordionItem';
 
 const Accordion = ({ items }) => {

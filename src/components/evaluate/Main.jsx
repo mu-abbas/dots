@@ -1,5 +1,4 @@
 'use client';
-
 import CTA from './CTA';
 import Process from './Process';
 import Steps from './Steps';

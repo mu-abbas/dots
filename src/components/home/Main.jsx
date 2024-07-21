@@ -1,4 +1,3 @@
-'use client';
 import Blog from '../ui/Blog';
 import Brands from './Brands';
 import Faqs from '../ui/Faqs';

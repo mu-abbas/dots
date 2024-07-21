@@ -1,5 +1,4 @@
 'use client';
-
 import Container from '../micro/Container';
 import SpaceY from '../micro/SpaceY';
 import powers from '@/data/powerOfDots';

@@ -1,4 +1,3 @@
-'use client';
 function ProcessItem({ src, label, content }) {
   return (
     <figure className="flex items-center h-20 gap-4 sm:h-max sm:gap-8 3xl:gap-12">

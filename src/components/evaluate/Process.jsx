@@ -1,5 +1,3 @@
-'use client';
-
 import Container from '../micro/Container';
 import SpaceY from '../micro/SpaceY';
 import processes from '@/data/evaluationProcesses';

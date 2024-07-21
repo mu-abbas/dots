@@ -21,21 +21,22 @@ function Form() {
 
   async function onSubmit(formData) {
     setIsSubmitting(true);
-
-    const res = await fetch('https://us-central1-dots-presentations.cloudfunctions.net/evaluateSlides', {
-      mode: 'no-cors',
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(formData),
-    });
-
-    if (res) {
-      toast.success('We have received your request successfully');
-      reset();
-    } else {
-      toast.error('Something went wrong, please try again!');
+    try {
+      const res = await fetch('https://us-central1-dots-presentations.cloudfunctions.net/evaluateSlides', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+      if (res.ok) {
+        toast.success('Thank you!');
+        reset();
+      } else {
+        throw new Error('Error! Please try again.');
+      }
+    } catch (error) {
+      toast.error(error.message);
     }
     setIsSubmitting(false);
   }

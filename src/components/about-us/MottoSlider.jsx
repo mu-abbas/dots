@@ -1,5 +1,4 @@
 'use client';
-
 import Slider from 'react-infinite-logo-slider';
 
 function MottoSlider() {

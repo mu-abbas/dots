@@ -1,5 +1,4 @@
 'use client';
-
 import projects from '@/data/projects';
 import Container from '../micro/Container';
 import SpaceY from '../micro/SpaceY';

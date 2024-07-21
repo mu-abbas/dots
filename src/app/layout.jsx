@@ -2,6 +2,7 @@ import { Space_Grotesk, Poppins } from 'next/font/google';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import localFont from 'next/font/local';
 import './globals.css';
+import { Toaster } from 'react-hot-toast';
 
 const grotesk = Space_Grotesk({
   weight: ['300', '400', '500', '600', '700'],
@@ -55,6 +56,14 @@ export default function RootLayout({ children }) {
       </head>
       <body className="relative overflow-x-hidden 2xl:text-lg 3xl:text-xl">
         <div className="absolute inset-0 z-40 hidden w-full h-full transition duration-300 animate-opacity overlay lg:hidden"></div>
+        <Toaster
+          position="top-center"
+          reverseOrder={false}
+          toastOptions={{
+            className: 'text-sm',
+            duration: 2000,
+          }}
+        />
         {children}
       </body>
     </html>

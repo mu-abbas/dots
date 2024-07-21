@@ -1,5 +1,4 @@
 'use client';
-
 import { useEffect, useRef } from 'react';
 import Calendly from './Calendly';
 import Hero from './Hero';

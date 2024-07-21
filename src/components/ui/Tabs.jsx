@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import TabItem from './TabItem';
 import TabLink from './TabLink';
 import SpaceY from '../micro/SpaceY';

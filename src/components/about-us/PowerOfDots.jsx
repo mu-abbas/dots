@@ -1,5 +1,3 @@
-'use client';
-
 import PowerItem from './PowerItem';
 import PowerList from './PowerList';
 

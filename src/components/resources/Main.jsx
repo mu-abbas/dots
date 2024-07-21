@@ -1,4 +1,3 @@
-'use client';
 import { Suspense } from 'react';
 import ReadyToStart from '../ui/ReadyToStart';
 import Articles from './Articles';

@@ -1,5 +1,3 @@
-'use client';
-
 import SpaceY from '../micro/SpaceY';
 import EveryPresentation from './EveryPresentation';
 import MottoSlider from './MottoSlider';

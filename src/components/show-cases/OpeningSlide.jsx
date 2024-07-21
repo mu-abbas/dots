@@ -1,5 +1,3 @@
-'use client';
-
 function OpeningSlide({ src }) {
   return (
     <section>

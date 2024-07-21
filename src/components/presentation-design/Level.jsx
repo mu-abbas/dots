@@ -1,4 +1,3 @@
-'use client';
 function Level({ heading, description, note, bg }) {
   return (
     <li

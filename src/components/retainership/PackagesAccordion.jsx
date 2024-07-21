@@ -1,4 +1,3 @@
-'use client';
 import PackageItem from './PackageItem';
 
 const Accordion = ({ items }) => {

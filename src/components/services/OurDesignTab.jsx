@@ -1,4 +1,3 @@
-'use client';
 function OurDesignTab({ heading, icon }) {
   return (
     <figure className="p-6 xl:p-8 3xl:p-10 w-52 xl:w-64 3xl:w-80">

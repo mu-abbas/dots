@@ -1,5 +1,3 @@
-'use client';
-
 import Faqs from '../ui/Faqs';
 import ReadyToStart from '../ui/ReadyToStart';
 import Capabilities from './Capabilities';

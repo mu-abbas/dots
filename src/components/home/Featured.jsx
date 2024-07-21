@@ -1,4 +1,3 @@
-'use client';
 import FeaturedTabContent from './FeaturedTabContent';
 import Container from '../micro/Container';
 import CTALinkV2 from '../navigation/CTALinkV2';

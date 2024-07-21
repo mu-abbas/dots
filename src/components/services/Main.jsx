@@ -1,4 +1,3 @@
-'use client';
 import Blog from '../ui/Blog';
 import Faqs from '../ui/Faqs';
 import ReadyToStart from '../ui/ReadyToStart';

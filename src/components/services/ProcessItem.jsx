@@ -1,4 +1,3 @@
-'use client';
 function ProcessItem({ num, heading, content, color }) {
   const green = 'bg-green';
   const black = 'bg-black text-offWhite';

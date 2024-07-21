@@ -1,5 +1,3 @@
-'use client';
-
 function ClosingSlide({ src }) {
   return (
     <section>

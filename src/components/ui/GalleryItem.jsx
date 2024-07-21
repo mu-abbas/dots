@@ -1,4 +1,3 @@
-'use client';
 import Link from 'next/link';
 
 function GalleryItem({ href, title, src }) {

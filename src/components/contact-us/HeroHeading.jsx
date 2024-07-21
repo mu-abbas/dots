@@ -1,5 +1,3 @@
-'use client';
-
 function HeroHeading() {
   return (
     <section className="flex flex-col gap-12 space-y-12 xl:w-full xl:justify-around">

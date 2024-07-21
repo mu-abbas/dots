@@ -1,4 +1,3 @@
-'use client';
 import CTALinkV2 from '../navigation/CTALinkV2';
 
 function OurDesignCarouselItem({ firstHeading, secondHeading, icon, description, href, linkLabel }) {

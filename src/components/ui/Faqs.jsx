@@ -1,4 +1,3 @@
-'use client';
 import Container from '../micro/Container';
 import Accordion from './Accordion';
 import faqs from '@/data/faqs';

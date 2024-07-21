@@ -1,4 +1,3 @@
-'use client';
 function Handle({ large = false }) {
   return (
     <span

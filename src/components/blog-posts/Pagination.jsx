@@ -1,5 +1,3 @@
-'use client';
-
 import Link from 'next/link';
 import Container from '../micro/Container';
 import Previous from './Previous';

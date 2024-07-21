@@ -1,4 +1,3 @@
-'use client';
 function EveryPresentation() {
   return (
     <div className="flex px-8 lg:px-0 lg:h-[700px] items-center lg:pt-32 lg:pb-24">

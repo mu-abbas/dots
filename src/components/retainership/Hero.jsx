@@ -1,5 +1,3 @@
-'use client';
-
 function Hero() {
   return (
     <section className="sticky flex items-center pt-32 text-offWhite bg-blue">

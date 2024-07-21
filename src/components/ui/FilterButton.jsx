@@ -1,4 +1,3 @@
-'use client';
 function FilterButton({ onClick, active, children }) {
   return (
     <button

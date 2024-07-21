@@ -1,4 +1,3 @@
-'use client';
 function OurDesignTabsLink({ title, onClick, isActive, heading }) {
   return (
     <button

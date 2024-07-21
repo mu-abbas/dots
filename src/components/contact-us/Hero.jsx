@@ -1,5 +1,3 @@
-'use client';
-
 import Container from '../micro/Container';
 import ContactForm from './ContactForm';
 import HeroHeading from './HeroHeading';

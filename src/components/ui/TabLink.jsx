@@ -1,4 +1,3 @@
-'use client';
 function TabLink({ title, onClick, isActive }) {
   return (
     <button

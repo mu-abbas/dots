@@ -1,4 +1,3 @@
-'use client';
 import FeaturedImage from './FeaturedImage';
 function FeaturedTabContent({ items }) {
   return (

@@ -1,5 +1,4 @@
 'use client';
-
 import stickyFn from '@/helpers/sticky';
 import { useEffect, useRef } from 'react';
 

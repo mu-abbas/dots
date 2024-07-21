@@ -1,4 +1,3 @@
-'use client';
 import SpaceY from '../micro/SpaceY';
 
 function Description({ descriptionImage, description }) {

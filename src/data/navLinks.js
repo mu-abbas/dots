@@ -20,7 +20,10 @@ const navLinks = [
   {
     label: 'Resources',
     href: '/resources',
-    subLinks: [{ label: 'Evaluate Your Slide', href: '/resources/evaluate-your-slide' }],
+    subLinks: [
+      { label: 'Our Blog', href: '/resources/' },
+      { label: 'Evaluate Your Slide', href: '/resources/evaluate-your-slide' },
+    ],
   },
   {
     label: 'About Us',

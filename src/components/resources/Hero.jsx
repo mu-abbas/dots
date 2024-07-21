@@ -1,5 +1,3 @@
-'use client';
-
 function Hero() {
   return (
     <section className="pt-28 bg-beige">

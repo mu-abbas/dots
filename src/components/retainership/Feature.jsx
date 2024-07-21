@@ -1,4 +1,3 @@
-'use client';
 function Feature({ src, title, content }) {
   return (
     <figure className="flex flex-col p-6 space-y-2 bg-opacity-50 md:p-8 bg-navy rounded-3xl text-offWhite">
