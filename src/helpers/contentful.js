@@ -4,7 +4,6 @@ export default async function getPosts() {
     headers: {
       Authorization: 'Bearer QtLijtLahHYbEuwdXwcaRblC4_ONCcFx2QfgKLyugYI',
     },
-    cache: 'no-store',
   });
 
   const {
