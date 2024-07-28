@@ -82,12 +82,20 @@ function Blog() {
             Take a look at our latest articles and resources
           </h2>
           <div>
-            {posts?.length ? (
+            {posts?.length > 1 ? (
               <Slider {...settings}>
                 {posts.map(({ imageURL, title, date, href, themeColor }, i) => (
                   <BlogPostCard color={themeColor} image={imageURL} title={title} date={date} href={href} key={i} />
                 ))}
               </Slider>
+            ) : posts?.length === 1 ? (
+              <div className="flex justify-center">
+                <div className="overflow-hidden border max-w-72 border-grey rounded-xl md:max-w-96">
+                  {posts.map(({ imageURL, title, date, href, themeColor }, i) => (
+                    <BlogPostCard color={themeColor} image={imageURL} title={title} date={date} href={href} key={i} />
+                  ))}
+                </div>
+              </div>
             ) : (
               <p className="text-center text-beige font-poppins">
                 No posts available right now, we will publish new posts soon.
