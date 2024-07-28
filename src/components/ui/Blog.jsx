@@ -90,7 +90,7 @@ function Blog() {
               </Slider>
             ) : (
               <p className="text-center text-beige font-poppins">
-                No posts avaialvle right now, we will publish new posts soon.
+                No posts available right now, we will publish new posts soon.
               </p>
             )}
           </div>
