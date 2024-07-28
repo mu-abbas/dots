@@ -68,7 +68,7 @@ function Blog() {
   useEffect(() => {
     async function getFeaturedPosts() {
       const posts = await getPosts();
-      setPosts(posts.filter(post => post.isFeatured));
+      setPosts(posts.filter(post => post.isFeatured).slice(0, 3));
     }
     getFeaturedPosts();
   }, []);
