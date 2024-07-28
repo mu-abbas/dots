@@ -89,7 +89,9 @@ function Blog() {
                 ))}
               </Slider>
             ) : (
-              'No posts avaialvle right now, we will publish new posts soon.'
+              <p className="text-center text-beige font-poppins">
+                No posts avaialvle right now, we will publish new posts soon.
+              </p>
             )}
           </div>
         </SpaceY>
