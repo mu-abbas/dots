@@ -1,8 +1,5 @@
 import Link from 'next/link';
-
-const purple = '#5152D8';
-const green = '#C7F08B';
-const blue = '#2B65F4';
+import { theme } from '../../../tailwind.config';
 
 function BlogPostCard({ image, title, href, date, color }) {
   return (
@@ -20,7 +17,7 @@ function BlogPostCard({ image, title, href, date, color }) {
                 <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M10.7913 21.5449L10.5003 2.22674M10.5003 2.22674L1.22754 11.6593M10.5003 2.22674L19.773 11.6593"
-                    stroke={`${color === 'purple' ? purple : color === 'blue' ? blue : green}`}
+                    stroke={theme.colors[color]}
                     strokeWidth="1.5"
                   />
                 </svg>

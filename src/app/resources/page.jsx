@@ -1,6 +1,7 @@
 import Footer from '@/components/footer/Footer';
 import Header from '@/components/resources/Header';
 import Main from '@/components/resources/Main';
+import getPosts from '@/helpers/contentful';
 
 export const metadata = {
   title: 'Presentation Design Resources | Dots Presentations',
@@ -32,11 +33,12 @@ export const metadata = {
   },
 };
 
-function resources() {
+async function resources() {
+  const posts = await getPosts();
   return (
     <>
       <Header />
-      <Main />
+      <Main posts={posts} />
       <Footer />
     </>
   );

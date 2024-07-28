@@ -6,6 +6,8 @@ import BlogPostCard from './BlogPostCard';
 import blogPosts from '@/data/blogPosts';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { useState, useEffect } from 'react';
+import getPosts from '@/helpers/contentful';
 
 function PrevArrow(props) {
   const { className, style, onClick } = props;
@@ -62,6 +64,16 @@ const settings = {
 };
 
 function Blog() {
+  const [posts, setPosts] = useState(null);
+
+  useEffect(() => {
+    async function getFeaturedPosts() {
+      const posts = await getPosts();
+      setPosts(posts.filter(post => post.isFeatured));
+    }
+    getFeaturedPosts();
+  }, []);
+
   return (
     <section className="sticky bg-black blog sticky-top-rounded sticky-padding sticky-margin">
       <Container>
@@ -70,11 +82,15 @@ function Blog() {
             Take a look at our latest articles and resources
           </h2>
           <div>
-            <Slider {...settings}>
-              {blogPosts.map(({ image, title, date, href, color }, i) => (
-                <BlogPostCard color={color} image={image} title={title} date={date} href={href} key={i} />
-              ))}
-            </Slider>
+            {posts?.length ? (
+              <Slider {...settings}>
+                {posts.map(({ imageURL, title, date, href, themeColor }, i) => (
+                  <BlogPostCard color={themeColor} image={imageURL} title={title} date={date} href={href} key={i} />
+                ))}
+              </Slider>
+            ) : (
+              'No posts avaialvle right now, we will publish new posts soon.'
+            )}
           </div>
         </SpaceY>
       </Container>
