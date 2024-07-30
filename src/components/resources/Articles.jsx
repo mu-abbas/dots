@@ -35,11 +35,17 @@ function Articles({ posts }) {
               </FilterButton>
             </div>
           </header>
-          <div className="grid grid-cols-1 gap-12 md:grid-cols-2 xl:grid-cols-3">
-            {filteredPosts.map(({ imageURL, title, href }, index) => (
-              <ArticleCard href={href} title={title} src={imageURL} key={index} />
-            ))}
-          </div>
+          {filteredPosts.length ? (
+            <div className="grid grid-cols-1 gap-12 md:grid-cols-2 xl:grid-cols-3">
+              {filteredPosts.map(({ imageURL, title, href }, index) => (
+                <ArticleCard href={href} title={title} src={imageURL} key={index} />
+              ))}
+            </div>
+          ) : (
+            <p className="text-center text-black font-poppins">
+              No posts available right now, we will publish new posts soon.
+            </p>
+          )}
         </SpaceY>
       </Container>
     </section>

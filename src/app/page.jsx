@@ -1,6 +1,7 @@
 import Footer from '@/components/footer/Footer';
 import Header from '@/components/home/Header';
 import Main from '@/components/home/Main';
+import getPosts from '@/helpers/contentful';
 
 export const metadata = {
   title: 'Professional Presentation Design Services | Dots Presentations',
@@ -30,11 +31,12 @@ export const metadata = {
   },
 };
 
-function HomePage() {
+async function HomePage() {
+  const posts = await getPosts();
   return (
     <>
       <Header />
-      <Main />
+      <Main posts={posts} />
       <Footer />
     </>
   );

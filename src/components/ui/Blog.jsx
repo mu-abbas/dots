@@ -5,8 +5,6 @@ import SpaceY from '../micro/SpaceY';
 import BlogPostCard from './BlogPostCard';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { useState, useEffect } from 'react';
-import getPosts from '@/helpers/contentful';
 
 function PrevArrow(props) {
   const { className, style, onClick } = props;
@@ -62,16 +60,8 @@ const settings = {
   ],
 };
 
-function Blog() {
-  const [posts, setPosts] = useState(null);
-
-  useEffect(() => {
-    async function getFeaturedPosts() {
-      const posts = await getPosts();
-      setPosts(posts.filter(post => post.isFeatured).slice(0, 3));
-    }
-    getFeaturedPosts();
-  }, []);
+function Blog({ posts }) {
+  const featuredPosts = posts.filter(post => post.isFeatured).slice(0, 3);
 
   return (
     <section className="sticky bg-black blog sticky-top-rounded sticky-padding sticky-margin">
@@ -81,16 +71,16 @@ function Blog() {
             Take a look at our latest articles and resources
           </h2>
           <div>
-            {posts?.length > 1 ? (
+            {featuredPosts?.length > 1 ? (
               <Slider {...settings}>
-                {posts.map(({ imageURL, title, date, href, themeColor }, i) => (
+                {featuredPosts.map(({ imageURL, title, date, href, themeColor }, i) => (
                   <BlogPostCard color={themeColor} image={imageURL} title={title} date={date} href={href} key={i} />
                 ))}
               </Slider>
-            ) : posts?.length === 1 ? (
+            ) : featuredPosts?.length === 1 ? (
               <div className="flex justify-center">
                 <div className="overflow-hidden border max-w-72 border-grey rounded-xl md:max-w-96">
-                  {posts.map(({ imageURL, title, date, href, themeColor }, i) => (
+                  {featuredPosts.map(({ imageURL, title, date, href, themeColor }, i) => (
                     <BlogPostCard color={themeColor} image={imageURL} title={title} date={date} href={href} key={i} />
                   ))}
                 </div>

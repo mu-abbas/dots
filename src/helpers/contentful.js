@@ -1,15 +1,14 @@
 export default async function getPosts() {
-  // get data from contentful
-  const postsRes = await fetch('https://cdn.contentful.com/spaces/n3e0up12nh9x/entries', {
-    headers: {
-      Authorization: 'Bearer QtLijtLahHYbEuwdXwcaRblC4_ONCcFx2QfgKLyugYI',
-    },
-  });
+  // get data from contentful through firebase functions
+  const postsRes = await fetch('https://us-central1-dots-presentations.cloudfunctions.net/getPosts');
+
+  const data = await postsRes.json();
+  if (!data?.items?.length) return [];
 
   const {
     includes: { Asset },
     items,
-  } = await postsRes.json();
+  } = data;
 
   //create a ready to use posts object
   const posts = items.map(post => {

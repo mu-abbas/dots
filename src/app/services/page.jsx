@@ -1,6 +1,7 @@
 import Footer from '@/components/footer/Footer';
 import Header from '@/components/services/Header';
 import Main from '@/components/services/Main';
+import getPosts from '@/helpers/contentful';
 
 export const metadata = {
   title: 'Services',
@@ -30,11 +31,12 @@ export const metadata = {
   },
 };
 
-function Services() {
+async function Services() {
+  const posts = await getPosts();
   return (
     <>
       <Header />
-      <Main />
+      <Main posts={posts} />
       <Footer />
     </>
   );

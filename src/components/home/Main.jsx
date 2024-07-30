@@ -9,7 +9,7 @@ import Story from './Story';
 import Testimonials from '../ui/Testimonials';
 import Hero from './Hero';
 
-function Main() {
+function Main({ posts }) {
   return (
     <main className="sticky">
       <Hero />
@@ -19,7 +19,7 @@ function Main() {
       <Featured />
       <Brands />
       <Testimonials />
-      <Blog />
+      <Blog posts={posts} />
       <Faqs />
       <ReadyToStart />
     </main>

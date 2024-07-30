@@ -189,11 +189,11 @@
 }
 
 .dynamicBlogPost h2 {
-  @apply text-lg font-bold sm:text-xl font-sans py-1 lg:text-2xl xl:text-3xl xl:py-3;
+  @apply text-lg font-medium sm:text-xl font-sans py-1 lg:text-2xl xl:text-3xl xl:py-3;
 }
 
 .dynamicBlogPost h3 {
-  @apply text-lg font-bold sm:text-xl font-sans py-1 lg:text-2xl xl:text-3xl xl:py-3;
+  @apply text-lg font-medium sm:text-xl font-sans py-1 lg:text-2xl xl:text-3xl xl:py-3;
 }
 
 .dynamicBlogPost h4 {
@@ -206,8 +206,4 @@
 
 .dynamicBlogPost {
   @apply lg:px-6;
-}
-
-.dynamicBlogPost b {
-  font-weight: 500 !important;
 }

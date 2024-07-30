@@ -5,14 +5,14 @@ import Testimonials from '../ui/Testimonials';
 import OurDesign from './OurDesign';
 import OurProcess from './OurProcess';
 import Hero from './Hero';
-function Main() {
+function Main({ posts }) {
   return (
     <main className="sticky">
       <Hero />
       <OurProcess />
       <OurDesign />
       <Testimonials />
-      <Blog />
+      <Blog posts={posts} />
       <Faqs />
       <ReadyToStart />
     </main>
