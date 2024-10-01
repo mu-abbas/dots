@@ -11,8 +11,8 @@ function Articles({ posts }) {
   const pathname = usePathname();
   const router = useRouter();
 
-  const filter = searchParams.get('filter') || 'recent';
-  const filteredPosts = filter === 'recent' && posts.length > 3 ? posts.slice(0, 3) : posts;
+  const filter = searchParams.get('filter') || 'all';
+  const filteredPosts = filter === 'recent' && posts.length > 3 ? posts.slice(0, 6) : posts;
 
   function filterHandler(value) {
     const params = new URLSearchParams(searchParams);

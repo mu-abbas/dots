@@ -5,14 +5,14 @@ import getPosts from '@/helpers/contentful';
 
 function findNext(array, href) {
   const current = array.findIndex(current => current.href === href);
-  if (current >= array.length - 1) return `/resources/${array[0]?.href}`;
-  return `/resources/${array[current + 1]?.href}`;
+  if (current >= array.length - 1) return `/blog/${array[0]?.href}`;
+  return `/blog/${array[current + 1]?.href}`;
 }
 
 function findPrevious(array, href) {
   const current = array.findIndex(current => current.href === href);
-  if (current < 1) return `/resources/${array[array.length - 1]?.href}`;
-  return `/resources/${array[current - 1]?.href}`;
+  if (current < 1) return `/blog/${array[array.length - 1]?.href}`;
+  return `/blog/${array[current - 1]?.href}`;
 }
 
 export async function generateStaticParams() {
@@ -32,7 +32,7 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: `${title} - DOTS`,
       description: metaDescription,
-      url: `https://dotspresentations.com/${post}`,
+      url: `https://dotspresentations.com/blog/${post}`,
       siteName: 'Dotspresentaions',
       images: [
         {
@@ -50,6 +50,9 @@ export async function generateMetadata({ params }) {
       description: metaDescription,
       creator: '@dotsppts',
       images: [`https://dotspresentations.com${imageURL}`],
+    },
+    alternates: {
+      canonical: `/blog/${post}`,
     },
   };
 }

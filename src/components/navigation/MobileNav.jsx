@@ -33,7 +33,6 @@ function MobileNav({ isOpen = false, setIsOpen, pathname }) {
   }, [isOpen]);
 
   function handleScroll(e) {
-    console.log('scrolled');
     e.preventDefault();
   }
 
@@ -60,7 +59,7 @@ function MobileNav({ isOpen = false, setIsOpen, pathname }) {
               href={href}
               key={href}
               subLinks={subLinks}
-              isActive={pathname.startsWith(`${href}`)}
+              isActive={pathname.startsWith(`${href}`) || (pathname.startsWith('/evaluate') && label === 'Resources')}
             />
           ))}
         </ul>

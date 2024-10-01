@@ -19,10 +19,10 @@ const navLinks = [
   },
   {
     label: 'Resources',
-    href: '/resources',
+    href: '/blog',
     subLinks: [
-      { label: 'Our Blog', href: '/resources/' },
-      { label: 'Evaluate Your Slide', href: '/resources/evaluate-your-slide' },
+      { label: 'Our Blog', href: '/blog' },
+      { label: 'Evaluate Your Slide', href: '/evaluate-your-slide' },
     ],
   },
   {

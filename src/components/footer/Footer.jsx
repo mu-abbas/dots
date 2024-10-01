@@ -37,7 +37,7 @@ function Footer() {
                 <Link href="/our-work">Our Work</Link>
               </li>
               <li className="transition duration-300 brightness-50 hover:brightness-100 max-w-max">
-                <Link href="/resources">Our Articles</Link>
+                <Link href="/blog">Our Articles</Link>
               </li>
               <li className="transition duration-300 brightness-50 hover:brightness-100 max-w-max">
                 <Link href="/retainership">Retainership</Link>

@@ -4,7 +4,7 @@ import MobileNavAccordionItem from './MobileNavAccordionItem';
 function MobileNavLink({ label, href, isActive, color = 'blue', subLinks }) {
   return (
     <li className={`flex gap-4 items-center`}>
-      {href !== '/services' && href !== '/resources' && (
+      {href !== '/services' && label !== 'Resources' && (
         <Link
           href={href}
           className={`transition duration-300 ${
@@ -14,7 +14,7 @@ function MobileNavLink({ label, href, isActive, color = 'blue', subLinks }) {
           {label}
         </Link>
       )}
-      {(href === '/services' || href === '/resources') && (
+      {(href === '/services' || label === 'Resources') && (
         <MobileNavAccordionItem isActive={isActive} subLinks={subLinks} href={href} label={label} />
       )}
     </li>

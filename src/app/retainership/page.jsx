@@ -30,6 +30,9 @@ export const metadata = {
     creator: '@dotsppts',
     images: ['https://dotspresentations.com/images/retainershipog.jpeg'],
   },
+  alternates: {
+    canonical: '/retainership',
+  },
 };
 function Retainership() {
   return (

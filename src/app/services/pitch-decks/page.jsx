@@ -27,6 +27,9 @@ export const metadata = {
     creator: '@dotsppts',
     images: ['https://dotspresentations.com/images/pitchog.jpeg'],
   },
+  alternates: {
+    canonical: '/services/pitch-decks',
+  },
 };
 
 function PitchDecks() {
