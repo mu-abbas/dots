@@ -54,7 +54,7 @@ function Nav({ color }) {
                 subLinks={subLinks}
                 href={href}
                 key={href}
-                isActive={pathname.startsWith(`${href}`)}
+                isActive={pathname.startsWith(`${href}`) || (pathname.startsWith('/evaluate') && label === 'Resources')}
                 color={currentColor}
               />
             ))}

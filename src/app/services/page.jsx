@@ -29,6 +29,9 @@ export const metadata = {
     creator: '@dotsppts',
     images: ['https://dotspresentations.com/images/servicesog.jpeg'],
   },
+  alternates: {
+    canonical: '/services',
+  },
 };
 
 async function Services() {

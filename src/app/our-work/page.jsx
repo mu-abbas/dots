@@ -30,6 +30,9 @@ export const metadata = {
     creator: '@dotsppts',
     images: ['https://dotspresentations.com/images/ourworkog.jpeg'],
   },
+  alternates: {
+    canonical: '/our-work',
+  },
 };
 
 function OurWork() {

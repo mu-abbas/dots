@@ -10,7 +10,7 @@ export const metadata = {
     title: 'Slide Evaluation Tool | Dots Presentations',
     description:
       'Use our slide evaluation tool to get professional feedback on your presentation slides. Improve your design and effectiveness with expert recommendations.',
-    url: 'https://dotspresentations.com/resources/evaluate-your-slide',
+    url: 'https://dotspresentations.com/evaluate-your-slide',
     siteName: 'Dotspresentaions',
     images: [
       {
@@ -29,6 +29,9 @@ export const metadata = {
       'Use our slide evaluation tool to get professional feedback on your presentation slides. Improve your design and effectiveness with expert recommendations.',
     creator: '@dotsppts',
     images: ['https://dotspresentations.com/images/evaluateog.jpeg'],
+  },
+  alternates: {
+    canonical: '/evaluate-your-slide',
   },
 };
 

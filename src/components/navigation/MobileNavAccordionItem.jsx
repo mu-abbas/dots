@@ -3,9 +3,12 @@ import { useState } from 'react';
 import MobileNavLink from './MobileNavLink';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-function MobileNavAccordionItem({ href, label, subLinks, isActive }) {
+function MobileNavAccordionItem({ href, label, subLinks = [], isActive }) {
   const pathname = usePathname();
-  const [isOpen, setIsOpen] = useState(subLinks.some(subLink => pathname.startsWith(`${subLink.href}`)));
+  const [isOpen, setIsOpen] = useState(
+    subLinks.some(subLink => pathname.startsWith(`${subLink.href}`)) ||
+      (pathname.startsWith('/evaluate') && label === 'Resources')
+  );
 
   return (
     <div>

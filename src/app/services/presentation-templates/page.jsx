@@ -28,6 +28,9 @@ export const metadata = {
     creator: '@dotsppts',
     images: ['https://dotspresentations.com/images/templatesog.jpeg'],
   },
+  alternates: {
+    canonical: '/services/presentation-templates',
+  },
 };
 
 function PresentationTemplates() {

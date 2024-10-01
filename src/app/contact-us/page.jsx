@@ -29,6 +29,9 @@ export const metadata = {
     creator: '@dotsppts',
     images: ['https://dotspresentations.com/images/contactusog.jpeg'],
   },
+  alternates: {
+    canonical: '/contact-us',
+  },
 };
 
 function ContactUs() {

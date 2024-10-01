@@ -3,7 +3,7 @@ import { theme } from '../../../tailwind.config';
 
 function BlogPostCard({ image, title, href, date, color }) {
   return (
-    <Link href={`/resources/${href}`} aria-label={title}>
+    <Link href={`/blog/${href}`} aria-label={title}>
       <figure className="font-poppins">
         <img src={image} alt={title} />
         <figcaption className="flex items-center justify-center min-h-64">

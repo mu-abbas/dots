@@ -29,6 +29,9 @@ export const metadata = {
     creator: '@dotsppts',
     images: ['https://dotspresentations.com/images/aboutusog.jpeg'],
   },
+  alternates: {
+    canonical: '/about-us',
+  },
 };
 
 function AboutUs() {

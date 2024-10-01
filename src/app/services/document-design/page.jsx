@@ -27,6 +27,9 @@ export const metadata = {
     creator: '@dotsppts',
     images: ['https://dotspresentations.com/images/homeog.jpeg'],
   },
+  alternates: {
+    canonical: '/services/document-design',
+  },
 };
 
 function DocumentDesign() {
