@@ -29,10 +29,13 @@ export const metadata = {
     creator: '@dotsppts',
     images: ['https://dotspresentations.com/images/homeog.jpeg'],
   },
+  alternates: {
+    canonical: '/',
+  },
 };
 
 async function HomePage() {
-  const posts = await getPosts();
+  const { posts } = await getPosts();
   return (
     <>
       <Header />

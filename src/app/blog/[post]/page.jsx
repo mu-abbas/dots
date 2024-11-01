@@ -16,7 +16,7 @@ function findPrevious(array, href) {
 }
 
 export async function generateStaticParams() {
-  const posts = await getPosts();
+  const { posts } = await getPosts();
   return posts.map(post => ({
     post: post.href,
   }));
@@ -24,7 +24,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }) {
   const { post } = params;
-  const posts = await getPosts();
+  const { posts } = await getPosts();
   const [{ title, metaDescription, imageURL }] = posts.filter(item => item.href === post);
   return {
     title: title,
@@ -59,7 +59,7 @@ export async function generateMetadata({ params }) {
 
 async function page({ params }) {
   const { post } = params;
-  const posts = await getPosts();
+  const { posts, Asset } = await getPosts();
   const [{ title, imageURL, postContent, href, slidesURLS, date, duration }] = posts.filter(item => item.href === post);
 
   const next = findNext(posts, href);
@@ -78,6 +78,7 @@ async function page({ params }) {
         title={title}
         date={date}
         duration={duration}
+        assets={Asset}
       />
       <Footer />
     </>

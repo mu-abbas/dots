@@ -3,7 +3,8 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import SpaceY from '../micro/SpaceY';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
-import { INLINES, MARKS } from '@contentful/rich-text-types';
+import { BLOCKS, MARKS } from '@contentful/rich-text-types';
+import { getMediaDescription, getMediaURL } from '@/helpers/contentful';
 
 import {
   FacebookShareButton,
@@ -21,14 +22,6 @@ import {
   TwitterIcon,
   WhatsappIcon,
 } from 'react-share';
-
-const options = {
-  renderMark: {
-    [MARKS.BOLD]: text => {
-      return text;
-    },
-  },
-};
 
 const settings = {
   dots: true,
@@ -48,7 +41,34 @@ const settings = {
   ],
 };
 
-function PostContent({ content, slides, title, href }) {
+function PostContent({ content, slides, title, href, assets }) {
+  const options = {
+    renderMark: {
+      [MARKS.BOLD]: text => {
+        return text;
+      },
+    },
+    renderNode: {
+      [BLOCKS.EMBEDDED_ASSET]: (node, _) => {
+        const image = node.data.target;
+        const url = getMediaURL(assets, image);
+        const description = getMediaDescription(assets, image);
+        return (
+          <div key={url} className="flex flex-col gap-6 py-6">
+            <img src={url} alt={title} className="w-3/4 mx-auto" />
+            {description ? (
+              <p className="w-3/4 !p-2 mx-auto !text-sm bg-opacity-10 border border-opacity-50 rounded-lg text-grey max-h-max border-babyBlue bg-babyBlue">
+                {description}
+              </p>
+            ) : (
+              ''
+            )}
+          </div>
+        );
+      },
+    },
+  };
+
   return (
     <section className="bg-beige sticky-top-rounded sticky-margin">
       <div className="container px-8 pt-12 mx-auto sm:px-10 sm:pt-14 md:px-12 md:pt-16 lg:px-14 lg:pt-20 xl:px-16 xl:pt-24 2xl:pt-28 2xl:px-20">
