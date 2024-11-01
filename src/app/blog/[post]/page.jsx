@@ -26,6 +26,7 @@ export async function generateMetadata({ params }) {
   const { post } = params;
   const { posts } = await getPosts();
   const [{ title, metaDescription, imageURL }] = posts.filter(item => item.href === post);
+  // console.log(title);
   return {
     title: title,
     description: metaDescription,

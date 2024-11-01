@@ -1,8 +1,6 @@
 export default async function getPosts() {
   // get data from contentful through firebase functions
-  const postsRes = await fetch('https://us-central1-dots-presentations.cloudfunctions.net/getPosts', {
-    cache: 'no-store',
-  });
+  const postsRes = await fetch('https://us-central1-dots-presentations.cloudfunctions.net/getPosts');
 
   const data = await postsRes.json();
   if (!data?.items?.length) return [];
@@ -25,7 +23,7 @@ export default async function getPosts() {
 
       // create the object
       return {
-        title,
+        title: title.trim(),
         metaDescription,
         duration: `${duration} minutes`,
         isFeatured,
@@ -60,7 +58,7 @@ function formatDate(dateString) {
 
 // generating href from the title function
 function generateHref(title) {
-  return title.split(' ').join('-').toLowerCase();
+  return title.trim().split(' ').join('-').toLowerCase();
 }
 
 export function getMediaURL(Asset, image) {
