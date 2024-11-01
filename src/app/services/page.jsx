@@ -35,7 +35,7 @@ export const metadata = {
 };
 
 async function Services() {
-  const posts = await getPosts();
+  const { posts } = await getPosts();
   return (
     <>
       <Header />
