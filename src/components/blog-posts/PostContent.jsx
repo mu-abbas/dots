@@ -22,6 +22,7 @@ import {
   TwitterIcon,
   WhatsappIcon,
 } from 'react-share';
+import SideCard from './SideCard';
 
 const settings = {
   dots: true,
@@ -41,7 +42,7 @@ const settings = {
   ],
 };
 
-function PostContent({ content, slides, title, href, assets }) {
+function PostContent({ content, slides, title, href, assets, latestBlogs }) {
   const options = {
     renderMark: {
       [MARKS.BOLD]: text => {
@@ -55,9 +56,9 @@ function PostContent({ content, slides, title, href, assets }) {
         const description = getMediaDescription(assets, image);
         return (
           <div key={url} className="flex flex-col gap-6 py-6">
-            <img src={url} alt={title} className="w-3/4 mx-auto" />
+            <img src={url} alt={title} className="w-full" />
             {description ? (
-              <p className="w-3/4 !p-2 mx-auto !text-sm bg-opacity-10 border border-opacity-50 rounded-lg text-grey max-h-max border-babyBlue bg-babyBlue">
+              <p className="w-full text-center !p-3 bg-opacity-10 border border-opacity-50 rounded-lg text-grey max-h-max border-babyBlue bg-babyBlue">
                 {description}
               </p>
             ) : (
@@ -70,17 +71,27 @@ function PostContent({ content, slides, title, href, assets }) {
   };
 
   return (
-    <section className="bg-beige sticky-top-rounded sticky-margin">
-      <div className="container px-8 pt-12 mx-auto sm:px-10 sm:pt-14 md:px-12 md:pt-16 lg:px-14 lg:pt-20 xl:px-16 xl:pt-24 2xl:pt-28 2xl:px-20">
-        <SpaceY>
-          <div className="dynamicBlogPost">{documentToReactComponents(content, options)}</div>
-          {!!slides.length && (
-            <Slider {...settings} className="postSlider">
-              {slides.map((slide, index) => (
-                <img src={slide} key={index} alt={title} className="rounded-xl" />
-              ))}
-            </Slider>
-          )}
+    <section className="relative bg-beige sticky-top-rounded sticky-margin">
+      <div className="container max-w-[1536px] grid xl:grid-cols-[2fr_1fr] px-8 pt-12 mx-auto sm:px-10 sm:pt-14 md:px-12 md:pt-16 lg:px-14 lg:pt-20 xl:px-16 xl:pt-24 2xl:pt-28 2xl:px-20 gap-x-12">
+        <div>
+          <SpaceY>
+            <div className="dynamicBlogPost">{documentToReactComponents(content, options)}</div>
+            {!!slides.length && (
+              <Slider {...settings} className="postSlider">
+                {slides.map((slide, index) => (
+                  <img src={slide} key={index} alt={title} className="rounded-xl" />
+                ))}
+              </Slider>
+            )}
+          </SpaceY>
+        </div>
+        <div className="sticky flex-col hidden gap-6 top-28 xl:flex place-self-start xl:pb-[17rem]">
+          <h2 className="text-lg font-medium sm:text-xl lg:text-2xl xl:text-3xl ">Check our latest blogs</h2>
+          {latestBlogs.map(({ src, href, title }, index) => (
+            <SideCard src={src} href={href} title={title} key={index} />
+          ))}
+        </div>
+        <div className="col-span-2 pt-12 sm:pt-14 md:pt-16 lg:pt-20 xl:pt-24 2xl:pt-28">
           <div className="flex flex-wrap justify-center w-full gap-2 p-6 mx-auto bg-white rounded-xl max-w-max">
             <p className="w-full pb-2 text-center">Share our post</p>
 
@@ -122,7 +133,7 @@ function PostContent({ content, slides, title, href, assets }) {
               </RedditShareButton>
             </div>
           </div>
-        </SpaceY>
+        </div>
       </div>
     </section>
   );

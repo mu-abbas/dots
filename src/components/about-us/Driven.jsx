@@ -43,18 +43,20 @@ function Driven() {
             <img src="/image/about-us/driven.jpeg" alt="driven info graphic" className="lg:w-1/2 rounded-xl" />
             <figcaption className="flex flex-col justify-center gap-4 lg:pl-12 font-extralight 2xl:gap-8 sm:text-lg 3xl:text-3xl xl:text-2xl xl:leading-9 font-poppins 3xl:leading-10 2xl:pl-16 3xl:pl-24 lg:border-l-[0.5px] border-lightGrey">
               <p>
-                Businesses of all sizes didn&apos;t realize how a well-designed presentation could help them grow their
-                business, deliver their message more effectively, engage with their audience, and leave a lasting
-                impression.
+                Dots Presentations is a creative design studio that specializes in creating powerful presentations and
+                visually compelling data visualizations. Our core mission is to transform rough presentations into
+                impactful visual stories, helping our clients deliver their message with clarity, confidence, and style.
+                We are passionate about helping businesses, organizations, and individuals tell their stories
+                effectively, ensuring that their message is not only understood but also remembered.
               </p>
-              <p>We decided to connect the dots between presentation design and business success.</p>
+              <p>At Dots Presentations, we connect the dots to deliver clarity, impact, and insight.</p>
             </figcaption>
           </figure>
-          <p className="p-6 text-sm shadow-sm md:p-8 bg-opacity-10 bg-lightPurple rounded-xl font-poppins lg:text-base xl:text-xl 3xl:text-2xl lg:p-12 xl:p-14 3xl:p-18">
+          {/* <p className="p-6 text-sm shadow-sm md:p-8 bg-opacity-10 bg-lightPurple rounded-xl font-poppins lg:text-base xl:text-xl 3xl:text-2xl lg:p-12 xl:p-14 3xl:p-18">
             In addition, this year we are planning to provide annual trainings and workshops in schools to nurture the
             next generation of visual storytellers. We want to teach students how to use presentation design to
             communicate their ideas effectively and persuasively.
-          </p>
+          </p> */}
         </SpaceY>
       </Container>
     </section>

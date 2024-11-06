@@ -61,6 +61,10 @@ export async function generateMetadata({ params }) {
 async function page({ params }) {
   const { post } = params;
   const { posts, Asset } = await getPosts();
+  const latestBlogs = posts
+    .filter(item => item.href !== post)
+    .slice(0, 4)
+    .map(item => ({ src: item.imageURL, href: item.href, title: item.title }));
   const [{ title, imageURL, postContent, href, slidesURLS, date, duration }] = posts.filter(item => item.href === post);
 
   const next = findNext(posts, href);
@@ -80,6 +84,7 @@ async function page({ params }) {
         date={date}
         duration={duration}
         assets={Asset}
+        latestBlogs={latestBlogs}
       />
       <Footer />
     </>

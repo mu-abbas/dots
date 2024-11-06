@@ -5,7 +5,7 @@ import Hero from './Hero';
 import { useEffect, useRef } from 'react';
 import stickyFn from '@/helpers/sticky';
 
-function Main({ content, next, previous, image, slides, title, href, date, duration, assets }) {
+function Main({ content, next, previous, image, slides, title, href, date, duration, assets, latestBlogs }) {
   const ref = useRef();
 
   useEffect(() => {
@@ -22,7 +22,14 @@ function Main({ content, next, previous, image, slides, title, href, date, durat
       <Hero title={title} date={date} duration={duration} />
       <img src={image} alt={title} className="sticky w-full sticky-margin -z-10" />
       <div className="sticky" ref={ref}>
-        <PostContent content={content} slides={slides} title={title} href={href} assets={assets} />
+        <PostContent
+          content={content}
+          slides={slides}
+          title={title}
+          href={href}
+          assets={assets}
+          latestBlogs={latestBlogs}
+        />
         <Pagination next={next} previous={previous} />
       </div>
     </main>
