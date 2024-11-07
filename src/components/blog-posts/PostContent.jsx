@@ -55,7 +55,7 @@ function PostContent({ content, slides, title, href, assets, latestBlogs }) {
         const url = getMediaURL(assets, image);
         const description = getMediaDescription(assets, image);
         return (
-          <div key={url} className="flex flex-col gap-6 py-6">
+          <div key={url} className="flex flex-col gap-6 py-6 -translate-y-6">
             <img src={url} alt={title} className="w-full" />
             {description ? (
               <p className="w-full text-center !p-3 bg-opacity-10 border border-opacity-50 rounded-lg text-grey max-h-max border-babyBlue bg-babyBlue">
