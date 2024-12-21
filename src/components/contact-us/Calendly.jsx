@@ -20,7 +20,7 @@ function Calendly() {
           <div className="self-stretch hidden border-l border-black h-[1000px] lg:block"></div>
           <div className="w-full h-[1000px] overflow-hidden max-w-xl mx-auto 3xl:max-w-full">
             <InlineWidget
-              url="https://calendly.com/mahmoud_elsoudy/30min"
+              url="https://calendly.com/dotspresentations/30min"
               pageSettings={{
                 hideEventTypeDetails: false,
                 hideLandingPageDetails: true,
