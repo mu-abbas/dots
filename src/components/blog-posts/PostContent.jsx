@@ -72,7 +72,7 @@ function PostContent({ content, slides, title, href, assets, latestBlogs }) {
 
   return (
     <section className="relative bg-beige sticky-top-rounded sticky-margin">
-      <div className="container max-w-[1536px] grid xl:grid-cols-[2fr_1fr] px-8 pt-12 mx-auto sm:px-10 sm:pt-14 md:px-12 md:pt-16 lg:px-14 lg:pt-20 xl:px-16 xl:pt-24 2xl:pt-28 2xl:px-20 gap-x-12">
+      <div className="container max-w-[1536px] grid xl:grid-cols-[4fr_1fr] px-8 pt-12 mx-auto sm:px-10 sm:pt-14 md:px-12 md:pt-16 lg:px-14 lg:pt-20 xl:px-16 xl:pt-24 2xl:pt-28 2xl:px-20 gap-x-12">
         <div>
           <SpaceY>
             <div className="dynamicBlogPost">{documentToReactComponents(content, options)}</div>
@@ -88,7 +88,7 @@ function PostContent({ content, slides, title, href, assets, latestBlogs }) {
           </SpaceY>
         </div>
         <div className="sticky flex-col hidden gap-6 top-28 xl:flex place-self-start xl:pb-[17rem]">
-          <h2 className="text-lg font-medium sm:text-xl lg:text-2xl xl:text-3xl ">Check our latest blogs</h2>
+          <h2 className="text-xl font-medium text-center">Check our latest blogs</h2>
           {latestBlogs.map(({ src, href, title }, index) => (
             <SideCard src={src} href={href} title={title} key={index} />
           ))}

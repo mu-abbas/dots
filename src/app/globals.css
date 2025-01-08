@@ -204,6 +204,10 @@
   @apply text-sm font-light sm:text-base font-poppins pb-4 lg:text-lg xl:text-xl xl:pb-8;
 }
 
+.dynamicBlogPost hr {
+  @apply pb-5;
+}
+
 .dynamicBlogPost {
   @apply lg:px-6;
 }
