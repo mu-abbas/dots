@@ -76,13 +76,15 @@ function PostContent({ content, slides, title, href, assets, latestBlogs }) {
         <div>
           <SpaceY>
             <div className="dynamicBlogPost">{documentToReactComponents(content, options)}</div>
-            {!!slides.length && (
-              <Slider {...settings} className="postSlider">
-                {slides.map((slide, index) => (
-                  <img src={slide} key={index} alt={title} className="rounded-xl" />
-                ))}
-              </Slider>
-            )}
+            {/* <div className="w-full max-w-2xl">
+              {!!slides.length && (
+                <Slider {...settings} className="postSlider w-xl">
+                  {slides.map((slide, index) => (
+                    <img src={slide} key={index} alt={title} className="rounded-xl" />
+                  ))}
+                </Slider>
+              )}
+            </div> */}
           </SpaceY>
         </div>
         <div className="sticky flex-col hidden gap-6 top-28 xl:flex place-self-start xl:pb-[17rem]">

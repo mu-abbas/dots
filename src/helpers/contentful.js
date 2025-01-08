@@ -58,7 +58,12 @@ function formatDate(dateString) {
 
 // generating href from the title function
 function generateHref(title) {
-  return title.trim().split(' ').join('-').toLowerCase();
+  return title
+    .replace(/[^a-zA-Z0-9\s]/g, '')
+    .trim()
+    .split(' ')
+    .join('-')
+    .toLowerCase();
 }
 
 export function getMediaURL(Asset, image) {
