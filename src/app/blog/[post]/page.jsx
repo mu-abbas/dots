@@ -37,7 +37,7 @@ export async function generateMetadata({ params }) {
       siteName: 'Dotspresentaions',
       images: [
         {
-          url: `https://dotspresentations.com${imageURL}`,
+          url: `${imageURL}`,
           width: 800,
           height: 600,
         },
@@ -50,7 +50,7 @@ export async function generateMetadata({ params }) {
       title: `${title} - DOTS`,
       description: metaDescription,
       creator: '@dotsppts',
-      images: [`https://dotspresentations.com${imageURL}`],
+      images: [`${imageURL}`],
     },
     alternates: {
       canonical: `/blog/${post}`,
