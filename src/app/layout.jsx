@@ -54,6 +54,21 @@ export default function RootLayout({ children }) {
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
         <GoogleAnalytics gaId="G-ZSNCJRTQZD" />
+        <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Dots Presentations",
+  "url": "https://dotspresentations.com/",
+  "logo": "",
+  "sameAs": [
+    "https://www.instagram.com/dotspresentations/",
+    "https://x.com/DotsPPTs",
+    "https://www.linkedin.com/company/dots-presentations/",
+    "https://www.youtube.com/@DotsPresentations"
+  ]
+}
+</script>
       </head>
       <body className="relative overflow-x-hidden 2xl:text-lg 3xl:text-xl">
         <div className="absolute inset-0 z-40 hidden w-full h-full transition duration-300 animate-opacity overlay lg:hidden"></div>
