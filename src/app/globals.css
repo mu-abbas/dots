@@ -193,7 +193,7 @@
 }
 
 .dynamicBlogPost h3 {
-  @apply text-lg font-medium sm:text-xl font-sans py-1 lg:text-2xl xl:text-3xl xl:py-3;
+  @apply text-base font-medium sm:text-lg font-sans py-1 lg:text-xl xl:text-2xl xl:py-3;
 }
 
 .dynamicBlogPost h4 {
@@ -210,4 +210,20 @@
 
 .dynamicBlogPost {
   @apply lg:px-6;
+}
+
+.dynamicBlogPost a {
+  @apply text-blue hover:text-navy visited:text-purple transition-all duration-300;
+}
+
+.dynamicBlogPost ul li {
+  @apply list-disc last:pb-2 xl:last:pb-6;
+}
+
+.dynamicBlogPost li p {
+  @apply !pb-2;
+}
+
+.dynamicBlogPost ul {
+  @apply pl-4;
 }

@@ -44,11 +44,11 @@ const settings = {
 
 function PostContent({ content, slides, title, href, assets, latestBlogs }) {
   const options = {
-    renderMark: {
-      [MARKS.BOLD]: text => {
-        return text;
-      },
-    },
+    // renderMark: {
+    //   [MARKS.BOLD]: text => {
+    //     return text;
+    //   },
+    // },
     renderNode: {
       [BLOCKS.EMBEDDED_ASSET]: (node, _) => {
         const image = node.data.target;
