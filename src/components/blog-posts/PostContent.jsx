@@ -3,7 +3,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import SpaceY from '../micro/SpaceY';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
-import { BLOCKS, MARKS } from '@contentful/rich-text-types';
+import { BLOCKS, MARKS, INLINES } from '@contentful/rich-text-types';
 import { getMediaDescription, getMediaURL } from '@/helpers/contentful';
 
 import {
@@ -65,6 +65,18 @@ function PostContent({ content, slides, title, href, assets, latestBlogs }) {
               ''
             )}
           </div>
+        );
+      },
+      [INLINES.HYPERLINK]: (node, children) => {
+        const url = node.data.uri;
+        return (
+          <a
+            href={url}
+            target="_blank"
+            className="transition-all duration-300 text-blue hover:text-navy visited:text-purple"
+          >
+            {children}
+          </a>
         );
       },
     },
