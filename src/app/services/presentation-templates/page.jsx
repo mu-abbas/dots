@@ -3,12 +3,12 @@ import Header from '@/components/presentation-templates/Header';
 import Main from '@/components/presentation-templates/Main';
 
 export const metadata = {
-  title: 'Professional Presentation Templates',
+  title: 'Presentation Templates Service',
   description:
-    'Discover our professionally designed presentation templates. Save time and ensure consistency with templates tailored to your brand and communication needs.',
+    'Dots Presentation Templates Service ensures your presentations are visually appealing and polished, helping you convey your message effectively.',
   openGraph: {
-    title: 'Professional Presentation Templates | Dots Presentations',
-    description: `Discover our professionally designed presentation templates. Save time and ensure consistency with templates tailored to your brand and communication needs.`,
+    title: 'Presentation Templates Service | Dots Presentations',
+    description: `Dots Presentation Templates Service ensures your presentations are visually appealing and polished, helping you convey your message effectively.`,
     url: 'https://dotspresentations.com/services/presentation-templates/',
     siteName: 'Dotspresentaions',
     images: [
@@ -23,8 +23,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Professional Presentation Templates | Dots Presentations',
-    description: `Discover our professionally designed presentation templates. Save time and ensure consistency with templates tailored to your brand and communication needs.`,
+    title: 'Presentation Templates Service | Dots Presentations',
+    description: `Dots Presentation Templates Service ensures your presentations are visually appealing and polished, helping you convey your message effectively.`,
     creator: '@dotsppts',
     images: ['https://dotspresentations.com/images/templatesog.jpeg'],
   },

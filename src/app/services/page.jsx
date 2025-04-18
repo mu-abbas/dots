@@ -4,12 +4,12 @@ import Main from '@/components/services/Main';
 import getPosts from '@/helpers/contentful';
 
 export const metadata = {
-  title: 'Services',
+  title: 'Best Presentation Design Services',
   description:
-    'Explore our comprehensive presentation design services, including custom presentations, templates, pitch decks, and document design. Elevate your communication and captivate your audience with visually stunning slides.',
+    'Dots offers you the Best Presentation Design Service. We use our creativity, expertise, and passion to connect the dots and bring your stories to life.',
   openGraph: {
-    title: 'Services - Dots Presentations',
-    description: `Explore our comprehensive presentation design services, including custom presentations, templates, pitch decks, and document design. Elevate your communication and captivate your audience with visually stunning slides.`,
+    title: 'Best Presentation Design Services | Dots Presentations',
+    description: `Dots offers you the Best Presentation Design Service. We use our creativity, expertise, and passion to connect the dots and bring your stories to life.`,
     url: 'https://dotspresentations.com/services/',
     siteName: 'Dotspresentaions',
     images: [
@@ -24,8 +24,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Services - Dots Presentations',
-    description: `Explore our comprehensive presentation design services, including custom presentations, templates, pitch decks, and document design. Elevate your communication and captivate your audience with visually stunning slides.`,
+    title: 'Best Presentation Design Services | Dots Presentations',
+    description: `Dots offers you the Best Presentation Design Service. We use our creativity, expertise, and passion to connect the dots and bring your stories to life.`,
     creator: '@dotsppts',
     images: ['https://dotspresentations.com/images/servicesog.jpeg'],
   },

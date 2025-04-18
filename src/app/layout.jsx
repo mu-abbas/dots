@@ -41,7 +41,7 @@ const clash = localFont({
 export const metadata = {
   metadataBase: new URL('https://dotspresentations.com'),
   title: {
-    template: '%s - Dots Presentations',
+    template: '%s | Dots Presentations',
     default: 'Dots Presentations',
   },
 };

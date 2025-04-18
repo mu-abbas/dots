@@ -4,12 +4,12 @@ import Main from '@/components/home/Main';
 import getPosts from '@/helpers/contentful';
 
 export const metadata = {
-  title: 'Professional Presentation Design Services | Dots Presentations',
+  title: 'Professional Presentation Design Company | Dots Presentations',
   description:
-    'Transform your presentations with Dots Presentations. We offer professional, time-saving, and competitively priced presentation design services to help you tell your story effectively and impress your audience.',
+    'Dots Presentations is a professional presentation design company. We offer affordable services that help you effectively communicate your story to your audience.',
   openGraph: {
-    title: 'Professional Presentation Design Services | Dots Presentations',
-    description: `Transform your presentations with Dots Presentations. We offer professional, time-saving, and competitively priced presentation design services to help you tell your story effectively and impress your audience.`,
+    title: 'Professional Presentation Design Company | Dots Presentations',
+    description: `Dots Presentations is a professional presentation design company. We offer affordable services that help you effectively communicate your story to your audience.`,
     url: 'https://dotspresentations.com/',
     siteName: 'Dotspresentaions',
     images: [
@@ -24,8 +24,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Professional Presentation Design Services | Dots Presentations',
-    description: `Transform your presentations with Dots Presentations. We offer professional, time-saving, and competitively priced presentation design services to help you tell your story effectively and impress your audience.`,
+    title: 'Professional Presentation Design Company | Dots Presentations',
+    description: `Dots Presentations is a professional presentation design company. We offer affordable services that help you effectively communicate your story to your audience.`,
     creator: '@dotsppts',
     images: ['https://dotspresentations.com/images/homeog.jpeg'],
   },

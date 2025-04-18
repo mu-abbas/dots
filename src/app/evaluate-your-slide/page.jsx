@@ -3,13 +3,13 @@ import Main from '@/components/evaluate/Main';
 import Footer from '@/components/footer/Footer';
 
 export const metadata = {
-  title: 'Slide Evaluation Tool',
+  title: 'Slide Evaluation Service',
   description:
-    'Use our slide evaluation tool to get professional feedback on your presentation slides. Improve your design and effectiveness with expert recommendations.',
+    'With Dots Presentation Slide Evaluation Service, get a free, expert Evaluation of your slides in just 3 steps before you deliver your presentation.',
   openGraph: {
-    title: 'Slide Evaluation Tool | Dots Presentations',
+    title: 'Slide Evaluation Service | Dots Presentations',
     description:
-      'Use our slide evaluation tool to get professional feedback on your presentation slides. Improve your design and effectiveness with expert recommendations.',
+      'With Dots Presentation Slide Evaluation Service, get a free, expert Evaluation of your slides in just 3 steps before you deliver your presentation.',
     url: 'https://dotspresentations.com/evaluate-your-slide',
     siteName: 'Dotspresentaions',
     images: [
@@ -24,9 +24,9 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Slide Evaluation Tool | Dots Presentations',
+    title: 'Slide Evaluation Service | Dots Presentations',
     description:
-      'Use our slide evaluation tool to get professional feedback on your presentation slides. Improve your design and effectiveness with expert recommendations.',
+      'With Dots Presentation Slide Evaluation Service, get a free, expert Evaluation of your slides in just 3 steps before you deliver your presentation.',
     creator: '@dotsppts',
     images: ['https://dotspresentations.com/images/evaluateog.jpeg'],
   },

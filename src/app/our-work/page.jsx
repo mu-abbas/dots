@@ -3,13 +3,13 @@ import Header from '@/components/our-work/Header';
 import Main from '@/components/our-work/Main';
 
 export const metadata = {
-  title: 'Presentation Design Portfolio',
+  title: 'Our Portfolio',
   description:
-    'View our portfolio of successful presentation design projects. See how we have helped clients from various industries tell their stories and achieve their goals with impactful presentations.',
+    'Dots Presentation Portfolio is about creating presentations that get you noticed! See how we helped clients achieve their goals with impactful presentations.',
   openGraph: {
-    title: 'Presentation Design Portfolio | Dots Presentations',
+    title: 'Our Portfolio | Dots Presentations',
     description:
-      'View our portfolio of successful presentation design projects. See how we have helped clients from various industries tell their stories and achieve their goals with impactful presentations.',
+      'Dots Presentation Portfolio is about creating presentations that get you noticed! See how we helped clients achieve their goals with impactful presentations.',
     url: 'https://dotspresentations.com/our-work',
     siteName: 'Dotspresentaions',
     images: [
@@ -24,9 +24,9 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Presentation Design Portfolio | Dots Presentations',
+    title: 'Our Portfolio | Dots Presentations',
     description:
-      'View our portfolio of successful presentation design projects. See how we have helped clients from various industries tell their stories and achieve their goals with impactful presentations.',
+      'Dots Presentation Portfolio is about creating presentations that get you noticed! See how we helped clients achieve their goals with impactful presentations.',
     creator: '@dotsppts',
     images: ['https://dotspresentations.com/images/ourworkog.jpeg'],
   },

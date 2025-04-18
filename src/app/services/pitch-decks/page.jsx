@@ -3,11 +3,13 @@ import Header from '@/components/pitch-decks/Header';
 import Main from '@/components/pitch-decks/Main';
 
 export const metadata = {
-  title: 'Engaging Pitch Deck Design',
-  description: `Make a lasting impression with our expertly crafted pitch decks. We design compelling slides that effectively communicate your vision and value proposition to investors.`,
+  title: 'Pitch Deck Template',
+  description: `Dots offers you Pitch Decks Templates That Close Deals.
+It's your chance to make a great first impression on investors, partners, and customers.`,
   openGraph: {
-    title: 'Engaging Pitch Deck Design | Dots Presentations',
-    description: `Make a lasting impression with our expertly crafted pitch decks. We design compelling slides that effectively communicate your vision and value proposition to investors.`,
+    title: 'Pitch Deck Template | Dots Presentations',
+    description: `Dots offers you Pitch Decks Templates That Close Deals.
+It's your chance to make a great first impression on investors, partners, and customers.`,
     url: 'https://dotspresentations.com/services/pitch-decks/',
     siteName: 'Dotspresentaions',
     images: [
@@ -22,8 +24,9 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Engaging Pitch Deck Design | Dots Presentations',
-    description: `Make a lasting impression with our expertly crafted pitch decks. We design compelling slides that effectively communicate your vision and value proposition to investors.`,
+    title: 'Pitch Deck Template | Dots Presentations',
+    description: `Dots offers you Pitch Decks Templates That Close Deals.
+It's your chance to make a great first impression on investors, partners, and customers.`,
     creator: '@dotsppts',
     images: ['https://dotspresentations.com/images/pitchog.jpeg'],
   },

@@ -4,13 +4,13 @@ import Main from '@/components/resources/Main';
 import getPosts from '@/helpers/contentful';
 
 export const metadata = {
-  title: 'Presentation Design Blog | Dots Presentations',
+  title: 'Our Blog | Dots Presentations',
   description:
-    'Access valuable resources to improve your presentation skills. We provide tips and insights to help you create impactful presentations.',
+    'Dots Presentation Blog gives you Access to valuable resources to improve your skills. We provide tips and insights to help you create impactful presentations.',
   openGraph: {
-    title: 'Presentation Design Blog | Dots Presentations',
+    title: 'Our Blog | Dots Presentations',
     description:
-      'Access valuable resources to improve your presentation skills. We provide tips and insights to help you create impactful presentations.',
+      'Dots Presentation Blog gives you Access to valuable resources to improve your skills. We provide tips and insights to help you create impactful presentations.',
     url: 'https://dotspresentations.com/blog',
     siteName: 'Dotspresentaions',
     images: [
@@ -25,9 +25,9 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Presentation Design Blog | Dots Presentations',
+    title: 'Our Blog | Dots Presentations',
     description:
-      'Access valuable resources to improve your presentation skills. We provide tips and insights to help you create impactful presentations.',
+      'Dots Presentation Blog gives you Access to valuable resources to improve your skills. We provide tips and insights to help you create impactful presentations.',
     creator: '@dotsppts',
     images: ['https://dotspresentations.com/images/resourcesog.jpeg'],
   },

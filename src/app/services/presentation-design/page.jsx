@@ -5,10 +5,10 @@ import Main from '@/components/presentation-design/Main';
 export const metadata = {
   title: 'Custom Presentation Design',
   description:
-    'Get bespoke presentation designs tailored to your brand and message. Our expert designers create visually appealing, easy-to-follow slides that connect with your audience.',
+    'Dots Custom Presentation Design services are the solution that helps you create engaging, Flawless, and Effective Presentations. On Budget. On-Time!.',
   openGraph: {
     title: 'Custom Presentation Design | Dots Presentations ',
-    description: `Get bespoke presentation designs tailored to your brand and message. Our expert designers create visually appealing, easy-to-follow slides that connect with your audience.`,
+    description: `Dots Custom Presentation Design services are the solution that helps you create engaging, Flawless, and Effective Presentations. On Budget. On-Time!.`,
     url: 'https://dotspresentations.com/services/presentation-design/',
     siteName: 'Dotspresentaions',
     images: [
@@ -24,7 +24,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Custom Presentation Design | Dots Presentations ',
-    description: `Get bespoke presentation designs tailored to your brand and message. Our expert designers create visually appealing, easy-to-follow slides that connect with your audience.`,
+    description: `Dots Custom Presentation Design services are the solution that helps you create engaging, Flawless, and Effective Presentations. On Budget. On-Time!.`,
     creator: '@dotsppts',
     images: ['https://dotspresentations.com/images/presentationog.jpeg'],
   },
