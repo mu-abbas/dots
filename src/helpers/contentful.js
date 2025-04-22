@@ -18,8 +18,18 @@ export default async function getPosts() {
     })
     .map(post => {
       // get data from the response
-      const { title, metaDescription, coverImage, date, duration, imageSlider, isFeatured, postContent, themeColor } =
-        post.fields;
+      const {
+        slug,
+        title,
+        metaDescription,
+        coverImage,
+        date,
+        duration,
+        imageSlider,
+        isFeatured,
+        postContent,
+        themeColor,
+      } = post.fields;
 
       // create the object
       return {
@@ -32,7 +42,7 @@ export default async function getPosts() {
         date: formatDate(date),
         imageURL: getMediaURL(Asset, coverImage),
         slidesURLS: imageSlider?.map(image => getMediaURL(Asset, image)) || [],
-        href: generateHref(title),
+        href: generateHref(slug),
       };
     });
 
@@ -57,8 +67,8 @@ function formatDate(dateString) {
 }
 
 // generating href from the title function
-function generateHref(title) {
-  return title
+function generateHref(slug) {
+  return slug
     .replace(/[^a-zA-Z0-9\s]/g, '')
     .trim()
     .split(' ')
