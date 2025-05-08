@@ -688,7 +688,6 @@ const projectsPages = [
         '/image/our-work/d-design/together-2/81.jpg',
         '/image/our-work/d-design/together-2/82.jpg',
         '/image/our-work/d-design/together-2/83.jpg',
-        '/image/our-work/d-design/together-2/Cover.jpg',
       ],
     },
   },
